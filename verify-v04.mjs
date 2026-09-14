@@ -11,7 +11,7 @@ const hasText=value=>typeof value==='string'?value.trim().length>0:Boolean(value
 check('three atlas views declared',['overview','musc-fap-ecm','dna-redox'].every(id=>views[id]?.stages?.length===6));
 check('all stages have positive teaching durations',Object.values(views).every(view=>view.stages.every(stage=>stage.duration>0)));
 check('all evidence edges have metadata',Object.values(viewEdges).flat().every(edge=>edge.id&&edge.level&&edge.kind&&hasText(edge.model)&&hasText(edge.dose)&&hasText(edge.time)&&hasText(edge.method)&&hasText(edge.functional)&&hasText(edge.limits)&&edge.refs?.length));
-check('all evidence references resolve',Object.values(viewEdges).flat().every(edge=>edge.refs.every(id=>sources[id]?.pmid)));
+check('all evidence references resolve',Object.values(viewEdges).flat().every(edge=>edge.refs.every(id=>sources[id]?.pmid||sources[id]?.url)));
 check('all edge endpoints resolve',Object.entries(viewEdges).every(([view,edges])=>edges.every(edge=>viewNodes[view].some(node=>node.id===edge.source)&&viewNodes[view].some(node=>node.id===edge.target))));
 check('navigation targets resolve',navigation.every(item=>views[item.view]&&views[item.targetView]&&viewNodes[item.view].some(node=>node.id===item.source)&&viewNodes[item.targetView].some(node=>node.id===item.targetNode)));
 check('direct radiation relations use A',Object.values(viewEdges).flat().filter(edge=>['direct','observed','pharmacology'].includes(edge.kind)).every(edge=>edge.level==='A'));

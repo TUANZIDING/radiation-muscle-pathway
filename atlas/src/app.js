@@ -17,8 +17,9 @@ function sourceCard(id){
   const source=sources[id];if(!source)return `<article class="reference-card"><strong>${esc(id)}</strong><p>${lang==='zh'?'来源记录待补':'Source record pending'}</p></article>`;
   const title=esc(getText(source.title,lang)),depth=esc(getText(source.depth,lang)||'');
   const pubmed=source.pmid?`<a href="https://pubmed.ncbi.nlm.nih.gov/${encodeURIComponent(source.pmid)}/" target="_blank" rel="noreferrer">PMID ${esc(source.pmid)} ↗</a>`:'';
+  const pathway=source.url?`<a href="${esc(source.url)}" target="_blank" rel="noreferrer">Reactome ↗</a>`:'';
   const doi=source.doi?`<a href="https://doi.org/${encodeURIComponent(source.doi)}" target="_blank" rel="noreferrer">DOI ↗</a>`:'';
-  return `<article class="reference-card">${pubmed} ${doi}<p>${title}</p><small>${esc(source.journal||'Project evidence registry')} · ${depth}</small><small>${esc(getText(source.model,lang)||'')}</small></article>`;
+  return `<article class="reference-card">${pubmed} ${pathway} ${doi}<p>${title}</p><small>${esc(source.journal||'Project evidence registry')} · ${depth}</small><small>${esc(getText(source.model,lang)||'')}</small></article>`;
 }
 function layerLabel(id){return id==='all'?ui[lang].all:ui[lang][id]||id;}
 function renderBreadcrumbs(){
