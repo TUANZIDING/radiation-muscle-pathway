@@ -1,0 +1,11 @@
+import {build} from 'esbuild';
+import {mkdirSync,readFileSync,writeFileSync} from 'node:fs';
+import {fileURLToPath} from 'node:url';
+const root=fileURLToPath(new URL('.',import.meta.url));
+const result=await build({entryPoints:[root+'atlas/src/app.js'],bundle:true,minify:true,format:'iife',write:false,legalComments:'inline',target:['es2020']});
+const template=readFileSync(root+'atlas/src/template.html','utf8');
+const style=readFileSync(root+'atlas/src/style.css','utf8');
+const script=result.outputFiles[0].text.replaceAll('</script','<\\/script');
+mkdirSync(root+'atlas',{recursive:true});
+writeFileSync(root+'atlas/index.html',template.replace('/*STYLE*/',style).replace('/*SCRIPT*/',script));
+console.log('Built v0.4 atlas: '+root+'atlas/index.html');

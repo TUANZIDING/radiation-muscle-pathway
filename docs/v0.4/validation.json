@@ -1,0 +1,202 @@
+{
+  "date": "2026-09-14",
+  "version": "v0.4",
+  "browser": "Chrome headless",
+  "checks": [
+    {
+      "name": "three atlas views declared",
+      "pass": true
+    },
+    {
+      "name": "all stages have positive teaching durations",
+      "pass": true
+    },
+    {
+      "name": "all evidence edges have metadata",
+      "pass": true
+    },
+    {
+      "name": "all evidence references resolve",
+      "pass": true
+    },
+    {
+      "name": "all edge endpoints resolve",
+      "pass": true
+    },
+    {
+      "name": "navigation targets resolve",
+      "pass": true
+    },
+    {
+      "name": "direct radiation relations use A",
+      "pass": true
+    },
+    {
+      "name": "reference relations use B",
+      "pass": true
+    },
+    {
+      "name": "inference and candidate relations use C",
+      "pass": true
+    },
+    {
+      "name": "partial rescue relations remain conditional",
+      "pass": true
+    },
+    {
+      "name": "excluded boundaries are explicit",
+      "pass": true
+    },
+    {
+      "name": "p-SMAD3 early-only edge is preserved",
+      "pass": true
+    },
+    {
+      "name": "WNT7A-PCP remains separate",
+      "pass": true
+    },
+    {
+      "name": "DNA map contains canonical and direct layers",
+      "pass": true
+    },
+    {
+      "name": "Chinese is default",
+      "pass": true
+    },
+    {
+      "name": "mother map renders",
+      "pass": true
+    },
+    {
+      "name": "mother map marks navigation lines",
+      "pass": true
+    },
+    {
+      "name": "play advances overview",
+      "pass": true
+    },
+    {
+      "name": "pause holds overview frame",
+      "pass": true
+    },
+    {
+      "name": "replay resets overview",
+      "pass": true
+    },
+    {
+      "name": "mother node opens inspector",
+      "pass": true
+    },
+    {
+      "name": "mother to DNA subgraph navigation",
+      "pass": true
+    },
+    {
+      "name": "DNA subgraph renders",
+      "pass": true
+    },
+    {
+      "name": "DNA edge inspector shows A evidence",
+      "pass": true
+    },
+    {
+      "name": "DNA to MuSC subgraph navigation",
+      "pass": true
+    },
+    {
+      "name": "MuSC subgraph keeps v0.3 core",
+      "pass": true
+    },
+    {
+      "name": "subgraph returns to mother map",
+      "pass": true
+    },
+    {
+      "name": "shared node locations render",
+      "pass": true
+    },
+    {
+      "name": "English switch preserves view and inspector",
+      "pass": true
+    },
+    {
+      "name": "reference filter sets state",
+      "pass": true
+    },
+    {
+      "name": "direct DNA edge is visually de-emphasized",
+      "pass": true
+    },
+    {
+      "name": "network mode state is available",
+      "pass": true
+    },
+    {
+      "name": "reduced motion flag is available",
+      "pass": true
+    },
+    {
+      "name": "no document overflow at 390x844",
+      "pass": true
+    },
+    {
+      "name": "player visible at 390x844",
+      "pass": true
+    },
+    {
+      "name": "touch-sized play target at 390x844",
+      "pass": true
+    },
+    {
+      "name": "no document overflow at 320x844",
+      "pass": true
+    },
+    {
+      "name": "player visible at 320x844",
+      "pass": true
+    },
+    {
+      "name": "touch-sized play target at 320x844",
+      "pass": true
+    },
+    {
+      "name": "no document overflow at 844x390",
+      "pass": true
+    },
+    {
+      "name": "player visible at 844x390",
+      "pass": true
+    },
+    {
+      "name": "touch-sized play target at 844x390",
+      "pass": true
+    },
+    {
+      "name": "no document overflow at 1366x768",
+      "pass": true
+    },
+    {
+      "name": "player visible at 1366x768",
+      "pass": true
+    },
+    {
+      "name": "touch-sized play target at 1366x768",
+      "pass": true
+    },
+    {
+      "name": "no uncaught page errors",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "views": [
+    "overview",
+    "musc-fap-ecm",
+    "dna-redox"
+  ],
+  "limitations": [
+    "动画是教学顺序，不是定量动力学模拟",
+    "A/B/C/N证据层级表达研究直接性，不等同临床证据等级",
+    "移动端验证为浏览器视口模拟，仍需真实设备触摸复核"
+  ]
+}

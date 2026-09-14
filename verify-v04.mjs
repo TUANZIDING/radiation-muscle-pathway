@@ -1,0 +1,42 @@
+import {chromium} from 'playwright';
+import {mkdirSync,writeFileSync} from 'node:fs';
+import {fileURLToPath} from 'node:url';
+import {views,viewNodes,viewEdges,navigation,sources,excluded} from './atlas/src/data.js';
+
+const root=fileURLToPath(new URL('.',import.meta.url));
+const out=root+'docs/v0.4';mkdirSync(out,{recursive:true});
+const checks=[];const errors=[];
+const check=(name,value)=>{const pass=Boolean(value);checks.push({name,pass});if(!pass)throw new Error(name);};
+const hasText=value=>typeof value==='string'?value.trim().length>0:Boolean(value?.zh&&value?.en);
+check('three atlas views declared',['overview','musc-fap-ecm','dna-redox'].every(id=>views[id]?.stages?.length===6));
+check('all stages have positive teaching durations',Object.values(views).every(view=>view.stages.every(stage=>stage.duration>0)));
+check('all evidence edges have metadata',Object.values(viewEdges).flat().every(edge=>edge.id&&edge.level&&edge.kind&&hasText(edge.model)&&hasText(edge.dose)&&hasText(edge.time)&&hasText(edge.method)&&hasText(edge.functional)&&hasText(edge.limits)&&edge.refs?.length));
+check('all evidence references resolve',Object.values(viewEdges).flat().every(edge=>edge.refs.every(id=>sources[id]?.pmid)));
+check('all edge endpoints resolve',Object.entries(viewEdges).every(([view,edges])=>edges.every(edge=>viewNodes[view].some(node=>node.id===edge.source)&&viewNodes[view].some(node=>node.id===edge.target))));
+check('navigation targets resolve',navigation.every(item=>views[item.view]&&views[item.targetView]&&viewNodes[item.view].some(node=>node.id===item.source)&&viewNodes[item.targetView].some(node=>node.id===item.targetNode)));
+check('direct radiation relations use A',Object.values(viewEdges).flat().filter(edge=>['direct','observed','pharmacology'].includes(edge.kind)).every(edge=>edge.level==='A'));
+check('reference relations use B',Object.values(viewEdges).flat().filter(edge=>edge.kind==='reference').every(edge=>edge.level==='B'));
+check('inference and candidate relations use C',Object.values(viewEdges).flat().filter(edge=>['inference','candidate'].includes(edge.kind)).every(edge=>edge.level==='C'));
+check('partial rescue relations remain conditional',Object.values(viewEdges).flat().filter(edge=>edge.kind==='partial').every(edge=>['B','C'].includes(edge.level)));
+check('excluded boundaries are explicit',excluded.length>=4&&excluded.some(item=>item.id==='X01')&&excluded.some(item=>item.id==='X04'));
+check('p-SMAD3 early-only edge is preserved',viewEdges['musc-fap-ecm'].some(edge=>edge.id==='A07'&&edge.stage===2&&String(edge.time.zh).includes('56 d恢复')));
+check('WNT7A-PCP remains separate',viewEdges['musc-fap-ecm'].some(edge=>edge.id==='A18')&&viewEdges['musc-fap-ecm'].some(edge=>edge.id==='A16'));
+check('DNA map contains canonical and direct layers',viewEdges['dna-redox'].some(edge=>edge.id==='D02'&&edge.level==='A')&&viewEdges['dna-redox'].some(edge=>edge.id==='D12'&&edge.level==='B'));
+
+const browser=await chromium.launch({channel:'chrome',headless:true,args:['--enable-unsafe-swiftshader']});
+const page=await browser.newPage({viewport:{width:1366,height:900}});page.on('pageerror',error=>errors.push(error.message));
+const url=new URL('./atlas/index.html#overview',import.meta.url).href;
+await page.goto(url);await page.waitForLoadState('load');
+const state=()=>page.evaluate(()=>window.atlasV04.getState());
+check('Chinese is default',(await state()).lang==='zh'&&await page.locator('html').getAttribute('lang')==='zh-CN');
+check('mother map renders',await page.locator('.atlas-node').count()===9&&await page.locator('.atlas-edge').count()===9&&await page.locator('.navigation-edge').count()===4);
+check('mother map marks navigation lines',await page.locator('.navigation-edge .edge-line').evaluateAll(elements=>elements.every(element=>getComputedStyle(element).strokeDasharray!=='none')));
+await page.locator('#play').click();await page.waitForTimeout(300);check('play advances overview',(await state()).status==='playing'&&(await state()).elapsed>100);await page.locator('#play').click();const paused=(await state()).elapsed;await page.waitForTimeout(120);check('pause holds overview frame',(await state()).status==='paused'&&(await state()).elapsed===paused);await page.locator('#replay').click();check('replay resets overview',(await state()).status==='playing'&&(await state()).elapsed<100);await page.locator('#play').click();
+await page.locator('[data-node-id="ov-dna"]').click();check('mother node opens inspector',(await state()).selectedNode==='ov-dna'&&await page.locator('#topicLink').isVisible());await page.locator('#topicLink').click();await page.waitForTimeout(40);check('mother to DNA subgraph navigation',(await state()).viewId==='dna-redox'&&await page.locator('#breadcrumbs').innerText().then(text=>text.includes('DNA')));
+check('DNA subgraph renders',await page.locator('.atlas-node').count()===15&&await page.locator('.atlas-edge').count()===15&&await page.locator('.navigation-edge').count()===2);await page.locator('[data-edge-id="D01"]').click();check('DNA edge inspector shows A evidence',(await state()).selectedEdge==='D01'&&await page.locator('#gradeBadge').innerText()==='A级'&&await page.locator('#method').innerText().then(text=>text.includes('γH2AX')));await page.locator('[data-nav-id="N-DNA-MUSC"]').click();await page.waitForTimeout(40);check('DNA to MuSC subgraph navigation',(await state()).viewId==='musc-fap-ecm');check('MuSC subgraph keeps v0.3 core',await page.locator('.atlas-node').count()===20&&await page.locator('.atlas-edge').count()===20);await page.locator('#breadcrumbs [data-view-id="overview"]').click();await page.waitForTimeout(40);check('subgraph returns to mother map',(await state()).viewId==='overview');
+await page.locator('[data-node-id="ov-fap"]').click();check('shared node locations render',await page.locator('.shared-location').count()>=2);await page.locator('#language').click();check('English switch preserves view and inspector',(await state()).lang==='en'&&await page.locator('html').getAttribute('lang')==='en'&&await page.locator('#evidenceTitle').innerText().then(text=>text.includes('FAP')));await page.locator('#language').click();
+await page.locator('[data-view-id="dna-redox"]').first().click();await page.locator('[data-layer="reference"]').click();check('reference filter sets state',(await state()).filter==='reference'&&await page.locator('[data-edge-id="D12"]').evaluate(element=>element.classList.contains('active-stage')||!element.classList.contains('hidden-filter')));check('direct DNA edge is visually de-emphasized',await page.locator('[data-edge-id="D01"]').evaluate(element=>element.classList.contains('hidden-filter')));await page.locator('#network').click();check('network mode state is available',(await state()).mode==='network');await page.locator('#overview').click();await page.locator('#reduced').check();check('reduced motion flag is available',(await state()).reduced===true);
+await page.screenshot({path:out+'/desktop-overview.png',fullPage:true});
+for(const [width,height,name] of [[390,844,'390x844'],[320,844,'320x844'],[844,390,'844x390'],[1366,768,'1366x768']]){await page.setViewportSize({width,height});await page.waitForTimeout(80);check(`no document overflow at ${name}`,await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));check(`player visible at ${name}`,await page.locator('.player').isVisible());check(`touch-sized play target at ${name}`,await page.locator('#play').evaluate(element=>element.getBoundingClientRect().height>=36));await page.screenshot({path:out+`/${name}.png`,fullPage:true});}
+check('no uncaught page errors',errors.length===0);
+const report={date:'2026-09-14',version:'v0.4',browser:'Chrome headless',checks,errors,views:Object.keys(views),limitations:['动画是教学顺序，不是定量动力学模拟','A/B/C/N证据层级表达研究直接性，不等同临床证据等级','移动端验证为浏览器视口模拟，仍需真实设备触摸复核']};writeFileSync(out+'/validation.json',JSON.stringify(report,null,2));console.log(JSON.stringify({passed:checks.filter(item=>item.pass).length,total:checks.length,errors},null,2));await browser.close();

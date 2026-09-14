@@ -1,0 +1,204 @@
+{
+  "date": "2026-09-14",
+  "browser": "Chrome headless",
+  "checks": [
+    {
+      "name": "six scientific stages declared",
+      "pass": true
+    },
+    {
+      "name": "all evidence edges have auditable metadata",
+      "pass": true
+    },
+    {
+      "name": "all evidence references resolve",
+      "pass": true
+    },
+    {
+      "name": "all edge endpoints resolve",
+      "pass": true
+    },
+    {
+      "name": "direct radiation evidence is level A",
+      "pass": true
+    },
+    {
+      "name": "inference and candidate evidence is level C",
+      "pass": true
+    },
+    {
+      "name": "p-SMAD3 edge is restricted to early stage",
+      "pass": true
+    },
+    {
+      "name": "WNT7A PCP is separate from canonical Wnt",
+      "pass": true
+    },
+    {
+      "name": "A09 does not claim FAP-derived TGF-beta1",
+      "pass": true
+    },
+    {
+      "name": "Chinese is default",
+      "pass": true
+    },
+    {
+      "name": "six stages rendered",
+      "pass": true
+    },
+    {
+      "name": "twenty evidence-bearing edges rendered",
+      "pass": true
+    },
+    {
+      "name": "twenty nodes rendered",
+      "pass": true
+    },
+    {
+      "name": "rejected A08 and A10 are absent",
+      "pass": true
+    },
+    {
+      "name": "play advances timeline",
+      "pass": true
+    },
+    {
+      "name": "pause preserves exact frame",
+      "pass": true
+    },
+    {
+      "name": "replay starts from beginning",
+      "pass": true
+    },
+    {
+      "name": "scrub selects FAP stage",
+      "pass": true
+    },
+    {
+      "name": "early p-SMAD3 is available in stage 3",
+      "pass": true
+    },
+    {
+      "name": "p-SMAD3 fades in late outcome stage",
+      "pass": true
+    },
+    {
+      "name": "A09 opens edge evidence",
+      "pass": true
+    },
+    {
+      "name": "A09 keeps secretome factor unresolved",
+      "pass": true
+    },
+    {
+      "name": "CellChat relation is level C dashed",
+      "pass": true
+    },
+    {
+      "name": "SB-505124 dose and duration visible",
+      "pass": true
+    },
+    {
+      "name": "node click opens related evidence",
+      "pass": true
+    },
+    {
+      "name": "English switch preserves timeline",
+      "pass": true
+    },
+    {
+      "name": "English stage copy renders",
+      "pass": true
+    },
+    {
+      "name": "method and exclusion notes switch to English",
+      "pass": true
+    },
+    {
+      "name": "selected evidence parameters switch to English",
+      "pass": true
+    },
+    {
+      "name": "document and control labels switch to English",
+      "pass": true
+    },
+    {
+      "name": "reference filter applied",
+      "pass": true
+    },
+    {
+      "name": "direct edges hidden under reference filter",
+      "pass": true
+    },
+    {
+      "name": "reference edge remains visible",
+      "pass": true
+    },
+    {
+      "name": "network mode hides tissue context",
+      "pass": true
+    },
+    {
+      "name": "reduced motion state applied",
+      "pass": true
+    },
+    {
+      "name": "no page overflow at 390x844",
+      "pass": true
+    },
+    {
+      "name": "player visible at 390x844",
+      "pass": true
+    },
+    {
+      "name": "play target usable at 390x844",
+      "pass": true
+    },
+    {
+      "name": "no page overflow at 320x844",
+      "pass": true
+    },
+    {
+      "name": "player visible at 320x844",
+      "pass": true
+    },
+    {
+      "name": "play target usable at 320x844",
+      "pass": true
+    },
+    {
+      "name": "no page overflow at 844x390",
+      "pass": true
+    },
+    {
+      "name": "player visible at 844x390",
+      "pass": true
+    },
+    {
+      "name": "play target usable at 844x390",
+      "pass": true
+    },
+    {
+      "name": "no page overflow at 1366x768",
+      "pass": true
+    },
+    {
+      "name": "player visible at 1366x768",
+      "pass": true
+    },
+    {
+      "name": "play target usable at 1366x768",
+      "pass": true
+    },
+    {
+      "name": "no uncaught page errors",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "limitations": [
+    "动画为教学顺序，不是定量动力学模拟",
+    "尚未在真实手机硬件上测试触摸",
+    "A级直接模型仍以细胞和动物研究为主，不代表人体临床证据"
+  ]
+}
