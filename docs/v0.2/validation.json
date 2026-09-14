@@ -1,0 +1,192 @@
+{
+  "date": "2026-09-10",
+  "checks": [
+    {
+      "name": "offline WebGL initializes 11 nodes",
+      "pass": true
+    },
+    {
+      "name": "10 source records",
+      "pass": true
+    },
+    {
+      "name": "inspector follows teaching node 1",
+      "pass": true
+    },
+    {
+      "name": "inspector follows teaching node 2",
+      "pass": true
+    },
+    {
+      "name": "inspector follows teaching node 3",
+      "pass": true
+    },
+    {
+      "name": "inspector follows teaching node 4",
+      "pass": true
+    },
+    {
+      "name": "inspector follows teaching node 5",
+      "pass": true
+    },
+    {
+      "name": "inspector follows teaching node 6",
+      "pass": true
+    },
+    {
+      "name": "inspector follows teaching node 7",
+      "pass": true
+    },
+    {
+      "name": "inspector follows teaching node 8",
+      "pass": true
+    },
+    {
+      "name": "inspector follows teaching node 9",
+      "pass": true
+    },
+    {
+      "name": "inspector follows teaching node 10",
+      "pass": true
+    },
+    {
+      "name": "inspector follows teaching node 11",
+      "pass": true
+    },
+    {
+      "name": "top dynamic play advances clock",
+      "pass": true
+    },
+    {
+      "name": "pause holds exact timeline",
+      "pass": true
+    },
+    {
+      "name": "ligand approaches receptor",
+      "pass": true
+    },
+    {
+      "name": "receptor phosphorylation initially absent",
+      "pass": true
+    },
+    {
+      "name": "receptor phosphorylation appears",
+      "pass": true
+    },
+    {
+      "name": "R-SMAD phosphorylation initially absent",
+      "pass": true
+    },
+    {
+      "name": "R-SMAD phosphorylation appears",
+      "pass": true
+    },
+    {
+      "name": "assembled SMAD complex moves into nucleus",
+      "pass": true
+    },
+    {
+      "name": "NRF2 accumulates then moves toward nuclear ARE",
+      "pass": true
+    },
+    {
+      "name": "speed control applied",
+      "pass": true
+    },
+    {
+      "name": "playback stops at final frame",
+      "pass": true
+    },
+    {
+      "name": "replay returns to first node",
+      "pass": true
+    },
+    {
+      "name": "branch nrf filters teaching sequence",
+      "pass": true
+    },
+    {
+      "name": "branch feedback filters teaching sequence",
+      "pass": true
+    },
+    {
+      "name": "branch tgfb filters teaching sequence",
+      "pass": true
+    },
+    {
+      "name": "branch all filters teaching sequence",
+      "pass": true
+    },
+    {
+      "name": "orbit changes camera",
+      "pass": true
+    },
+    {
+      "name": "label layer hides",
+      "pass": true
+    },
+    {
+      "name": "3D mesh picking selects ligand",
+      "pass": true
+    },
+    {
+      "name": "source dialog opens",
+      "pass": true
+    },
+    {
+      "name": "source dialog closes",
+      "pass": true
+    },
+    {
+      "name": "flat node selects feedback inspector",
+      "pass": true
+    },
+    {
+      "name": "feedback tracer is visible in overview",
+      "pass": true
+    },
+    {
+      "name": "no horizontal page overflow 390",
+      "pass": true
+    },
+    {
+      "name": "no overlapping molecule labels 390",
+      "pass": true
+    },
+    {
+      "name": "no horizontal page overflow 320",
+      "pass": true
+    },
+    {
+      "name": "no overlapping molecule labels 320",
+      "pass": true
+    },
+    {
+      "name": "no horizontal page overflow 844",
+      "pass": true
+    },
+    {
+      "name": "no overlapping molecule labels 844",
+      "pass": true
+    },
+    {
+      "name": "no uncaught page errors",
+      "pass": true
+    },
+    {
+      "name": "WebGL failure retains playable overview",
+      "pass": true
+    },
+    {
+      "name": "fallback playback starts",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "browser": "Chrome headless / software WebGL",
+  "limitations": [
+    "真实手机触摸硬件未验证",
+    "无生物动力学参数或定量模拟",
+    "动态时间为教学顺序"
+  ]
+}

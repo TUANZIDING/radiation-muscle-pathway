@@ -1,0 +1,88 @@
+{
+  "date": "2026-09-10",
+  "browser": "Chrome headless; software WebGL",
+  "checks": [
+    {
+      "name": "offline WebGL initialized",
+      "pass": true
+    },
+    {
+      "name": "node 1 inspection",
+      "pass": true
+    },
+    {
+      "name": "node 2 inspection",
+      "pass": true
+    },
+    {
+      "name": "node 3 inspection",
+      "pass": true
+    },
+    {
+      "name": "node 4 inspection",
+      "pass": true
+    },
+    {
+      "name": "node 5 inspection",
+      "pass": true
+    },
+    {
+      "name": "node 6 inspection",
+      "pass": true
+    },
+    {
+      "name": "orbit changes projection",
+      "pass": true
+    },
+    {
+      "name": "hide labels",
+      "pass": true
+    },
+    {
+      "name": "six references",
+      "pass": true
+    },
+    {
+      "name": "dialog closes",
+      "pass": true
+    },
+    {
+      "name": "play advances one step",
+      "pass": true
+    },
+    {
+      "name": "pause stops playback",
+      "pass": true
+    },
+    {
+      "name": "overview mode",
+      "pass": true
+    },
+    {
+      "name": "overview node selects detail",
+      "pass": true
+    },
+    {
+      "name": "no page overflow 390",
+      "pass": true
+    },
+    {
+      "name": "no page overflow 320",
+      "pass": true
+    },
+    {
+      "name": "no page overflow 844",
+      "pass": true
+    },
+    {
+      "name": "no uncaught errors",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "limitations": [
+    "真实移动设备和多点触控未测试",
+    "非MCell定量模拟",
+    "3D符号不是实验解析分子结构"
+  ]
+}
