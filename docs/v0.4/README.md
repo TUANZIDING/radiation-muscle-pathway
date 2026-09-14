@@ -2,6 +2,8 @@
 
 v0.4 保留根目录的 v0.3 页面，在 `atlas/` 中增加一个独立的教学图谱入口：
 
+GitHub Pages 的 `docs/index.html` 是发布入口。它会自动跳转到 `atlas/index.html#overview`，并保留 v0.3 的链接和 GitHub 源码入口。
+
 - `atlas/index.html#overview`：机制总览母图，显示电离辐射、DNA/氧化应激、MuSC、FAP、免疫、血管/内皮、ECM 和组织结局的粗粒度关系。
 - `atlas/index.html#musc-fap-ecm`：现有 MuSC–FAP–ECM 核心子图，沿用 v0.3 的逐箭头证据数据。
 - `atlas/index.html#dna-redox`：DNA 损伤与氧化应激子图，区分直接肌肉细胞证据、经典条件通路和候选修复窗口。

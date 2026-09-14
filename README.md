@@ -14,6 +14,8 @@ python3 -m http.server 8094 --bind 127.0.0.1
 
 访问 `http://127.0.0.1:8094/radiation-muscle-pathway/?v=0.3`。
 
+v0.4 机制图谱入口为 `http://127.0.0.1:8094/radiation-muscle-pathway/atlas/index.html#overview`。GitHub Pages 发布入口为 `docs/index.html`；启用 Pages 后可直接访问 `https://TUANZIDING.github.io/radiation-muscle-pathway/`。
+
 ## 交互
 
 - 播放、暂停、继续、重播、前后阶段、拖动时间轴及0.5×–2×速度。
