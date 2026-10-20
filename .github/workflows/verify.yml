@@ -1,0 +1,23 @@
+name: verify-atlas
+on:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install build and test tools
+        run: npm install --no-save esbuild playwright
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+      - name: Build v0.5 atlas
+        run: node build-v05.mjs
+      - name: Export registry, CSV and SBGN
+        run: node scripts/export-v05.mjs
+      - name: Verify evidence contract and UI
+        run: node verify-v05.mjs
