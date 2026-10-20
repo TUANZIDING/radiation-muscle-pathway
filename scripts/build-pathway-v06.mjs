@@ -31,16 +31,16 @@ const POS = {
   've-ev': [2, 9.6], 've-angio': [3, 9.6], 've-perfusion': [2, 10.6],
   'ev-radev': [2, 11.6], 'ev-function': [3, 11.6], 'ev-srm': [4, 10.6], 'ev-collagen': [6, 10.6],
   // scaffold strip (evidence pending)
-  've-capillary': [1, 12.9], 've-endo-sen': [2, 12.9], 've-rt-dose': [3, 12.9], 'im-recruit': [4, 12.9], 'im-polar': [5, 12.9],
-  'im-causal': [1, 13.8], 'sn-sasp': [2, 13.8], 'sn-senolytic': [3, 13.8], 'ev-targets': [4, 13.8], 'ev-neonatal': [5, 13.8],
+  've-capillary': [1, 12.75], 've-endo-sen': [2, 12.75], 've-rt-dose': [3, 12.75], 'im-recruit': [4, 12.75], 'im-polar': [5, 12.75],
+  'im-causal': [1, 13.65], 'sn-sasp': [2, 13.65], 'sn-senolytic': [3, 13.65], 'ev-targets': [4, 13.65], 'ev-neonatal': [5, 13.65],
 };
 
 const LANES = [
   { id: 'dna', r0: -0.5, r1: 3.6, zh: 'DNA损伤 · 检查点 · 氧化应激', en: 'DNA damage · checkpoints · redox' },
   { id: 'musc', r0: 3.6, r1: 5.9, zh: 'MuSC · 成肌再生', en: 'MuSC · myogenic regeneration' },
   { id: 'fap', r0: 5.9, r1: 9.1, zh: 'FAP · TGF-β · ECM · 免疫', en: 'FAP · TGF-β · ECM · immune' },
-  { id: 'ev', r0: 9.1, r1: 12.2, zh: '血管/内皮 · 细胞外囊泡', en: 'Vessel / endothelium · extracellular vesicles' },
-  { id: 'scaffold', r0: 12.2, r1: 14.4, zh: '证据待补骨架（不连证据边）', en: 'Evidence-pending scaffold (no evidence edges)' },
+  { id: 'ev', r0: 9.1, r1: 12.35, zh: '血管/内皮 · 细胞外囊泡', en: 'Vessel / endothelium · extracellular vesicles' },
+  { id: 'scaffold', r0: 12.35, r1: 14.4, zh: '证据待补骨架（不连证据边）', en: 'Evidence-pending scaffold (no evidence edges)' },
 ];
 const COLS = [
   { zh: '辐射事件', en: 'Radiation' }, { zh: '分子损伤', en: 'Molecular damage' }, { zh: '感受器/信号', en: 'Sensors / signals' },
