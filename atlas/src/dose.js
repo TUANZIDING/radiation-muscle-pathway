@@ -53,6 +53,8 @@ export const regimens={
   D11:[vitro(2)],
   // v0.5 new views
   V01:[vivo(12,1),vivo(15,1)],
+  E03:[vivo(10,1,'tumor-bearing mice, 6 MV X-ray, 6 Gy/min')],
+  E04:[vivo(10,1,'tumor-bearing mice; plus EV/AAV/spermidine')],
   V02:[vitro(10,'rat soleus MPCs, single X-ray dose')],
   V03:[vitro(10,'EVs from 10 Gy MPCs tested on HUVEC / MVF')],
   I00:[vivo(8.2,3)],
