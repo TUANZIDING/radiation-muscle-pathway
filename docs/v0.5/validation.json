@@ -1,0 +1,214 @@
+{
+  "version": "0.5",
+  "checks": [
+    {
+      "name": "original three views keep six stages",
+      "pass": true
+    },
+    {
+      "name": "four v0.5 scaffold views declared",
+      "pass": true
+    },
+    {
+      "name": "all stages have positive durations",
+      "pass": true
+    },
+    {
+      "name": "all evidence edges have metadata",
+      "pass": true
+    },
+    {
+      "name": "edge ids are unique",
+      "pass": true
+    },
+    {
+      "name": "all references resolve to PMID or URL",
+      "pass": true
+    },
+    {
+      "name": "all edge endpoints resolve",
+      "pass": true
+    },
+    {
+      "name": "navigation targets resolve",
+      "pass": true
+    },
+    {
+      "name": "direct/observed/pharmacology use A",
+      "pass": true
+    },
+    {
+      "name": "reference relations use B",
+      "pass": true
+    },
+    {
+      "name": "inference and candidate use C",
+      "pass": true
+    },
+    {
+      "name": "partial rescue stays conditional",
+      "pass": true
+    },
+    {
+      "name": "excluded boundaries X01–X07 present",
+      "pass": true
+    },
+    {
+      "name": "p-SMAD3 early-only edge preserved",
+      "pass": true
+    },
+    {
+      "name": "WNT7A-PCP stays separate",
+      "pass": true
+    },
+    {
+      "name": "A08 and A10 are still not drawn",
+      "pass": true
+    },
+    {
+      "name": "no FAP-TGF-β1 → MuSC edge",
+      "pass": true
+    },
+    {
+      "name": "scaffold nodes carry no evidence edge",
+      "pass": true
+    },
+    {
+      "name": "every scaffold view has at least one scaffold node",
+      "pass": true
+    },
+    {
+      "name": "every A-grade edge has dose regimens and a model",
+      "pass": true
+    },
+    {
+      "name": "EQD2 arithmetic: 8.2 Gy x3 ≈ 55.1 Gy",
+      "pass": true
+    },
+    {
+      "name": "EQD2 arithmetic: 16 Gy x1 ≈ 60.8 Gy",
+      "pass": true
+    },
+    {
+      "name": "EQD2 is never computed for unknown fractionation",
+      "pass": true
+    },
+    {
+      "name": "fractionation-unknown regimens classed unknown",
+      "pass": true
+    },
+    {
+      "name": "in vitro regimens never get EQD2",
+      "pass": true
+    },
+    {
+      "name": "new literature edges keep honest grades",
+      "pass": true
+    },
+    {
+      "name": "neonatal EV hypothesis is a scaffold, not an edge",
+      "pass": true
+    },
+    {
+      "name": "external ids use valid prefixes",
+      "pass": true
+    },
+    {
+      "name": "external ids point at existing nodes",
+      "pass": true
+    },
+    {
+      "name": "registry exported",
+      "pass": true
+    },
+    {
+      "name": "registry matches source data",
+      "pass": true
+    },
+    {
+      "name": "registry edges carry required schema fields",
+      "pass": true
+    },
+    {
+      "name": "registry navigation is N-only",
+      "pass": true
+    },
+    {
+      "name": "csv and sbgn exported",
+      "pass": true
+    },
+    {
+      "name": "v0.3/v0.4 edges preserved in registry",
+      "pass": true
+    },
+    {
+      "name": "Chinese default and v0.5 title",
+      "pass": true
+    },
+    {
+      "name": "overview renders 9 nodes, 9 edges, 7 navigation lines",
+      "pass": true
+    },
+    {
+      "name": "view list shows seven modules",
+      "pass": true
+    },
+    {
+      "name": "dose filter renders five options",
+      "pass": true
+    },
+    {
+      "name": "high-dose filter dims RT-only edges but keeps 50 Gy edges",
+      "pass": true
+    },
+    {
+      "name": "dose filter reset clears dimming",
+      "pass": true
+    },
+    {
+      "name": "edge inspector shows EQD2",
+      "pass": true
+    },
+    {
+      "name": "vessel-endothelium renders nodes, edges and scaffolds",
+      "pass": true
+    },
+    {
+      "name": "immune-macrophage renders nodes, edges and scaffolds",
+      "pass": true
+    },
+    {
+      "name": "senescence-p21 renders nodes, edges and scaffolds",
+      "pass": true
+    },
+    {
+      "name": "ev-mirna renders nodes, edges and scaffolds",
+      "pass": true
+    },
+    {
+      "name": "scaffold node inspector says evidence pending",
+      "pass": true
+    },
+    {
+      "name": "English switch keeps view",
+      "pass": true
+    },
+    {
+      "name": "layout 390x844 has no horizontal page overflow",
+      "pass": true
+    },
+    {
+      "name": "layout 320x844 has no horizontal page overflow",
+      "pass": true
+    },
+    {
+      "name": "layout 844x390 has no horizontal page overflow",
+      "pass": true
+    },
+    {
+      "name": "no page errors",
+      "pass": true
+    }
+  ],
+  "errors": []
+}
