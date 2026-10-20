@@ -21,3 +21,7 @@ jobs:
         run: node scripts/export-v05.mjs
       - name: Verify evidence contract and UI
         run: node verify-v05.mjs
+      - name: Build v0.6 molecular pathway page
+        run: node scripts/build-pathway-v06.mjs
+      - name: Verify v0.6 pathway page
+        run: node scripts/verify-pathway-v06.mjs
