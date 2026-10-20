@@ -9,7 +9,7 @@
 
 - **剂量层**：每条证据边结构化记录照射方案，体内方案计算 EQD2（α/β = 3 Gy），界面可按“放疗相关 / 高剂量·事故级 / 体外 / 分次未记录”筛选。
 - **四个骨架专题**：血管/内皮、免疫/巨噬细胞、衰老/p21、EV/miRNA。已核查证据画成 A/B/C 边，缺口用灰色虚框“证据待补”节点标出，验证脚本禁止骨架节点连证据边。
-- **新文献**：照射 MPC 的 EV（Sci Rep 2025，PMID 40835994，A 级体外）；肿瘤 sEV-SRM 致放疗后肌无力（Cell Metab 2025，PMID 40541182，C 级摘要级）；FAP FSTL1（2025 硕士论文，C 级）。新增排除关系 X05–X07。
+- **新文献**：照射 MPC 的 EV（Sci Rep 2025，PMID 40835994，A 级体外）；肿瘤 sEV-SRM 致放疗后肌无力（Cell Metab 2025，PMID 40541182，C 级：全文核查确认依赖肿瘤，肌肉未直接受照）；FAP FSTL1（2025 硕士论文，C 级）。新增排除关系 X05–X08。
 - **统一注册表与导出**：`data/atlas-v0.5.json`（schema：`data/atlas-schema-v0.5.json`）、`exports/evidence-table-v0.5.csv`、`exports/atlas-v0.5.sbgn`（SBGN-ML Activity Flow，可导入 MINERVA/Newt）。
 - **CI**：`.github/workflows/verify.yml`。
 
