@@ -1,0 +1,6114 @@
+{
+  "schema": "atlas-schema-v0.5.json",
+  "version": "0.5.0",
+  "generated": "build-time export; regenerate with node scripts/export-v05.mjs",
+  "doseModel": {
+    "type": "linear-quadratic EQD2",
+    "alphaBeta": 3,
+    "rtRelevantMaxEqd2": 70,
+    "caveat": "LQ conversion is unreliable for single fractions above ~10 Gy; values are teaching aids, not dosimetry."
+  },
+  "gradeDefinitions": {
+    "A": "measurement or functional readout in a direct radiation muscle/cell model",
+    "B": "conditional support from general injury, canonical pathways or other tissues",
+    "C": "inference, abstract-level evidence or candidate intervention",
+    "N": "navigation only, never biological evidence"
+  },
+  "views": [
+    {
+      "id": "overview",
+      "kind": "overview",
+      "scaffold": false,
+      "title": {
+        "zh": "机制总览",
+        "en": "Mechanism overview"
+      },
+      "summary": {
+        "zh": "从电离辐射到MuSC、FAP、免疫、血管/内皮和ECM结局；母图只保留经过核查的粗粒度关系。",
+        "en": "From ionizing radiation to MuSC, FAP, immune, vascular/endothelial and ECM outcomes; the mother map keeps only audited coarse-grained relations."
+      },
+      "stages": [
+        {
+          "id": "ov0",
+          "title": {
+            "zh": "辐射事件与早期应激",
+            "en": "Radiation event and early stress"
+          },
+          "summary": {
+            "zh": "电离辐射首先进入DNA损伤与氧化应激背景。",
+            "en": "Ionizing radiation enters a DNA-damage and oxidative-stress context."
+          }
+        },
+        {
+          "id": "ov1",
+          "title": {
+            "zh": "MuSC反应",
+            "en": "MuSC response"
+          },
+          "summary": {
+            "zh": "MuSC数量、扩增和分化能力进入受损阶段。",
+            "en": "MuSC number, expansion and differentiation become impaired."
+          }
+        },
+        {
+          "id": "ov2",
+          "title": {
+            "zh": "FAP状态改变",
+            "en": "FAP state change"
+          },
+          "summary": {
+            "zh": "FAP出现衰老样和促纤维化表型；p-SMAD3只在早期出现。",
+            "en": "FAPs acquire senescence-like and fibrotic features; p-SMAD3 is early only."
+          }
+        },
+        {
+          "id": "ov3",
+          "title": {
+            "zh": "免疫与基质通讯",
+            "en": "Immune and matrix communication"
+          },
+          "summary": {
+            "zh": "免疫通讯保留为推断层，血管/内皮显示为证据待补区域。",
+            "en": "Immune communication remains an inference layer; vascular/endothelial evidence is pending."
+          }
+        },
+        {
+          "id": "ov4",
+          "title": {
+            "zh": "再生障碍与纤维化结局",
+            "en": "Regeneration deficit and fibrosis"
+          },
+          "summary": {
+            "zh": "肌纤维/肌核不足、ECM沉积和纤维化共同出现。",
+            "en": "Myofiber/myonuclear deficits, ECM deposition and fibrosis appear together."
+          }
+        },
+        {
+          "id": "ov5",
+          "title": {
+            "zh": "专题机制与修复窗口",
+            "en": "Mechanism modules and repair windows"
+          },
+          "summary": {
+            "zh": "进入DNA损伤、MuSC–FAP–ECM和候选干预专题；导航线不表示因果。",
+            "en": "Open the DNA-damage, MuSC–FAP–ECM and candidate-intervention modules; navigation lines are not causality."
+          }
+        }
+      ]
+    },
+    {
+      "id": "musc-fap-ecm",
+      "kind": "subgraph",
+      "scaffold": false,
+      "title": {
+        "zh": "MuSC–FAP–ECM专题",
+        "en": "MuSC–FAP–ECM module"
+      },
+      "summary": {
+        "zh": "保留v0.3的核心证据链，并与母图和DNA专题共享MuSC、FAP、ECM节点。",
+        "en": "The v0.3 evidence core is retained, with shared MuSC, FAP and ECM nodes linking to the mother map and DNA module."
+      },
+      "stages": [
+        {
+          "id": "radiation",
+          "title": {
+            "zh": "辐射事件与早期应激",
+            "en": "Radiation event and early stress"
+          },
+          "summary": {
+            "zh": "电离辐射首先触发细胞内氧化应激与损伤反应；具体效应依剂量、组织和细胞而变。",
+            "en": "Ionizing radiation initiates oxidative and damage responses that depend on dose, tissue and cell type."
+          }
+        },
+        {
+          "id": "musc",
+          "title": {
+            "zh": "MuSC数量与功能受损",
+            "en": "Loss of MuSC number and function"
+          },
+          "summary": {
+            "zh": "MuSC减少、ROS升高、NO下降；NO供体只有部分救援，不能解释全部增殖缺陷。",
+            "en": "MuSC loss, higher ROS and lower NO emerge; NO-donor rescue is partial and not the sole explanation."
+          }
+        },
+        {
+          "id": "fap",
+          "title": {
+            "zh": "FAP状态和免疫通讯改变",
+            "en": "Altered FAP state and immune communication"
+          },
+          "summary": {
+            "zh": "FAP出现衰老样/促纤维化状态；p-SMAD3仅早期亮起，巨噬细胞通讯保持为推断。",
+            "en": "FAPs acquire senescence-like/profibrotic features; p-SMAD3 is transient and macrophage signaling remains inferred."
+          }
+        },
+        {
+          "id": "secretome",
+          "title": {
+            "zh": "分泌组抑制成肌",
+            "en": "Secretome impairs myogenesis"
+          },
+          "summary": {
+            "zh": "辐射后FAP分泌组整体抑制分化和融合，但决定性分泌因子尚未识别。",
+            "en": "The post-radiation FAP secretome impairs differentiation and fusion, while the decisive factor remains unknown."
+          }
+        },
+        {
+          "id": "outcome",
+          "title": {
+            "zh": "长期生长不足与纤维化",
+            "en": "Long-term growth deficit and fibrosis"
+          },
+          "summary": {
+            "zh": "再生储备不足与间质重塑共同表现为肌纤维/肌核不足、ECM沉积和纤维化。",
+            "en": "Reduced regenerative reserve and stromal remodeling culminate in myofiber/myonuclear deficits and fibrosis."
+          }
+        },
+        {
+          "id": "repair",
+          "title": {
+            "zh": "可研究的修复窗口",
+            "en": "Researchable repair windows"
+          },
+          "summary": {
+            "zh": "储备MuSC、再生时序和动物药理干预被分别展示；这些窗口不表示临床疗效已确立。",
+            "en": "Reserve MuSCs, regeneration timing and animal pharmacology are shown separately; none establishes clinical efficacy."
+          }
+        }
+      ]
+    },
+    {
+      "id": "dna-redox",
+      "kind": "subgraph",
+      "scaffold": false,
+      "title": {
+        "zh": "DNA损伤与氧化应激专题",
+        "en": "DNA damage and redox module"
+      },
+      "summary": {
+        "zh": "将直接肌肉细胞证据、经典DNA损伤通路和候选抗氧化窗口分开显示。",
+        "en": "Direct muscle-cell evidence, canonical DNA-damage pathways and candidate redox windows are separated."
+      },
+      "stages": [
+        {
+          "id": "dna0",
+          "title": {
+            "zh": "DSB标志与早期焦点",
+            "en": "DSB markers and early foci"
+          },
+          "summary": {
+            "zh": "γH2AX/53BP1是损伤与修复动力学标志，不等同于每一个未修复断裂。",
+            "en": "γH2AX/53BP1 mark damage and repair kinetics; they are not synonymous with every unrepaired break."
+          }
+        },
+        {
+          "id": "dna1",
+          "title": {
+            "zh": "ATM–MRN–H2AX–Chk2",
+            "en": "ATM–MRN–H2AX–Chk2"
+          },
+          "summary": {
+            "zh": "肌肉细胞模型中可观察到ATM、H2AX、MRE11/Nbs1和Chk2反应。",
+            "en": "ATM, H2AX, MRE11/Nbs1 and Chk2 responses are observed in muscle-cell models."
+          }
+        },
+        {
+          "id": "dna2",
+          "title": {
+            "zh": "p53/p21与细胞命运",
+            "en": "p53/p21 and cell fate"
+          },
+          "summary": {
+            "zh": "增殖肌母细胞可进入细胞周期阻滞或凋亡；终末肌管不能直接套用。",
+            "en": "Proliferating myoblasts may enter arrest or apoptosis; terminal myotubes cannot be treated as equivalent."
+          }
+        },
+        {
+          "id": "dna3",
+          "title": {
+            "zh": "ROS、线粒体与自噬并行反应",
+            "en": "Parallel ROS, mitochondrial and autophagy responses"
+          },
+          "summary": {
+            "zh": "ROS/RNS、线粒体代谢重塑和自噬是并行观察，不拼接成单一路径。",
+            "en": "ROS/RNS, mitochondrial remodeling and autophagy are parallel observations, not one stitched pathway."
+          }
+        },
+        {
+          "id": "dna4",
+          "title": {
+            "zh": "修复动力学与MuSC功能不足",
+            "en": "Repair kinetics and MuSC functional deficit"
+          },
+          "summary": {
+            "zh": "损伤标志与扩增/分化不足在同一模型中出现，但中介关系仍需功能验证。",
+            "en": "Damage markers and expansion/differentiation deficits co-occur, while mediation still needs functional testing."
+          }
+        },
+        {
+          "id": "dna5",
+          "title": {
+            "zh": "NRF2与候选修复窗口",
+            "en": "NRF2 and candidate repair window"
+          },
+          "summary": {
+            "zh": "NRF2按经典通路和SFN摘要级动物研究显示为条件性窗口，不是临床疗效。",
+            "en": "NRF2 is shown as a conditional window from canonical biology and an abstract-level SFN animal study, not clinical efficacy."
+          }
+        }
+      ]
+    },
+    {
+      "id": "vessel-endothelium",
+      "kind": "subgraph",
+      "scaffold": true,
+      "title": {
+        "zh": "血管/内皮专题",
+        "en": "Vessel / endothelium module"
+      },
+      "summary": {
+        "zh": "血管与内皮反应证据仍在补充；此专题先给出骨架节点与已核查的灌注、EV促血管生成证据，其余留作证据待补。",
+        "en": "Vessel and endothelial evidence is still being assembled; this module seeds scaffold nodes with the audited perfusion and EV-angiogenesis evidence, leaving the rest pending."
+      },
+      "stages": [
+        {
+          "id": "ve0",
+          "title": {
+            "zh": "辐射与微血管",
+            "en": "Radiation and microvasculature"
+          },
+          "summary": {
+            "zh": "局部照射后早期微血管/灌注改变的证据有限。",
+            "en": "Evidence for early microvascular/perfusion change after local irradiation is limited."
+          }
+        },
+        {
+          "id": "ve1",
+          "title": {
+            "zh": "内皮与MuSC/血管生成",
+            "en": "Endothelium and MuSC / angiogenesis"
+          },
+          "summary": {
+            "zh": "照射MPC的EV丧失促血管生成功能；其余内皮—MuSC耦合待补。",
+            "en": "EVs from irradiated MPCs lose pro-angiogenic function; other endothelium–MuSC coupling is pending."
+          }
+        }
+      ]
+    },
+    {
+      "id": "immune-macrophage",
+      "kind": "subgraph",
+      "scaffold": true,
+      "title": {
+        "zh": "免疫/巨噬细胞专题",
+        "en": "Immune / macrophage module"
+      },
+      "summary": {
+        "zh": "免疫通讯目前主要是单细胞推断层；此专题保留A11推断关系并标出尚待因果验证的骨架节点。",
+        "en": "Immune communication is currently an inference layer; this module keeps the A11 inferred relation and marks scaffold nodes awaiting causal proof."
+      },
+      "stages": [
+        {
+          "id": "im0",
+          "title": {
+            "zh": "照射与免疫浸润",
+            "en": "Irradiation and immune infiltration"
+          },
+          "summary": {
+            "zh": "照射后单核/巨噬细胞动态改变主要来自单细胞推断。",
+            "en": "Post-irradiation monocyte/macrophage dynamics come mainly from single-cell inference."
+          }
+        },
+        {
+          "id": "im1",
+          "title": {
+            "zh": "巨噬细胞—FAP通讯",
+            "en": "Macrophage–FAP communication"
+          },
+          "summary": {
+            "zh": "CellChat推断的TGF-β1→TGFBR2通讯，尚无敲除/中和验证。",
+            "en": "CellChat-inferred TGF-β1→TGFBR2 communication, without knockout/neutralization proof."
+          }
+        }
+      ]
+    },
+    {
+      "id": "senescence-p21",
+      "kind": "subgraph",
+      "scaffold": true,
+      "title": {
+        "zh": "衰老/p21专题",
+        "en": "Senescence / p21 module"
+      },
+      "summary": {
+        "zh": "连接DNA专题的p53/p21与FAP衰老样表型；骨架节点标出SASP等待补证据。",
+        "en": "Links the DNA module p53/p21 to the senescence-like FAP phenotype; scaffold nodes mark SASP as pending."
+      },
+      "stages": [
+        {
+          "id": "sn0",
+          "title": {
+            "zh": "p53/p21与持续信号",
+            "en": "p53/p21 and persistent signature"
+          },
+          "summary": {
+            "zh": "照射肌肉中可见持续Cdkn1a/p21信号。",
+            "en": "A persistent Cdkn1a/p21 signature is seen in irradiated muscle."
+          }
+        },
+        {
+          "id": "sn1",
+          "title": {
+            "zh": "FAP衰老样表型与SASP",
+            "en": "Senescence-like FAP and SASP"
+          },
+          "summary": {
+            "zh": "FAP呈衰老样、促纤维化表型；具体SASP因子待补。",
+            "en": "FAPs show a senescence-like, profibrotic phenotype; specific SASP factors are pending."
+          }
+        }
+      ]
+    },
+    {
+      "id": "ev-mirna",
+      "kind": "subgraph",
+      "scaffold": true,
+      "title": {
+        "zh": "EV/miRNA专题",
+        "en": "EV / miRNA module"
+      },
+      "summary": {
+        "zh": "细胞外囊泡与miRNA在辐射肌肉损伤中的作用；此专题给出已核查的照射MPC-EV证据与非辐射参照，推断与候选分层显示。",
+        "en": "EV and miRNA roles in radiation muscle injury; this module seeds audited irradiated MPC-EV evidence with non-radiation references, layering inference and candidates."
+      },
+      "stages": [
+        {
+          "id": "ev0",
+          "title": {
+            "zh": "照射改变EV货物",
+            "en": "Irradiation alters EV cargo"
+          },
+          "summary": {
+            "zh": "照射MPC的EV改变miRNA货物并丧失促增殖/促血管生成功能。",
+            "en": "EVs from irradiated MPCs shift miRNA cargo and lose pro-proliferative/angiogenic function."
+          }
+        },
+        {
+          "id": "ev1",
+          "title": {
+            "zh": "肿瘤EV与候选EV疗法",
+            "en": "Tumor EVs and candidate EV therapy"
+          },
+          "summary": {
+            "zh": "肿瘤来源sEV可远程致肌无力；健康/新生EV作为候选修复，标为非辐射或待证实。",
+            "en": "Tumor sEVs can drive distant muscle weakness; healthy/neonatal EVs are candidates, marked non-radiation or unproven."
+          }
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "ov-radiation",
+      "view": "overview",
+      "type": "event",
+      "status": "evidence",
+      "label": {
+        "zh": "电离辐射",
+        "en": "Ionizing radiation"
+      },
+      "sub": {
+        "zh": "局部/体外模型",
+        "en": "local / in vitro"
+      },
+      "shared": "radiation",
+      "topic": null,
+      "ids": {},
+      "layout": {
+        "x": 36,
+        "y": 292,
+        "w": 156,
+        "h": 78
+      }
+    },
+    {
+      "id": "ov-dna",
+      "view": "overview",
+      "type": "damage",
+      "status": "evidence",
+      "label": {
+        "zh": "DNA损伤与氧化应激",
+        "en": "DNA damage & redox stress"
+      },
+      "sub": {
+        "zh": "进入DNA专题 ↗",
+        "en": "open DNA module ↗"
+      },
+      "shared": "dna-redox",
+      "topic": "dna-redox",
+      "ids": {},
+      "layout": {
+        "x": 266,
+        "y": 176,
+        "w": 194,
+        "h": 86
+      }
+    },
+    {
+      "id": "ov-musc",
+      "view": "overview",
+      "type": "musc",
+      "status": "evidence",
+      "label": {
+        "zh": "MuSC反应",
+        "en": "MuSC response"
+      },
+      "sub": {
+        "zh": "数量/扩增/分化 ↓",
+        "en": "number / expansion / differentiation ↓"
+      },
+      "shared": "musc",
+      "topic": "musc-fap-ecm",
+      "ids": {
+        "cl": "CL:0000594"
+      },
+      "layout": {
+        "x": 520,
+        "y": 84,
+        "w": 194,
+        "h": 82
+      }
+    },
+    {
+      "id": "ov-fap",
+      "view": "overview",
+      "type": "fap",
+      "status": "evidence",
+      "label": {
+        "zh": "FAP状态改变",
+        "en": "FAP state change"
+      },
+      "sub": {
+        "zh": "衰老样/促纤维化",
+        "en": "senescence-like / fibrotic"
+      },
+      "shared": "fap",
+      "topic": "musc-fap-ecm",
+      "ids": {},
+      "layout": {
+        "x": 520,
+        "y": 286,
+        "w": 194,
+        "h": 82
+      }
+    },
+    {
+      "id": "ov-immune",
+      "view": "overview",
+      "type": "immune",
+      "status": "evidence",
+      "label": {
+        "zh": "免疫通讯",
+        "en": "Immune communication"
+      },
+      "sub": {
+        "zh": "CellChat推断层",
+        "en": "CellChat inference layer"
+      },
+      "shared": "immune",
+      "topic": "musc-fap-ecm",
+      "ids": {},
+      "layout": {
+        "x": 520,
+        "y": 486,
+        "w": 194,
+        "h": 82
+      }
+    },
+    {
+      "id": "ov-vessel",
+      "view": "overview",
+      "type": "vascular",
+      "status": "evidence",
+      "label": {
+        "zh": "血管/内皮反应",
+        "en": "Vascular / endothelial response"
+      },
+      "sub": {
+        "zh": "证据待补·不作确定耗竭",
+        "en": "evidence pending · no fixed depletion"
+      },
+      "shared": "vascular",
+      "topic": null,
+      "ids": {
+        "cl": "CL:0000115"
+      },
+      "layout": {
+        "x": 790,
+        "y": 494,
+        "w": 206,
+        "h": 82
+      }
+    },
+    {
+      "id": "ov-ecm",
+      "view": "overview",
+      "type": "outcome",
+      "status": "evidence",
+      "label": {
+        "zh": "ECM重塑",
+        "en": "ECM remodeling"
+      },
+      "sub": {
+        "zh": "沉积与基质改变",
+        "en": "deposition and matrix change"
+      },
+      "shared": "ecm",
+      "topic": "musc-fap-ecm",
+      "ids": {},
+      "layout": {
+        "x": 790,
+        "y": 286,
+        "w": 194,
+        "h": 82
+      }
+    },
+    {
+      "id": "ov-outcome",
+      "view": "overview",
+      "type": "outcome",
+      "status": "evidence",
+      "label": {
+        "zh": "再生不足 / 纤维化",
+        "en": "Regeneration deficit / fibrosis"
+      },
+      "sub": {
+        "zh": "肌纤维、肌核与组织结局",
+        "en": "myofibers, myonuclei and tissue outcome"
+      },
+      "shared": "outcome",
+      "topic": "musc-fap-ecm",
+      "ids": {},
+      "layout": {
+        "x": 1050,
+        "y": 220,
+        "w": 206,
+        "h": 94
+      }
+    },
+    {
+      "id": "ov-window",
+      "view": "overview",
+      "type": "candidate",
+      "status": "evidence",
+      "label": {
+        "zh": "修复候选窗口",
+        "en": "Candidate repair windows"
+      },
+      "sub": {
+        "zh": "储备MuSC · NRF2 · TGF-β抑制",
+        "en": "reserve MuSC · NRF2 · TGF-β inhibition"
+      },
+      "shared": "repair",
+      "topic": "musc-fap-ecm",
+      "ids": {},
+      "layout": {
+        "x": 1050,
+        "y": 488,
+        "w": 206,
+        "h": 82
+      }
+    },
+    {
+      "id": "radiation",
+      "view": "musc-fap-ecm",
+      "type": "event",
+      "status": "evidence",
+      "label": {
+        "zh": "电离辐射",
+        "en": "Ionizing radiation"
+      },
+      "sub": {
+        "zh": "局部/体外模型",
+        "en": "local / in vitro"
+      },
+      "shared": "radiation",
+      "topic": "musc-fap-ecm",
+      "ids": {},
+      "layout": {
+        "x": 54,
+        "y": 255,
+        "w": 128,
+        "h": 72
+      }
+    },
+    {
+      "id": "musc",
+      "view": "musc-fap-ecm",
+      "type": "musc",
+      "status": "evidence",
+      "label": {
+        "zh": "MuSC",
+        "en": "MuSC"
+      },
+      "sub": {
+        "zh": "PAX7+卫星细胞",
+        "en": "PAX7+ satellite cell"
+      },
+      "shared": "musc",
+      "topic": "musc-fap-ecm",
+      "ids": {
+        "cl": "CL:0000594",
+        "hgnc": "PAX7",
+        "mgi": "Pax7"
+      },
+      "layout": {
+        "x": 240,
+        "y": 105,
+        "w": 166,
+        "h": 76
+      }
+    },
+    {
+      "id": "ros",
+      "view": "musc-fap-ecm",
+      "type": "stress",
+      "status": "evidence",
+      "label": {
+        "zh": "ROS / RNS ↑",
+        "en": "ROS / RNS ↑"
+      },
+      "sub": {
+        "zh": "MuSC内测量",
+        "en": "measured in MuSCs"
+      },
+      "shared": "dna-redox",
+      "topic": "musc-fap-ecm",
+      "ids": {},
+      "layout": {
+        "x": 245,
+        "y": 220,
+        "w": 158,
+        "h": 68
+      }
+    },
+    {
+      "id": "no",
+      "view": "musc-fap-ecm",
+      "type": "stress",
+      "status": "evidence",
+      "label": {
+        "zh": "NO ↓",
+        "en": "NO ↓"
+      },
+      "sub": {
+        "zh": "48 h · 部分机制",
+        "en": "48 h · partial mechanism"
+      },
+      "shared": null,
+      "topic": "musc-fap-ecm",
+      "ids": {},
+      "layout": {
+        "x": 245,
+        "y": 323,
+        "w": 158,
+        "h": 68
+      }
+    },
+    {
+      "id": "muscFunction",
+      "view": "musc-fap-ecm",
+      "type": "musc",
+      "status": "evidence",
+      "label": {
+        "zh": "MuSC储备与扩增 ↓",
+        "en": "MuSC pool & expansion ↓"
+      },
+      "sub": {
+        "zh": "急性减少 · 长期缺陷",
+        "en": "acute loss · persistent deficit"
+      },
+      "shared": "musc",
+      "topic": "musc-fap-ecm",
+      "ids": {},
+      "layout": {
+        "x": 464,
+        "y": 120,
+        "w": 188,
+        "h": 82
+      }
+    },
+    {
+      "id": "reserve",
+      "view": "musc-fap-ecm",
+      "type": "repair",
+      "status": "evidence",
+      "label": {
+        "zh": "稀有Pax3高表达储备MuSC",
+        "en": "Rare Pax3-high reserve MuSC"
+      },
+      "sub": {
+        "zh": "较低ROS · 应激克隆扩增",
+        "en": "lower ROS · clonal expansion"
+      },
+      "shared": null,
+      "topic": "musc-fap-ecm",
+      "ids": {},
+      "layout": {
+        "x": 455,
+        "y": 20,
+        "w": 196,
+        "h": 70
+      }
+    },
+    {
+      "id": "fap",
+      "view": "musc-fap-ecm",
+      "type": "fap",
+      "status": "evidence",
+      "label": {
+        "zh": "FAP衰老样/促纤维化状态",
+        "en": "Senescence-like / fibrotic FAP"
+      },
+      "sub": {
+        "zh": "状态改变，非持续扩增",
+        "en": "state change, not continued expansion"
+      },
+      "shared": "fap",
+      "topic": "musc-fap-ecm",
+      "ids": {},
+      "layout": {
+        "x": 455,
+        "y": 354,
+        "w": 196,
+        "h": 82
+      }
+    },
+    {
+      "id": "psmad",
+      "view": "musc-fap-ecm",
+      "type": "signal",
+      "status": "evidence",
+      "label": {
+        "zh": "早期 p-SMAD3 ↑",
+        "en": "Early p-SMAD3 ↑"
+      },
+      "sub": {
+        "zh": "3 d升高 · 56 d恢复",
+        "en": "higher at 3 d · baseline at 56 d"
+      },
+      "shared": null,
+      "topic": "musc-fap-ecm",
+      "ids": {
+        "hgnc": "SMAD3",
+        "mgi": "Smad3"
+      },
+      "layout": {
+        "x": 690,
+        "y": 335,
+        "w": 158,
+        "h": 68
+      }
+    },
+    {
+      "id": "macrophage",
+      "view": "musc-fap-ecm",
+      "type": "immune",
+      "status": "evidence",
+      "label": {
+        "zh": "巨噬细胞 TGF-β1",
+        "en": "Macrophage TGF-β1"
+      },
+      "sub": {
+        "zh": "CellChat来源推断",
+        "en": "CellChat source inference"
+      },
+      "shared": "immune",
+      "topic": "musc-fap-ecm",
+      "ids": {
+        "cl": "CL:0000235"
+      },
+      "layout": {
+        "x": 460,
+        "y": 510,
+        "w": 190,
+        "h": 76
+      }
+    },
+    {
+      "id": "secretome",
+      "view": "musc-fap-ecm",
+      "type": "fap",
+      "status": "evidence",
+      "label": {
+        "zh": "FAP分泌组",
+        "en": "FAP secretome"
+      },
+      "sub": {
+        "zh": "具体因子尚未确定",
+        "en": "specific factor unresolved"
+      },
+      "shared": null,
+      "topic": "musc-fap-ecm",
+      "ids": {},
+      "layout": {
+        "x": 690,
+        "y": 445,
+        "w": 190,
+        "h": 76
+      }
+    },
+    {
+      "id": "myogenesis",
+      "view": "musc-fap-ecm",
+      "type": "musc",
+      "status": "evidence",
+      "label": {
+        "zh": "成肌分化/融合 ↓",
+        "en": "Myogenic differentiation / fusion ↓"
+      },
+      "sub": {
+        "zh": "未照射成肌细胞功能实验",
+        "en": "functional assay in unirradiated myoblasts"
+      },
+      "shared": null,
+      "topic": "musc-fap-ecm",
+      "ids": {},
+      "layout": {
+        "x": 920,
+        "y": 190,
+        "w": 190,
+        "h": 82
+      }
+    },
+    {
+      "id": "growth",
+      "view": "musc-fap-ecm",
+      "type": "outcome",
+      "status": "evidence",
+      "label": {
+        "zh": "肌纤维与肌核不足",
+        "en": "Myofiber & myonuclear deficit"
+      },
+      "sub": {
+        "zh": "长期生长不足",
+        "en": "long-term growth deficit"
+      },
+      "shared": "outcome",
+      "topic": "musc-fap-ecm",
+      "ids": {},
+      "layout": {
+        "x": 1110,
+        "y": 95,
+        "w": 170,
+        "h": 84
+      }
+    },
+    {
+      "id": "ecm",
+      "view": "musc-fap-ecm",
+      "type": "outcome",
+      "status": "evidence",
+      "label": {
+        "zh": "ECM沉积 ↑",
+        "en": "ECM deposition ↑"
+      },
+      "sub": {
+        "zh": "胶原 · FN · αSMA",
+        "en": "collagen · FN · αSMA"
+      },
+      "shared": "ecm",
+      "topic": "musc-fap-ecm",
+      "ids": {},
+      "layout": {
+        "x": 930,
+        "y": 405,
+        "w": 150,
+        "h": 72
+      }
+    },
+    {
+      "id": "fibrosis",
+      "view": "musc-fap-ecm",
+      "type": "outcome",
+      "status": "evidence",
+      "label": {
+        "zh": "肌肉纤维化",
+        "en": "Muscle fibrosis"
+      },
+      "sub": {
+        "zh": "56 d / 9个月模型",
+        "en": "56 d / 9-month models"
+      },
+      "shared": "outcome",
+      "topic": "musc-fap-ecm",
+      "ids": {},
+      "layout": {
+        "x": 1125,
+        "y": 390,
+        "w": 155,
+        "h": 82
+      }
+    },
+    {
+      "id": "notchWnt",
+      "view": "musc-fap-ecm",
+      "type": "repair",
+      "status": "evidence",
+      "label": {
+        "zh": "Notch → 经典Wnt",
+        "en": "Notch → canonical Wnt"
+      },
+      "sub": {
+        "zh": "早期扩增 → 后期分化",
+        "en": "early expansion → later differentiation"
+      },
+      "shared": null,
+      "topic": "musc-fap-ecm",
+      "ids": {},
+      "layout": {
+        "x": 700,
+        "y": 22,
+        "w": 200,
+        "h": 78
+      }
+    },
+    {
+      "id": "wnt7a",
+      "view": "musc-fap-ecm",
+      "type": "repair",
+      "status": "evidence",
+      "label": {
+        "zh": "WNT7A–FZD7–PCP",
+        "en": "WNT7A–FZD7–PCP"
+      },
+      "sub": {
+        "zh": "对称扩增 · 独立分支",
+        "en": "symmetric expansion · separate branch"
+      },
+      "shared": null,
+      "topic": "musc-fap-ecm",
+      "ids": {},
+      "layout": {
+        "x": 700,
+        "y": 120,
+        "w": 200,
+        "h": 72
+      }
+    },
+    {
+      "id": "normalFap",
+      "view": "musc-fap-ecm",
+      "type": "reference",
+      "status": "evidence",
+      "label": {
+        "zh": "正常损伤FAP支持成肌",
+        "en": "Injury FAP supports myogenesis"
+      },
+      "sub": {
+        "zh": "非辐射参照",
+        "en": "non-radiation reference"
+      },
+      "shared": null,
+      "topic": "musc-fap-ecm",
+      "ids": {},
+      "layout": {
+        "x": 690,
+        "y": 535,
+        "w": 190,
+        "h": 76
+      }
+    },
+    {
+      "id": "clearance",
+      "view": "musc-fap-ecm",
+      "type": "reference",
+      "status": "evidence",
+      "label": {
+        "zh": "TNF→FAP清除",
+        "en": "TNF→FAP clearance"
+      },
+      "sub": {
+        "zh": "慢性TGF-β1抑制",
+        "en": "restrained by chronic TGF-β1"
+      },
+      "shared": null,
+      "topic": "musc-fap-ecm",
+      "ids": {},
+      "layout": {
+        "x": 920,
+        "y": 535,
+        "w": 180,
+        "h": 76
+      }
+    },
+    {
+      "id": "sb",
+      "view": "musc-fap-ecm",
+      "type": "intervention",
+      "status": "evidence",
+      "label": {
+        "zh": "SB-505124",
+        "en": "SB-505124"
+      },
+      "sub": {
+        "zh": "动物药理候选",
+        "en": "animal pharmacology"
+      },
+      "shared": null,
+      "topic": "musc-fap-ecm",
+      "ids": {},
+      "layout": {
+        "x": 1115,
+        "y": 505,
+        "w": 165,
+        "h": 76
+      }
+    },
+    {
+      "id": "sfn",
+      "view": "musc-fap-ecm",
+      "type": "candidate",
+      "status": "evidence",
+      "label": {
+        "zh": "SFN / NRF2",
+        "en": "SFN / NRF2"
+      },
+      "sub": {
+        "zh": "摘要级候选",
+        "en": "abstract-level candidate"
+      },
+      "shared": null,
+      "topic": "musc-fap-ecm",
+      "ids": {},
+      "layout": {
+        "x": 930,
+        "y": 625,
+        "w": 165,
+        "h": 72
+      }
+    },
+    {
+      "id": "dna-radiation",
+      "view": "dna-redox",
+      "type": "event",
+      "status": "evidence",
+      "label": {
+        "zh": "电离辐射",
+        "en": "Ionizing radiation"
+      },
+      "sub": {
+        "zh": "直接刺激",
+        "en": "direct exposure"
+      },
+      "shared": "radiation",
+      "topic": null,
+      "ids": {},
+      "layout": {
+        "x": 28,
+        "y": 300,
+        "w": 150,
+        "h": 74
+      }
+    },
+    {
+      "id": "dna-dsb",
+      "view": "dna-redox",
+      "type": "damage",
+      "status": "evidence",
+      "label": {
+        "zh": "DSB / γH2AX / 53BP1",
+        "en": "DSB / γH2AX / 53BP1"
+      },
+      "sub": {
+        "zh": "损伤标志与焦点动力学",
+        "en": "damage markers and foci kinetics"
+      },
+      "shared": "dna-redox",
+      "topic": null,
+      "ids": {},
+      "layout": {
+        "x": 235,
+        "y": 258,
+        "w": 190,
+        "h": 86
+      }
+    },
+    {
+      "id": "dna-atm",
+      "view": "dna-redox",
+      "type": "checkpoint",
+      "status": "evidence",
+      "label": {
+        "zh": "ATM–MRN–H2AX",
+        "en": "ATM–MRN–H2AX"
+      },
+      "sub": {
+        "zh": "肌肉细胞观察",
+        "en": "observed in muscle cells"
+      },
+      "shared": "dna-redox",
+      "topic": null,
+      "ids": {
+        "hgnc": "ATM",
+        "mgi": "Atm"
+      },
+      "layout": {
+        "x": 482,
+        "y": 112,
+        "w": 180,
+        "h": 78
+      }
+    },
+    {
+      "id": "dna-repair",
+      "view": "dna-redox",
+      "type": "repair",
+      "status": "evidence",
+      "label": {
+        "zh": "MRE11 / Nbs1修复焦点",
+        "en": "MRE11 / Nbs1 repair foci"
+      },
+      "sub": {
+        "zh": "损伤处理平台",
+        "en": "lesion-processing platform"
+      },
+      "shared": "dna-redox",
+      "topic": null,
+      "ids": {},
+      "layout": {
+        "x": 712,
+        "y": 74,
+        "w": 190,
+        "h": 78
+      }
+    },
+    {
+      "id": "dna-chk2",
+      "view": "dna-redox",
+      "type": "checkpoint",
+      "status": "evidence",
+      "label": {
+        "zh": "Chk2",
+        "en": "Chk2"
+      },
+      "sub": {
+        "zh": "直接肌肉细胞证据",
+        "en": "direct muscle-cell evidence"
+      },
+      "shared": "dna-redox",
+      "topic": null,
+      "ids": {
+        "hgnc": "CHEK2",
+        "mgi": "Chek2"
+      },
+      "layout": {
+        "x": 712,
+        "y": 208,
+        "w": 170,
+        "h": 72
+      }
+    },
+    {
+      "id": "dna-atr",
+      "view": "dna-redox",
+      "type": "reference",
+      "status": "evidence",
+      "label": {
+        "zh": "ATR",
+        "en": "ATR"
+      },
+      "sub": {
+        "zh": "经典条件通路",
+        "en": "canonical reference"
+      },
+      "shared": "dna-redox",
+      "topic": null,
+      "ids": {
+        "hgnc": "ATR",
+        "mgi": "Atr"
+      },
+      "layout": {
+        "x": 482,
+        "y": 322,
+        "w": 180,
+        "h": 72
+      }
+    },
+    {
+      "id": "dna-chk1",
+      "view": "dna-redox",
+      "type": "reference",
+      "status": "evidence",
+      "label": {
+        "zh": "Chk1",
+        "en": "Chk1"
+      },
+      "sub": {
+        "zh": "经典条件通路",
+        "en": "canonical reference"
+      },
+      "shared": "dna-redox",
+      "topic": null,
+      "ids": {
+        "hgnc": "CHEK1",
+        "mgi": "Chek1"
+      },
+      "layout": {
+        "x": 712,
+        "y": 326,
+        "w": 170,
+        "h": 72
+      }
+    },
+    {
+      "id": "dna-p53",
+      "view": "dna-redox",
+      "type": "checkpoint",
+      "status": "evidence",
+      "label": {
+        "zh": "p53",
+        "en": "p53"
+      },
+      "sub": {
+        "zh": "增殖肌母细胞情境",
+        "en": "proliferating myoblast context"
+      },
+      "shared": "dna-redox",
+      "topic": null,
+      "ids": {
+        "hgnc": "TP53",
+        "mgi": "Trp53"
+      },
+      "layout": {
+        "x": 930,
+        "y": 126,
+        "w": 180,
+        "h": 78
+      }
+    },
+    {
+      "id": "dna-p21",
+      "view": "dna-redox",
+      "type": "checkpoint",
+      "status": "evidence",
+      "label": {
+        "zh": "p21 / 周期阻滞",
+        "en": "p21 / cell-cycle arrest"
+      },
+      "sub": {
+        "zh": "条件性输出",
+        "en": "conditional output"
+      },
+      "shared": "dna-redox",
+      "topic": null,
+      "ids": {
+        "hgnc": "CDKN1A",
+        "mgi": "Cdkn1a"
+      },
+      "layout": {
+        "x": 1144,
+        "y": 62,
+        "w": 170,
+        "h": 78
+      }
+    },
+    {
+      "id": "dna-apoptosis",
+      "view": "dna-redox",
+      "type": "outcome",
+      "status": "evidence",
+      "label": {
+        "zh": "凋亡",
+        "en": "Apoptosis"
+      },
+      "sub": {
+        "zh": "增殖细胞分支",
+        "en": "proliferating-cell branch"
+      },
+      "shared": "dna-redox",
+      "topic": null,
+      "ids": {},
+      "layout": {
+        "x": 1144,
+        "y": 224,
+        "w": 170,
+        "h": 78
+      }
+    },
+    {
+      "id": "dna-ros",
+      "view": "dna-redox",
+      "type": "stress",
+      "status": "evidence",
+      "label": {
+        "zh": "ROS / RNS ↑",
+        "en": "ROS / RNS ↑"
+      },
+      "sub": {
+        "zh": "卫星细胞直接测量",
+        "en": "direct satellite-cell measure"
+      },
+      "shared": "dna-redox",
+      "topic": null,
+      "ids": {},
+      "layout": {
+        "x": 235,
+        "y": 492,
+        "w": 190,
+        "h": 80
+      }
+    },
+    {
+      "id": "dna-mito",
+      "view": "dna-redox",
+      "type": "mito",
+      "status": "evidence",
+      "label": {
+        "zh": "线粒体代谢重塑",
+        "en": "Mitochondrial remodeling"
+      },
+      "sub": {
+        "zh": "AMPK / 质子漏 / 呼吸",
+        "en": "AMPK / proton leak / respiration"
+      },
+      "shared": "dna-redox",
+      "topic": null,
+      "ids": {},
+      "layout": {
+        "x": 482,
+        "y": 488,
+        "w": 190,
+        "h": 80
+      }
+    },
+    {
+      "id": "dna-autophagy",
+      "view": "dna-redox",
+      "type": "repair",
+      "status": "evidence",
+      "label": {
+        "zh": "自噬反应",
+        "en": "Autophagy response"
+      },
+      "sub": {
+        "zh": "观察性分支",
+        "en": "observational branch"
+      },
+      "shared": "dna-redox",
+      "topic": null,
+      "ids": {},
+      "layout": {
+        "x": 716,
+        "y": 492,
+        "w": 190,
+        "h": 80
+      }
+    },
+    {
+      "id": "dna-nrf2",
+      "view": "dna-redox",
+      "type": "candidate",
+      "status": "evidence",
+      "label": {
+        "zh": "NRF2 / ARE",
+        "en": "NRF2 / ARE"
+      },
+      "sub": {
+        "zh": "经典+候选窗口",
+        "en": "canonical + candidate window"
+      },
+      "shared": "dna-redox",
+      "topic": null,
+      "ids": {
+        "hgnc": "NFE2L2",
+        "mgi": "Nfe2l2",
+        "reactome": "R-HSA-9755511"
+      },
+      "layout": {
+        "x": 950,
+        "y": 472,
+        "w": 178,
+        "h": 80
+      }
+    },
+    {
+      "id": "dna-function",
+      "view": "dna-redox",
+      "type": "musc",
+      "status": "evidence",
+      "label": {
+        "zh": "MuSC扩增/分化不足",
+        "en": "MuSC expansion / differentiation deficit"
+      },
+      "sub": {
+        "zh": "与损伤标志同模型出现",
+        "en": "co-occurs in model"
+      },
+      "shared": "musc",
+      "topic": "musc-fap-ecm",
+      "ids": {},
+      "layout": {
+        "x": 1140,
+        "y": 468,
+        "w": 174,
+        "h": 88
+      }
+    },
+    {
+      "id": "ve-radiation",
+      "view": "vessel-endothelium",
+      "type": "event",
+      "status": "evidence",
+      "label": {
+        "zh": "电离辐射",
+        "en": "Ionizing radiation"
+      },
+      "sub": {
+        "zh": "局部/体外模型",
+        "en": "local / in vitro"
+      },
+      "shared": "radiation",
+      "topic": null,
+      "ids": {},
+      "layout": {
+        "x": 40,
+        "y": 300,
+        "w": 156,
+        "h": 78
+      }
+    },
+    {
+      "id": "ve-perfusion",
+      "view": "vessel-endothelium",
+      "type": "vascular",
+      "status": "evidence",
+      "label": {
+        "zh": "微血管灌注",
+        "en": "Microvascular perfusion"
+      },
+      "sub": {
+        "zh": "CEUS · 证据缺口",
+        "en": "CEUS · evidence gap"
+      },
+      "shared": "vascular",
+      "topic": null,
+      "ids": {},
+      "layout": {
+        "x": 300,
+        "y": 150,
+        "w": 214,
+        "h": 84
+      }
+    },
+    {
+      "id": "ve-ev",
+      "view": "vessel-endothelium",
+      "type": "ev",
+      "status": "evidence",
+      "label": {
+        "zh": "MPC-EV促血管生成支持",
+        "en": "MPC-EV pro-angiogenic support"
+      },
+      "sub": {
+        "zh": "照射来源EV功能下降",
+        "en": "reduced when EVs come from irradiated MPCs"
+      },
+      "shared": "ev",
+      "topic": null,
+      "ids": {},
+      "layout": {
+        "x": 300,
+        "y": 430,
+        "w": 230,
+        "h": 84
+      }
+    },
+    {
+      "id": "ve-angio",
+      "view": "vessel-endothelium",
+      "type": "vascular",
+      "status": "evidence",
+      "label": {
+        "zh": "体外血管生成读出",
+        "en": "In vitro angiogenesis readout"
+      },
+      "sub": {
+        "zh": "HUVEC管形成 · 微血管片段",
+        "en": "HUVEC tubes · microvascular fragments"
+      },
+      "shared": null,
+      "topic": null,
+      "ids": {
+        "cl": "CL:0000115"
+      },
+      "layout": {
+        "x": 640,
+        "y": 430,
+        "w": 230,
+        "h": 84
+      }
+    },
+    {
+      "id": "ve-capillary",
+      "view": "vessel-endothelium",
+      "type": "vascular",
+      "status": "scaffold",
+      "label": {
+        "zh": "毛细血管密度 / 内皮—MuSC耦合",
+        "en": "Capillary density / endothelium–MuSC coupling"
+      },
+      "sub": {
+        "zh": "证据待补",
+        "en": "evidence pending"
+      },
+      "shared": null,
+      "topic": null,
+      "ids": {},
+      "layout": {
+        "x": 640,
+        "y": 150,
+        "w": 230,
+        "h": 80
+      }
+    },
+    {
+      "id": "ve-endo-sen",
+      "view": "vessel-endothelium",
+      "type": "vascular",
+      "status": "scaffold",
+      "label": {
+        "zh": "内皮衰老 / 通透性",
+        "en": "Endothelial senescence / permeability"
+      },
+      "sub": {
+        "zh": "证据待补",
+        "en": "evidence pending"
+      },
+      "shared": null,
+      "topic": null,
+      "ids": {},
+      "layout": {
+        "x": 980,
+        "y": 150,
+        "w": 230,
+        "h": 80
+      }
+    },
+    {
+      "id": "ve-rt-dose",
+      "view": "vessel-endothelium",
+      "type": "vascular",
+      "status": "scaffold",
+      "label": {
+        "zh": "放疗剂量下体内血管结局",
+        "en": "In vivo vascular outcome at RT doses"
+      },
+      "sub": {
+        "zh": "证据待补",
+        "en": "evidence pending"
+      },
+      "shared": null,
+      "topic": null,
+      "ids": {},
+      "layout": {
+        "x": 980,
+        "y": 430,
+        "w": 230,
+        "h": 80
+      }
+    },
+    {
+      "id": "im-radiation",
+      "view": "immune-macrophage",
+      "type": "event",
+      "status": "evidence",
+      "label": {
+        "zh": "电离辐射",
+        "en": "Ionizing radiation"
+      },
+      "sub": {
+        "zh": "幼年局部照射",
+        "en": "juvenile local irradiation"
+      },
+      "shared": "radiation",
+      "topic": null,
+      "ids": {},
+      "layout": {
+        "x": 40,
+        "y": 300,
+        "w": 156,
+        "h": 78
+      }
+    },
+    {
+      "id": "im-macrophage",
+      "view": "immune-macrophage",
+      "type": "immune",
+      "status": "evidence",
+      "label": {
+        "zh": "巨噬细胞 TGF-β1",
+        "en": "Macrophage TGF-β1"
+      },
+      "sub": {
+        "zh": "CellChat来源推断",
+        "en": "CellChat source inference"
+      },
+      "shared": "immune",
+      "topic": null,
+      "ids": {
+        "cl": "CL:0000235",
+        "hgnc": "TGFB1",
+        "mgi": "Tgfb1"
+      },
+      "layout": {
+        "x": 340,
+        "y": 296,
+        "w": 214,
+        "h": 84
+      }
+    },
+    {
+      "id": "im-fap",
+      "view": "immune-macrophage",
+      "type": "fap",
+      "status": "evidence",
+      "label": {
+        "zh": "FAP TGFBR2",
+        "en": "FAP TGFBR2"
+      },
+      "sub": {
+        "zh": "受体端推断",
+        "en": "receptor-side inference"
+      },
+      "shared": "fap",
+      "topic": "musc-fap-ecm",
+      "ids": {
+        "hgnc": "TGFBR2",
+        "mgi": "Tgfbr2"
+      },
+      "layout": {
+        "x": 700,
+        "y": 296,
+        "w": 214,
+        "h": 84
+      }
+    },
+    {
+      "id": "im-recruit",
+      "view": "immune-macrophage",
+      "type": "immune",
+      "status": "scaffold",
+      "label": {
+        "zh": "单核/巨噬细胞募集动态",
+        "en": "Monocyte/macrophage recruitment kinetics"
+      },
+      "sub": {
+        "zh": "证据待补 · 需流式/谱系示踪",
+        "en": "evidence pending · needs flow/lineage tracing"
+      },
+      "shared": null,
+      "topic": null,
+      "ids": {},
+      "layout": {
+        "x": 340,
+        "y": 110,
+        "w": 230,
+        "h": 80
+      }
+    },
+    {
+      "id": "im-polar",
+      "view": "immune-macrophage",
+      "type": "immune",
+      "status": "scaffold",
+      "label": {
+        "zh": "巨噬细胞极化 / 清除",
+        "en": "Macrophage polarization / clearance"
+      },
+      "sub": {
+        "zh": "证据待补",
+        "en": "evidence pending"
+      },
+      "shared": null,
+      "topic": null,
+      "ids": {},
+      "layout": {
+        "x": 340,
+        "y": 500,
+        "w": 230,
+        "h": 80
+      }
+    },
+    {
+      "id": "im-causal",
+      "view": "immune-macrophage",
+      "type": "immune",
+      "status": "scaffold",
+      "label": {
+        "zh": "配体中和/细胞特异敲除",
+        "en": "Ligand neutralization / cell-specific knockout"
+      },
+      "sub": {
+        "zh": "证据待补 · A11因果检验",
+        "en": "evidence pending · causal test of A11"
+      },
+      "shared": null,
+      "topic": null,
+      "ids": {},
+      "layout": {
+        "x": 1010,
+        "y": 296,
+        "w": 230,
+        "h": 80
+      }
+    },
+    {
+      "id": "sn-radiation",
+      "view": "senescence-p21",
+      "type": "event",
+      "status": "evidence",
+      "label": {
+        "zh": "电离辐射",
+        "en": "Ionizing radiation"
+      },
+      "sub": {
+        "zh": "体外/局部照射",
+        "en": "in vitro / local irradiation"
+      },
+      "shared": "radiation",
+      "topic": null,
+      "ids": {},
+      "layout": {
+        "x": 40,
+        "y": 300,
+        "w": 156,
+        "h": 78
+      }
+    },
+    {
+      "id": "sn-p53",
+      "view": "senescence-p21",
+      "type": "checkpoint",
+      "status": "evidence",
+      "label": {
+        "zh": "p53",
+        "en": "p53"
+      },
+      "sub": {
+        "zh": "增殖肌母细胞情境",
+        "en": "proliferating myoblast context"
+      },
+      "shared": "dna-redox",
+      "topic": "dna-redox",
+      "ids": {
+        "hgnc": "TP53",
+        "mgi": "Trp53"
+      },
+      "layout": {
+        "x": 300,
+        "y": 140,
+        "w": 200,
+        "h": 80
+      }
+    },
+    {
+      "id": "sn-p21",
+      "view": "senescence-p21",
+      "type": "checkpoint",
+      "status": "evidence",
+      "label": {
+        "zh": "p21 / Cdkn1a",
+        "en": "p21 / Cdkn1a"
+      },
+      "sub": {
+        "zh": "周期阻滞 · 持续转录信号",
+        "en": "arrest · persistent transcript signature"
+      },
+      "shared": "dna-redox",
+      "topic": null,
+      "ids": {
+        "hgnc": "CDKN1A",
+        "mgi": "Cdkn1a"
+      },
+      "layout": {
+        "x": 620,
+        "y": 140,
+        "w": 220,
+        "h": 80
+      }
+    },
+    {
+      "id": "sn-fap",
+      "view": "senescence-p21",
+      "type": "fap",
+      "status": "evidence",
+      "label": {
+        "zh": "FAP衰老样/促纤维化",
+        "en": "Senescence-like / fibrotic FAP"
+      },
+      "sub": {
+        "zh": "同模型观察",
+        "en": "same-model observation"
+      },
+      "shared": "fap",
+      "topic": "musc-fap-ecm",
+      "ids": {},
+      "layout": {
+        "x": 620,
+        "y": 450,
+        "w": 220,
+        "h": 84
+      }
+    },
+    {
+      "id": "sn-sasp",
+      "view": "senescence-p21",
+      "type": "stress",
+      "status": "scaffold",
+      "label": {
+        "zh": "SASP因子",
+        "en": "SASP factors"
+      },
+      "sub": {
+        "zh": "证据待补 · 具体因子未识别",
+        "en": "evidence pending · factors unidentified"
+      },
+      "shared": null,
+      "topic": null,
+      "ids": {},
+      "layout": {
+        "x": 980,
+        "y": 450,
+        "w": 230,
+        "h": 80
+      }
+    },
+    {
+      "id": "sn-senolytic",
+      "view": "senescence-p21",
+      "type": "candidate",
+      "status": "scaffold",
+      "label": {
+        "zh": "衰老细胞清除（senolytic）",
+        "en": "Senolytic clearance"
+      },
+      "sub": {
+        "zh": "证据待补 · 无辐射肌肉干预数据",
+        "en": "evidence pending · no radiation-muscle intervention data"
+      },
+      "shared": null,
+      "topic": null,
+      "ids": {},
+      "layout": {
+        "x": 980,
+        "y": 140,
+        "w": 230,
+        "h": 80
+      }
+    },
+    {
+      "id": "ev-radiation",
+      "view": "ev-mirna",
+      "type": "event",
+      "status": "evidence",
+      "label": {
+        "zh": "电离辐射",
+        "en": "Ionizing radiation"
+      },
+      "sub": {
+        "zh": "体外/荷瘤模型",
+        "en": "in vitro / tumor-bearing"
+      },
+      "shared": "radiation",
+      "topic": null,
+      "ids": {},
+      "layout": {
+        "x": 40,
+        "y": 300,
+        "w": 156,
+        "h": 78
+      }
+    },
+    {
+      "id": "ev-radev",
+      "view": "ev-mirna",
+      "type": "ev",
+      "status": "evidence",
+      "label": {
+        "zh": "照射MPC-EV miRNA货物改变",
+        "en": "Irradiated MPC-EV miRNA cargo shift"
+      },
+      "sub": {
+        "zh": "13↓ / 7↑（nCounter）",
+        "en": "13↓ / 7↑ (nCounter)"
+      },
+      "shared": "ev",
+      "topic": null,
+      "ids": {},
+      "layout": {
+        "x": 290,
+        "y": 130,
+        "w": 230,
+        "h": 84
+      }
+    },
+    {
+      "id": "ev-function",
+      "view": "ev-mirna",
+      "type": "musc",
+      "status": "evidence",
+      "label": {
+        "zh": "照射MPC存活/增殖",
+        "en": "Irradiated MPC viability / proliferation"
+      },
+      "sub": {
+        "zh": "NoRad-EV部分救援；Rad-EV无效",
+        "en": "NoRad-EV partial rescue; Rad-EV none"
+      },
+      "shared": "musc",
+      "topic": "musc-fap-ecm",
+      "ids": {},
+      "layout": {
+        "x": 620,
+        "y": 130,
+        "w": 230,
+        "h": 84
+      }
+    },
+    {
+      "id": "ev-targets",
+      "view": "ev-mirna",
+      "type": "ev",
+      "status": "scaffold",
+      "label": {
+        "zh": "miRNA → 靶基因因果",
+        "en": "miRNA → target-gene causality"
+      },
+      "sub": {
+        "zh": "仅预测 · 证据待补",
+        "en": "prediction only · evidence pending"
+      },
+      "shared": null,
+      "topic": null,
+      "ids": {},
+      "layout": {
+        "x": 960,
+        "y": 130,
+        "w": 230,
+        "h": 80
+      }
+    },
+    {
+      "id": "ev-srm",
+      "view": "ev-mirna",
+      "type": "candidate",
+      "status": "evidence",
+      "label": {
+        "zh": "肿瘤sEV携带SRM",
+        "en": "Tumor sEVs carrying SRM"
+      },
+      "sub": {
+        "zh": "ArA → ISGylation（荷瘤）",
+        "en": "ArA → ISGylation (tumor-bearing)"
+      },
+      "shared": null,
+      "topic": null,
+      "ids": {
+        "hgnc": "SRM",
+        "mgi": "Srm"
+      },
+      "layout": {
+        "x": 290,
+        "y": 430,
+        "w": 230,
+        "h": 84
+      }
+    },
+    {
+      "id": "ev-collagen",
+      "view": "ev-mirna",
+      "type": "outcome",
+      "status": "evidence",
+      "label": {
+        "zh": "肌肉胶原I沉积 / 肌无力",
+        "en": "Muscle collagen I / weakness"
+      },
+      "sub": {
+        "zh": "eIF5A依赖 · 氯沙坦阻断",
+        "en": "eIF5A-dependent · blocked by losartan"
+      },
+      "shared": "outcome",
+      "topic": null,
+      "ids": {},
+      "layout": {
+        "x": 620,
+        "y": 430,
+        "w": 230,
+        "h": 84
+      }
+    },
+    {
+      "id": "ev-fstl1",
+      "view": "ev-mirna",
+      "type": "candidate",
+      "status": "evidence",
+      "label": {
+        "zh": "FAP分泌FSTL1",
+        "en": "FAP-secreted FSTL1"
+      },
+      "sub": {
+        "zh": "学位论文 · 方向不一致",
+        "en": "thesis · mixed direction"
+      },
+      "shared": null,
+      "topic": null,
+      "ids": {
+        "hgnc": "FSTL1",
+        "mgi": "Fstl1"
+      },
+      "layout": {
+        "x": 960,
+        "y": 430,
+        "w": 230,
+        "h": 84
+      }
+    },
+    {
+      "id": "ev-neonatal",
+      "view": "ev-mirna",
+      "type": "hypothesis",
+      "status": "scaffold",
+      "label": {
+        "zh": "新生/幼年肌肉EV修复",
+        "en": "Neonatal/young muscle-EV repair"
+      },
+      "sub": {
+        "zh": "假说 · 未在辐射模型证实",
+        "en": "hypothesis · not demonstrated in radiation"
+      },
+      "shared": null,
+      "topic": null,
+      "ids": {},
+      "layout": {
+        "x": 960,
+        "y": 600,
+        "w": 240,
+        "h": 80
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "OV-A1",
+      "view": "overview",
+      "source": "ov-radiation",
+      "target": "ov-dna",
+      "sign": "+",
+      "grade": "A",
+      "kind": "direct",
+      "stage": 0,
+      "label": {
+        "zh": "DNA损伤与氧化应激背景",
+        "en": "DNA damage and redox context"
+      },
+      "refs": [
+        "P38936620",
+        "P20726709"
+      ],
+      "model": {
+        "zh": "人3D骨骼肌类器官；大鼠卫星细胞",
+        "en": "human 3D muscle organoid; rat satellite cells"
+      },
+      "doseText": {
+        "zh": "2 Gy；1–10 Gy体外",
+        "en": "2 Gy; 1–10 Gy in vitro"
+      },
+      "dose": {
+        "regimens": [
+          {
+            "setting": "invitro",
+            "gyPerFraction": 2,
+            "fractions": 1,
+            "note": "human 3D muscle organoid",
+            "eqd2": null
+          },
+          {
+            "setting": "invitro",
+            "gyPerFraction": 5,
+            "fractions": 1,
+            "note": "rat satellite cells 1–10 Gy",
+            "eqd2": null
+          }
+        ],
+        "classes": [
+          "invitro"
+        ]
+      },
+      "time": {
+        "zh": "30 min–72 h；20 min–48 h",
+        "en": "30 min–72 h; 20 min–48 h"
+      },
+      "method": {
+        "zh": "γH2AX/53BP1、ROS/RNS检测",
+        "en": "γH2AX/53BP1 and ROS/RNS assays"
+      },
+      "functional": {
+        "zh": "部分有扩增/分化和增殖读出",
+        "en": "expansion/differentiation and proliferation readouts"
+      },
+      "limitation": {
+        "zh": "母图为粗粒度汇总，不拼接为一条定量链。",
+        "en": "Coarse mother-map summary; not a quantitative stitched chain."
+      }
+    },
+    {
+      "id": "OV-A2",
+      "view": "overview",
+      "source": "ov-radiation",
+      "target": "ov-musc",
+      "sign": "+",
+      "grade": "A",
+      "kind": "direct",
+      "stage": 1,
+      "label": {
+        "zh": "MuSC数量与功能下降",
+        "en": "MuSC number and function decrease"
+      },
+      "refs": [
+        "P33241204",
+        "P20726709"
+      ],
+      "model": {
+        "zh": "幼年局部照射小鼠；卫星细胞体外",
+        "en": "juvenile local-irradiation mice; cultured satellite cells"
+      },
+      "doseText": {
+        "zh": "8.2 Gy × 3；≥5 Gy",
+        "en": "8.2 Gy × 3; ≥5 Gy"
+      },
+      "dose": {
+        "regimens": [
+          {
+            "setting": "invivo",
+            "gyPerFraction": 8.2,
+            "fractions": 3,
+            "note": "",
+            "eqd2": 55.1
+          },
+          {
+            "setting": "invitro",
+            "gyPerFraction": 5,
+            "fractions": 1,
+            "note": "",
+            "eqd2": null
+          }
+        ],
+        "classes": [
+          "rt",
+          "invitro"
+        ]
+      },
+      "time": {
+        "zh": "数小时至长期",
+        "en": "hours to long-term"
+      },
+      "method": {
+        "zh": "细胞计数、增殖、凋亡与长期组织结局",
+        "en": "cell counts, proliferation, apoptosis and long-term tissue outcomes"
+      },
+      "functional": {
+        "zh": "有部分功能读出",
+        "en": "partial functional readouts"
+      },
+      "limitation": {
+        "zh": "不同模型与时间点不合并。",
+        "en": "Models and time points are not pooled."
+      }
+    },
+    {
+      "id": "OV-A3",
+      "view": "overview",
+      "source": "ov-radiation",
+      "target": "ov-fap",
+      "sign": "+",
+      "grade": "A",
+      "kind": "direct",
+      "stage": 2,
+      "label": {
+        "zh": "FAP衰老样/促纤维化状态",
+        "en": "senescence-like / fibrotic FAP state"
+      },
+      "refs": [
+        "P37671686"
+      ],
+      "model": {
+        "zh": "4周龄雄性小鼠单侧后肢",
+        "en": "4-week-old male mice, unilateral hindlimb"
+      },
+      "doseText": {
+        "zh": "16 Gy单次",
+        "en": "single 16 Gy"
+      },
+      "dose": {
+        "regimens": [
+          {
+            "setting": "invivo",
+            "gyPerFraction": 16,
+            "fractions": 1,
+            "note": "",
+            "eqd2": 60.8
+          }
+        ],
+        "classes": [
+          "rt"
+        ]
+      },
+      "time": {
+        "zh": "3、7、14、56 d",
+        "en": "3, 7, 14, 56 d"
+      },
+      "method": {
+        "zh": "细胞动态、DNA损伤、代谢与命运分析",
+        "en": "cell dynamics, DNA damage, metabolism and fate assays"
+      },
+      "functional": {
+        "zh": "FAP分泌组条件培养基功能实验",
+        "en": "FAP-conditioned-medium functional assay"
+      },
+      "limitation": {
+        "zh": "FAP数量在56 d下降，不能画成持续扩增。",
+        "en": "FAP number declines at 56 d; do not show persistent expansion."
+      }
+    },
+    {
+      "id": "OV-C1",
+      "view": "overview",
+      "source": "ov-radiation",
+      "target": "ov-immune",
+      "sign": "+",
+      "grade": "C",
+      "kind": "inference",
+      "stage": 3,
+      "label": {
+        "zh": "免疫/旁分泌通讯推断",
+        "en": "inferred immune/paracrine communication"
+      },
+      "refs": [
+        "P40316295"
+      ],
+      "model": {
+        "zh": "幼年小鼠scRNA-seq",
+        "en": "juvenile-mouse scRNA-seq"
+      },
+      "doseText": {
+        "zh": "8.2 Gy × 3",
+        "en": "8.2 Gy × 3"
+      },
+      "dose": {
+        "regimens": [
+          {
+            "setting": "invivo",
+            "gyPerFraction": 8.2,
+            "fractions": 3,
+            "note": "",
+            "eqd2": 55.1
+          }
+        ],
+        "classes": [
+          "rt"
+        ]
+      },
+      "time": {
+        "zh": "24 h、56 d",
+        "en": "24 h, 56 d"
+      },
+      "method": {
+        "zh": "单细胞转录组和CellChat",
+        "en": "single-cell transcriptomics and CellChat"
+      },
+      "functional": {
+        "zh": "无细胞特异敲除或中和",
+        "en": "no cell-specific knockout or neutralization"
+      },
+      "limitation": {
+        "zh": "表达通讯不等于分泌蛋白和因果功能。",
+        "en": "Expression-based communication is not secreted protein or causal function."
+      }
+    },
+    {
+      "id": "OV-B1",
+      "view": "overview",
+      "source": "ov-radiation",
+      "target": "ov-vessel",
+      "sign": "+",
+      "grade": "B",
+      "kind": "reference",
+      "stage": 3,
+      "label": {
+        "zh": "血管/灌注变化待核查",
+        "en": "vascular/perfusion change remains unresolved"
+      },
+      "refs": [
+        "P31841082"
+      ],
+      "model": {
+        "zh": "小鼠后肢CEUS",
+        "en": "mouse hindlimb CEUS"
+      },
+      "doseText": {
+        "zh": "12或15 Gy",
+        "en": "12 or 15 Gy"
+      },
+      "dose": {
+        "regimens": [
+          {
+            "setting": "invivo",
+            "gyPerFraction": 12,
+            "fractions": 1,
+            "note": "",
+            "eqd2": 36
+          },
+          {
+            "setting": "invivo",
+            "gyPerFraction": 15,
+            "fractions": 1,
+            "note": "",
+            "eqd2": 54
+          }
+        ],
+        "classes": [
+          "rt"
+        ]
+      },
+      "time": {
+        "zh": "第1、8天",
+        "en": "days 1 and 8"
+      },
+      "method": {
+        "zh": "增强超声灌注检测",
+        "en": "contrast-enhanced ultrasound"
+      },
+      "functional": {
+        "zh": "第8天未见明确显著灌注下降",
+        "en": "no clear significant perfusion decline at day 8"
+      },
+      "limitation": {
+        "zh": "只作为证据缺口，不表示确定血管耗竭。",
+        "en": "Evidence-gap context only; not fixed vascular depletion."
+      }
+    },
+    {
+      "id": "OV-A4",
+      "view": "overview",
+      "source": "ov-musc",
+      "target": "ov-outcome",
+      "sign": "+",
+      "grade": "A",
+      "kind": "observed",
+      "stage": 4,
+      "label": {
+        "zh": "长期肌纤维/肌核不足",
+        "en": "long-term myofiber/myonuclear deficit"
+      },
+      "refs": [
+        "P33241204"
+      ],
+      "model": {
+        "zh": "幼年局部照射小鼠",
+        "en": "juvenile local-irradiation mice"
+      },
+      "doseText": {
+        "zh": "8.2 Gy × 3",
+        "en": "8.2 Gy × 3"
+      },
+      "dose": {
+        "regimens": [
+          {
+            "setting": "invivo",
+            "gyPerFraction": 8.2,
+            "fractions": 3,
+            "note": "",
+            "eqd2": 55.1
+          }
+        ],
+        "classes": [
+          "rt"
+        ]
+      },
+      "time": {
+        "zh": "长期随访",
+        "en": "long-term follow-up"
+      },
+      "method": {
+        "zh": "肌纤维尺寸、肌核数量和功能",
+        "en": "fiber size, myonuclei and function"
+      },
+      "functional": {
+        "zh": "组织结局观察",
+        "en": "tissue-outcome observation"
+      },
+      "limitation": {
+        "zh": "不声称单一分子中介链已完成证明。",
+        "en": "Does not prove one complete molecular mediation chain."
+      }
+    },
+    {
+      "id": "OV-A5",
+      "view": "overview",
+      "source": "ov-fap",
+      "target": "ov-ecm",
+      "sign": "+",
+      "grade": "A",
+      "kind": "observed",
+      "stage": 4,
+      "label": {
+        "zh": "伴随ECM沉积",
+        "en": "associated ECM deposition"
+      },
+      "refs": [
+        "P37671686"
+      ],
+      "model": {
+        "zh": "幼年单侧后肢照射小鼠",
+        "en": "juvenile unilateral hindlimb irradiation mice"
+      },
+      "doseText": {
+        "zh": "16 Gy",
+        "en": "16 Gy"
+      },
+      "dose": {
+        "regimens": [
+          {
+            "setting": "invivo",
+            "gyPerFraction": 16,
+            "fractions": 1,
+            "note": "",
+            "eqd2": 60.8
+          }
+        ],
+        "classes": [
+          "rt"
+        ]
+      },
+      "time": {
+        "zh": "56 d",
+        "en": "56 d"
+      },
+      "method": {
+        "zh": "胶原、FN、αSMA和组织学",
+        "en": "collagen, FN, αSMA and histology"
+      },
+      "functional": {
+        "zh": "同模型关联观察",
+        "en": "same-model association"
+      },
+      "limitation": {
+        "zh": "不是特定分子的一步因果。",
+        "en": "Not a one-step molecular cause."
+      }
+    },
+    {
+      "id": "OV-A6",
+      "view": "overview",
+      "source": "ov-ecm",
+      "target": "ov-outcome",
+      "sign": "+",
+      "grade": "A",
+      "kind": "observed",
+      "stage": 4,
+      "label": {
+        "zh": "纤维化结局",
+        "en": "fibrosis outcome"
+      },
+      "refs": [
+        "P37671686",
+        "P33252888"
+      ],
+      "model": {
+        "zh": "两个局部照射小鼠模型",
+        "en": "two local-irradiation mouse models"
+      },
+      "doseText": {
+        "zh": "16 Gy或50 Gy",
+        "en": "16 Gy or 50 Gy"
+      },
+      "dose": {
+        "regimens": [
+          {
+            "setting": "invivo",
+            "gyPerFraction": 16,
+            "fractions": 1,
+            "note": "",
+            "eqd2": 60.8
+          },
+          {
+            "setting": "invivo",
+            "gyPerFraction": 50,
+            "fractions": 1,
+            "note": "",
+            "eqd2": 530
+          }
+        ],
+        "classes": [
+          "rt",
+          "high"
+        ]
+      },
+      "time": {
+        "zh": "56 d或9个月",
+        "en": "56 d or 9 months"
+      },
+      "method": {
+        "zh": "组织学和纤维化指标",
+        "en": "histology and fibrosis markers"
+      },
+      "functional": {
+        "zh": "组织学结局",
+        "en": "histologic outcome"
+      },
+      "limitation": {
+        "zh": "不同剂量/研究不插值为时间曲线。",
+        "en": "Different doses/studies are not interpolated into a time curve."
+      }
+    },
+    {
+      "id": "OV-C2",
+      "view": "overview",
+      "source": "ov-fap",
+      "target": "ov-window",
+      "sign": "+",
+      "grade": "C",
+      "kind": "candidate",
+      "stage": 5,
+      "label": {
+        "zh": "候选修复窗口",
+        "en": "candidate repair window"
+      },
+      "refs": [
+        "P36400201",
+        "P33252888"
+      ],
+      "model": {
+        "zh": "辐射肌纤维化动物药理研究",
+        "en": "animal pharmacology in radiation fibrosis"
+      },
+      "doseText": {
+        "zh": "SB-505124剂量已核查；SFN剂量待补",
+        "en": "SB-505124 dose checked; SFN dose pending"
+      },
+      "dose": {
+        "regimens": [
+          {
+            "setting": "invivo",
+            "gyPerFraction": 50,
+            "fractions": 1,
+            "note": "SB-505124 study; SFN dose not verified",
+            "eqd2": 530
+          }
+        ],
+        "classes": [
+          "high"
+        ]
+      },
+      "time": {
+        "zh": "8周或9个月结局",
+        "en": "8-week or 9-month outcome"
+      },
+      "method": {
+        "zh": "药理干预与纤维化指标",
+        "en": "pharmacology and fibrosis markers"
+      },
+      "functional": {
+        "zh": "动物模型候选",
+        "en": "animal-model candidate"
+      },
+      "limitation": {
+        "zh": "不表示人体疗效或直接分子抑制。",
+        "en": "Not human efficacy or direct molecular inhibition."
+      }
+    },
+    {
+      "id": "A01",
+      "view": "musc-fap-ecm",
+      "source": "radiation",
+      "target": "muscFunction",
+      "sign": "+",
+      "grade": "A",
+      "kind": "direct",
+      "stage": 1,
+      "label": {
+        "zh": "数量/扩增能力下降",
+        "en": "number / expansion decreases"
+      },
+      "refs": [
+        "P33241204"
+      ],
+      "model": {
+        "zh": "约4周龄小鼠，局部照射",
+        "en": "~4-week-old mice, local irradiation"
+      },
+      "doseText": {
+        "zh": "8.2 Gy × 3，隔日",
+        "en": "8.2 Gy × 3, every other day"
+      },
+      "dose": {
+        "regimens": [
+          {
+            "setting": "invivo",
+            "gyPerFraction": 8.2,
+            "fractions": 3,
+            "note": "juvenile mouse hindlimb, alternate days",
+            "eqd2": 55.1
+          }
+        ],
+        "classes": [
+          "rt"
+        ]
+      },
+      "time": {
+        "zh": "末次后2–4 h、3周及长期",
+        "en": "2–4 h after final dose, 3 weeks and long term"
+      },
+      "method": {
+        "zh": "按v0.3逐箭头核查",
+        "en": "audited per v0.3 edge"
+      },
+      "functional": {
+        "zh": "按原始研究读出",
+        "en": "as reported in the original study"
+      },
+      "limitation": {
+        "zh": "仅代表幼年局部照射模型；仍有残余再生。",
+        "en": "Applies to a juvenile local-irradiation model; residual regeneration remains."
+      }
+    },
+    {
+      "id": "A02",
+      "view": "musc-fap-ecm",
+      "source": "radiation",
+      "target": "ros",
+      "sign": "+",
+      "grade": "A",
+      "kind": "direct",
+      "stage": 0,
+      "label": {
+        "zh": "MuSC内ROS/RNS升高",
+        "en": "ROS/RNS rises in MuSCs"
+      },
+      "refs": [
+        "P20726709"
+      ],
+      "model": {
+        "zh": "大鼠卫星细胞体外γ射线",
+        "en": "Rat satellite cells, in vitro gamma radiation"
+      },
+      "doseText": "1–10 Gy",
+      "dose": {
+        "regimens": [
+          {
+            "setting": "invitro",
+            "gyPerFraction": 5,
+            "fractions": 1,
+            "note": "rat satellite cells, 1–10 Gy range; ≥5 Gy emphasised",
+            "eqd2": null
+          }
+        ],
+        "classes": [
+          "invitro"
+        ]
+      },
+      "time": {
+        "zh": "早期至48 h",
+        "en": "early to 48 h"
+      },
+      "method": {
+        "zh": "按v0.3逐箭头核查",
+        "en": "audited per v0.3 edge"
+      },
+      "functional": {
+        "zh": "按原始研究读出",
+        "en": "as reported in the original study"
+      },
+      "limitation": {
+        "zh": "不能用组织整体ROS替代细胞内测量。",
+        "en": "Do not substitute whole-tissue ROS for cell-intrinsic measurements."
+      }
+    },
+    {
+      "id": "A03",
+      "view": "musc-fap-ecm",
+      "source": "radiation",
+      "target": "no",
+      "sign": "+",
+      "grade": "A",
+      "kind": "direct",
+      "stage": 1,
+      "label": {
+        "zh": "NO下降",
+        "en": "NO decreases"
+      },
+      "refs": [
+        "P20726709"
+      ],
+      "model": {
+        "zh": "大鼠卫星细胞体外γ射线",
+        "en": "Rat satellite cells, in vitro gamma radiation"
+      },
+      "doseText": "1或5 Gy",
+      "dose": {
+        "regimens": [
+          {
+            "setting": "invitro",
+            "gyPerFraction": 5,
+            "fractions": 1,
+            "note": "rat satellite cells, 1 or 5 Gy",
+            "eqd2": null
+          }
+        ],
+        "classes": [
+          "invitro"
+        ]
+      },
+      "time": "48 h",
+      "method": {
+        "zh": "按v0.3逐箭头核查",
+        "en": "audited per v0.3 edge"
+      },
+      "functional": {
+        "zh": "按原始研究读出",
+        "en": "as reported in the original study"
+      },
+      "limitation": {
+        "zh": "只表示测量到的下降。",
+        "en": "Represents the measured decrease only."
+      }
+    },
+    {
+      "id": "A04",
+      "view": "musc-fap-ecm",
+      "source": "no",
+      "target": "muscFunction",
+      "sign": "+",
+      "grade": "B",
+      "kind": "partial",
+      "stage": 1,
+      "label": {
+        "zh": "部分关联增殖下降",
+        "en": "partial link to reduced proliferation"
+      },
+      "refs": [
+        "P20726709"
+      ],
+      "model": {
+        "zh": "NO供体部分救援",
+        "en": "Partial NO-donor rescue"
+      },
+      "doseText": "5 Gy；sulindac",
+      "dose": {
+        "regimens": [
+          {
+            "setting": "invitro",
+            "gyPerFraction": 5,
+            "fractions": 1,
+            "note": "NO-donor partial rescue after 5 Gy",
+            "eqd2": null
+          }
+        ],
+        "classes": [
+          "invitro"
+        ]
+      },
+      "time": {
+        "zh": "48 h",
+        "en": "48 h"
+      },
+      "method": {
+        "zh": "按v0.3逐箭头核查",
+        "en": "audited per v0.3 edge"
+      },
+      "functional": {
+        "zh": "按原始研究读出",
+        "en": "as reported in the original study"
+      },
+      "limitation": {
+        "zh": "细胞数仅约增加15%；不是唯一原因。",
+        "en": "Cell number rose by only ~15%; this is not the sole cause."
+      }
+    },
+    {
+      "id": "A05",
+      "view": "musc-fap-ecm",
+      "source": "reserve",
+      "target": "muscFunction",
+      "sign": "+",
+      "grade": "A",
+      "kind": "direct",
+      "stage": 5,
+      "label": {
+        "zh": "较低ROS / 应激克隆扩增",
+        "en": "lower ROS / stress clonal expansion"
+      },
+      "refs": [
+        "P31006621"
+      ],
+      "model": {
+        "zh": "Mx1+、Pax3富集稀有MuSC亚群",
+        "en": "Rare Mx1+, Pax3-enriched MuSC subset"
+      },
+      "doseText": {
+        "zh": "辐射应激；具体剂量见原文",
+        "en": "radiation stress; see paper for dose"
+      },
+      "dose": {
+        "regimens": [],
+        "classes": [
+          "na"
+        ]
+      },
+      "time": {
+        "zh": "应激克隆实验",
+        "en": "stress clonal assays"
+      },
+      "method": {
+        "zh": "按v0.3逐箭头核查",
+        "en": "audited per v0.3 edge"
+      },
+      "functional": {
+        "zh": "按原始研究读出",
+        "en": "as reported in the original study"
+      },
+      "limitation": {
+        "zh": "只代表稀有储备亚群，不能泛化至全部MuSC。",
+        "en": "Restricted to a rare reserve subset; not all MuSCs."
+      }
+    },
+    {
+      "id": "A06",
+      "view": "musc-fap-ecm",
+      "source": "radiation",
+      "target": "fap",
+      "sign": "+",
+      "grade": "A",
+      "kind": "direct",
+      "stage": 2,
+      "label": {
+        "zh": "衰老样/促纤维化状态",
+        "en": "senescence-like / fibrotic state"
+      },
+      "refs": [
+        "P37671686"
+      ],
+      "model": {
+        "zh": "4–5周龄雄鼠单侧后肢；分离FAP",
+        "en": "4–5-week-old male mice, unilateral hindlimb; isolated FAPs"
+      },
+      "doseText": {
+        "zh": "16 Gy；体外FAP 1 Gy",
+        "en": "16 Gy; isolated FAPs 1 Gy in vitro"
+      },
+      "dose": {
+        "regimens": [
+          {
+            "setting": "invivo",
+            "gyPerFraction": 16,
+            "fractions": 1,
+            "note": "juvenile male hindlimb",
+            "eqd2": 60.8
+          },
+          {
+            "setting": "invitro",
+            "gyPerFraction": 1,
+            "fractions": 1,
+            "note": "isolated FAP",
+            "eqd2": null
+          }
+        ],
+        "classes": [
+          "rt",
+          "invitro"
+        ]
+      },
+      "time": {
+        "zh": "3、7、14、56 d",
+        "en": "3, 7, 14 and 56 d"
+      },
+      "method": {
+        "zh": "按v0.3逐箭头核查",
+        "en": "audited per v0.3 edge"
+      },
+      "functional": {
+        "zh": "按原始研究读出",
+        "en": "as reported in the original study"
+      },
+      "limitation": {
+        "zh": "56 d时FAP数量下降；不能画成持续扩增。",
+        "en": "FAP number decreases at 56 d; do not show continued expansion."
+      }
+    },
+    {
+      "id": "A07",
+      "view": "musc-fap-ecm",
+      "source": "radiation",
+      "target": "psmad",
+      "sign": "+",
+      "grade": "A",
+      "kind": "direct",
+      "stage": 2,
+      "label": {
+        "zh": "早期SMAD3磷酸化",
+        "en": "transient SMAD3 phosphorylation"
+      },
+      "refs": [
+        "P37671686"
+      ],
+      "model": {
+        "zh": "全肌蛋白测量",
+        "en": "Whole-muscle protein measurement"
+      },
+      "doseText": "16 Gy",
+      "dose": {
+        "regimens": [
+          {
+            "setting": "invivo",
+            "gyPerFraction": 16,
+            "fractions": 1,
+            "note": "whole-muscle protein",
+            "eqd2": 60.8
+          }
+        ],
+        "classes": [
+          "rt"
+        ]
+      },
+      "time": {
+        "zh": "3 d升高；56 d恢复",
+        "en": "higher at 3 d; baseline at 56 d"
+      },
+      "method": {
+        "zh": "按v0.3逐箭头核查",
+        "en": "audited per v0.3 edge"
+      },
+      "functional": {
+        "zh": "按原始研究读出",
+        "en": "as reported in the original study"
+      },
+      "limitation": {
+        "zh": "不能画成晚期持续激活或FAP特异测量。",
+        "en": "Do not show persistent late activation or claim FAP-specific measurement."
+      }
+    },
+    {
+      "id": "A09",
+      "view": "musc-fap-ecm",
+      "source": "secretome",
+      "target": "myogenesis",
+      "sign": "+",
+      "grade": "A",
+      "kind": "direct",
+      "stage": 3,
+      "label": {
+        "zh": "分化与融合受抑",
+        "en": "differentiation and fusion impaired"
+      },
+      "refs": [
+        "P37671686"
+      ],
+      "model": {
+        "zh": "照射后分离FAP的条件培养基→未照射原代成肌细胞",
+        "en": "Conditioned medium from post-IR FAPs → unirradiated primary myogenic cells"
+      },
+      "doseText": {
+        "zh": "小鼠后肢16 Gy",
+        "en": "Mouse hindlimb, 16 Gy"
+      },
+      "dose": {
+        "regimens": [
+          {
+            "setting": "invivo",
+            "gyPerFraction": 16,
+            "fractions": 1,
+            "note": "FAP isolated after hindlimb irradiation; conditioned medium ex vivo",
+            "eqd2": 60.8
+          }
+        ],
+        "classes": [
+          "rt"
+        ]
+      },
+      "time": {
+        "zh": "3/56 d FAP；56 d分化，3/56 d融合",
+        "en": "3/56 d FAPs; differentiation at 56 d, fusion at 3/56 d"
+      },
+      "method": {
+        "zh": "按v0.3逐箭头核查",
+        "en": "audited per v0.3 edge"
+      },
+      "functional": {
+        "zh": "按原始研究读出",
+        "en": "as reported in the original study"
+      },
+      "limitation": {
+        "zh": "具体分泌因子未确定，不得改写为FAP来源TGF-β1。",
+        "en": "The specific factor is unresolved; do not rewrite as FAP-derived TGF-β1."
+      }
+    },
+    {
+      "id": "A11",
+      "view": "musc-fap-ecm",
+      "source": "macrophage",
+      "target": "fap",
+      "sign": "+",
+      "grade": "C",
+      "kind": "inference",
+      "stage": 2,
+      "label": {
+        "zh": "TGF-β1 → TGFBR2通讯推断",
+        "en": "inferred TGF-β1 → TGFBR2 communication"
+      },
+      "refs": [
+        "P40316295"
+      ],
+      "model": {
+        "zh": "幼年小鼠单细胞转录组＋组织/蛋白验证",
+        "en": "Juvenile-mouse scRNA-seq plus tissue/protein validation"
+      },
+      "doseText": "8.2 Gy × 3",
+      "dose": {
+        "regimens": [
+          {
+            "setting": "invivo",
+            "gyPerFraction": 8.2,
+            "fractions": 3,
+            "note": "juvenile mouse scRNA-seq",
+            "eqd2": 55.1
+          }
+        ],
+        "classes": [
+          "rt"
+        ]
+      },
+      "time": {
+        "zh": "24 h与56 d",
+        "en": "24 h and 56 d"
+      },
+      "method": {
+        "zh": "按v0.3逐箭头核查",
+        "en": "audited per v0.3 edge"
+      },
+      "functional": {
+        "zh": "通讯推断，无因果干预",
+        "en": "inference without causal intervention"
+      },
+      "limitation": {
+        "zh": "巨噬细胞来源及配体—受体因果未用敲除/中和证实。",
+        "en": "Macrophage source and ligand–receptor causality lack knockout/neutralization proof."
+      }
+    },
+    {
+      "id": "A12",
+      "view": "musc-fap-ecm",
+      "source": "sb",
+      "target": "fibrosis",
+      "sign": "-",
+      "grade": "A",
+      "kind": "pharmacology",
+      "stage": 5,
+      "label": {
+        "zh": "抑制纤维化",
+        "en": "reduces fibrosis"
+      },
+      "refs": [
+        "P33252888"
+      ],
+      "model": {
+        "zh": "12周龄雄性C57BL/6，小鼠后肢",
+        "en": "12-week-old male C57BL/6 mice, hindlimb"
+      },
+      "doseText": {
+        "zh": "50 Gy单次；1 mg/kg/d腹腔8周",
+        "en": "Single 50 Gy; 1 mg/kg/day i.p. for 8 weeks"
+      },
+      "dose": {
+        "regimens": [
+          {
+            "setting": "invivo",
+            "gyPerFraction": 50,
+            "fractions": 1,
+            "note": "12-week-old male hindlimb",
+            "eqd2": 530
+          }
+        ],
+        "classes": [
+          "high"
+        ]
+      },
+      "time": {
+        "zh": "9个月结局",
+        "en": "9-month outcome"
+      },
+      "method": {
+        "zh": "按v0.3逐箭头核查",
+        "en": "audited per v0.3 edge"
+      },
+      "functional": {
+        "zh": "按原始研究读出",
+        "en": "as reported in the original study"
+      },
+      "limitation": {
+        "zh": "高单次剂量动物模型；不是人体疗效证据。",
+        "en": "High single-dose animal model; not evidence of human efficacy."
+      }
+    },
+    {
+      "id": "A13",
+      "view": "musc-fap-ecm",
+      "source": "sfn",
+      "target": "fibrosis",
+      "sign": "-",
+      "grade": "C",
+      "kind": "candidate",
+      "stage": 5,
+      "label": {
+        "zh": "NRF2/TGF-β–Smad相关保护",
+        "en": "NRF2/TGF-β–Smad-associated protection"
+      },
+      "refs": [
+        "P36400201"
+      ],
+      "model": {
+        "zh": "辐射肌纤维化动物药理研究",
+        "en": "Animal pharmacology in radiation muscle fibrosis"
+      },
+      "doseText": {
+        "zh": "当前摘要未充分核对剂量",
+        "en": "dose not fully verified from current abstract"
+      },
+      "dose": {
+        "regimens": [],
+        "classes": [
+          "na"
+        ]
+      },
+      "time": {
+        "zh": "当前摘要级",
+        "en": "abstract-level"
+      },
+      "method": {
+        "zh": "按v0.3逐箭头核查",
+        "en": "audited per v0.3 edge"
+      },
+      "functional": {
+        "zh": "按原始研究读出",
+        "en": "as reported in the original study"
+      },
+      "limitation": {
+        "zh": "不得画成NRF2直接抑制SMAD3；等待全文。",
+        "en": "Do not draw NRF2 directly inhibiting SMAD3; full text pending."
+      }
+    },
+    {
+      "id": "A14",
+      "view": "musc-fap-ecm",
+      "source": "normalFap",
+      "target": "myogenesis",
+      "sign": "+",
+      "grade": "B",
+      "kind": "reference",
+      "stage": 5,
+      "label": {
+        "zh": "支持成肌",
+        "en": "supports myogenesis"
+      },
+      "refs": [
+        "P20081841"
+      ],
+      "model": {
+        "zh": "一般急性肌损伤",
+        "en": "General acute muscle injury"
+      },
+      "doseText": "非辐射",
+      "dose": {
+        "regimens": [],
+        "classes": [
+          "na"
+        ]
+      },
+      "time": {
+        "zh": "损伤后短暂FAP反应",
+        "en": "transient post-injury FAP response"
+      },
+      "method": {
+        "zh": "按v0.3逐箭头核查",
+        "en": "audited per v0.3 edge"
+      },
+      "functional": {
+        "zh": "按原始研究读出",
+        "en": "as reported in the original study"
+      },
+      "limitation": {
+        "zh": "FAP不形成肌纤维；与辐射模型分层显示。",
+        "en": "FAPs do not form myofibers; keep separate from radiation evidence."
+      }
+    },
+    {
+      "id": "A15a",
+      "view": "musc-fap-ecm",
+      "source": "macrophage",
+      "target": "clearance",
+      "sign": "+",
+      "grade": "B",
+      "kind": "reference",
+      "stage": 5,
+      "label": {
+        "zh": "TNF促进FAP凋亡/清除",
+        "en": "TNF promotes FAP apoptosis/clearance"
+      },
+      "refs": [
+        "P26053624"
+      ],
+      "model": {
+        "zh": "急性肌损伤/慢性mdx模型",
+        "en": "Acute injury / chronic mdx model"
+      },
+      "doseText": "非辐射",
+      "dose": {
+        "regimens": [],
+        "classes": [
+          "na"
+        ]
+      },
+      "time": {
+        "zh": "损伤阶段依赖",
+        "en": "injury-stage dependent"
+      },
+      "method": {
+        "zh": "按v0.3逐箭头核查",
+        "en": "audited per v0.3 edge"
+      },
+      "functional": {
+        "zh": "按原始研究读出",
+        "en": "as reported in the original study"
+      },
+      "limitation": {
+        "zh": "摘要级非辐射参照，不直接外推放射肌肉。",
+        "en": "Abstract-level non-radiation reference; not directly transferable to irradiated muscle."
+      }
+    },
+    {
+      "id": "A15b",
+      "view": "musc-fap-ecm",
+      "source": "psmad",
+      "target": "clearance",
+      "sign": "-",
+      "grade": "B",
+      "kind": "reference",
+      "stage": 5,
+      "label": {
+        "zh": "慢性TGF-β1抑制清除",
+        "en": "chronic TGF-β1 restrains clearance"
+      },
+      "refs": [
+        "P26053624"
+      ],
+      "model": {
+        "zh": "慢性mdx模型",
+        "en": "Chronic mdx model"
+      },
+      "doseText": "非辐射",
+      "dose": {
+        "regimens": [],
+        "classes": [
+          "na"
+        ]
+      },
+      "time": {
+        "zh": "慢性病理背景",
+        "en": "chronic pathology"
+      },
+      "method": {
+        "zh": "按v0.3逐箭头核查",
+        "en": "audited per v0.3 edge"
+      },
+      "functional": {
+        "zh": "按原始研究读出",
+        "en": "as reported in the original study"
+      },
+      "limitation": {
+        "zh": "不是A09的具体分泌因子，也不是辐射直接证据。",
+        "en": "Not the specific A09 secreted factor and not direct radiation evidence."
+      }
+    },
+    {
+      "id": "A16",
+      "view": "musc-fap-ecm",
+      "source": "notchWnt",
+      "target": "myogenesis",
+      "sign": "+",
+      "grade": "B",
+      "kind": "reference",
+      "stage": 5,
+      "label": {
+        "zh": "阶段切换：扩增→分化",
+        "en": "temporal switch: expansion → differentiation"
+      },
+      "refs": [
+        "P18371421",
+        "P22493066"
+      ],
+      "model": {
+        "zh": "一般成人肌肉再生；持续NICD模型",
+        "en": "General adult regeneration; sustained NICD model"
+      },
+      "doseText": "非辐射",
+      "dose": {
+        "regimens": [],
+        "classes": [
+          "na"
+        ]
+      },
+      "time": {
+        "zh": "早期Notch；后期经典Wnt",
+        "en": "early Notch; later canonical Wnt"
+      },
+      "method": {
+        "zh": "按v0.3逐箭头核查",
+        "en": "audited per v0.3 edge"
+      },
+      "functional": {
+        "zh": "按原始研究读出",
+        "en": "as reported in the original study"
+      },
+      "limitation": {
+        "zh": "Notch不直接激活Wnt；持续Notch可抑制MYOD/分化。",
+        "en": "Notch does not directly activate Wnt; persistent Notch can inhibit MYOD/differentiation."
+      }
+    },
+    {
+      "id": "A18",
+      "view": "musc-fap-ecm",
+      "source": "wnt7a",
+      "target": "muscFunction",
+      "sign": "+",
+      "grade": "B",
+      "kind": "reference",
+      "stage": 5,
+      "label": {
+        "zh": "对称扩增",
+        "en": "symmetric expansion"
+      },
+      "refs": [
+        "P19497282"
+      ],
+      "model": {
+        "zh": "成年小鼠卫星干细胞/肌纤维培养和体内再生",
+        "en": "Adult-mouse satellite stem cells, myofiber culture and in vivo regeneration"
+      },
+      "doseText": "非辐射",
+      "dose": {
+        "regimens": [],
+        "classes": [
+          "na"
+        ]
+      },
+      "time": {
+        "zh": "再生实验",
+        "en": "regeneration assays"
+      },
+      "method": {
+        "zh": "按v0.3逐箭头核查",
+        "en": "audited per v0.3 edge"
+      },
+      "functional": {
+        "zh": "按原始研究读出",
+        "en": "as reported in the original study"
+      },
+      "limitation": {
+        "zh": "PCP分支与经典Wnt/β-catenin分开。",
+        "en": "PCP branch is separate from canonical Wnt/β-catenin."
+      }
+    },
+    {
+      "id": "A19",
+      "view": "musc-fap-ecm",
+      "source": "musc",
+      "target": "muscFunction",
+      "sign": "+",
+      "grade": "B",
+      "kind": "reference",
+      "stage": 5,
+      "label": {
+        "zh": "维持MuSC池正常功能",
+        "en": "maintains normal MuSC pool function"
+      },
+      "refs": [
+        "P24065826"
+      ],
+      "model": {
+        "zh": "成人小鼠Pax7条件删除",
+        "en": "Adult-mouse conditional Pax7 deletion"
+      },
+      "doseText": "非辐射",
+      "dose": {
+        "regimens": [],
+        "classes": [
+          "na"
+        ]
+      },
+      "time": {
+        "zh": "成人稳态/再生",
+        "en": "adult homeostasis/regeneration"
+      },
+      "method": {
+        "zh": "按v0.3逐箭头核查",
+        "en": "audited per v0.3 edge"
+      },
+      "functional": {
+        "zh": "按原始研究读出",
+        "en": "as reported in the original study"
+      },
+      "limitation": {
+        "zh": "PAX7是细胞状态/功能节点，不表示所有分化阶段持续上调。",
+        "en": "PAX7 is a state/function node, not continuously elevated through differentiation."
+      }
+    },
+    {
+      "id": "O01",
+      "view": "musc-fap-ecm",
+      "source": "muscFunction",
+      "target": "growth",
+      "sign": "+",
+      "grade": "A",
+      "kind": "observed",
+      "stage": 4,
+      "label": {
+        "zh": "长期肌纤维/肌核不足",
+        "en": "long-term myofiber / myonuclear deficit"
+      },
+      "refs": [
+        "P33241204"
+      ],
+      "model": {
+        "zh": "幼年局部照射小鼠",
+        "en": "Juvenile local-irradiation mice"
+      },
+      "doseText": "8.2 Gy × 3",
+      "dose": {
+        "regimens": [
+          {
+            "setting": "invivo",
+            "gyPerFraction": 8.2,
+            "fractions": 3,
+            "note": "",
+            "eqd2": 55.1
+          }
+        ],
+        "classes": [
+          "rt"
+        ]
+      },
+      "time": {
+        "zh": "长期随访",
+        "en": "long-term follow-up"
+      },
+      "method": {
+        "zh": "按v0.3逐箭头核查",
+        "en": "audited per v0.3 edge"
+      },
+      "functional": {
+        "zh": "按原始研究读出",
+        "en": "as reported in the original study"
+      },
+      "limitation": {
+        "zh": "表示同一模型的长期组织结局，不声称单一中介链完全证明。",
+        "en": "Shows a long-term outcome in the same model; does not prove one complete mediation chain."
+      }
+    },
+    {
+      "id": "O02",
+      "view": "musc-fap-ecm",
+      "source": "fap",
+      "target": "ecm",
+      "sign": "+",
+      "grade": "A",
+      "kind": "observed",
+      "stage": 4,
+      "label": {
+        "zh": "伴随ECM沉积",
+        "en": "associated ECM deposition"
+      },
+      "refs": [
+        "P37671686"
+      ],
+      "model": {
+        "zh": "幼年单侧后肢照射小鼠",
+        "en": "Juvenile unilateral hindlimb irradiation mice"
+      },
+      "doseText": "16 Gy",
+      "dose": {
+        "regimens": [
+          {
+            "setting": "invivo",
+            "gyPerFraction": 16,
+            "fractions": 1,
+            "note": "",
+            "eqd2": 60.8
+          }
+        ],
+        "classes": [
+          "rt"
+        ]
+      },
+      "time": "56 d",
+      "method": {
+        "zh": "按v0.3逐箭头核查",
+        "en": "audited per v0.3 edge"
+      },
+      "functional": {
+        "zh": "按原始研究读出",
+        "en": "as reported in the original study"
+      },
+      "limitation": {
+        "zh": "这是状态与组织结局的同模型关联，非特定分子单步因果。",
+        "en": "Same-model association between state and tissue outcome, not a one-step molecular cause."
+      }
+    },
+    {
+      "id": "O03",
+      "view": "musc-fap-ecm",
+      "source": "ecm",
+      "target": "fibrosis",
+      "sign": "+",
+      "grade": "A",
+      "kind": "observed",
+      "stage": 4,
+      "label": {
+        "zh": "组织学纤维化结局",
+        "en": "histologic fibrosis outcome"
+      },
+      "refs": [
+        "P37671686",
+        "P33252888"
+      ],
+      "model": {
+        "zh": "两个小鼠局部照射模型",
+        "en": "Two local-irradiation mouse models"
+      },
+      "doseText": {
+        "zh": "16 Gy或50 Gy单次",
+        "en": "16 Gy or single 50 Gy"
+      },
+      "dose": {
+        "regimens": [
+          {
+            "setting": "invivo",
+            "gyPerFraction": 16,
+            "fractions": 1,
+            "note": "",
+            "eqd2": 60.8
+          },
+          {
+            "setting": "invivo",
+            "gyPerFraction": 50,
+            "fractions": 1,
+            "note": "",
+            "eqd2": 530
+          }
+        ],
+        "classes": [
+          "rt",
+          "high"
+        ]
+      },
+      "time": {
+        "zh": "56 d或9个月",
+        "en": "56 d or 9 months"
+      },
+      "method": {
+        "zh": "按v0.3逐箭头核查",
+        "en": "audited per v0.3 edge"
+      },
+      "functional": {
+        "zh": "按原始研究读出",
+        "en": "as reported in the original study"
+      },
+      "limitation": {
+        "zh": "不同剂量和研究不可合并为定量时间曲线。",
+        "en": "Different doses/studies cannot be merged into a quantitative trajectory."
+      }
+    },
+    {
+      "id": "D01",
+      "view": "dna-redox",
+      "source": "dna-radiation",
+      "target": "dna-dsb",
+      "sign": "+",
+      "grade": "A",
+      "kind": "direct",
+      "stage": 0,
+      "label": {
+        "zh": "γH2AX/53BP1焦点增加",
+        "en": "γH2AX/53BP1 foci increase"
+      },
+      "refs": [
+        "P38936620",
+        "P15226436"
+      ],
+      "model": {
+        "zh": "人3D骨骼肌类器官；C2C12/原代肌肉细胞",
+        "en": "human 3D muscle organoid; C2C12/primary muscle cells"
+      },
+      "doseText": {
+        "zh": "2 Gy；IR 10 Gy（部分实验20 Gy）",
+        "en": "2 Gy; 10 Gy IR (some 20 Gy assays)"
+      },
+      "dose": {
+        "regimens": [
+          {
+            "setting": "invitro",
+            "gyPerFraction": 2,
+            "fractions": 1,
+            "note": "organoid",
+            "eqd2": null
+          },
+          {
+            "setting": "invitro",
+            "gyPerFraction": 10,
+            "fractions": 1,
+            "note": "C2C12/primary cells",
+            "eqd2": null
+          }
+        ],
+        "classes": [
+          "invitro"
+        ]
+      },
+      "time": {
+        "zh": "30 min、18 h、72 h；早期",
+        "en": "30 min, 18 h, 72 h; early"
+      },
+      "method": {
+        "zh": "免疫荧光、RNA-seq、γH2AX/53BP1",
+        "en": "immunofluorescence, RNA-seq, γH2AX/53BP1"
+      },
+      "functional": {
+        "zh": "扩增/分化/修复读出",
+        "en": "expansion/differentiation/repair readouts"
+      },
+      "limitation": {
+        "zh": "焦点减少不等于错误修复完全消失。",
+        "en": "Foci decline does not prove error-free repair."
+      }
+    },
+    {
+      "id": "D02",
+      "view": "dna-redox",
+      "source": "dna-dsb",
+      "target": "dna-atm",
+      "sign": "+",
+      "grade": "A",
+      "kind": "observed",
+      "stage": 1,
+      "label": {
+        "zh": "ATM–MRN–H2AX反应",
+        "en": "ATM–MRN–H2AX response"
+      },
+      "refs": [
+        "P15226436"
+      ],
+      "model": {
+        "zh": "C2C12及原代人/鼠肌肉细胞",
+        "en": "C2C12 and primary human/mouse muscle cells"
+      },
+      "doseText": {
+        "zh": "IR 10 Gy；部分实验20 Gy",
+        "en": "10 Gy IR; some 20 Gy assays"
+      },
+      "dose": {
+        "regimens": [
+          {
+            "setting": "invitro",
+            "gyPerFraction": 10,
+            "fractions": 1,
+            "note": "",
+            "eqd2": null
+          }
+        ],
+        "classes": [
+          "invitro"
+        ]
+      },
+      "time": {
+        "zh": "早期损伤反应",
+        "en": "early damage response"
+      },
+      "method": {
+        "zh": "免疫印迹、免疫荧光和损伤焦点",
+        "en": "immunoblotting, immunofluorescence and damage foci"
+      },
+      "functional": {
+        "zh": "直接检测损伤处理蛋白",
+        "en": "direct protein-level measurements"
+      },
+      "limitation": {
+        "zh": "是肌肉细胞观察，不等于成年MuSC体内全链。",
+        "en": "Muscle-cell observation, not the full adult MuSC in vivo chain."
+      }
+    },
+    {
+      "id": "D03",
+      "view": "dna-redox",
+      "source": "dna-dsb",
+      "target": "dna-repair",
+      "sign": "+",
+      "grade": "A",
+      "kind": "observed",
+      "stage": 1,
+      "label": {
+        "zh": "MRE11/Nbs1修复焦点",
+        "en": "MRE11/Nbs1 repair foci"
+      },
+      "refs": [
+        "P15226436"
+      ],
+      "model": {
+        "zh": "肌母细胞和肌管",
+        "en": "myoblasts and myotubes"
+      },
+      "doseText": {
+        "zh": "IR 10 Gy",
+        "en": "10 Gy IR"
+      },
+      "dose": {
+        "regimens": [
+          {
+            "setting": "invitro",
+            "gyPerFraction": 10,
+            "fractions": 1,
+            "note": "",
+            "eqd2": null
+          }
+        ],
+        "classes": [
+          "invitro"
+        ]
+      },
+      "time": {
+        "zh": "早期",
+        "en": "early"
+      },
+      "method": {
+        "zh": "损伤焦点免疫检测",
+        "en": "repair-focus immunostaining"
+      },
+      "functional": {
+        "zh": "修复相关蛋白募集",
+        "en": "recruitment of repair proteins"
+      },
+      "limitation": {
+        "zh": "不能据此判断长期修复成功或失败。",
+        "en": "Does not establish long-term repair success or failure."
+      }
+    },
+    {
+      "id": "D04",
+      "view": "dna-redox",
+      "source": "dna-atm",
+      "target": "dna-chk2",
+      "sign": "+",
+      "grade": "A",
+      "kind": "observed",
+      "stage": 1,
+      "label": {
+        "zh": "Chk2激活",
+        "en": "Chk2 activation"
+      },
+      "refs": [
+        "P15226436"
+      ],
+      "model": {
+        "zh": "增殖和终末分化肌肉细胞",
+        "en": "proliferating and differentiated muscle cells"
+      },
+      "doseText": {
+        "zh": "IR 10 Gy",
+        "en": "10 Gy IR"
+      },
+      "dose": {
+        "regimens": [
+          {
+            "setting": "invitro",
+            "gyPerFraction": 10,
+            "fractions": 1,
+            "note": "",
+            "eqd2": null
+          }
+        ],
+        "classes": [
+          "invitro"
+        ]
+      },
+      "time": {
+        "zh": "早期",
+        "en": "early"
+      },
+      "method": {
+        "zh": "Chk2活化检测",
+        "en": "Chk2 activation assay"
+      },
+      "functional": {
+        "zh": "直接观察",
+        "en": "direct observation"
+      },
+      "limitation": {
+        "zh": "下游p53/凋亡受细胞分化状态影响。",
+        "en": "Downstream p53/apoptosis depends on differentiation state."
+      }
+    },
+    {
+      "id": "D05",
+      "view": "dna-redox",
+      "source": "dna-atm",
+      "target": "dna-p53",
+      "sign": "+",
+      "grade": "A",
+      "kind": "direct",
+      "stage": 2,
+      "label": {
+        "zh": "ATM/Chk2 → p53（肌母细胞）",
+        "en": "ATM/Chk2 → p53 (myoblasts)"
+      },
+      "refs": [
+        "P15226436",
+        "P37982576"
+      ],
+      "model": {
+        "zh": "增殖肌母细胞；p53敲低小鼠",
+        "en": "proliferating myoblasts; p53-knockdown mice"
+      },
+      "doseText": {
+        "zh": "IR 10 Gy；后肢30/40 Gy",
+        "en": "10 Gy IR; 30/40 Gy hindlimb"
+      },
+      "dose": {
+        "regimens": [
+          {
+            "setting": "invitro",
+            "gyPerFraction": 10,
+            "fractions": 1,
+            "note": "",
+            "eqd2": null
+          },
+          {
+            "setting": "invivo",
+            "gyPerFraction": 30,
+            "fractions": null,
+            "note": "hindlimb 30/40 Gy; fractionation not recorded in registry",
+            "eqd2": null
+          }
+        ],
+        "classes": [
+          "invitro",
+          "unknown"
+        ]
+      },
+      "time": {
+        "zh": "早期及长期组织结局",
+        "en": "early and long-term tissue outcome"
+      },
+      "method": {
+        "zh": "p53磷酸化、遗传敲低、凋亡和干细胞计数",
+        "en": "p53 phosphorylation, genetic knockdown, apoptosis and stem-cell counts"
+      },
+      "functional": {
+        "zh": "有遗传干预，但模型不同",
+        "en": "genetic intervention, across different models"
+      },
+      "limitation": {
+        "zh": "不可扩展为所有MuSC的统一链。",
+        "en": "Cannot be generalized to all MuSCs."
+      }
+    },
+    {
+      "id": "D06",
+      "view": "dna-redox",
+      "source": "dna-p53",
+      "target": "dna-p21",
+      "sign": "+",
+      "grade": "A",
+      "kind": "direct",
+      "stage": 2,
+      "label": {
+        "zh": "p53 → p21/周期阻滞",
+        "en": "p53 → p21/cell-cycle arrest"
+      },
+      "refs": [
+        "P15226436"
+      ],
+      "model": {
+        "zh": "增殖C2C12和原代肌母细胞",
+        "en": "proliferating C2C12 and primary myoblasts"
+      },
+      "doseText": {
+        "zh": "IR 10 Gy",
+        "en": "10 Gy IR"
+      },
+      "dose": {
+        "regimens": [
+          {
+            "setting": "invitro",
+            "gyPerFraction": 10,
+            "fractions": 1,
+            "note": "",
+            "eqd2": null
+          }
+        ],
+        "classes": [
+          "invitro"
+        ]
+      },
+      "time": {
+        "zh": "约4 h内早期峰值",
+        "en": "early peak within about 4 h"
+      },
+      "method": {
+        "zh": "p21报告基因、RNA/蛋白检测",
+        "en": "p21 reporter and RNA/protein assays"
+      },
+      "functional": {
+        "zh": "细胞周期相关读出",
+        "en": "cell-cycle readout"
+      },
+      "limitation": {
+        "zh": "终末肌管反应受限。",
+        "en": "Response is restricted in terminal myotubes."
+      }
+    },
+    {
+      "id": "D07",
+      "view": "dna-redox",
+      "source": "dna-p53",
+      "target": "dna-apoptosis",
+      "sign": "+",
+      "grade": "A",
+      "kind": "direct",
+      "stage": 2,
+      "label": {
+        "zh": "p53相关凋亡分支",
+        "en": "p53-associated apoptosis branch"
+      },
+      "refs": [
+        "P15226436",
+        "P37982576"
+      ],
+      "model": {
+        "zh": "肌母细胞及后肢照射小鼠",
+        "en": "myoblasts and hindlimb-irradiated mice"
+      },
+      "doseText": {
+        "zh": "IR 10 Gy；30/40 Gy",
+        "en": "10 Gy IR; 30/40 Gy"
+      },
+      "dose": {
+        "regimens": [
+          {
+            "setting": "invitro",
+            "gyPerFraction": 10,
+            "fractions": 1,
+            "note": "",
+            "eqd2": null
+          },
+          {
+            "setting": "invivo",
+            "gyPerFraction": 30,
+            "fractions": null,
+            "note": "hindlimb 30/40 Gy; fractionation not recorded in registry",
+            "eqd2": null
+          }
+        ],
+        "classes": [
+          "invitro",
+          "unknown"
+        ]
+      },
+      "time": {
+        "zh": "早期凋亡及长期肉瘤随访",
+        "en": "early apoptosis and long-term sarcoma follow-up"
+      },
+      "method": {
+        "zh": "TUNEL/cleaved caspase-3/遗传敲低",
+        "en": "TUNEL/cleaved caspase-3/genetic knockdown"
+      },
+      "functional": {
+        "zh": "有凋亡和p53干预读出",
+        "en": "apoptosis and p53-intervention readouts"
+      },
+      "limitation": {
+        "zh": "高剂量动物模型，不代表临床剂量。",
+        "en": "High-dose animal model; not clinical dosing."
+      }
+    },
+    {
+      "id": "D08",
+      "view": "dna-redox",
+      "source": "dna-radiation",
+      "target": "dna-ros",
+      "sign": "+",
+      "grade": "A",
+      "kind": "direct",
+      "stage": 1,
+      "label": {
+        "zh": "ROS/RNS升高",
+        "en": "ROS/RNS increase"
+      },
+      "refs": [
+        "P20726709"
+      ],
+      "model": {
+        "zh": "大鼠卫星细胞体外γ射线",
+        "en": "rat satellite cells, in vitro gamma radiation"
+      },
+      "doseText": {
+        "zh": "1–10 Gy，重点≥5 Gy",
+        "en": "1–10 Gy, emphasis ≥5 Gy"
+      },
+      "dose": {
+        "regimens": [
+          {
+            "setting": "invitro",
+            "gyPerFraction": 5,
+            "fractions": 1,
+            "note": "1–10 Gy range",
+            "eqd2": null
+          }
+        ],
+        "classes": [
+          "invitro"
+        ]
+      },
+      "time": {
+        "zh": "20 min–48 h",
+        "en": "20 min–48 h"
+      },
+      "method": {
+        "zh": "氧化应激、细胞周期、凋亡和NO测定",
+        "en": "oxidative-stress, cell-cycle, apoptosis and NO assays"
+      },
+      "functional": {
+        "zh": "NO供体部分救援增殖",
+        "en": "partial proliferation rescue by NO donor"
+      },
+      "limitation": {
+        "zh": "不画ROS直接导致某一单一结局。",
+        "en": "Do not make ROS the sole cause of one outcome."
+      }
+    },
+    {
+      "id": "D09",
+      "view": "dna-redox",
+      "source": "dna-radiation",
+      "target": "dna-mito",
+      "sign": "+",
+      "grade": "A",
+      "kind": "observed",
+      "stage": 3,
+      "label": {
+        "zh": "线粒体代谢重塑",
+        "en": "mitochondrial metabolic remodeling"
+      },
+      "refs": [
+        "P31438652"
+      ],
+      "model": {
+        "zh": "ICR小鼠骨骼肌与C2C12肌管",
+        "en": "ICR mouse muscle and C2C12 myotubes"
+      },
+      "doseText": {
+        "zh": "2 Gy小鼠；6 Gy C2C12",
+        "en": "2 Gy mice; 6 Gy C2C12"
+      },
+      "dose": {
+        "regimens": [
+          {
+            "setting": "invivo",
+            "gyPerFraction": 2,
+            "fractions": 1,
+            "note": "ICR mice",
+            "eqd2": 2
+          },
+          {
+            "setting": "invitro",
+            "gyPerFraction": 6,
+            "fractions": 1,
+            "note": "C2C12 myotubes",
+            "eqd2": null
+          }
+        ],
+        "classes": [
+          "rt",
+          "invitro"
+        ]
+      },
+      "time": {
+        "zh": "约16–24 h",
+        "en": "about 16–24 h"
+      },
+      "method": {
+        "zh": "OCR、mtDNA、COXIV、代谢和AMPK",
+        "en": "OCR, mtDNA, COXIV, metabolism and AMPK"
+      },
+      "functional": {
+        "zh": "代谢适应读出",
+        "en": "metabolic adaptation readout"
+      },
+      "limitation": {
+        "zh": "不是线粒体ROS或线粒体自噬的直接证明。",
+        "en": "Not direct proof of mitochondrial ROS or mitophagy."
+      }
+    },
+    {
+      "id": "D10",
+      "view": "dna-redox",
+      "source": "dna-radiation",
+      "target": "dna-autophagy",
+      "sign": "+",
+      "grade": "A",
+      "kind": "observed",
+      "stage": 3,
+      "label": {
+        "zh": "自噬结构/标志增加",
+        "en": "autophagy structures/markers increase"
+      },
+      "refs": [
+        "P20685830",
+        "P35294551"
+      ],
+      "model": {
+        "zh": "C2C12重离子；Sprague-Dawley大鼠肌纤维化",
+        "en": "C2C12 heavy-ion model; Sprague-Dawley rat fibrosis model"
+      },
+      "doseText": {
+        "zh": "重离子剂量摘要未给；大鼠90 Gy",
+        "en": "heavy-ion dose absent from abstract; 90 Gy rat model"
+      },
+      "dose": {
+        "regimens": [
+          {
+            "setting": "invivo",
+            "gyPerFraction": 90,
+            "fractions": null,
+            "note": "rat fibrosis model; fractionation not recorded in registry",
+            "eqd2": null
+          }
+        ],
+        "classes": [
+          "unknown"
+        ]
+      },
+      "time": {
+        "zh": "20 min起；1–24周",
+        "en": "from 20 min; 1–24 weeks"
+      },
+      "method": {
+        "zh": "EM、LC3/LysoTracker、TUNEL、组织学",
+        "en": "EM, LC3/LysoTracker, TUNEL and histology"
+      },
+      "functional": {
+        "zh": "3-MA抑制C2C12标志；无长期结局因果",
+        "en": "3-MA suppresses C2C12 markers; no long-term causal outcome"
+      },
+      "limitation": {
+        "zh": "不画自噬一定保护或有害。",
+        "en": "Do not label autophagy inherently protective or harmful."
+      }
+    },
+    {
+      "id": "D11",
+      "view": "dna-redox",
+      "source": "dna-dsb",
+      "target": "dna-function",
+      "sign": "+",
+      "grade": "A",
+      "kind": "observed",
+      "stage": 4,
+      "label": {
+        "zh": "损伤标志与扩增/分化不足同模型出现",
+        "en": "damage markers co-occur with expansion/differentiation deficit"
+      },
+      "refs": [
+        "P38936620"
+      ],
+      "model": {
+        "zh": "人3D骨骼肌类器官",
+        "en": "human 3D skeletal-muscle organoids"
+      },
+      "doseText": {
+        "zh": "2 Gy",
+        "en": "2 Gy"
+      },
+      "dose": {
+        "regimens": [
+          {
+            "setting": "invitro",
+            "gyPerFraction": 2,
+            "fractions": 1,
+            "note": "",
+            "eqd2": null
+          }
+        ],
+        "classes": [
+          "invitro"
+        ]
+      },
+      "time": {
+        "zh": "30 min、18 h、72 h",
+        "en": "30 min, 18 h, 72 h"
+      },
+      "method": {
+        "zh": "组织学、免疫荧光和RNA-seq",
+        "en": "histology, immunofluorescence and RNA-seq"
+      },
+      "functional": {
+        "zh": "扩增、分化和修复反应读出",
+        "en": "expansion, differentiation and repair readouts"
+      },
+      "limitation": {
+        "zh": "不画成DNA损伤已经被证明是唯一中介。",
+        "en": "Not proof that DNA damage is the sole mediator."
+      }
+    },
+    {
+      "id": "D12",
+      "view": "dna-redox",
+      "source": "dna-ros",
+      "target": "dna-nrf2",
+      "sign": "+",
+      "grade": "B",
+      "kind": "reference",
+      "stage": 5,
+      "label": {
+        "zh": "氧化应激 → KEAP1–NRF2/ARE（经典）",
+        "en": "oxidative stress → KEAP1–NRF2/ARE (canonical)"
+      },
+      "refs": [
+        "R9755511",
+        "P29298131"
+      ],
+      "model": {
+        "zh": "Reactome经典人类通路；骨骼肌综述",
+        "en": "Reactome canonical human pathway; skeletal-muscle review"
+      },
+      "doseText": {
+        "zh": "不适用",
+        "en": "not applicable"
+      },
+      "dose": {
+        "regimens": [],
+        "classes": [
+          "na"
+        ]
+      },
+      "time": {
+        "zh": "不适用",
+        "en": "not applicable"
+      },
+      "method": {
+        "zh": "官方通路与综述",
+        "en": "curated pathway and review"
+      },
+      "functional": {
+        "zh": "无辐射肌肉特异功能干预",
+        "en": "no radiation-muscle-specific intervention"
+      },
+      "limitation": {
+        "zh": "只作条件性参考，不写成辐射MuSC已证实链。",
+        "en": "Conditional reference only; not a confirmed radiation-MuSC chain."
+      }
+    },
+    {
+      "id": "D13",
+      "view": "dna-redox",
+      "source": "dna-nrf2",
+      "target": "dna-function",
+      "sign": "+",
+      "grade": "C",
+      "kind": "candidate",
+      "stage": 5,
+      "label": {
+        "zh": "SFN/NRF2相关保护候选",
+        "en": "SFN/NRF2-associated protection candidate"
+      },
+      "refs": [
+        "P36400201"
+      ],
+      "model": {
+        "zh": "C57BL/6J辐射肌纤维化动物研究",
+        "en": "C57BL/6J radiation-fibrosis mouse study"
+      },
+      "doseText": {
+        "zh": "摘要未充分核实剂量",
+        "en": "dose not fully verified in abstract"
+      },
+      "dose": {
+        "regimens": [],
+        "classes": [
+          "na"
+        ]
+      },
+      "time": {
+        "zh": "8周",
+        "en": "8 weeks"
+      },
+      "method": {
+        "zh": "SFN干预、NRF2及氧化应激/纤维化指标",
+        "en": "SFN intervention, NRF2 and redox/fibrosis markers"
+      },
+      "functional": {
+        "zh": "动物候选干预",
+        "en": "animal candidate intervention"
+      },
+      "limitation": {
+        "zh": "不画NRF2直接抑制SMAD3或直接修复DNA。",
+        "en": "Do not draw NRF2 directly inhibiting SMAD3 or repairing DNA."
+      }
+    },
+    {
+      "id": "D14",
+      "view": "dna-redox",
+      "source": "dna-dsb",
+      "target": "dna-atr",
+      "sign": "+",
+      "grade": "B",
+      "kind": "reference",
+      "stage": 1,
+      "label": {
+        "zh": "ATR（经典复制压力分支）",
+        "en": "ATR (canonical replication-stress branch)"
+      },
+      "refs": [
+        "R5693606",
+        "R69473"
+      ],
+      "model": {
+        "zh": "Reactome经典人类DNA损伤通路",
+        "en": "Reactome canonical human DNA-damage pathway"
+      },
+      "doseText": {
+        "zh": "不适用",
+        "en": "not applicable"
+      },
+      "dose": {
+        "regimens": [],
+        "classes": [
+          "na"
+        ]
+      },
+      "time": {
+        "zh": "不适用",
+        "en": "not applicable"
+      },
+      "method": {
+        "zh": "Reactome事件条目",
+        "en": "Reactome event entry"
+      },
+      "functional": {
+        "zh": "无辐射肌肉功能干预",
+        "en": "no radiation-muscle functional intervention"
+      },
+      "limitation": {
+        "zh": "在本图中与直接ATM/Chk2证据分层。",
+        "en": "Layered separately from direct ATM/Chk2 evidence."
+      }
+    },
+    {
+      "id": "D15",
+      "view": "dna-redox",
+      "source": "dna-atr",
+      "target": "dna-chk1",
+      "sign": "+",
+      "grade": "B",
+      "kind": "reference",
+      "stage": 1,
+      "label": {
+        "zh": "ATR → Chk1（经典检查点）",
+        "en": "ATR → Chk1 (canonical checkpoint)"
+      },
+      "refs": [
+        "R69473"
+      ],
+      "model": {
+        "zh": "Reactome G2/M DNA损伤检查点",
+        "en": "Reactome G2/M DNA-damage checkpoint"
+      },
+      "doseText": {
+        "zh": "不适用",
+        "en": "not applicable"
+      },
+      "dose": {
+        "regimens": [],
+        "classes": [
+          "na"
+        ]
+      },
+      "time": {
+        "zh": "不适用",
+        "en": "not applicable"
+      },
+      "method": {
+        "zh": "Reactome事件条目",
+        "en": "Reactome event entry"
+      },
+      "functional": {
+        "zh": "无辐射肌肉功能干预",
+        "en": "no radiation-muscle functional intervention"
+      },
+      "limitation": {
+        "zh": "不能替代肌肉细胞直接证据。",
+        "en": "Cannot replace direct muscle-cell evidence."
+      }
+    },
+    {
+      "id": "V01",
+      "view": "vessel-endothelium",
+      "source": "ve-radiation",
+      "target": "ve-perfusion",
+      "sign": "+",
+      "grade": "B",
+      "kind": "reference",
+      "stage": 0,
+      "label": {
+        "zh": "灌注变化待核查",
+        "en": "perfusion change unresolved"
+      },
+      "refs": [
+        "P31841082"
+      ],
+      "model": {
+        "zh": "小鼠后肢CEUS",
+        "en": "mouse hindlimb CEUS"
+      },
+      "doseText": {
+        "zh": "12或15 Gy",
+        "en": "12 or 15 Gy"
+      },
+      "dose": {
+        "regimens": [
+          {
+            "setting": "invivo",
+            "gyPerFraction": 12,
+            "fractions": 1,
+            "note": "",
+            "eqd2": 36
+          },
+          {
+            "setting": "invivo",
+            "gyPerFraction": 15,
+            "fractions": 1,
+            "note": "",
+            "eqd2": 54
+          }
+        ],
+        "classes": [
+          "rt"
+        ]
+      },
+      "time": {
+        "zh": "第1、8天",
+        "en": "days 1 and 8"
+      },
+      "method": {
+        "zh": "增强超声灌注检测",
+        "en": "contrast-enhanced ultrasound"
+      },
+      "functional": {
+        "zh": "第8天未见明确显著灌注下降",
+        "en": "no clear significant perfusion decline at day 8"
+      },
+      "limitation": {
+        "zh": "只作为证据缺口，不表示确定血管耗竭。",
+        "en": "Evidence-gap context only; not fixed vascular depletion."
+      }
+    },
+    {
+      "id": "V02",
+      "view": "vessel-endothelium",
+      "source": "ve-radiation",
+      "target": "ve-ev",
+      "sign": "+",
+      "grade": "A",
+      "kind": "direct",
+      "stage": 1,
+      "label": {
+        "zh": "照射MPC的EV促血管生成支持下降",
+        "en": "EVs from irradiated MPCs give less angiogenic support"
+      },
+      "refs": [
+        "P40835994"
+      ],
+      "model": {
+        "zh": "4–6月龄雄性SD大鼠比目鱼肌MPC（P2–3）",
+        "en": "soleus MPCs from 4–6-month male SD rats (P2–3)"
+      },
+      "doseText": {
+        "zh": "单次10 Gy X线（130 kV）",
+        "en": "single 10 Gy X-ray (130 kV)"
+      },
+      "dose": {
+        "regimens": [
+          {
+            "setting": "invitro",
+            "gyPerFraction": 10,
+            "fractions": 1,
+            "note": "rat soleus MPCs, single X-ray dose",
+            "eqd2": null
+          }
+        ],
+        "classes": [
+          "invitro"
+        ]
+      },
+      "time": {
+        "zh": "照射后无血清培养48 h收集EV",
+        "en": "EVs collected over 48 h serum-free after irradiation"
+      },
+      "method": {
+        "zh": "超离心EV；NTA、TEM、CD9/Flotillin-1",
+        "en": "ultracentrifuged EVs; NTA, TEM, CD9/Flotillin-1"
+      },
+      "functional": {
+        "zh": "Rad-EV与NoRad-EV大小和蛋白量无差异，功能不同",
+        "en": "Rad- and NoRad-EVs similar in size/protein yet differ in function"
+      },
+      "limitation": {
+        "zh": "体外单剂量、n=3–4；未做体内验证。",
+        "en": "In vitro single dose, n=3–4; no in vivo validation."
+      }
+    },
+    {
+      "id": "V03",
+      "view": "vessel-endothelium",
+      "source": "ve-ev",
+      "target": "ve-angio",
+      "sign": "+",
+      "grade": "A",
+      "kind": "observed",
+      "stage": 1,
+      "label": {
+        "zh": "Rad-EV较NoRad-EV血管生成更弱",
+        "en": "Rad-EVs weaker than NoRad-EVs for angiogenesis"
+      },
+      "refs": [
+        "P40835994"
+      ],
+      "model": {
+        "zh": "HUVEC管形成；大鼠脂肪微血管片段3D培养",
+        "en": "HUVEC tube formation; rat adipose microvascular fragments in 3D"
+      },
+      "doseText": {
+        "zh": "EV来自10 Gy照射MPC；EV 25/75 µg蛋白",
+        "en": "EVs from 10 Gy MPCs; 25/75 µg EV protein"
+      },
+      "dose": {
+        "regimens": [
+          {
+            "setting": "invitro",
+            "gyPerFraction": 10,
+            "fractions": 1,
+            "note": "EVs from 10 Gy MPCs tested on HUVEC / MVF",
+            "eqd2": null
+          }
+        ],
+        "classes": [
+          "invitro"
+        ]
+      },
+      "time": {
+        "zh": "HUVEC 24 h；微血管片段第8天",
+        "en": "HUVEC 24 h; fragments day 8"
+      },
+      "method": {
+        "zh": "Angiogenesis Analyzer；GS-Lectin共聚焦",
+        "en": "Angiogenesis Analyzer; GS-lectin confocal"
+      },
+      "functional": {
+        "zh": "NoRad-EV高剂量分支长度约1.5倍；片段密度约3倍于Rad-EV",
+        "en": "high-dose NoRad-EV ~1.5× branch length; ~3× fragment density vs Rad-EV"
+      },
+      "limitation": {
+        "zh": "HUVEC为人脐静脉内皮，不是肌肉微血管内皮；不能外推体内毛细血管密度。",
+        "en": "HUVECs are not muscle microvascular endothelium; no inference to in vivo capillary density."
+      }
+    },
+    {
+      "id": "I00",
+      "view": "immune-macrophage",
+      "source": "im-radiation",
+      "target": "im-macrophage",
+      "sign": "+",
+      "grade": "C",
+      "kind": "inference",
+      "stage": 0,
+      "label": {
+        "zh": "免疫/旁分泌通讯推断",
+        "en": "inferred immune/paracrine communication"
+      },
+      "refs": [
+        "P40316295"
+      ],
+      "model": {
+        "zh": "幼年小鼠scRNA-seq",
+        "en": "juvenile-mouse scRNA-seq"
+      },
+      "doseText": {
+        "zh": "8.2 Gy × 3",
+        "en": "8.2 Gy × 3"
+      },
+      "dose": {
+        "regimens": [
+          {
+            "setting": "invivo",
+            "gyPerFraction": 8.2,
+            "fractions": 3,
+            "note": "",
+            "eqd2": 55.1
+          }
+        ],
+        "classes": [
+          "rt"
+        ]
+      },
+      "time": {
+        "zh": "24 h、56 d",
+        "en": "24 h, 56 d"
+      },
+      "method": {
+        "zh": "单细胞转录组和CellChat",
+        "en": "single-cell transcriptomics and CellChat"
+      },
+      "functional": {
+        "zh": "无细胞特异敲除或中和",
+        "en": "no cell-specific knockout or neutralization"
+      },
+      "limitation": {
+        "zh": "表达通讯不等于分泌蛋白和因果功能。",
+        "en": "Expression-based communication is not secreted protein or causal function."
+      }
+    },
+    {
+      "id": "I01",
+      "view": "immune-macrophage",
+      "source": "im-macrophage",
+      "target": "im-fap",
+      "sign": "+",
+      "grade": "C",
+      "kind": "inference",
+      "stage": 1,
+      "label": {
+        "zh": "TGF-β1 → TGFBR2通讯推断",
+        "en": "inferred TGF-β1 → TGFBR2 communication"
+      },
+      "refs": [
+        "P40316295"
+      ],
+      "model": {
+        "zh": "幼年小鼠单细胞转录组＋组织/蛋白验证",
+        "en": "juvenile-mouse scRNA-seq plus tissue/protein validation"
+      },
+      "doseText": {
+        "zh": "8.2 Gy × 3",
+        "en": "8.2 Gy × 3"
+      },
+      "dose": {
+        "regimens": [
+          {
+            "setting": "invivo",
+            "gyPerFraction": 8.2,
+            "fractions": 3,
+            "note": "",
+            "eqd2": 55.1
+          }
+        ],
+        "classes": [
+          "rt"
+        ]
+      },
+      "time": {
+        "zh": "24 h与56 d",
+        "en": "24 h and 56 d"
+      },
+      "method": {
+        "zh": "CellChat配体—受体推断",
+        "en": "CellChat ligand–receptor inference"
+      },
+      "functional": {
+        "zh": "通讯推断，无因果干预",
+        "en": "inference without causal intervention"
+      },
+      "limitation": {
+        "zh": "与v0.3 A11相同；巨噬细胞来源及因果未用敲除/中和证实。",
+        "en": "Same as v0.3 A11; macrophage source and causality lack knockout/neutralization proof."
+      }
+    },
+    {
+      "id": "S01",
+      "view": "senescence-p21",
+      "source": "sn-radiation",
+      "target": "sn-p53",
+      "sign": "+",
+      "grade": "A",
+      "kind": "direct",
+      "stage": 0,
+      "label": {
+        "zh": "辐射 → p53（肌母细胞）",
+        "en": "radiation → p53 (myoblasts)"
+      },
+      "refs": [
+        "P15226436",
+        "P37982576"
+      ],
+      "model": {
+        "zh": "增殖肌母细胞；p53敲低小鼠",
+        "en": "proliferating myoblasts; p53-knockdown mice"
+      },
+      "doseText": {
+        "zh": "IR 10 Gy；后肢30/40 Gy",
+        "en": "10 Gy IR; 30/40 Gy hindlimb"
+      },
+      "dose": {
+        "regimens": [
+          {
+            "setting": "invitro",
+            "gyPerFraction": 10,
+            "fractions": 1,
+            "note": "",
+            "eqd2": null
+          },
+          {
+            "setting": "invivo",
+            "gyPerFraction": 30,
+            "fractions": null,
+            "note": "hindlimb 30/40 Gy; fractionation not recorded in registry",
+            "eqd2": null
+          }
+        ],
+        "classes": [
+          "invitro",
+          "unknown"
+        ]
+      },
+      "time": {
+        "zh": "早期及长期组织结局",
+        "en": "early and long-term tissue outcome"
+      },
+      "method": {
+        "zh": "p53磷酸化、遗传敲低",
+        "en": "p53 phosphorylation, genetic knockdown"
+      },
+      "functional": {
+        "zh": "有遗传干预，但模型不同",
+        "en": "genetic intervention, across different models"
+      },
+      "limitation": {
+        "zh": "与DNA专题D05同源；不可扩展为所有MuSC的统一链。",
+        "en": "Mirrors DNA module D05; cannot be generalized to all MuSCs."
+      }
+    },
+    {
+      "id": "S02",
+      "view": "senescence-p21",
+      "source": "sn-p53",
+      "target": "sn-p21",
+      "sign": "+",
+      "grade": "A",
+      "kind": "direct",
+      "stage": 0,
+      "label": {
+        "zh": "p53 → p21/周期阻滞",
+        "en": "p53 → p21/cell-cycle arrest"
+      },
+      "refs": [
+        "P15226436"
+      ],
+      "model": {
+        "zh": "增殖C2C12和原代肌母细胞",
+        "en": "proliferating C2C12 and primary myoblasts"
+      },
+      "doseText": {
+        "zh": "IR 10 Gy",
+        "en": "10 Gy IR"
+      },
+      "dose": {
+        "regimens": [
+          {
+            "setting": "invitro",
+            "gyPerFraction": 10,
+            "fractions": 1,
+            "note": "",
+            "eqd2": null
+          }
+        ],
+        "classes": [
+          "invitro"
+        ]
+      },
+      "time": {
+        "zh": "约4 h内早期峰值",
+        "en": "early peak within about 4 h"
+      },
+      "method": {
+        "zh": "p21报告基因、RNA/蛋白检测",
+        "en": "p21 reporter and RNA/protein assays"
+      },
+      "functional": {
+        "zh": "细胞周期相关读出",
+        "en": "cell-cycle readout"
+      },
+      "limitation": {
+        "zh": "与D06同源；早期p21不等于持久衰老。",
+        "en": "Mirrors D06; early p21 is not durable senescence."
+      }
+    },
+    {
+      "id": "S03",
+      "view": "senescence-p21",
+      "source": "sn-radiation",
+      "target": "sn-p21",
+      "sign": "+",
+      "grade": "A",
+      "kind": "observed",
+      "stage": 0,
+      "label": {
+        "zh": "持续Cdkn1a转录信号",
+        "en": "persistent Cdkn1a transcript signature"
+      },
+      "refs": [
+        "P40316295"
+      ],
+      "model": {
+        "zh": "幼年小鼠局部照射scRNA-seq",
+        "en": "juvenile-mouse local irradiation scRNA-seq"
+      },
+      "doseText": {
+        "zh": "8.2 Gy × 3",
+        "en": "8.2 Gy × 3"
+      },
+      "dose": {
+        "regimens": [
+          {
+            "setting": "invivo",
+            "gyPerFraction": 8.2,
+            "fractions": 3,
+            "note": "",
+            "eqd2": 55.1
+          }
+        ],
+        "classes": [
+          "rt"
+        ]
+      },
+      "time": {
+        "zh": "24 h与56 d",
+        "en": "24 h and 56 d"
+      },
+      "method": {
+        "zh": "单细胞转录组",
+        "en": "single-cell transcriptomics"
+      },
+      "functional": {
+        "zh": "无p21功能干预",
+        "en": "no p21 functional intervention"
+      },
+      "limitation": {
+        "zh": "转录信号不等于功能性衰老；跨数据集“保守”需独立复核。",
+        "en": "A transcript signature is not functional senescence; cross-dataset \"conservation\" needs independent replication."
+      }
+    },
+    {
+      "id": "S04",
+      "view": "senescence-p21",
+      "source": "sn-radiation",
+      "target": "sn-fap",
+      "sign": "+",
+      "grade": "A",
+      "kind": "direct",
+      "stage": 1,
+      "label": {
+        "zh": "FAP衰老样/促纤维化状态",
+        "en": "senescence-like / fibrotic FAP state"
+      },
+      "refs": [
+        "P37671686"
+      ],
+      "model": {
+        "zh": "4周龄雄性小鼠单侧后肢",
+        "en": "4-week-old male mice, unilateral hindlimb"
+      },
+      "doseText": {
+        "zh": "16 Gy单次",
+        "en": "single 16 Gy"
+      },
+      "dose": {
+        "regimens": [
+          {
+            "setting": "invivo",
+            "gyPerFraction": 16,
+            "fractions": 1,
+            "note": "",
+            "eqd2": 60.8
+          }
+        ],
+        "classes": [
+          "rt"
+        ]
+      },
+      "time": {
+        "zh": "3、7、14、56 d",
+        "en": "3, 7, 14, 56 d"
+      },
+      "method": {
+        "zh": "细胞动态、DNA损伤、代谢与命运分析",
+        "en": "cell dynamics, DNA damage, metabolism and fate assays"
+      },
+      "functional": {
+        "zh": "FAP条件培养基功能实验",
+        "en": "FAP-conditioned-medium functional assay"
+      },
+      "limitation": {
+        "zh": "与OV-A3同源；FAP数量在56 d下降，不画成持续扩增。",
+        "en": "Mirrors OV-A3; FAP number declines at 56 d; no persistent expansion."
+      }
+    },
+    {
+      "id": "E01",
+      "view": "ev-mirna",
+      "source": "ev-radiation",
+      "target": "ev-radev",
+      "sign": "+",
+      "grade": "A",
+      "kind": "observed",
+      "stage": 0,
+      "label": {
+        "zh": "照射改变MPC-EV miRNA货物",
+        "en": "irradiation shifts MPC-EV miRNA cargo"
+      },
+      "refs": [
+        "P40835994"
+      ],
+      "model": {
+        "zh": "大鼠比目鱼肌MPC，每组≥4只供体",
+        "en": "rat soleus MPCs, ≥4 donors per group"
+      },
+      "doseText": {
+        "zh": "单次10 Gy X线",
+        "en": "single 10 Gy X-ray"
+      },
+      "dose": {
+        "regimens": [
+          {
+            "setting": "invitro",
+            "gyPerFraction": 10,
+            "fractions": 1,
+            "note": "",
+            "eqd2": null
+          }
+        ],
+        "classes": [
+          "invitro"
+        ]
+      },
+      "time": {
+        "zh": "照射后48 h条件培养基",
+        "en": "48 h conditioned medium after irradiation"
+      },
+      "method": {
+        "zh": "nCounter大鼠miRNA panel（423个）",
+        "en": "nCounter rat miRNA panel (423)"
+      },
+      "functional": {
+        "zh": "Rad-EV中13个下调（含miR-206、let-7b）、7个上调（含miR-181a）",
+        "en": "13 down (incl. miR-206, let-7b), 7 up (incl. miR-181a) in Rad-EVs"
+      },
+      "limitation": {
+        "zh": "倍数≥1.3、p<0.05、n=4；靶基因仅为数据库预测。",
+        "en": "FC≥1.3, p<0.05, n=4; target genes database-predicted only."
+      }
+    },
+    {
+      "id": "E02",
+      "view": "ev-mirna",
+      "source": "ev-radev",
+      "target": "ev-function",
+      "sign": "+",
+      "grade": "A",
+      "kind": "direct",
+      "stage": 0,
+      "label": {
+        "zh": "EV来源状态决定救援：NoRad-EV部分救援，Rad-EV无效",
+        "en": "EV source state decides rescue: NoRad-EV partial, Rad-EV none"
+      },
+      "refs": [
+        "P40835994"
+      ],
+      "model": {
+        "zh": "10 Gy照射的大鼠MPC接受EV处理",
+        "en": "10 Gy-irradiated rat MPCs treated with EVs"
+      },
+      "doseText": {
+        "zh": "10 Gy；EV 25–50 µg蛋白",
+        "en": "10 Gy; 25–50 µg EV protein"
+      },
+      "dose": {
+        "regimens": [
+          {
+            "setting": "invitro",
+            "gyPerFraction": 10,
+            "fractions": 1,
+            "note": "",
+            "eqd2": null
+          }
+        ],
+        "classes": [
+          "invitro"
+        ]
+      },
+      "time": {
+        "zh": "存活48 h；BrdU 72 h",
+        "en": "viability 48 h; BrdU 72 h"
+      },
+      "method": {
+        "zh": "AO/PI活死染色；BrdU ELISA",
+        "en": "AO/PI live/dead; BrdU ELISA"
+      },
+      "functional": {
+        "zh": "NoRad-EV使存活由52%升至71%，增殖约+16%",
+        "en": "NoRad-EV raised viability 52%→71%, proliferation ~+16%"
+      },
+      "limitation": {
+        "zh": "救援幅度有限；照射后增殖仍下降约85%。体外、单剂量。",
+        "en": "Rescue is modest; proliferation still ~85% lower after IR. In vitro, single dose."
+      }
+    },
+    {
+      "id": "E03",
+      "view": "ev-mirna",
+      "source": "ev-radiation",
+      "target": "ev-srm",
+      "sign": "+",
+      "grade": "C",
+      "kind": "candidate",
+      "stage": 1,
+      "label": {
+        "zh": "放疗 → ArA积累 → SRM经sEV分泌",
+        "en": "radiotherapy → ArA → SRM secreted in sEVs"
+      },
+      "refs": [
+        "P40541182"
+      ],
+      "model": {
+        "zh": "荷瘤小鼠局部放疗",
+        "en": "tumor-bearing mice with local radiotherapy"
+      },
+      "doseText": {
+        "zh": "摘要未给剂量；待全文",
+        "en": "dose not in abstract; full text pending"
+      },
+      "dose": {
+        "regimens": [],
+        "classes": [
+          "na"
+        ]
+      },
+      "time": {
+        "zh": "待全文",
+        "en": "pending full text"
+      },
+      "method": {
+        "zh": "sEV蛋白组、ISGylation检测",
+        "en": "sEV proteomics, ISGylation assays"
+      },
+      "functional": {
+        "zh": "氯沙坦阻断SRM ISGylation与分泌",
+        "en": "losartan blocks SRM ISGylation and secretion"
+      },
+      "limitation": {
+        "zh": "肿瘤—宿主远程机制，不适用于无肿瘤的意外照射；摘要级。",
+        "en": "Tumor–host remote mechanism, not applicable to tumor-free accidental exposure; abstract-level."
+      }
+    },
+    {
+      "id": "E04",
+      "view": "ev-mirna",
+      "source": "ev-srm",
+      "target": "ev-collagen",
+      "sign": "+",
+      "grade": "C",
+      "kind": "candidate",
+      "stage": 1,
+      "label": {
+        "zh": "循环SRM → 亚精胺/eIF5A → 胶原I与肌无力",
+        "en": "circulating SRM → spermidine/eIF5A → collagen I and weakness"
+      },
+      "refs": [
+        "P40541182"
+      ],
+      "model": {
+        "zh": "荷瘤小鼠骨骼肌",
+        "en": "skeletal muscle of tumor-bearing mice"
+      },
+      "doseText": {
+        "zh": "摘要未给剂量；待全文",
+        "en": "dose not in abstract; full text pending"
+      },
+      "dose": {
+        "regimens": [],
+        "classes": [
+          "na"
+        ]
+      },
+      "time": {
+        "zh": "待全文",
+        "en": "pending full text"
+      },
+      "method": {
+        "zh": "代谢、胶原组织学、eIF5A依赖性",
+        "en": "metabolism, collagen histology, eIF5A dependence"
+      },
+      "functional": {
+        "zh": "氯沙坦缓解肌无力",
+        "en": "losartan relieves weakness"
+      },
+      "limitation": {
+        "zh": "不画成放疗直接作用于肌纤维；剂量和时间待全文核查。",
+        "en": "Not drawn as direct radiation action on myofibers; dose and timing pending full-text audit."
+      }
+    },
+    {
+      "id": "E05",
+      "view": "ev-mirna",
+      "source": "ev-radiation",
+      "target": "ev-fstl1",
+      "sign": "+",
+      "grade": "C",
+      "kind": "candidate",
+      "stage": 1,
+      "label": {
+        "zh": "照射后FAP FSTL1表达变化（方向不一致）",
+        "en": "FAP FSTL1 after irradiation (mixed direction)"
+      },
+      "refs": [
+        "T_FSTL1"
+      ],
+      "model": {
+        "zh": "C3H10T1/2与原代FAP；小鼠后肢分次照射",
+        "en": "C3H10T1/2 and primary FAPs; fractionated mouse hindlimb"
+      },
+      "doseText": {
+        "zh": "剂量待全文提取",
+        "en": "dose to be extracted from full text"
+      },
+      "dose": {
+        "regimens": [
+          {
+            "setting": "invitro",
+            "gyPerFraction": null,
+            "fractions": 1,
+            "note": "C3H10T1/2 and primary FAPs; dose to be extracted from thesis",
+            "eqd2": null
+          }
+        ],
+        "classes": [
+          "invitro"
+        ]
+      },
+      "time": {
+        "zh": "12、24、48 h；体内3 d",
+        "en": "12, 24, 48 h; in vivo 3 d"
+      },
+      "method": {
+        "zh": "qPCR/蛋白；FSTL1敲低分化实验；静脉rFSTL1",
+        "en": "qPCR/protein; FSTL1 knockdown differentiation; IV rFSTL1"
+      },
+      "functional": {
+        "zh": "敲低降低成纤维分化；静脉补充未提高肌内FSTL1",
+        "en": "knockdown lowered fibrogenic differentiation; IV repletion did not raise muscle FSTL1"
+      },
+      "limitation": {
+        "zh": "C3H细胞24 h mRNA↓而48 h蛋白↑；硕士论文未同行评审。不作为A09未知抑制因子。",
+        "en": "C3H mRNA ↓ at 24 h but protein ↑ at 48 h; unreviewed MSc thesis. Not the unresolved A09 inhibitor."
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "P20726709",
+      "pmid": "20726709",
+      "doi": "10.1667/RR2190.1",
+      "url": null,
+      "journal": null,
+      "title": {
+        "zh": "卫星细胞的放射敏感性：细胞周期、凋亡和氧化应激",
+        "en": "The radiosensitivity of satellite cells: cell cycle regulation, apoptosis and oxidative stress"
+      },
+      "reviewDepth": {
+        "zh": "全文核查",
+        "en": "Full text reviewed"
+      },
+      "model": ""
+    },
+    {
+      "id": "P33241204",
+      "pmid": "33241204",
+      "doi": "10.1016/j.isci.2020.101760",
+      "url": null,
+      "journal": null,
+      "title": {
+        "zh": "幼年Pax7+肌肉干细胞的辐射损伤导致终生肌纤维与肌核不足",
+        "en": "Radiation damage to prepubertal Pax7+ muscle stem cells drives lifelong deficits"
+      },
+      "reviewDepth": {
+        "zh": "全文＋SI核查",
+        "en": "Full text and SI reviewed"
+      },
+      "model": ""
+    },
+    {
+      "id": "P31006621",
+      "pmid": "31006621",
+      "doi": "10.1016/j.stem.2019.03.020",
+      "url": null,
+      "journal": null,
+      "title": {
+        "zh": "谱系示踪发现可在应激下克隆扩增的储备MuSC亚群",
+        "en": "Lineage tracing reveals reserve MuSCs capable of clonal expansion under stress"
+      },
+      "reviewDepth": {
+        "zh": "全文核查",
+        "en": "Full text reviewed"
+      },
+      "model": ""
+    },
+    {
+      "id": "P37671686",
+      "pmid": "37671686",
+      "doi": "10.1002/jcsm.13320",
+      "url": null,
+      "journal": null,
+      "title": {
+        "zh": "辐射诱导长期肌肉纤维化并促进FAP促纤维化表型",
+        "en": "Radiation induces long-term muscle fibrosis and a fibrotic FAP phenotype"
+      },
+      "reviewDepth": {
+        "zh": "全文＋SI核查",
+        "en": "Full text and SI reviewed"
+      },
+      "model": ""
+    },
+    {
+      "id": "P40316295",
+      "pmid": "40316295",
+      "doi": "10.1152/ajpcell.00115.2025",
+      "url": null,
+      "journal": null,
+      "title": {
+        "zh": "单细胞转录组揭示辐射肌肉细胞动态与旁分泌通讯变化",
+        "en": "Single-cell analysis reveals altered cellular dynamics and paracrine signaling"
+      },
+      "reviewDepth": {
+        "zh": "全文＋Data S1核查",
+        "en": "Full text and Data S1 reviewed"
+      },
+      "model": ""
+    },
+    {
+      "id": "P20081841",
+      "pmid": "20081841",
+      "doi": "10.1038/ncb2015",
+      "url": null,
+      "journal": null,
+      "title": {
+        "zh": "FAP促进成肌并参与损伤反应",
+        "en": "FAPs facilitate myogenesis and respond to muscle injury"
+      },
+      "reviewDepth": {
+        "zh": "全文核查",
+        "en": "Full text reviewed"
+      },
+      "model": ""
+    },
+    {
+      "id": "P26053624",
+      "pmid": "26053624",
+      "doi": "10.1038/nm.3869",
+      "url": null,
+      "journal": null,
+      "title": {
+        "zh": "TNF与TGF-β调节FAP清除和纤维化",
+        "en": "TNF and TGF-β regulate FAP clearance and fibrosis"
+      },
+      "reviewDepth": {
+        "zh": "官方摘要；全文待补",
+        "en": "Official abstract; full text pending"
+      },
+      "model": ""
+    },
+    {
+      "id": "P33252888",
+      "pmid": "33252888",
+      "doi": "10.1097/CORR.0000000000001286",
+      "url": null,
+      "journal": null,
+      "title": {
+        "zh": "TGF-β抑制剂减轻小鼠放射性肌纤维化",
+        "en": "TGF-β inhibitor mitigates radiation-induced muscle fibrosis in mice"
+      },
+      "reviewDepth": {
+        "zh": "既有全文剪藏",
+        "en": "Archived full-text clipping"
+      },
+      "model": ""
+    },
+    {
+      "id": "P36400201",
+      "pmid": "36400201",
+      "doi": "10.1016/j.lfs.2022.121197",
+      "url": null,
+      "journal": null,
+      "title": {
+        "zh": "SFN调节NRF2及TGF-β/Smad相关变化",
+        "en": "Sulforaphane regulates NRF2 and TGF-β/Smad-associated changes"
+      },
+      "reviewDepth": {
+        "zh": "官方摘要；全文待补",
+        "en": "Official abstract; full text pending"
+      },
+      "model": ""
+    },
+    {
+      "id": "P24065826",
+      "pmid": "24065826",
+      "doi": "10.1073/pnas.1307680110",
+      "url": null,
+      "journal": null,
+      "title": {
+        "zh": "Pax7对成人卫星细胞正常功能至关重要",
+        "en": "Pax7 is critical for normal adult satellite-cell function"
+      },
+      "reviewDepth": {
+        "zh": "官方摘要；全文待补",
+        "en": "Official abstract; full text pending"
+      },
+      "model": ""
+    },
+    {
+      "id": "P18371421",
+      "pmid": "18371421",
+      "doi": "10.1016/j.stem.2008.03.006",
+      "url": null,
+      "journal": null,
+      "title": {
+        "zh": "Notch向Wnt的时间转换调节肌肉再生",
+        "en": "Temporal switch from Notch to Wnt controls muscle regeneration"
+      },
+      "reviewDepth": {
+        "zh": "官方摘要/出版者信息",
+        "en": "Official abstract/publisher record"
+      },
+      "model": ""
+    },
+    {
+      "id": "P22493066",
+      "pmid": "22493066",
+      "doi": "10.1242/dev.071233",
+      "url": null,
+      "journal": null,
+      "title": {
+        "zh": "持续Notch激活促进Pax7并抑制分化",
+        "en": "Constitutive Notch activation promotes Pax7 and inhibits differentiation"
+      },
+      "reviewDepth": {
+        "zh": "官方摘要；全文待补",
+        "en": "Official abstract; full text pending"
+      },
+      "model": ""
+    },
+    {
+      "id": "P19497282",
+      "pmid": "19497282",
+      "doi": "10.1016/j.cell.2009.03.051",
+      "url": null,
+      "journal": null,
+      "title": {
+        "zh": "Wnt7a–PCP驱动卫星干细胞对称扩增",
+        "en": "Wnt7a–PCP drives symmetric satellite stem-cell expansion"
+      },
+      "reviewDepth": {
+        "zh": "全文核查",
+        "en": "Full text reviewed"
+      },
+      "model": ""
+    },
+    {
+      "id": "P15226436",
+      "pmid": "15226436",
+      "doi": "10.1128/MCB.24.14.6350-6361.2004",
+      "url": null,
+      "journal": "Molecular and Cellular Biology",
+      "title": {
+        "zh": "分化诱导的肌肉细胞放射抗性",
+        "en": "Differentiation-induced radioresistance in muscle cells"
+      },
+      "reviewDepth": {
+        "zh": "PMC全文核查",
+        "en": "PMC full text reviewed"
+      },
+      "model": {
+        "zh": "C2C12及原代人/鼠肌肉细胞",
+        "en": "C2C12 and primary human/mouse muscle cells"
+      }
+    },
+    {
+      "id": "P38936620",
+      "pmid": "38936620",
+      "doi": "10.1016/j.bbamcr.2024.119792",
+      "url": null,
+      "journal": "Biochimica et Biophysica Acta - Molecular Cell Research",
+      "title": {
+        "zh": "3D人骨骼肌类器官中的辐射致损伤",
+        "en": "Unraveling radiation-induced skeletal muscle damage: Insights from a 3D human skeletal muscle organoid model"
+      },
+      "reviewDepth": {
+        "zh": "官方摘要；全文待补",
+        "en": "Official abstract; full text pending"
+      },
+      "model": {
+        "zh": "hPSC来源3D骨骼肌类器官",
+        "en": "hPSC-derived 3D skeletal-muscle organoids"
+      }
+    },
+    {
+      "id": "P37982576",
+      "pmid": "37982576",
+      "doi": "10.1158/2767-9764.CRC-23-0104",
+      "url": null,
+      "journal": "Cancer Research Communications",
+      "title": {
+        "zh": "局部肢体照射期间暂时降低p53增加肉瘤发生",
+        "en": "Temporary knockdown of p53 during focal limb irradiation increases the development of sarcomas"
+      },
+      "reviewDepth": {
+        "zh": "PMC全文核查",
+        "en": "PMC full text reviewed"
+      },
+      "model": {
+        "zh": "诱导性p53敲低小鼠及后肢照射",
+        "en": "Inducible p53-knockdown mice with hindlimb irradiation"
+      }
+    },
+    {
+      "id": "P20685830",
+      "pmid": "20685830",
+      "doi": "10.1093/jmicro/dfq059",
+      "url": null,
+      "journal": "Journal of Electron Microscopy",
+      "title": {
+        "zh": "重离子照射诱导C2C12肌母细胞及旁观者细胞自噬",
+        "en": "Heavy ion irradiation induces autophagy in irradiated C2C12 myoblasts and their bystander cells"
+      },
+      "reviewDepth": {
+        "zh": "官方摘要；剂量待全文核查",
+        "en": "Official abstract; dose pending full-text review"
+      },
+      "model": {
+        "zh": "C2C12肌母细胞及旁观者细胞",
+        "en": "C2C12 myoblasts and bystander cells"
+      }
+    },
+    {
+      "id": "P31438652",
+      "pmid": "31438652",
+      "doi": "10.3390/cells8090950",
+      "url": null,
+      "journal": "Cells",
+      "title": {
+        "zh": "辐射后骨骼肌线粒体能量代谢机制",
+        "en": "Mechanisms of energy metabolism in skeletal muscle mitochondria following radiation exposure"
+      },
+      "reviewDepth": {
+        "zh": "PMC全文关键段核查",
+        "en": "Key sections of PMC full text reviewed"
+      },
+      "model": {
+        "zh": "ICR小鼠骨骼肌与C2C12肌管",
+        "en": "ICR mouse skeletal muscle and C2C12 myotubes"
+      }
+    },
+    {
+      "id": "P35294551",
+      "pmid": "35294551",
+      "doi": "10.1080/02713683.2022.2043709",
+      "url": null,
+      "journal": "Radiation Research",
+      "title": {
+        "zh": "辐射诱导肌肉纤维化大鼠模型中的卫星细胞激活",
+        "en": "Satellite cells are activated in a rat model of radiation-induced muscle fibrosis"
+      },
+      "reviewDepth": {
+        "zh": "官方摘要核查",
+        "en": "Official abstract reviewed"
+      },
+      "model": {
+        "zh": "Sprague-Dawley大鼠辐射肌纤维化模型",
+        "en": "Sprague-Dawley rat radiation-fibrosis model"
+      }
+    },
+    {
+      "id": "P38579709",
+      "pmid": "38579709",
+      "doi": "10.1016/j.stemcr.2024.03.004",
+      "url": null,
+      "journal": "Stem Cell Reports",
+      "title": {
+        "zh": "PINK1缺失改变肌肉干细胞命运和再生能力",
+        "en": "PINK1 deficiency alters muscle stem cell fate decision and muscle regenerative capacity"
+      },
+      "reviewDepth": {
+        "zh": "PMC全文核查",
+        "en": "PMC full text reviewed"
+      },
+      "model": {
+        "zh": "PINK1缺失小鼠MuSC与CTX损伤",
+        "en": "PINK1-deficient mouse MuSCs with CTX injury"
+      }
+    },
+    {
+      "id": "P31841082",
+      "pmid": "31841082",
+      "doi": "10.1667/RR15555.1",
+      "url": null,
+      "journal": "Radiation Research",
+      "title": {
+        "zh": "高剂量辐射后骨骼肌早期微血管变化的CEUS检测",
+        "en": "Contrast-enhanced ultrasound to detect early microvascular changes in skeletal muscle after high-dose radiation treatment"
+      },
+      "reviewDepth": {
+        "zh": "官方摘要核查",
+        "en": "Official abstract reviewed"
+      },
+      "model": {
+        "zh": "小鼠后肢局部照射与CEUS",
+        "en": "Mouse hindlimb irradiation with contrast-enhanced ultrasound"
+      }
+    },
+    {
+      "id": "P29298131",
+      "pmid": "29298131",
+      "doi": "10.1080/13510002.2017.1416773",
+      "url": null,
+      "journal": "Free Radical Research",
+      "title": {
+        "zh": "p53调节骨骼肌氧化应激的系统综述",
+        "en": "A systematic review of p53 regulation of oxidative stress in skeletal muscle"
+      },
+      "reviewDepth": {
+        "zh": "官方摘要/综述核查",
+        "en": "Official abstract/review checked"
+      },
+      "model": {
+        "zh": "骨骼肌动物与细胞模型综述",
+        "en": "Review of skeletal-muscle animal and cell models"
+      }
+    },
+    {
+      "id": "R9755511",
+      "pmid": null,
+      "doi": null,
+      "url": "https://reactome.org/content/detail/R-HSA-9755511",
+      "journal": "Reactome",
+      "title": {
+        "zh": "NRF2介导的抗氧化反应",
+        "en": "NRF2-mediated antioxidant response"
+      },
+      "reviewDepth": {
+        "zh": "Reactome官方事件条目",
+        "en": "Reactome curated event"
+      },
+      "model": {
+        "zh": "人类经典通路数据库事件",
+        "en": "curated human pathway event"
+      }
+    },
+    {
+      "id": "R5693606",
+      "pmid": null,
+      "doi": null,
+      "url": "https://reactome.org/content/detail/R-HSA-5693606",
+      "journal": "Reactome",
+      "title": {
+        "zh": "DNA双链断裂响应",
+        "en": "DNA double-strand break response"
+      },
+      "reviewDepth": {
+        "zh": "Reactome官方事件条目",
+        "en": "Reactome curated event"
+      },
+      "model": {
+        "zh": "人类经典通路数据库事件",
+        "en": "curated human pathway event"
+      }
+    },
+    {
+      "id": "R69563",
+      "pmid": null,
+      "doi": null,
+      "url": "https://reactome.org/content/detail/R-HSA-69563",
+      "journal": "Reactome",
+      "title": {
+        "zh": "p53依赖性DNA损伤响应",
+        "en": "p53-dependent DNA damage response"
+      },
+      "reviewDepth": {
+        "zh": "Reactome官方事件条目",
+        "en": "Reactome curated event"
+      },
+      "model": {
+        "zh": "人类经典通路数据库事件",
+        "en": "curated human pathway event"
+      }
+    },
+    {
+      "id": "R69473",
+      "pmid": null,
+      "doi": null,
+      "url": "https://reactome.org/content/detail/R-HSA-69473",
+      "journal": "Reactome",
+      "title": {
+        "zh": "G2/M DNA损伤检查点",
+        "en": "G2/M DNA damage checkpoint"
+      },
+      "reviewDepth": {
+        "zh": "Reactome官方事件条目",
+        "en": "Reactome curated event"
+      },
+      "model": {
+        "zh": "人类经典通路数据库事件",
+        "en": "curated human pathway event"
+      }
+    },
+    {
+      "id": "P40835994",
+      "pmid": "40835994",
+      "doi": "10.1038/s41598-025-15699-x",
+      "url": null,
+      "journal": "Scientific Reports",
+      "title": {
+        "zh": "照射肌肉前体细胞的EV丧失促增殖和促血管生成功能",
+        "en": "Irradiation of muscle precursor cells impairs the proliferative and angiogenic functions of their EVs"
+      },
+      "reviewDepth": {
+        "zh": "PMC全文核查",
+        "en": "PMC full text reviewed"
+      },
+      "model": {
+        "zh": "大鼠比目鱼肌MPC，10 Gy X线，体外EV",
+        "en": "rat soleus MPCs, 10 Gy X-ray, in vitro EVs"
+      }
+    },
+    {
+      "id": "P40541182",
+      "pmid": "40541182",
+      "doi": "10.1016/j.cmet.2025.05.013",
+      "url": null,
+      "journal": "Cell Metabolism",
+      "title": {
+        "zh": "花生四烯酸触发肿瘤SRM分泌经EV诱导放疗后骨骼肌无力",
+        "en": "Arachidonic acid triggers tumor SRM secretion via EVs to induce muscle weakness upon irradiation"
+      },
+      "reviewDepth": {
+        "zh": "官方摘要与Highlights核查；全文待补",
+        "en": "Official abstract and highlights reviewed; full text pending"
+      },
+      "model": {
+        "zh": "荷瘤小鼠局部放疗；肿瘤来源sEV",
+        "en": "tumor-bearing mice, local radiotherapy; tumor sEVs"
+      }
+    },
+    {
+      "id": "T_FSTL1",
+      "pmid": null,
+      "doi": null,
+      "url": "https://hdl.handle.net/10393/50643",
+      "journal": "University of Ottawa MSc thesis (Brabrook 2025)",
+      "title": {
+        "zh": "FAP来源FSTL1经照射下调调控FAP命运",
+        "en": "FAP-derived FSTL1 reduced by irradiation regulates FAP fate"
+      },
+      "reviewDepth": {
+        "zh": "摘要级；未同行评审，待全文",
+        "en": "Abstract-level; not peer-reviewed, full text pending"
+      },
+      "model": {
+        "zh": "C3H10T1/2与原代FAP；小鼠后肢照射",
+        "en": "C3H10T1/2 and primary FAPs; mouse hindlimb irradiation"
+      }
+    }
+  ],
+  "navigation": [
+    {
+      "id": "N-OV-DNA",
+      "view": "overview",
+      "source": "ov-dna",
+      "targetView": "dna-redox",
+      "targetNode": "dna-dsb",
+      "label": {
+        "zh": "查看DNA损伤专题",
+        "en": "Open DNA-damage module"
+      },
+      "grade": "N"
+    },
+    {
+      "id": "N-OV-MUSC",
+      "view": "overview",
+      "source": "ov-musc",
+      "targetView": "musc-fap-ecm",
+      "targetNode": "muscFunction",
+      "label": {
+        "zh": "查看MuSC–FAP–ECM专题",
+        "en": "Open MuSC–FAP–ECM module"
+      },
+      "grade": "N"
+    },
+    {
+      "id": "N-OV-FAP",
+      "view": "overview",
+      "source": "ov-fap",
+      "targetView": "musc-fap-ecm",
+      "targetNode": "fap",
+      "label": {
+        "zh": "共享节点：FAP",
+        "en": "Shared node: FAP"
+      },
+      "grade": "N"
+    },
+    {
+      "id": "N-OV-ECM",
+      "view": "overview",
+      "source": "ov-ecm",
+      "targetView": "musc-fap-ecm",
+      "targetNode": "ecm",
+      "label": {
+        "zh": "共享节点：ECM",
+        "en": "Shared node: ECM"
+      },
+      "grade": "N"
+    },
+    {
+      "id": "N-DNA-MUSC",
+      "view": "dna-redox",
+      "source": "dna-function",
+      "targetView": "musc-fap-ecm",
+      "targetNode": "muscFunction",
+      "label": {
+        "zh": "进入MuSC–FAP–ECM",
+        "en": "Go to MuSC–FAP–ECM"
+      },
+      "grade": "N"
+    },
+    {
+      "id": "N-DNA-OV",
+      "view": "dna-redox",
+      "source": "dna-dsb",
+      "targetView": "overview",
+      "targetNode": "ov-dna",
+      "label": {
+        "zh": "返回机制总览",
+        "en": "Return to overview"
+      },
+      "grade": "N"
+    },
+    {
+      "id": "N-MUSC-OV",
+      "view": "musc-fap-ecm",
+      "source": "radiation",
+      "targetView": "overview",
+      "targetNode": "ov-radiation",
+      "label": {
+        "zh": "返回机制总览",
+        "en": "Return to overview"
+      },
+      "grade": "N"
+    },
+    {
+      "id": "N-MUSC-DNA",
+      "view": "musc-fap-ecm",
+      "source": "ros",
+      "targetView": "dna-redox",
+      "targetNode": "dna-ros",
+      "label": {
+        "zh": "查看ROS/DNA专题",
+        "en": "Open ROS/DNA module"
+      },
+      "grade": "N"
+    },
+    {
+      "id": "N-OV-VE",
+      "anchor": "below",
+      "dy": 58,
+      "view": "overview",
+      "source": "ov-vessel",
+      "targetView": "vessel-endothelium",
+      "targetNode": "ve-perfusion",
+      "label": {
+        "zh": "查看血管/内皮专题",
+        "en": "Open vessel/endothelium module"
+      },
+      "grade": "N"
+    },
+    {
+      "id": "N-OV-IM",
+      "anchor": "below",
+      "dy": 58,
+      "view": "overview",
+      "source": "ov-immune",
+      "targetView": "immune-macrophage",
+      "targetNode": "im-macrophage",
+      "label": {
+        "zh": "查看免疫/巨噬细胞专题",
+        "en": "Open immune/macrophage module"
+      },
+      "grade": "N"
+    },
+    {
+      "id": "N-OV-EV",
+      "anchor": "below",
+      "dy": 58,
+      "view": "overview",
+      "source": "ov-window",
+      "targetView": "ev-mirna",
+      "targetNode": "ev-function",
+      "label": {
+        "zh": "查看EV/miRNA专题",
+        "en": "Open EV/miRNA module"
+      },
+      "grade": "N"
+    },
+    {
+      "id": "N-DNA-SN",
+      "anchor": "below",
+      "dy": 52,
+      "view": "dna-redox",
+      "source": "dna-p21",
+      "targetView": "senescence-p21",
+      "targetNode": "sn-p21",
+      "label": {
+        "zh": "查看衰老/p21专题",
+        "en": "Open senescence/p21 module"
+      },
+      "grade": "N"
+    },
+    {
+      "id": "N-VE-OV",
+      "anchor": "below",
+      "dy": 52,
+      "view": "vessel-endothelium",
+      "source": "ve-radiation",
+      "targetView": "overview",
+      "targetNode": "ov-vessel",
+      "label": {
+        "zh": "返回机制总览",
+        "en": "Return to overview"
+      },
+      "grade": "N"
+    },
+    {
+      "id": "N-VE-EV",
+      "anchor": "below",
+      "dy": 52,
+      "view": "vessel-endothelium",
+      "source": "ve-ev",
+      "targetView": "ev-mirna",
+      "targetNode": "ev-radev",
+      "label": {
+        "zh": "查看EV/miRNA专题",
+        "en": "Open EV/miRNA module"
+      },
+      "grade": "N"
+    },
+    {
+      "id": "N-IM-OV",
+      "anchor": "below",
+      "dy": 52,
+      "view": "immune-macrophage",
+      "source": "im-radiation",
+      "targetView": "overview",
+      "targetNode": "ov-immune",
+      "label": {
+        "zh": "返回机制总览",
+        "en": "Return to overview"
+      },
+      "grade": "N"
+    },
+    {
+      "id": "N-IM-FAP",
+      "anchor": "below",
+      "dy": 52,
+      "view": "immune-macrophage",
+      "source": "im-fap",
+      "targetView": "musc-fap-ecm",
+      "targetNode": "fap",
+      "label": {
+        "zh": "共享节点：FAP",
+        "en": "Shared node: FAP"
+      },
+      "grade": "N"
+    },
+    {
+      "id": "N-SN-OV",
+      "anchor": "below",
+      "dy": 52,
+      "view": "senescence-p21",
+      "source": "sn-radiation",
+      "targetView": "overview",
+      "targetNode": "ov-radiation",
+      "label": {
+        "zh": "返回机制总览",
+        "en": "Return to overview"
+      },
+      "grade": "N"
+    },
+    {
+      "id": "N-SN-DNA",
+      "anchor": "below",
+      "dy": 52,
+      "view": "senescence-p21",
+      "source": "sn-p53",
+      "targetView": "dna-redox",
+      "targetNode": "dna-p53",
+      "label": {
+        "zh": "查看DNA损伤专题",
+        "en": "Open DNA-damage module"
+      },
+      "grade": "N"
+    },
+    {
+      "id": "N-SN-FAP",
+      "anchor": "below",
+      "dy": 52,
+      "view": "senescence-p21",
+      "source": "sn-fap",
+      "targetView": "musc-fap-ecm",
+      "targetNode": "fap",
+      "label": {
+        "zh": "共享节点：FAP",
+        "en": "Shared node: FAP"
+      },
+      "grade": "N"
+    },
+    {
+      "id": "N-EV-OV",
+      "anchor": "below",
+      "dy": 52,
+      "view": "ev-mirna",
+      "source": "ev-radiation",
+      "targetView": "overview",
+      "targetNode": "ov-window",
+      "label": {
+        "zh": "返回机制总览",
+        "en": "Return to overview"
+      },
+      "grade": "N"
+    },
+    {
+      "id": "N-EV-VE",
+      "anchor": "below",
+      "dy": 52,
+      "view": "ev-mirna",
+      "source": "ev-radev",
+      "targetView": "vessel-endothelium",
+      "targetNode": "ve-ev",
+      "label": {
+        "zh": "查看血管/内皮专题",
+        "en": "Open vessel/endothelium module"
+      },
+      "grade": "N"
+    }
+  ],
+  "excluded": [
+    {
+      "id": "X01",
+      "relation": {
+        "zh": "ROS → DNA损伤已完成因果验证",
+        "en": "ROS → DNA damage fully causally proven"
+      },
+      "reason": {
+        "zh": "现有辐射MuSC证据不足以确定方向性中介。",
+        "en": "Current radiation-MuSC evidence does not establish directional mediation."
+      }
+    },
+    {
+      "id": "X02",
+      "relation": {
+        "zh": "DNA修复失败 → MuSC长期耗竭",
+        "en": "repair failure → long-term MuSC depletion"
+      },
+      "reason": {
+        "zh": "长期缺陷研究没有完成ATM/p53/凋亡机制测定。",
+        "en": "Long-term-deficit studies did not measure ATM/p53/apoptosis mechanisms."
+      }
+    },
+    {
+      "id": "X03",
+      "relation": {
+        "zh": "NRF2 → SMAD3直接抑制",
+        "en": "NRF2 → direct SMAD3 inhibition"
+      },
+      "reason": {
+        "zh": "SFN研究为摘要级伴随变化，不证明直接抑制。",
+        "en": "The SFN study reports association-level changes, not direct inhibition."
+      }
+    },
+    {
+      "id": "X04",
+      "relation": {
+        "zh": "FAP来源TGF-β1 → MuSC抑制",
+        "en": "FAP-derived TGF-β1 → MuSC inhibition"
+      },
+      "reason": {
+        "zh": "FAP分泌组的具体抑制因子未确定。",
+        "en": "The specific inhibitory FAP-secretome factor is unresolved."
+      }
+    },
+    {
+      "id": "X05",
+      "relation": {
+        "zh": "Rad-EV特定miRNA → 特定靶基因已因果证实",
+        "en": "specific Rad-EV miRNA → specific target causally proven"
+      },
+      "reason": {
+        "zh": "靶基因来自miRTargetLink数据库预测，原研究未做敲除或过表达。",
+        "en": "Targets come from miRTargetLink prediction; the study did no knockout or overexpression."
+      }
+    },
+    {
+      "id": "X06",
+      "relation": {
+        "zh": "FSTL1即FAP分泌组中的未知抑制因子",
+        "en": "FSTL1 is the unresolved FAP-secretome inhibitor"
+      },
+      "reason": {
+        "zh": "证据为未同行评审学位论文且表达方向不一致。",
+        "en": "Evidence is an unreviewed thesis with inconsistent expression direction."
+      }
+    },
+    {
+      "id": "X07",
+      "relation": {
+        "zh": "新生/幼年肌肉EV可修复辐射肌损伤",
+        "en": "neonatal/young muscle EVs repair radiation muscle injury"
+      },
+      "reason": {
+        "zh": "目前仅有非辐射损伤或衰老模型数据；作为假说保留。",
+        "en": "Only non-radiation injury or aging data exist; kept as a hypothesis."
+      }
+    }
+  ]
+}
