@@ -16,10 +16,13 @@ export const sources={
   R9755511:{url:'https://reactome.org/content/detail/R-HSA-9755511',journal:'Reactome',title:bi('NRF2介导的抗氧化反应','NRF2-mediated antioxidant response'),depth:bi('Reactome官方事件条目','Reactome curated event'),model:bi('人类经典通路数据库事件','curated human pathway event')},
   R5693606:{url:'https://reactome.org/content/detail/R-HSA-5693606',journal:'Reactome',title:bi('DNA双链断裂响应','DNA double-strand break response'),depth:bi('Reactome官方事件条目','Reactome curated event'),model:bi('人类经典通路数据库事件','curated human pathway event')},
   R69563:{url:'https://reactome.org/content/detail/R-HSA-69563',journal:'Reactome',title:bi('p53依赖性DNA损伤响应','p53-dependent DNA damage response'),depth:bi('Reactome官方事件条目','Reactome curated event'),model:bi('人类经典通路数据库事件','curated human pathway event')},
-  R69473:{url:'https://reactome.org/content/detail/R-HSA-69473',journal:'Reactome',title:bi('G2/M DNA损伤检查点','G2/M DNA damage checkpoint'),depth:bi('Reactome官方事件条目','Reactome curated event'),model:bi('人类经典通路数据库事件','curated human pathway event')}
+  R69473:{url:'https://reactome.org/content/detail/R-HSA-69473',journal:'Reactome',title:bi('G2/M DNA损伤检查点','G2/M DNA damage checkpoint'),depth:bi('Reactome官方事件条目','Reactome curated event'),model:bi('人类经典通路数据库事件','curated human pathway event')},
+  P40835994:{pmid:'40835994',doi:'10.1038/s41598-025-15699-x',journal:'Scientific Reports',title:bi('照射肌肉前体细胞的EV丧失促增殖和促血管生成功能','Irradiation of muscle precursor cells impairs the proliferative and angiogenic functions of their EVs'),depth:bi('PMC全文核查','PMC full text reviewed'),model:bi('大鼠比目鱼肌MPC，10 Gy X线，体外EV','rat soleus MPCs, 10 Gy X-ray, in vitro EVs')},
+  P40541182:{pmid:'40541182',doi:'10.1016/j.cmet.2025.05.013',journal:'Cell Metabolism',title:bi('花生四烯酸触发肿瘤SRM分泌经EV诱导放疗后骨骼肌无力','Arachidonic acid triggers tumor SRM secretion via EVs to induce muscle weakness upon irradiation'),depth:bi('校样全文核查（Cell Metab 校正稿）','Corrected-proof full text reviewed'),model:bi('荷瘤小鼠肿瘤单次10 Gy局部放疗；肿瘤来源sEV','tumor single 10 Gy local RT in tumor-bearing mice; tumor sEVs')},
+  T_FSTL1:{url:'https://hdl.handle.net/10393/50643',journal:'University of Ottawa MSc thesis (Brabrook 2025)',title:bi('FAP来源FSTL1经照射下调调控FAP命运','FAP-derived FSTL1 reduced by irradiation regulates FAP fate'),depth:bi('摘要级；未同行评审，待全文','Abstract-level; not peer-reviewed, full text pending'),model:bi('C3H10T1/2与原代FAP；小鼠后肢照射','C3H10T1/2 and primary FAPs; mouse hindlimb irradiation')}
 };
 
-const typeColor={event:'#d65f50',damage:'#ad5d55',checkpoint:'#6a6c9c',repair:'#4e827c',stress:'#c78242',mito:'#a66f3e',immune:'#9c6077',musc:'#277c91',fap:'#98713d',outcome:'#9a5c4d',candidate:'#7f70a8',reference:'#7a8584',navigation:'#287e8a',vascular:'#647f8e'};
+const typeColor={event:'#d65f50',damage:'#ad5d55',checkpoint:'#6a6c9c',repair:'#4e827c',stress:'#c78242',mito:'#a66f3e',immune:'#9c6077',musc:'#277c91',fap:'#98713d',outcome:'#9a5c4d',candidate:'#7f70a8',reference:'#7a8584',navigation:'#287e8a',vascular:'#647f8e',ev:'#3d7f9a',hypothesis:'#a0789a'};
 
 export const typeColors=typeColor;
 
@@ -40,6 +43,23 @@ export const views={
     {id:'dna3',duration:5000,title:bi('ROS、线粒体与自噬并行反应','Parallel ROS, mitochondrial and autophagy responses'),summary:bi('ROS/RNS、线粒体代谢重塑和自噬是并行观察，不拼接成单一路径。','ROS/RNS, mitochondrial remodeling and autophagy are parallel observations, not one stitched pathway.')},
     {id:'dna4',duration:5000,title:bi('修复动力学与MuSC功能不足','Repair kinetics and MuSC functional deficit'),summary:bi('损伤标志与扩增/分化不足在同一模型中出现，但中介关系仍需功能验证。','Damage markers and expansion/differentiation deficits co-occur, while mediation still needs functional testing.')},
     {id:'dna5',duration:4500,title:bi('NRF2与候选修复窗口','NRF2 and candidate repair window'),summary:bi('NRF2按经典通路和SFN摘要级动物研究显示为条件性窗口，不是临床疗效。','NRF2 is shown as a conditional window from canonical biology and an abstract-level SFN animal study, not clinical efficacy.')}
+  ]}
+  ,
+  'vessel-endothelium':{id:'vessel-endothelium',kind:'subgraph',scaffold:true,path:'#vessel-endothelium',title:bi('血管/内皮专题','Vessel / endothelium module'),summary:bi('血管与内皮反应证据仍在补充；此专题先给出骨架节点与已核查的灌注、EV促血管生成证据，其余留作证据待补。','Vessel and endothelial evidence is still being assembled; this module seeds scaffold nodes with the audited perfusion and EV-angiogenesis evidence, leaving the rest pending.'),stages:[
+    {id:'ve0',duration:4000,title:bi('辐射与微血管','Radiation and microvasculature'),summary:bi('局部照射后早期微血管/灌注改变的证据有限。','Evidence for early microvascular/perfusion change after local irradiation is limited.')},
+    {id:'ve1',duration:4000,title:bi('内皮与MuSC/血管生成','Endothelium and MuSC / angiogenesis'),summary:bi('照射MPC的EV丧失促血管生成功能；其余内皮—MuSC耦合待补。','EVs from irradiated MPCs lose pro-angiogenic function; other endothelium–MuSC coupling is pending.')}
+  ]},
+  'immune-macrophage':{id:'immune-macrophage',kind:'subgraph',scaffold:true,path:'#immune-macrophage',title:bi('免疫/巨噬细胞专题','Immune / macrophage module'),summary:bi('免疫通讯目前主要是单细胞推断层；此专题保留A11推断关系并标出尚待因果验证的骨架节点。','Immune communication is currently an inference layer; this module keeps the A11 inferred relation and marks scaffold nodes awaiting causal proof.'),stages:[
+    {id:'im0',duration:4000,title:bi('照射与免疫浸润','Irradiation and immune infiltration'),summary:bi('照射后单核/巨噬细胞动态改变主要来自单细胞推断。','Post-irradiation monocyte/macrophage dynamics come mainly from single-cell inference.')},
+    {id:'im1',duration:4000,title:bi('巨噬细胞—FAP通讯','Macrophage–FAP communication'),summary:bi('CellChat推断的TGF-β1→TGFBR2通讯，尚无敲除/中和验证。','CellChat-inferred TGF-β1→TGFBR2 communication, without knockout/neutralization proof.')}
+  ]},
+  'senescence-p21':{id:'senescence-p21',kind:'subgraph',scaffold:true,path:'#senescence-p21',title:bi('衰老/p21专题','Senescence / p21 module'),summary:bi('连接DNA专题的p53/p21与FAP衰老样表型；骨架节点标出SASP等待补证据。','Links the DNA module p53/p21 to the senescence-like FAP phenotype; scaffold nodes mark SASP as pending.'),stages:[
+    {id:'sn0',duration:4000,title:bi('p53/p21与持续信号','p53/p21 and persistent signature'),summary:bi('照射肌肉中可见持续Cdkn1a/p21信号。','A persistent Cdkn1a/p21 signature is seen in irradiated muscle.')},
+    {id:'sn1',duration:4000,title:bi('FAP衰老样表型与SASP','Senescence-like FAP and SASP'),summary:bi('FAP呈衰老样、促纤维化表型；具体SASP因子待补。','FAPs show a senescence-like, profibrotic phenotype; specific SASP factors are pending.')}
+  ]},
+  'ev-mirna':{id:'ev-mirna',kind:'subgraph',scaffold:true,path:'#ev-mirna',title:bi('EV/miRNA专题','EV / miRNA module'),summary:bi('细胞外囊泡与miRNA在辐射肌肉损伤中的作用；此专题给出已核查的照射MPC-EV证据与非辐射参照，推断与候选分层显示。','EV and miRNA roles in radiation muscle injury; this module seeds audited irradiated MPC-EV evidence with non-radiation references, layering inference and candidates.'),stages:[
+    {id:'ev0',duration:4000,title:bi('照射改变EV货物','Irradiation alters EV cargo'),summary:bi('照射MPC的EV改变miRNA货物并丧失促增殖/促血管生成功能。','EVs from irradiated MPCs shift miRNA cargo and lose pro-proliferative/angiogenic function.')},
+    {id:'ev1',duration:4000,title:bi('肿瘤EV与候选EV疗法','Tumor EVs and candidate EV therapy'),summary:bi('肿瘤来源sEV可远程致肌无力；健康/新生EV作为候选修复，标为非辐射或待证实。','Tumor sEVs can drive distant muscle weakness; healthy/neonatal EVs are candidates, marked non-radiation or unproven.')}
   ]}
 };
 
@@ -125,6 +145,112 @@ export const excluded=[
   {id:'X03',relation:bi('NRF2 → SMAD3直接抑制','NRF2 → direct SMAD3 inhibition'),reason:bi('SFN研究为摘要级伴随变化，不证明直接抑制。','The SFN study reports association-level changes, not direct inhibition.')},
   {id:'X04',relation:bi('FAP来源TGF-β1 → MuSC抑制','FAP-derived TGF-β1 → MuSC inhibition'),reason:bi('FAP分泌组的具体抑制因子未确定。','The specific inhibitory FAP-secretome factor is unresolved.')}
 ];
+
+
+// ---------------- v0.5 additions ----------------
+// New subgraphs. Nodes with status:'scaffold' are placeholders: they carry no evidence edge and render greyed as "evidence pending".
+const scaffold=(id,type,x,y,w,label,sub,extra={})=>({id,type,x,y,w,h:80,status:'scaffold',label,sub,...extra});
+
+Object.assign(viewNodes,{
+  'vessel-endothelium':[
+    {id:'ve-radiation',type:'event',x:40,y:300,w:156,h:78,label:bi('电离辐射','Ionizing radiation'),sub:bi('局部/体外模型','local / in vitro'),shared:'radiation'},
+    {id:'ve-perfusion',type:'vascular',x:300,y:150,w:214,h:84,label:bi('微血管灌注','Microvascular perfusion'),sub:bi('CEUS · 证据缺口','CEUS · evidence gap'),shared:'vascular'},
+    {id:'ve-ev',type:'ev',x:300,y:430,w:230,h:84,label:bi('MPC-EV促血管生成支持','MPC-EV pro-angiogenic support'),sub:bi('照射来源EV功能下降','reduced when EVs come from irradiated MPCs'),shared:'ev'},
+    {id:'ve-angio',type:'vascular',x:640,y:430,w:230,h:84,label:bi('体外血管生成读出','In vitro angiogenesis readout'),sub:bi('HUVEC管形成 · 微血管片段','HUVEC tubes · microvascular fragments')},
+    scaffold('ve-capillary','vascular',640,150,230,bi('毛细血管密度 / 内皮—MuSC耦合','Capillary density / endothelium–MuSC coupling'),bi('证据待补','evidence pending')),
+    scaffold('ve-endo-sen','vascular',980,150,230,bi('内皮衰老 / 通透性','Endothelial senescence / permeability'),bi('证据待补','evidence pending')),
+    scaffold('ve-rt-dose','vascular',980,430,230,bi('放疗剂量下体内血管结局','In vivo vascular outcome at RT doses'),bi('证据待补','evidence pending'))
+  ],
+  'immune-macrophage':[
+    {id:'im-radiation',type:'event',x:40,y:300,w:156,h:78,label:bi('电离辐射','Ionizing radiation'),sub:bi('幼年局部照射','juvenile local irradiation'),shared:'radiation'},
+    {id:'im-macrophage',type:'immune',x:340,y:296,w:214,h:84,label:bi('巨噬细胞 TGF-β1','Macrophage TGF-β1'),sub:bi('CellChat来源推断','CellChat source inference'),shared:'immune'},
+    {id:'im-fap',type:'fap',x:700,y:296,w:214,h:84,label:bi('FAP TGFBR2','FAP TGFBR2'),sub:bi('受体端推断','receptor-side inference'),topic:'musc-fap-ecm',shared:'fap'},
+    scaffold('im-recruit','immune',340,110,230,bi('单核/巨噬细胞募集动态','Monocyte/macrophage recruitment kinetics'),bi('证据待补 · 需流式/谱系示踪','evidence pending · needs flow/lineage tracing')),
+    scaffold('im-polar','immune',340,500,230,bi('巨噬细胞极化 / 清除','Macrophage polarization / clearance'),bi('证据待补','evidence pending')),
+    scaffold('im-causal','immune',1010,296,230,bi('配体中和/细胞特异敲除','Ligand neutralization / cell-specific knockout'),bi('证据待补 · A11因果检验','evidence pending · causal test of A11'))
+  ],
+  'senescence-p21':[
+    {id:'sn-radiation',type:'event',x:40,y:300,w:156,h:78,label:bi('电离辐射','Ionizing radiation'),sub:bi('体外/局部照射','in vitro / local irradiation'),shared:'radiation'},
+    {id:'sn-p53',type:'checkpoint',x:300,y:140,w:200,h:80,label:bi('p53','p53'),sub:bi('增殖肌母细胞情境','proliferating myoblast context'),topic:'dna-redox',shared:'dna-redox'},
+    {id:'sn-p21',type:'checkpoint',x:620,y:140,w:220,h:80,label:bi('p21 / Cdkn1a','p21 / Cdkn1a'),sub:bi('周期阻滞 · 持续转录信号','arrest · persistent transcript signature'),shared:'dna-redox'},
+    {id:'sn-fap',type:'fap',x:620,y:450,w:220,h:84,label:bi('FAP衰老样/促纤维化','Senescence-like / fibrotic FAP'),sub:bi('同模型观察','same-model observation'),topic:'musc-fap-ecm',shared:'fap'},
+    scaffold('sn-sasp','stress',980,450,230,bi('SASP因子','SASP factors'),bi('证据待补 · 具体因子未识别','evidence pending · factors unidentified')),
+    scaffold('sn-senolytic','candidate',980,140,230,bi('衰老细胞清除（senolytic）','Senolytic clearance'),bi('证据待补 · 无辐射肌肉干预数据','evidence pending · no radiation-muscle intervention data'))
+  ],
+  'ev-mirna':[
+    {id:'ev-radiation',type:'event',x:40,y:300,w:156,h:78,label:bi('电离辐射','Ionizing radiation'),sub:bi('体外/荷瘤模型','in vitro / tumor-bearing'),shared:'radiation'},
+    {id:'ev-radev',type:'ev',x:290,y:130,w:230,h:84,label:bi('照射MPC-EV miRNA货物改变','Irradiated MPC-EV miRNA cargo shift'),sub:bi('13↓ / 7↑（nCounter）','13↓ / 7↑ (nCounter)'),shared:'ev'},
+    {id:'ev-function',type:'musc',x:620,y:130,w:230,h:84,label:bi('照射MPC存活/增殖','Irradiated MPC viability / proliferation'),sub:bi('NoRad-EV部分救援；Rad-EV无效','NoRad-EV partial rescue; Rad-EV none'),topic:'musc-fap-ecm',shared:'musc'},
+    scaffold('ev-targets','ev',960,130,230,bi('miRNA → 靶基因因果','miRNA → target-gene causality'),bi('仅预测 · 证据待补','prediction only · evidence pending')),
+    {id:'ev-srm',type:'candidate',x:290,y:430,w:230,h:84,label:bi('肿瘤sEV携带SRM','Tumor sEVs carrying SRM'),sub:bi('ArA → ISGylation（荷瘤）','ArA → ISGylation (tumor-bearing)')},
+    {id:'ev-collagen',type:'outcome',x:620,y:430,w:230,h:84,label:bi('肌肉胶原I沉积 / 肌无力','Muscle collagen I / weakness'),sub:bi('eIF5A依赖 · 氯沙坦阻断','eIF5A-dependent · blocked by losartan'),shared:'outcome'},
+    {id:'ev-fstl1',type:'candidate',x:960,y:430,w:230,h:84,label:bi('FAP分泌FSTL1','FAP-secreted FSTL1'),sub:bi('学位论文 · 方向不一致','thesis · mixed direction')},
+    scaffold('ev-neonatal','hypothesis',960,600,240,bi('新生/幼年肌肉EV修复','Neonatal/young muscle-EV repair'),bi('假说 · 未在辐射模型证实','hypothesis · not demonstrated in radiation'))
+  ]
+});
+
+const P_EV='P40835994',P_SRM='P40541182',P_SC='P40316295',P_FAP='P37671686';
+Object.assign(viewEdges,{
+  'vessel-endothelium':[
+    {id:'V01',source:'ve-radiation',target:'ve-perfusion',level:'B',kind:'reference',stage:0,label:bi('灌注变化待核查','perfusion change unresolved'),refs:['P31841082'],model:bi('小鼠后肢CEUS','mouse hindlimb CEUS'),dose:bi('12或15 Gy','12 or 15 Gy'),time:bi('第1、8天','days 1 and 8'),method:bi('增强超声灌注检测','contrast-enhanced ultrasound'),functional:bi('第8天未见明确显著灌注下降','no clear significant perfusion decline at day 8'),limits:bi('只作为证据缺口，不表示确定血管耗竭。','Evidence-gap context only; not fixed vascular depletion.')},
+    {id:'V02',source:'ve-radiation',target:'ve-ev',level:'A',kind:'direct',stage:1,label:bi('照射MPC的EV促血管生成支持下降','EVs from irradiated MPCs give less angiogenic support'),refs:[P_EV],model:bi('4–6月龄雄性SD大鼠比目鱼肌MPC（P2–3）','soleus MPCs from 4–6-month male SD rats (P2–3)'),dose:bi('单次10 Gy X线（130 kV）','single 10 Gy X-ray (130 kV)'),time:bi('照射后无血清培养48 h收集EV','EVs collected over 48 h serum-free after irradiation'),method:bi('超离心EV；NTA、TEM、CD9/Flotillin-1','ultracentrifuged EVs; NTA, TEM, CD9/Flotillin-1'),functional:bi('Rad-EV与NoRad-EV大小和蛋白量无差异，功能不同','Rad- and NoRad-EVs similar in size/protein yet differ in function'),limits:bi('体外单剂量、n=3–4；未做体内验证。','In vitro single dose, n=3–4; no in vivo validation.')},
+    {id:'V03',source:'ve-ev',target:'ve-angio',level:'A',kind:'observed',stage:1,label:bi('Rad-EV较NoRad-EV血管生成更弱','Rad-EVs weaker than NoRad-EVs for angiogenesis'),refs:[P_EV],model:bi('HUVEC管形成；大鼠脂肪微血管片段3D培养','HUVEC tube formation; rat adipose microvascular fragments in 3D'),dose:bi('EV来自10 Gy照射MPC；EV 25/75 µg蛋白','EVs from 10 Gy MPCs; 25/75 µg EV protein'),time:bi('HUVEC 24 h；微血管片段第8天','HUVEC 24 h; fragments day 8'),method:bi('Angiogenesis Analyzer；GS-Lectin共聚焦','Angiogenesis Analyzer; GS-lectin confocal'),functional:bi('NoRad-EV高剂量分支长度约1.5倍；片段密度约3倍于Rad-EV','high-dose NoRad-EV ~1.5× branch length; ~3× fragment density vs Rad-EV'),limits:bi('HUVEC为人脐静脉内皮，不是肌肉微血管内皮；不能外推体内毛细血管密度。','HUVECs are not muscle microvascular endothelium; no inference to in vivo capillary density.')}
+  ],
+  'immune-macrophage':[
+    {id:'I00',source:'im-radiation',target:'im-macrophage',level:'C',kind:'inference',stage:0,label:bi('免疫/旁分泌通讯推断','inferred immune/paracrine communication'),refs:[P_SC],model:bi('幼年小鼠scRNA-seq','juvenile-mouse scRNA-seq'),dose:bi('8.2 Gy × 3','8.2 Gy × 3'),time:bi('24 h、56 d','24 h, 56 d'),method:bi('单细胞转录组和CellChat','single-cell transcriptomics and CellChat'),functional:bi('无细胞特异敲除或中和','no cell-specific knockout or neutralization'),limits:bi('表达通讯不等于分泌蛋白和因果功能。','Expression-based communication is not secreted protein or causal function.')},
+    {id:'I01',source:'im-macrophage',target:'im-fap',level:'C',kind:'inference',stage:1,label:bi('TGF-β1 → TGFBR2通讯推断','inferred TGF-β1 → TGFBR2 communication'),refs:[P_SC],model:bi('幼年小鼠单细胞转录组＋组织/蛋白验证','juvenile-mouse scRNA-seq plus tissue/protein validation'),dose:bi('8.2 Gy × 3','8.2 Gy × 3'),time:bi('24 h与56 d','24 h and 56 d'),method:bi('CellChat配体—受体推断','CellChat ligand–receptor inference'),functional:bi('通讯推断，无因果干预','inference without causal intervention'),limits:bi('与v0.3 A11相同；巨噬细胞来源及因果未用敲除/中和证实。','Same as v0.3 A11; macrophage source and causality lack knockout/neutralization proof.')}
+  ],
+  'senescence-p21':[
+    {id:'S01',source:'sn-radiation',target:'sn-p53',level:'A',kind:'direct',stage:0,label:bi('辐射 → p53（肌母细胞）','radiation → p53 (myoblasts)'),refs:['P15226436','P37982576'],model:bi('增殖肌母细胞；p53敲低小鼠','proliferating myoblasts; p53-knockdown mice'),dose:bi('IR 10 Gy；后肢30/40 Gy','10 Gy IR; 30/40 Gy hindlimb'),time:bi('早期及长期组织结局','early and long-term tissue outcome'),method:bi('p53磷酸化、遗传敲低','p53 phosphorylation, genetic knockdown'),functional:bi('有遗传干预，但模型不同','genetic intervention, across different models'),limits:bi('与DNA专题D05同源；不可扩展为所有MuSC的统一链。','Mirrors DNA module D05; cannot be generalized to all MuSCs.')},
+    {id:'S02',source:'sn-p53',target:'sn-p21',level:'A',kind:'direct',stage:0,label:bi('p53 → p21/周期阻滞','p53 → p21/cell-cycle arrest'),refs:['P15226436'],model:bi('增殖C2C12和原代肌母细胞','proliferating C2C12 and primary myoblasts'),dose:bi('IR 10 Gy','10 Gy IR'),time:bi('约4 h内早期峰值','early peak within about 4 h'),method:bi('p21报告基因、RNA/蛋白检测','p21 reporter and RNA/protein assays'),functional:bi('细胞周期相关读出','cell-cycle readout'),limits:bi('与D06同源；早期p21不等于持久衰老。','Mirrors D06; early p21 is not durable senescence.')},
+    {id:'S03',source:'sn-radiation',target:'sn-p21',level:'A',kind:'observed',stage:0,label:bi('持续Cdkn1a转录信号','persistent Cdkn1a transcript signature'),refs:[P_SC],model:bi('幼年小鼠局部照射scRNA-seq','juvenile-mouse local irradiation scRNA-seq'),dose:bi('8.2 Gy × 3','8.2 Gy × 3'),time:bi('24 h与56 d','24 h and 56 d'),method:bi('单细胞转录组','single-cell transcriptomics'),functional:bi('无p21功能干预','no p21 functional intervention'),limits:bi('转录信号不等于功能性衰老；跨数据集“保守”需独立复核。','A transcript signature is not functional senescence; cross-dataset "conservation" needs independent replication.')},
+    {id:'S04',source:'sn-radiation',target:'sn-fap',level:'A',kind:'direct',stage:1,label:bi('FAP衰老样/促纤维化状态','senescence-like / fibrotic FAP state'),refs:[P_FAP],model:bi('4周龄雄性小鼠单侧后肢','4-week-old male mice, unilateral hindlimb'),dose:bi('16 Gy单次','single 16 Gy'),time:bi('3、7、14、56 d','3, 7, 14, 56 d'),method:bi('细胞动态、DNA损伤、代谢与命运分析','cell dynamics, DNA damage, metabolism and fate assays'),functional:bi('FAP条件培养基功能实验','FAP-conditioned-medium functional assay'),limits:bi('与OV-A3同源；FAP数量在56 d下降，不画成持续扩增。','Mirrors OV-A3; FAP number declines at 56 d; no persistent expansion.')}
+  ],
+  'ev-mirna':[
+    {id:'E01',source:'ev-radiation',target:'ev-radev',level:'A',kind:'observed',stage:0,label:bi('照射改变MPC-EV miRNA货物','irradiation shifts MPC-EV miRNA cargo'),refs:[P_EV],model:bi('大鼠比目鱼肌MPC，每组≥4只供体','rat soleus MPCs, ≥4 donors per group'),dose:bi('单次10 Gy X线','single 10 Gy X-ray'),time:bi('照射后48 h条件培养基','48 h conditioned medium after irradiation'),method:bi('nCounter大鼠miRNA panel（423个）','nCounter rat miRNA panel (423)'),functional:bi('Rad-EV中13个下调（含miR-206、let-7b）、7个上调（含miR-181a）','13 down (incl. miR-206, let-7b), 7 up (incl. miR-181a) in Rad-EVs'),limits:bi('倍数≥1.3、p<0.05、n=4；靶基因仅为数据库预测。','FC≥1.3, p<0.05, n=4; target genes database-predicted only.')},
+    {id:'E02',source:'ev-radev',target:'ev-function',level:'A',kind:'direct',stage:0,label:bi('EV来源状态决定救援：NoRad-EV部分救援，Rad-EV无效','EV source state decides rescue: NoRad-EV partial, Rad-EV none'),refs:[P_EV],model:bi('10 Gy照射的大鼠MPC接受EV处理','10 Gy-irradiated rat MPCs treated with EVs'),dose:bi('10 Gy；EV 25–50 µg蛋白','10 Gy; 25–50 µg EV protein'),time:bi('存活48 h；BrdU 72 h','viability 48 h; BrdU 72 h'),method:bi('AO/PI活死染色；BrdU ELISA','AO/PI live/dead; BrdU ELISA'),functional:bi('NoRad-EV使存活由52%升至71%，增殖约+16%','NoRad-EV raised viability 52%→71%, proliferation ~+16%'),limits:bi('救援幅度有限；照射后增殖仍下降约85%。体外、单剂量。','Rescue is modest; proliferation still ~85% lower after IR. In vitro, single dose.')},
+    {id:'E03',source:'ev-radiation',target:'ev-srm',level:'C',kind:'candidate',stage:1,label:bi('放疗 → ArA积累 → SRM经sEV分泌','radiotherapy → ArA → SRM secreted in sEVs'),refs:[P_SRM],model:bi('荷瘤小鼠局部放疗','tumor-bearing mice with local radiotherapy'),dose:bi('单次10 Gy（6 MV X线，6 Gy/min）照射荷瘤小鼠肿瘤','single 10 Gy (6 MV X-ray, 6 Gy/min) to tumor in tumor-bearing mice'),time:bi('照射后3天取材','tissue collected 3 days post-RT'),method:bi('sEV蛋白组、代谢组、ISGylation与ISG15突变','sEV proteomics, metabolomics, ISGylation and ISG15 mutants'),functional:bi('PLA2G15/ArA→ISG15→SRM(K194/198)分选入EV；GW4869阻断','PLA2G15/ArA→ISG15→SRM(K194/198) sorting into EVs; GW4869 blocks it'),limits:bi('肿瘤—宿主远程机制：无瘤小鼠同剂量照射后GA肌无ECM/COL1A1变化（图S1H–I），不适用于无肿瘤的意外照射。乳腺/肺癌成立，结肠癌不成立。','Tumor–host remote mechanism: tumor-free mice irradiated at the same dose show no GA muscle ECM/COL1A1 change (Fig. S1H–I); not applicable to tumor-free accidental exposure. Holds in breast/lung cancer, not colon cancer.')},
+    {id:'E04',source:'ev-srm',target:'ev-collagen',level:'C',kind:'candidate',stage:1,label:bi('循环SRM → 亚精胺/eIF5A → 胶原I与肌无力','circulating SRM → spermidine/eIF5A → collagen I and weakness'),refs:[P_SRM],model:bi('荷瘤小鼠骨骼肌','skeletal muscle of tumor-bearing mice'),dose:bi('单次10 Gy（荷瘤小鼠）；AAV/10A-SRM EV及亚精胺肌内补充','single 10 Gy (tumor-bearing); plus AAV/10A-SRM EV and intramuscular spermidine'),time:bi('照射后3天；EV尾静脉每周两次×5周','3 days post-RT; EVs semi-weekly ×5 weeks'),method:bi('SRM酶活性、GC7/DHPS、eIF5A肌肉条件敲除、跑步/收缩力','SRM activity, GC7/DHPS, muscle-specific eIF5A KO, treadmill/contractile force'),functional:bi('SRM(D173A)酶失活或eIF5A敲除取消胶原与肌无力；氯沙坦缓解','enzyme-dead SRM(D173A) or eIF5A KO abolishes collagen and weakness; losartan relieves'),limits:bi('放疗经肿瘤EV间接致肌纤维化，不是放疗直接作用于肌纤维；研究样本量小、仅腓肠肌。','Radiation acts indirectly via tumor EVs, not directly on myofibers; small samples, gastrocnemius only.')},
+    {id:'E05',source:'ev-radiation',target:'ev-fstl1',level:'C',kind:'candidate',stage:1,label:bi('照射后FAP FSTL1表达变化（方向不一致）','FAP FSTL1 after irradiation (mixed direction)'),refs:['T_FSTL1'],model:bi('C3H10T1/2与原代FAP；小鼠后肢分次照射','C3H10T1/2 and primary FAPs; fractionated mouse hindlimb'),dose:bi('剂量待全文提取','dose to be extracted from full text'),time:bi('12、24、48 h；体内3 d','12, 24, 48 h; in vivo 3 d'),method:bi('qPCR/蛋白；FSTL1敲低分化实验；静脉rFSTL1','qPCR/protein; FSTL1 knockdown differentiation; IV rFSTL1'),functional:bi('敲低降低成纤维分化；静脉补充未提高肌内FSTL1','knockdown lowered fibrogenic differentiation; IV repletion did not raise muscle FSTL1'),limits:bi('C3H细胞24 h mRNA↓而48 h蛋白↑；硕士论文未同行评审。不作为A09未知抑制因子。','C3H mRNA ↓ at 24 h but protein ↑ at 48 h; unreviewed MSc thesis. Not the unresolved A09 inhibitor.')}
+  ]
+});
+
+navigation.push(
+  {id:'N-OV-VE',anchor:'below',dy:58,view:'overview',source:'ov-vessel',targetView:'vessel-endothelium',targetNode:'ve-perfusion',label:bi('查看血管/内皮专题','Open vessel/endothelium module')},
+  {id:'N-OV-IM',anchor:'below',dy:58,view:'overview',source:'ov-immune',targetView:'immune-macrophage',targetNode:'im-macrophage',label:bi('查看免疫/巨噬细胞专题','Open immune/macrophage module')},
+  {id:'N-OV-EV',anchor:'below',dy:58,view:'overview',source:'ov-window',targetView:'ev-mirna',targetNode:'ev-function',label:bi('查看EV/miRNA专题','Open EV/miRNA module')},
+  {id:'N-DNA-SN',anchor:'below',dy:52,view:'dna-redox',source:'dna-p21',targetView:'senescence-p21',targetNode:'sn-p21',label:bi('查看衰老/p21专题','Open senescence/p21 module')},
+  {id:'N-VE-OV',anchor:'below',dy:52,view:'vessel-endothelium',source:'ve-radiation',targetView:'overview',targetNode:'ov-vessel',label:bi('返回机制总览','Return to overview')},
+  {id:'N-VE-EV',anchor:'below',dy:52,view:'vessel-endothelium',source:'ve-ev',targetView:'ev-mirna',targetNode:'ev-radev',label:bi('查看EV/miRNA专题','Open EV/miRNA module')},
+  {id:'N-IM-OV',anchor:'below',dy:52,view:'immune-macrophage',source:'im-radiation',targetView:'overview',targetNode:'ov-immune',label:bi('返回机制总览','Return to overview')},
+  {id:'N-IM-FAP',anchor:'below',dy:52,view:'immune-macrophage',source:'im-fap',targetView:'musc-fap-ecm',targetNode:'fap',label:bi('共享节点：FAP','Shared node: FAP')},
+  {id:'N-SN-OV',anchor:'below',dy:52,view:'senescence-p21',source:'sn-radiation',targetView:'overview',targetNode:'ov-radiation',label:bi('返回机制总览','Return to overview')},
+  {id:'N-SN-DNA',anchor:'below',dy:52,view:'senescence-p21',source:'sn-p53',targetView:'dna-redox',targetNode:'dna-p53',label:bi('查看DNA损伤专题','Open DNA-damage module')},
+  {id:'N-SN-FAP',anchor:'below',dy:52,view:'senescence-p21',source:'sn-fap',targetView:'musc-fap-ecm',targetNode:'fap',label:bi('共享节点：FAP','Shared node: FAP')},
+  {id:'N-EV-OV',anchor:'below',dy:52,view:'ev-mirna',source:'ev-radiation',targetView:'overview',targetNode:'ov-window',label:bi('返回机制总览','Return to overview')},
+  {id:'N-EV-VE',anchor:'below',dy:52,view:'ev-mirna',source:'ev-radev',targetView:'vessel-endothelium',targetNode:'ve-ev',label:bi('查看血管/内皮专题','Open vessel/endothelium module')}
+);
+
+excluded.push(
+  {id:'X05',relation:bi('Rad-EV特定miRNA → 特定靶基因已因果证实','specific Rad-EV miRNA → specific target causally proven'),reason:bi('靶基因来自miRTargetLink数据库预测，原研究未做敲除或过表达。','Targets come from miRTargetLink prediction; the study did no knockout or overexpression.')},
+  {id:'X06',relation:bi('FSTL1即FAP分泌组中的未知抑制因子','FSTL1 is the unresolved FAP-secretome inhibitor'),reason:bi('证据为未同行评审学位论文且表达方向不一致。','Evidence is an unreviewed thesis with inconsistent expression direction.')},
+  {id:'X08',relation:bi('放疗直接照射肌肉 → SRM/亚精胺/胶原I沉积','direct muscle irradiation → SRM/spermidine/collagen I'),reason:bi('同剂量照射无瘤小鼠GA肌无ECM/COL1A1变化；该链依赖肿瘤来源EV。','Tumor-free mice irradiated at the same dose show no GA ECM/COL1A1 change; the chain depends on tumor-derived EVs.')},
+  {id:'X07',relation:bi('新生/幼年肌肉EV可修复辐射肌损伤','neonatal/young muscle EVs repair radiation muscle injury'),reason:bi('目前仅有非辐射损伤或衰老模型数据；作为假说保留。','Only non-radiation injury or aging data exist; kept as a hypothesis.')}
+);
+
+// External identifiers for nodes, used by the unified registry and SBGN export.
+// Only identifiers the maintainers are sure of; anything else stays absent (never guessed).
+export const externalIds={
+  'dna-p53':{hgnc:'TP53',mgi:'Trp53'},'sn-p53':{hgnc:'TP53',mgi:'Trp53'},
+  'dna-p21':{hgnc:'CDKN1A',mgi:'Cdkn1a'},'sn-p21':{hgnc:'CDKN1A',mgi:'Cdkn1a'},
+  'dna-atm':{hgnc:'ATM',mgi:'Atm'},'dna-chk2':{hgnc:'CHEK2',mgi:'Chek2'},'dna-atr':{hgnc:'ATR',mgi:'Atr'},'dna-chk1':{hgnc:'CHEK1',mgi:'Chek1'},
+  'dna-nrf2':{hgnc:'NFE2L2',mgi:'Nfe2l2',reactome:'R-HSA-9755511'},
+  'im-fap':{hgnc:'TGFBR2',mgi:'Tgfbr2'},'im-macrophage':{cl:'CL:0000235',hgnc:'TGFB1',mgi:'Tgfb1'},
+  'ev-fstl1':{hgnc:'FSTL1',mgi:'Fstl1'},'ev-srm':{hgnc:'SRM',mgi:'Srm'},
+  'musc':{cl:'CL:0000594',hgnc:'PAX7',mgi:'Pax7'},'ov-musc':{cl:'CL:0000594'},
+  'macrophage':{cl:'CL:0000235'},'ov-vessel':{cl:'CL:0000115'},'ve-angio':{cl:'CL:0000115'},
+  'psmad':{hgnc:'SMAD3',mgi:'Smad3'}
+};
 
 export const getNodes=view=>viewNodes[view]||[];
 export const getEdges=view=>viewEdges[view]||[];

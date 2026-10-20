@@ -1,8 +1,27 @@
-# 肌肉信号图谱 v0.3 / v0.4：辐射损伤、修复障碍与纤维化
+# 肌肉信号图谱 v0.3 / v0.4 / v0.5：辐射损伤、修复障碍与纤维化
 
 一个中文优先、可切换英文的交互式教学图谱。页面按六个阶段演示电离辐射后的MuSC直接损伤、FAP状态改变、免疫和基质通讯、成肌障碍、长期结局及可研究的修复窗口。设计参考 Human Atlas 的探索式布局，并以肌纤维—基底膜—间质的空间关系组织节点。
 
 独立仓库：[TUANZIDING/radiation-muscle-pathway](https://github.com/TUANZIDING/radiation-muscle-pathway)。
+
+
+## v0.5 更新（2026-10-20）
+
+- **剂量层**：每条证据边结构化记录照射方案，体内方案计算 EQD2（α/β = 3 Gy），界面可按“放疗相关 / 高剂量·事故级 / 体外 / 分次未记录”筛选。
+- **四个骨架专题**：血管/内皮、免疫/巨噬细胞、衰老/p21、EV/miRNA。已核查证据画成 A/B/C 边，缺口用灰色虚框“证据待补”节点标出，验证脚本禁止骨架节点连证据边。
+- **新文献**：照射 MPC 的 EV（Sci Rep 2025，PMID 40835994，A 级体外）；肿瘤 sEV-SRM 致放疗后肌无力（Cell Metab 2025，PMID 40541182，C 级：全文核查确认依赖肿瘤，肌肉未直接受照）；FAP FSTL1（2025 硕士论文，C 级）。新增排除关系 X05–X08。
+- **统一注册表与导出**：`data/atlas-v0.5.json`（schema：`data/atlas-schema-v0.5.json`）、`exports/evidence-table-v0.5.csv`、`exports/atlas-v0.5.sbgn`（SBGN-ML Activity Flow，可导入 MINERVA/Newt）。
+- **CI**：`.github/workflows/verify.yml`。
+
+```sh
+node build-v05.mjs && node scripts/export-v05.mjs && node verify-v05.mjs
+```
+
+详见 [docs/v0.5/README.md](docs/v0.5/README.md) 与 [docs/pathway-evidence-v0.5.md](docs/pathway-evidence-v0.5.md)。v0.4 构建产物归档于 `history/v0.4/atlas-index.html`。
+
+### 引用
+
+> Ding H. Radiation Muscle Pathway Atlas (v0.5). GitHub: TUANZIDING/radiation-muscle-pathway. DOI: 待 Zenodo 发布后填写.
 
 ## 打开与运行
 
