@@ -5109,30 +5109,38 @@
         "en": "tumor-bearing mice with local radiotherapy"
       },
       "doseText": {
-        "zh": "摘要未给剂量；待全文",
-        "en": "dose not in abstract; full text pending"
+        "zh": "单次10 Gy（6 MV X线，6 Gy/min）照射荷瘤小鼠肿瘤",
+        "en": "single 10 Gy (6 MV X-ray, 6 Gy/min) to tumor in tumor-bearing mice"
       },
       "dose": {
-        "regimens": [],
+        "regimens": [
+          {
+            "setting": "invivo",
+            "gyPerFraction": 10,
+            "fractions": 1,
+            "note": "tumor-bearing mice, 6 MV X-ray, 6 Gy/min",
+            "eqd2": 26
+          }
+        ],
         "classes": [
-          "na"
+          "rt"
         ]
       },
       "time": {
-        "zh": "待全文",
-        "en": "pending full text"
+        "zh": "照射后3天取材",
+        "en": "tissue collected 3 days post-RT"
       },
       "method": {
-        "zh": "sEV蛋白组、ISGylation检测",
-        "en": "sEV proteomics, ISGylation assays"
+        "zh": "sEV蛋白组、代谢组、ISGylation与ISG15突变",
+        "en": "sEV proteomics, metabolomics, ISGylation and ISG15 mutants"
       },
       "functional": {
-        "zh": "氯沙坦阻断SRM ISGylation与分泌",
-        "en": "losartan blocks SRM ISGylation and secretion"
+        "zh": "PLA2G15/ArA→ISG15→SRM(K194/198)分选入EV；GW4869阻断",
+        "en": "PLA2G15/ArA→ISG15→SRM(K194/198) sorting into EVs; GW4869 blocks it"
       },
       "limitation": {
-        "zh": "肿瘤—宿主远程机制，不适用于无肿瘤的意外照射；摘要级。",
-        "en": "Tumor–host remote mechanism, not applicable to tumor-free accidental exposure; abstract-level."
+        "zh": "肿瘤—宿主远程机制：无瘤小鼠同剂量照射后GA肌无ECM/COL1A1变化（图S1H–I），不适用于无肿瘤的意外照射。乳腺/肺癌成立，结肠癌不成立。",
+        "en": "Tumor–host remote mechanism: tumor-free mice irradiated at the same dose show no GA muscle ECM/COL1A1 change (Fig. S1H–I); not applicable to tumor-free accidental exposure. Holds in breast/lung cancer, not colon cancer."
       }
     },
     {
@@ -5156,30 +5164,38 @@
         "en": "skeletal muscle of tumor-bearing mice"
       },
       "doseText": {
-        "zh": "摘要未给剂量；待全文",
-        "en": "dose not in abstract; full text pending"
+        "zh": "单次10 Gy（荷瘤小鼠）；AAV/10A-SRM EV及亚精胺肌内补充",
+        "en": "single 10 Gy (tumor-bearing); plus AAV/10A-SRM EV and intramuscular spermidine"
       },
       "dose": {
-        "regimens": [],
+        "regimens": [
+          {
+            "setting": "invivo",
+            "gyPerFraction": 10,
+            "fractions": 1,
+            "note": "tumor-bearing mice; plus EV/AAV/spermidine",
+            "eqd2": 26
+          }
+        ],
         "classes": [
-          "na"
+          "rt"
         ]
       },
       "time": {
-        "zh": "待全文",
-        "en": "pending full text"
+        "zh": "照射后3天；EV尾静脉每周两次×5周",
+        "en": "3 days post-RT; EVs semi-weekly ×5 weeks"
       },
       "method": {
-        "zh": "代谢、胶原组织学、eIF5A依赖性",
-        "en": "metabolism, collagen histology, eIF5A dependence"
+        "zh": "SRM酶活性、GC7/DHPS、eIF5A肌肉条件敲除、跑步/收缩力",
+        "en": "SRM activity, GC7/DHPS, muscle-specific eIF5A KO, treadmill/contractile force"
       },
       "functional": {
-        "zh": "氯沙坦缓解肌无力",
-        "en": "losartan relieves weakness"
+        "zh": "SRM(D173A)酶失活或eIF5A敲除取消胶原与肌无力；氯沙坦缓解",
+        "en": "enzyme-dead SRM(D173A) or eIF5A KO abolishes collagen and weakness; losartan relieves"
       },
       "limitation": {
-        "zh": "不画成放疗直接作用于肌纤维；剂量和时间待全文核查。",
-        "en": "Not drawn as direct radiation action on myofibers; dose and timing pending full-text audit."
+        "zh": "放疗经肿瘤EV间接致肌纤维化，不是放疗直接作用于肌纤维；研究样本量小、仅腓肠肌。",
+        "en": "Radiation acts indirectly via tumor EVs, not directly on myofibers; small samples, gastrocnemius only."
       }
     },
     {
@@ -5724,12 +5740,12 @@
         "en": "Arachidonic acid triggers tumor SRM secretion via EVs to induce muscle weakness upon irradiation"
       },
       "reviewDepth": {
-        "zh": "官方摘要与Highlights核查；全文待补",
-        "en": "Official abstract and highlights reviewed; full text pending"
+        "zh": "校样全文核查（Cell Metab 校正稿）",
+        "en": "Corrected-proof full text reviewed"
       },
       "model": {
-        "zh": "荷瘤小鼠局部放疗；肿瘤来源sEV",
-        "en": "tumor-bearing mice, local radiotherapy; tumor sEVs"
+        "zh": "荷瘤小鼠肿瘤单次10 Gy局部放疗；肿瘤来源sEV",
+        "en": "tumor single 10 Gy local RT in tumor-bearing mice; tumor sEVs"
       }
     },
     {
@@ -6097,6 +6113,17 @@
       "reason": {
         "zh": "证据为未同行评审学位论文且表达方向不一致。",
         "en": "Evidence is an unreviewed thesis with inconsistent expression direction."
+      }
+    },
+    {
+      "id": "X08",
+      "relation": {
+        "zh": "放疗直接照射肌肉 → SRM/亚精胺/胶原I沉积",
+        "en": "direct muscle irradiation → SRM/spermidine/collagen I"
+      },
+      "reason": {
+        "zh": "同剂量照射无瘤小鼠GA肌无ECM/COL1A1变化；该链依赖肿瘤来源EV。",
+        "en": "Tumor-free mice irradiated at the same dose show no GA ECM/COL1A1 change; the chain depends on tumor-derived EVs."
       }
     },
     {
