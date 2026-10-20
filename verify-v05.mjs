@@ -27,7 +27,7 @@ check('direct/observed/pharmacology use A',allEdges.filter(e=>['direct','observe
 check('reference relations use B',allEdges.filter(e=>e.kind==='reference').every(e=>e.level==='B'));
 check('inference and candidate use C',allEdges.filter(e=>['inference','candidate'].includes(e.kind)).every(e=>e.level==='C'));
 check('partial rescue stays conditional',allEdges.filter(e=>e.kind==='partial').every(e=>['B','C'].includes(e.level)));
-check('excluded boundaries X01–X07 present',['X01','X02','X03','X04','X05','X06','X07'].every(id=>excluded.some(x=>x.id===id)));
+check('excluded boundaries X01–X08 present',['X01','X02','X03','X04','X05','X06','X07','X08'].every(id=>excluded.some(x=>x.id===id)));
 check('p-SMAD3 early-only edge preserved',viewEdges['musc-fap-ecm'].some(e=>e.id==='A07'&&e.stage===2&&String(e.time.zh).includes('56 d恢复')));
 check('WNT7A-PCP stays separate',viewEdges['musc-fap-ecm'].some(e=>e.id==='A18')&&viewEdges['musc-fap-ecm'].some(e=>e.id==='A16'));
 check('A08 and A10 are still not drawn',!allEdges.some(e=>['A08','A10'].includes(e.id)));
