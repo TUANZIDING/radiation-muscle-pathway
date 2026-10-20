@@ -230,11 +230,19 @@
       "pass": true
     },
     {
-      "name": "1680x1000 E03 inspector shows tumor-dependence boundary",
+      "name": "1680x1000 real click on node opens evidence with PubMed link",
+      "pass": true
+    },
+    {
+      "name": "1680x1000 real click on edge shows E04 evidence, boundary and PubMed link",
       "pass": true
     },
     {
       "name": "1680x1000 English toggle",
+      "pass": true
+    },
+    {
+      "name": "1680x1000 background click clears selection",
       "pass": true
     },
     {
@@ -258,11 +266,19 @@
       "pass": true
     },
     {
-      "name": "390x844 E03 inspector shows tumor-dependence boundary",
+      "name": "390x844 real click on node opens evidence with PubMed link",
+      "pass": true
+    },
+    {
+      "name": "390x844 real click on edge shows E04 evidence, boundary and PubMed link",
       "pass": true
     },
     {
       "name": "390x844 English toggle",
+      "pass": true
+    },
+    {
+      "name": "390x844 background click clears selection",
       "pass": true
     },
     {
@@ -286,11 +302,19 @@
       "pass": true
     },
     {
-      "name": "844x390 E03 inspector shows tumor-dependence boundary",
+      "name": "844x390 real click on node opens evidence with PubMed link",
+      "pass": true
+    },
+    {
+      "name": "844x390 real click on edge shows E04 evidence, boundary and PubMed link",
       "pass": true
     },
     {
       "name": "844x390 English toggle",
+      "pass": true
+    },
+    {
+      "name": "844x390 background click clears selection",
       "pass": true
     },
     {
