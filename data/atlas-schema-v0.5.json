@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "atlas-schema-v0.5.json",
+  "title": "Radiation muscle atlas registry v0.5",
+  "type": "object",
+  "required": ["version", "doseModel", "gradeDefinitions", "views", "nodes", "edges", "sources", "navigation", "excluded"],
+  "$defs": {
+    "bi": {"type": "object", "required": ["zh", "en"], "properties": {"zh": {"type": "string"}, "en": {"type": "string"}}},
+    "text": {"oneOf": [{"type": "string"}, {"$ref": "#/$defs/bi"}]},
+    "regimen": {
+      "type": "object",
+      "required": ["setting", "gyPerFraction", "fractions", "eqd2"],
+      "properties": {
+        "setting": {"enum": ["invivo", "invitro"]},
+        "gyPerFraction": {"type": ["number", "null"]},
+        "fractions": {"type": ["integer", "null"]},
+        "eqd2": {"type": ["number", "null"], "description": "Only for in vivo regimens with known fractionation; alpha/beta = 3 Gy."},
+        "note": {"type": "string"}
+      }
+    }
+  },
+  "properties": {
+    "version": {"const": "0.5.0"},
+    "views": {"type": "array", "items": {"type": "object", "required": ["id", "kind", "title", "stages"], "properties": {"id": {"type": "string"}, "kind": {"enum": ["overview", "subgraph"]}, "scaffold": {"type": "boolean"}, "title": {"$ref": "#/$defs/bi"}}}},
+    "nodes": {"type": "array", "items": {"type": "object", "required": ["id", "view", "type", "status", "label", "ids"], "properties": {
+      "id": {"type": "string"}, "view": {"type": "string"}, "type": {"type": "string"},
+      "status": {"enum": ["evidence", "scaffold"]},
+      "label": {"$ref": "#/$defs/bi"},
+      "ids": {"type": "object", "description": "External identifiers; omitted when unknown, never guessed.", "properties": {"hgnc": {"type": "string"}, "mgi": {"type": "string"}, "uniprot": {"type": "string"}, "reactome": {"type": "string", "pattern": "^R-HSA-\\d+$"}, "go": {"type": "string", "pattern": "^GO:\\d{7}$"}, "cl": {"type": "string", "pattern": "^CL:\\d{7}$"}}, "additionalProperties": false}
+    }}},
+    "edges": {"type": "array", "items": {"type": "object", "required": ["id", "view", "source", "target", "sign", "grade", "kind", "refs", "model", "dose", "time", "limitation"], "properties": {
+      "id": {"type": "string"}, "sign": {"enum": ["+", "-"]},
+      "grade": {"enum": ["A", "B", "C"]},
+      "kind": {"enum": ["direct", "observed", "pharmacology", "partial", "reference", "inference", "candidate"]},
+      "refs": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+      "dose": {"type": "object", "required": ["regimens", "classes"], "properties": {"regimens": {"type": "array", "items": {"$ref": "#/$defs/regimen"}}, "classes": {"type": "array", "items": {"enum": ["rt", "high", "invitro", "unknown", "na"]}}}},
+      "limitation": {"$ref": "#/$defs/text"}
+    }}},
+    "sources": {"type": "array", "items": {"type": "object", "required": ["id"], "anyOf": [{"required": ["pmid"], "properties": {"pmid": {"type": "string"}}}, {"required": ["url"], "properties": {"url": {"type": "string"}}}]}},
+    "navigation": {"type": "array", "items": {"type": "object", "required": ["id", "view", "source", "targetView", "targetNode", "grade"], "properties": {"grade": {"const": "N"}}}},
+    "excluded": {"type": "array", "items": {"type": "object", "required": ["id", "relation", "reason"]}}
+  }
+}
