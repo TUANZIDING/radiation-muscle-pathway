@@ -26,12 +26,17 @@ for (const [w, h] of [[1680, 1000], [390, 844], [844, 390]]) {
   ok(`${w}x${h} renders all nodes`, await page.locator('.node').count() === data.nodes.length);
   ok(`${w}x${h} renders all edges`, await page.locator('.edge').count() === data.edges.length);
   ok(`${w}x${h} no horizontal overflow`, await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
-  await page.evaluate(() => document.querySelector('.edge[data-edge="RAD>ev-srm"] path.hit').dispatchEvent(new MouseEvent('click', { bubbles: true })));
+  // real mouse clicks (not synthetic events): node, then edge badge
+  await page.locator('.node[data-node="P53"] .body').click();
+  const ntxt = await page.locator('#inspector').innerText();
+  ok(`${w}x${h} real click on node opens evidence with PubMed link`, ntxt.includes('p53') && await page.locator('#inspector a[href*="pubmed"]').count() > 0);
+  await page.locator('.edge[data-edge="ev-srm>ev-collagen"] .edge-badge').click();
   const txt = await page.locator('#inspector').innerText();
-  ok(`${w}x${h} E03 inspector shows tumor-dependence boundary`, txt.includes('E03') && txt.includes('无瘤'));
+  ok(`${w}x${h} real click on edge shows E04 evidence, boundary and PubMed link`, txt.includes('E04') && txt.includes('肿瘤') && txt.includes('PMID 40541182'));
   await page.click('#fLang'); await page.waitForTimeout(200);
   ok(`${w}x${h} English toggle`, (await page.locator('header b').innerText()).startsWith('Radiation'));
-  await page.evaluate(() => document.getElementById('svg').dispatchEvent(new MouseEvent('click', { bubbles: true })));
+  const box = await page.locator('#svg').boundingBox(); await page.mouse.click(box.x + 8, box.y + 8);
+  ok(`${w}x${h} background click clears selection`, (await page.locator('#inspector .empty').count()) === 1);
   await page.click('#fA'); await page.waitForTimeout(200);
   ok(`${w}x${h} A-only filter dims non-A edges`, await page.locator('.edge.dim').count() === data.edges.filter(g => g.grade !== 'A').length);
   ok(`${w}x${h} no page errors`, errs.length === 0);
