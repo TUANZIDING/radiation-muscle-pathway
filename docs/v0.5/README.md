@@ -10,8 +10,8 @@ v0.5 在 v0.4 母图—子图结构上做增量升级，**不修改任何已有�
 | 血管/内皮专题 | V01（CEUS 灌注，B 级，证据缺口）、V02–V03（照射 MPC 的 EV 促血管生成支持下降，A 级，体外）；毛细血管密度、内皮衰老、放疗剂量下体内血管结局为骨架节点。 |
 | 免疫/巨噬细胞专题 | I00–I01 沿用 CellChat 推断（C 级，与 v0.3 A11 同源）；募集动态、极化/清除、配体中和/细胞特异敲除为骨架节点。 |
 | 衰老/p21专题 | S01–S02 与 DNA 专题 D05/D06 同源；S03 持续 Cdkn1a 转录信号（A 级观察，无功能干预）；S04 FAP 衰老样状态；SASP 与 senolytic 为骨架节点。 |
-| EV/miRNA专题 | E01–E02 照射 MPC-EV 的 miRNA 货物改变与救援差异（A 级，体外，PMID 40835994）；E03–E04 肿瘤 sEV-SRM 远程致肌无力（C 级，摘要级，PMID 40541182）；E05 FAP FSTL1（C 级，未同行评审学位论文，方向不一致）；新生/幼年肌肉 EV 修复为**假说骨架节点**，未画任何证据边。 |
-| 新排除关系 | X05（Rad-EV miRNA→靶基因因果）、X06（FSTL1 = A09 未知抑制因子）、X07（新生/幼年 EV 修复辐射损伤）。 |
+| EV/miRNA专题 | E01–E02 照射 MPC-EV 的 miRNA 货物改变与救援差异（A 级，体外，PMID 40835994）；E03–E04 肿瘤 sEV-SRM 远程致肌纤维化/肌无力（C 级，PMID 40541182，已核查全文：单次 10 Gy 照射肿瘤，肌肉未受照，无瘤对照阴性，属肿瘤—宿主间接机制）；E05 FAP FSTL1（C 级，未同行评审学位论文，方向不一致）；新生/幼年肌肉 EV 修复为**假说骨架节点**，未画任何证据边。 |
+| 新排除关系 | X05（Rad-EV miRNA→靶基因因果）、X06（FSTL1 = A09 未知抑制因子）、X07（新生/幼年 EV 修复辐射损伤）、X08（放疗直接照射肌肉 → SRM/胶原）。 |
 | 外部标识 | `externalIds` 只收录确定的 HGNC/MGI 基因符号、Cell Ontology（CL）和 Reactome 编号；不确定的一律留空，不猜测。 |
 | 统一注册表与导出 | `node scripts/export-v05.mjs` 生成 `data/atlas-v0.5.json`（符合 `data/atlas-schema-v0.5.json`）、`exports/evidence-table-v0.5.csv`（每边一行）、`exports/atlas-v0.5.sbgn`（SBGN-ML Activity Flow）。 |
 | CI | `.github/workflows/verify.yml` 在 push/PR 时构建、导出并运行 `verify-v05.mjs`。 |
@@ -40,7 +40,7 @@ node verify-v05.mjs            # CHROMIUM_PATH=/usr/bin/chromium 可指定系统
 
 ## 待办（下一步）
 
-1. 回原文补 D05/D07/D10/E05 的分次信息与 E03/E04 剂量（Cell Metabolism 全文）。
+1. 回原文补 D05/D07/D10/E05 的分次信息（E03/E04 已按全文补齐）。
 2. 以 scMuscle 与人骨骼肌整合参考图谱统一细胞命名与 CL 标识。
 3. 血管与免疫骨架节点的文献检索与逐箭头审计。
 4. Zenodo 发布并在 README 填入 DOI。
