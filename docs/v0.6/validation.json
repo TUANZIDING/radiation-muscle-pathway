@@ -1,0 +1,305 @@
+{
+  "version": "v0.6",
+  "checks": [
+    {
+      "name": "every module evidence edge appears exactly once",
+      "pass": true
+    },
+    {
+      "name": "A01 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "A02 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "D08 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "A03 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "A04 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "A05 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "A06 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "S04 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "A07 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "A09 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "A11 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "I01 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "A12 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "A13 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "A14 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "A15a grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "A15b grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "A16 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "A18 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "A19 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "O01 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "O02 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "O03 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "D01 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "D02 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "D03 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "D04 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "D05 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "D06 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "S02 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "D07 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "D09 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "D10 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "D11 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "D12 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "D13 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "D14 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "D15 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "V01 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "V02 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "V03 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "I00 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "S01 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "S03 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "E01 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "E02 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "E03 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "E04 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "E05 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "scaffold nodes carry no edges",
+      "pass": true
+    },
+    {
+      "name": "excluded A08/A10 absent",
+      "pass": true
+    },
+    {
+      "name": "excluded relations X01–X08 carried",
+      "pass": true
+    },
+    {
+      "name": "docs/index.html is the v0.6 page",
+      "pass": true
+    },
+    {
+      "name": "1680x1000 renders all nodes",
+      "pass": true
+    },
+    {
+      "name": "1680x1000 renders all edges",
+      "pass": true
+    },
+    {
+      "name": "1680x1000 no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "1680x1000 E03 inspector shows tumor-dependence boundary",
+      "pass": true
+    },
+    {
+      "name": "1680x1000 English toggle",
+      "pass": true
+    },
+    {
+      "name": "1680x1000 A-only filter dims non-A edges",
+      "pass": true
+    },
+    {
+      "name": "1680x1000 no page errors",
+      "pass": true
+    },
+    {
+      "name": "390x844 renders all nodes",
+      "pass": true
+    },
+    {
+      "name": "390x844 renders all edges",
+      "pass": true
+    },
+    {
+      "name": "390x844 no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "390x844 E03 inspector shows tumor-dependence boundary",
+      "pass": true
+    },
+    {
+      "name": "390x844 English toggle",
+      "pass": true
+    },
+    {
+      "name": "390x844 A-only filter dims non-A edges",
+      "pass": true
+    },
+    {
+      "name": "390x844 no page errors",
+      "pass": true
+    },
+    {
+      "name": "844x390 renders all nodes",
+      "pass": true
+    },
+    {
+      "name": "844x390 renders all edges",
+      "pass": true
+    },
+    {
+      "name": "844x390 no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "844x390 E03 inspector shows tumor-dependence boundary",
+      "pass": true
+    },
+    {
+      "name": "844x390 English toggle",
+      "pass": true
+    },
+    {
+      "name": "844x390 A-only filter dims non-A edges",
+      "pass": true
+    },
+    {
+      "name": "844x390 no page errors",
+      "pass": true
+    }
+  ]
+}
