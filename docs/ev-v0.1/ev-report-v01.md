@@ -351,6 +351,15 @@ miRNA：miR-494, miR-29/29b/29c, miR-26a, miR-486-5p, miR-132-3p, miR-145-5p, mi
 - Semantic Scholar 对单篇查询严重限流，部分条目只能读 TLDR 或摘要片段（New J Chem、Biochem Moscow、Cytotherapy 摘要）。付费墙后的 B 级论文未读全文，仅读了出版社摘要或页面片段。
 - ChiCTR 注册页无法抓取（HTTP 405），注册号与状态未核实。
 
+### 7.6 苏州大学 WebVPN 补检（2026-10-21）
+
+- **Web of Science 核心合集**（经苏大 WebVPN 登录）：
+  - Q1 辐射专项 `TS=((exosom* OR "extracellular vesicle*" OR "small EV*") AND (irradiat* OR radiation OR radiotherap* OR "ionizing") AND ("skeletal muscle" OR myoblast* OR "satellite cell*" OR myogenic OR myotube* OR "muscle progenitor*" OR sarcopenia OR "muscle atrophy" OR "muscle fibrosis"))` = **14 条**。
+  - 逐条核对：已纳入 4 条（Sharma 2025 Sci Rep = PMID 40835994；Kim 2026 放射性食管炎 = 41936013；Shin 2022 PAI-1；Zhang 2025 Cell Metab SRM，后两条为致病背景）；已排除 7 条（超声/光生物调节促 EV 释放 ×4、光生物调节 ×1、PBK 分泌型自噬体（脂肪消耗）、卵巢癌微循环）；未见过 3 条均不纳入：Loinard 2023 Cell Death Discov（HuMSC-EV 治疗**皮肤**放射性创面，非骨骼肌）、Ausoni 2020 综述、Noguchi FASEB J 会议摘要（超声"irradiation"，非电离辐射）。
+  - **结论：WoS 未发现新的辐射骨骼肌 EV 研究，主结论不变。**
+  - Q2 广义 `TS=((exosom* OR "extracellular vesicle*") AND ("skeletal muscle") AND (regenerat* OR atrophy OR fibrosis OR injur* OR repair))` = 439 条（仅计数，未逐条去重）。
+- **Scopus、Embase：苏大未订购。** 图书馆仅订 Elsevier ScienceDirect；Elsevier 机构/CARSI 登录选"苏州大学"后，Scopus 退回 Preview（无检索界面），Embase 退回"无访问权限"页。
+
 ### 7.5 文件
 
 - `/workspace/work/ev-screen-v01/ev-gap-additions-v01.json` — 23 条新增条目（含 source_db、peer_reviewed、status、why_new、evidence_read 字段）
