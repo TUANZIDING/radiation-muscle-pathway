@@ -360,6 +360,16 @@ miRNA：miR-494, miR-29/29b/29c, miR-26a, miR-486-5p, miR-132-3p, miR-145-5p, mi
   - Q2 广义 `TS=((exosom* OR "extracellular vesicle*") AND ("skeletal muscle") AND (regenerat* OR atrophy OR fibrosis OR injur* OR repair))` = 439 条（仅计数，未逐条去重）。
 - **Scopus、Embase：苏大未订购。** 图书馆仅订 Elsevier ScienceDirect；Elsevier 机构/CARSI 登录选"苏州大学"后，Scopus 退回 Preview（无检索界面），Embase 退回"无访问权限"页。
 
+### 7.7 WoS 广义检索去重（2026-10-21）
+
+- Q2 广义检索 439 条，去掉综述 162、社论 2 后导出 **275 条**（Author/Title/Source/PMID）。按 PMID + 标题与本项目已处理集合比对：已纳入 94、已排除 113、补充检索已收 2，**未见过 66 条**。
+- 66 条逐条标题/摘要筛查，**新增 5 条**（均非辐射）：
+  - B：PMID 33316945（多柔比星肌毒性，ES-Exo，在体，焦亡↓、M1→M2、萎缩与纤维化↓、肌功能↑；与放疗同属"肿瘤治疗相关肌损伤"）；Chem Eng J 2025 resolvin 载药 ADSC-EV/dECM 水凝胶（DOI 10.1016/j.cej.2025.163325，非 PubMed，未读全文，暂定 B）；PMID 37507448（年轻 CDC-EV 抗衰老，老龄大鼠，含骨骼肌结构/功能改善）。
+  - C：PMID 28926719（33316945 的体外前期）；Hepatology 2024 会议摘要（损伤肝细胞 EV → mtDNA–cGAS–STING → 肌损伤【致病】，可挂到 atlas 的 cGAS-STING 支架节点）。
+  - 其余 61 条排除：综述/观点、生物标志物或 EV 释放描述、心脏/骨/肌腱/神经靶器官、非 EV 研究。
+- **结论：WoS 全量比对后，仍无在体辐射骨骼肌 EV 治疗研究；PubMed 主筛查对 WoS 收录文献的覆盖约 76%（209/275 已见），漏掉的有效条目很少。**
+- 原始导出：/workspace/work/ev-screen-v01/wos-q2-export-v01.txt、wos-q2-export-b-v01.txt（不入库，避免版权数据外泄）。
+
 ### 7.5 文件
 
 - `/workspace/work/ev-screen-v01/ev-gap-additions-v01.json` — 23 条新增条目（含 source_db、peer_reviewed、status、why_new、evidence_read 字段）
