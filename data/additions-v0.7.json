@@ -1,0 +1,2061 @@
+{
+ "version": "v0.7-additions",
+ "generated": "2026-10-21",
+ "screen": {
+  "report": "docs/v0.7/screen-report-v07.md",
+  "included": 53,
+  "A": 15,
+  "B": 26,
+  "C": 12,
+  "excluded": 227
+ },
+ "view": {
+  "id": "screen-v07",
+  "kind": "subgraph",
+  "scaffold": false,
+  "title": {
+   "zh": "系统筛查新增（v0.7）",
+   "en": "Systematic screen additions (v0.7)"
+  },
+  "summary": {
+   "zh": "2026-10-21 PubMed系统筛查补入的通路：离子/膜、趋化因子、蛋白稳态、代谢；仅直接照射肌肉或肌源细胞的原始研究。",
+   "en": "Pathways added by the 2026-10-21 PubMed screen: ion/membrane, chemokine, proteostasis, metabolism; direct irradiation of muscle or myogenic cells only."
+  },
+  "stages": []
+ },
+ "nodes": [
+  {
+   "id": "nka",
+   "view": "screen-v07",
+   "type": "signal",
+   "status": "evidence",
+   "label": {
+    "zh": "α2 Na,K-ATPase 功能 ↓",
+    "en": "α2 Na,K-ATPase function ↓"
+   },
+   "sub": {
+    "zh": "电生理贡献下降，蛋白量不变",
+    "en": "electrogenic loss; protein unchanged"
+   },
+   "topic": "screen-v07",
+   "ids": {}
+  },
+  {
+   "id": "depol",
+   "view": "screen-v07",
+   "type": "outcome",
+   "status": "evidence",
+   "label": {
+    "zh": "肌膜去极化",
+    "en": "Sarcolemmal depolarization"
+   },
+   "sub": {
+    "zh": "静息膜电位上移",
+    "en": "resting potential shift"
+   },
+   "topic": "screen-v07",
+   "ids": {}
+  },
+  {
+   "id": "ca",
+   "view": "screen-v07",
+   "type": "signal",
+   "status": "evidence",
+   "label": {
+    "zh": "Ca²⁺ 稳态失调",
+    "en": "Ca²⁺ homeostasis dysregulated"
+   },
+   "sub": {
+    "zh": "方向随时相/射线类型而变",
+    "en": "direction depends on time and particle"
+   },
+   "topic": "screen-v07",
+   "ids": {}
+  },
+  {
+   "id": "piezo",
+   "view": "screen-v07",
+   "type": "signal",
+   "status": "evidence",
+   "label": {
+    "zh": "膜刚度↑ / Piezo1 反应 ↓",
+    "en": "Membrane rigidity ↑ / Piezo1 response ↓"
+   },
+   "sub": {
+    "zh": "质子照射成肌细胞",
+    "en": "protons, myoblasts"
+   },
+   "topic": "screen-v07",
+   "ids": {}
+  },
+  {
+   "id": "cd47",
+   "view": "screen-v07",
+   "type": "signal",
+   "status": "evidence",
+   "label": {
+    "zh": "TSP1–CD47 信号",
+    "en": "TSP1–CD47 signaling"
+   },
+   "sub": {
+    "zh": "阻断后凋亡与挛缩减轻",
+    "en": "blockade reduces apoptosis"
+   },
+   "topic": "screen-v07",
+   "ids": {}
+  },
+  {
+   "id": "ccl2",
+   "view": "screen-v07",
+   "type": "immune",
+   "status": "evidence",
+   "label": {
+    "zh": "CCL2/7/8–CCR2 ↑",
+    "en": "CCL2/7/8–CCR2 ↑"
+   },
+   "sub": {
+    "zh": "衰老FAP分泌CCL2/OPN",
+    "en": "senescent FAPs secrete CCL2/OPN"
+   },
+   "topic": "screen-v07",
+   "ids": {}
+  },
+  {
+   "id": "macRecruit",
+   "view": "screen-v07",
+   "type": "immune",
+   "status": "evidence",
+   "label": {
+    "zh": "巨噬细胞募集 / M2 极化",
+    "en": "Macrophage recruitment / M2"
+   },
+   "sub": {
+    "zh": "体外迁移与极化读出",
+    "en": "in vitro migration/polarization"
+   },
+   "topic": "screen-v07",
+   "ids": {}
+  },
+  {
+   "id": "il6t",
+   "view": "screen-v07",
+   "type": "immune",
+   "status": "evidence",
+   "label": {
+    "zh": "组织/血清 IL-6 ↑",
+    "en": "Tissue / serum IL-6 ↑"
+   },
+   "sub": {
+    "zh": "mRNA与血清",
+    "en": "mRNA and serum"
+   },
+   "topic": "screen-v07",
+   "ids": {}
+  },
+  {
+   "id": "il6m",
+   "view": "screen-v07",
+   "type": "musc",
+   "status": "evidence",
+   "label": {
+    "zh": "成肌细胞 IL-6 分泌 ↓",
+    "en": "Myoblast IL-6 secretion ↓"
+   },
+   "sub": {
+    "zh": "人原代成肌细胞",
+    "en": "human primary myoblasts"
+   },
+   "topic": "screen-v07",
+   "ids": {}
+  },
+  {
+   "id": "ctgf",
+   "view": "screen-v07",
+   "type": "fap",
+   "status": "evidence",
+   "label": {
+    "zh": "CTGF / CCN2 ↑",
+    "en": "CTGF / CCN2 ↑"
+   },
+   "sub": {
+    "zh": "伴TGF-β升高",
+    "en": "with TGF-β rise"
+   },
+   "topic": "screen-v07",
+   "ids": {}
+  },
+  {
+   "id": "myod",
+   "view": "screen-v07",
+   "type": "musc",
+   "status": "evidence",
+   "label": {
+    "zh": "MyoD ↓（伴TGF-β1↑）",
+    "en": "MyoD ↓ (with TGF-β1 ↑)"
+   },
+   "sub": {
+    "zh": "头颈放疗患者",
+    "en": "head-neck RT patients"
+   },
+   "topic": "screen-v07",
+   "ids": {}
+  },
+  {
+   "id": "atrogin",
+   "view": "screen-v07",
+   "type": "signal",
+   "status": "evidence",
+   "label": {
+    "zh": "Atrogin-1 / FBXO32 ↑",
+    "en": "Atrogin-1 / FBXO32 ↑"
+   },
+   "sub": {
+    "zh": "泛素–蛋白酶体E3",
+    "en": "UPS E3 ligase"
+   },
+   "topic": "screen-v07",
+   "ids": {}
+  },
+  {
+   "id": "murf1",
+   "view": "screen-v07",
+   "type": "signal",
+   "status": "evidence",
+   "label": {
+    "zh": "MuRF1 ↑",
+    "en": "MuRF1 ↑"
+   },
+   "sub": {
+    "zh": "泛素–蛋白酶体E3",
+    "en": "UPS E3 ligase"
+   },
+   "topic": "screen-v07",
+   "ids": {}
+  },
+  {
+   "id": "acvr2b",
+   "view": "screen-v07",
+   "type": "signal",
+   "status": "evidence",
+   "label": {
+    "zh": "ActRIIB ↑",
+    "en": "ActRIIB ↑"
+   },
+   "sub": {
+    "zh": "激活素受体；MSTN方向矛盾",
+    "en": "activin receptor; MSTN conflicting"
+   },
+   "topic": "screen-v07",
+   "ids": {}
+  },
+  {
+   "id": "akt",
+   "view": "screen-v07",
+   "type": "signal",
+   "status": "evidence",
+   "label": {
+    "zh": "Akt / 胰岛素–Akt2（时相依赖）",
+    "en": "Akt / insulin–Akt2 (phase-dependent)"
+   },
+   "sub": {
+    "zh": "急性↑，远期功能↓",
+    "en": "acute ↑, chronic impairment"
+   },
+   "topic": "screen-v07",
+   "ids": {}
+  },
+  {
+   "id": "pgc",
+   "view": "screen-v07",
+   "type": "mito",
+   "status": "evidence",
+   "label": {
+    "zh": "PGC-1α / TFAM / Parkin ↓",
+    "en": "PGC-1α / TFAM / Parkin ↓"
+   },
+   "sub": {
+    "zh": "重离子；光子未见改变",
+    "en": "heavy ion; photon null"
+   },
+   "topic": "screen-v07",
+   "ids": {}
+  },
+  {
+   "id": "mttx",
+   "view": "screen-v07",
+   "type": "mito",
+   "status": "evidence",
+   "label": {
+    "zh": "线粒体转录 / TFB2M ↓",
+    "en": "mtDNA transcription / TFB2M ↓"
+   },
+   "sub": {
+    "zh": "致死剂量全身照射",
+    "en": "lethal whole-body dose"
+   },
+   "topic": "screen-v07",
+   "ids": {}
+  },
+  {
+   "id": "igf1",
+   "view": "screen-v07",
+   "type": "intervention",
+   "status": "evidence",
+   "label": {
+    "zh": "外源 IGF-1（挽救）",
+    "en": "Exogenous IGF-1 (rescue)"
+   },
+   "sub": {
+    "zh": "C2C12 2 Gy",
+    "en": "C2C12 2 Gy"
+   },
+   "topic": "screen-v07",
+   "ids": {}
+  },
+  {
+   "id": "sc-nmj",
+   "view": "screen-v07",
+   "type": "hypothesis",
+   "status": "scaffold",
+   "label": {
+    "zh": "神经肌肉接头 / 去神经",
+    "en": "NMJ / denervation"
+   },
+   "sub": {
+    "zh": "证据待补",
+    "en": "evidence pending"
+   },
+   "topic": "screen-v07",
+   "ids": {}
+  },
+  {
+   "id": "sc-cgas",
+   "view": "screen-v07",
+   "type": "hypothesis",
+   "status": "scaffold",
+   "label": {
+    "zh": "cGAS–STING",
+    "en": "cGAS–STING"
+   },
+   "sub": {
+    "zh": "证据待补",
+    "en": "evidence pending"
+   },
+   "topic": "screen-v07",
+   "ids": {}
+  },
+  {
+   "id": "sc-nfkb",
+   "view": "screen-v07",
+   "type": "hypothesis",
+   "status": "scaffold",
+   "label": {
+    "zh": "NF-κB / STAT3",
+    "en": "NF-κB / STAT3"
+   },
+   "sub": {
+    "zh": "证据待补",
+    "en": "evidence pending"
+   },
+   "topic": "screen-v07",
+   "ids": {}
+  },
+  {
+   "id": "sc-hh",
+   "view": "screen-v07",
+   "type": "hypothesis",
+   "status": "scaffold",
+   "label": {
+    "zh": "Hedgehog / 初级纤毛",
+    "en": "Hedgehog / primary cilia"
+   },
+   "sub": {
+    "zh": "证据待补",
+    "en": "evidence pending"
+   },
+   "topic": "screen-v07",
+   "ids": {}
+  },
+  {
+   "id": "sc-cabl",
+   "view": "screen-v07",
+   "type": "hypothesis",
+   "status": "scaffold",
+   "label": {
+    "zh": "c-Abl–MyoD 检查点",
+    "en": "c-Abl–MyoD checkpoint"
+   },
+   "sub": {
+    "zh": "证据待补",
+    "en": "evidence pending"
+   },
+   "topic": "screen-v07",
+   "ids": {}
+  },
+  {
+   "id": "sc-mstn",
+   "view": "screen-v07",
+   "type": "hypothesis",
+   "status": "scaffold",
+   "label": {
+    "zh": "Myostatin（方向矛盾）",
+    "en": "Myostatin (conflicting)"
+   },
+   "sub": {
+    "zh": "证据待补",
+    "en": "evidence pending"
+   },
+   "topic": "screen-v07",
+   "ids": {}
+  },
+  {
+   "id": "sc-bmp",
+   "view": "screen-v07",
+   "type": "hypothesis",
+   "status": "scaffold",
+   "label": {
+    "zh": "BMP–SMAD1（异位骨化）",
+    "en": "BMP–SMAD1 (heterotopic ossification)"
+   },
+   "sub": {
+    "zh": "证据待补",
+    "en": "evidence pending"
+   },
+   "topic": "screen-v07",
+   "ids": {}
+  }
+ ],
+ "edges": [
+  {
+   "id": "Q01",
+   "view": "screen-v07",
+   "source": "radiation",
+   "target": "nka",
+   "sign": "+",
+   "grade": "A",
+   "kind": "direct",
+   "stage": 0,
+   "label": {
+    "zh": "α2 电生理贡献丧失；哇巴因可预防",
+    "en": "α2 electrogenic loss; prevented by ouabain"
+   },
+   "refs": [
+    "P36142836"
+   ],
+   "model": {
+    "zh": "Wistar大鼠膈肌（±慢性哇巴因）",
+    "en": "Wistar rat diaphragm ± chronic ouabain"
+   },
+   "doseText": "10 Gy 全身 X线",
+   "dose": {
+    "regimens": [
+     {
+      "setting": "invivo",
+      "gyPerFraction": 10,
+      "fractions": 1,
+      "note": "rat TBI",
+      "eqd2": 26.0
+     }
+    ],
+    "classes": [
+     "rt"
+    ]
+   },
+   "time": {
+    "zh": "72 h",
+    "en": "72 h"
+   },
+   "method": {
+    "zh": "细胞内微电极、Western blot",
+    "en": "intracellular microelectrodes, Western blot"
+   },
+   "functional": {
+    "zh": "静息膜电位",
+    "en": "resting membrane potential"
+   },
+   "limitation": {
+    "zh": "全身照射、单时间点；为功能性而非表达量改变。",
+    "en": "Whole-body, single time point; functional not expression change."
+   }
+  },
+  {
+   "id": "Q02",
+   "view": "screen-v07",
+   "source": "nka",
+   "target": "depol",
+   "sign": "+",
+   "grade": "A",
+   "kind": "direct",
+   "stage": 0,
+   "label": {
+    "zh": "α2 功能丧失 → 去极化",
+    "en": "α2 loss → depolarization"
+   },
+   "refs": [
+    "P36142836"
+   ],
+   "model": {
+    "zh": "Wistar大鼠膈肌",
+    "en": "Wistar rat diaphragm"
+   },
+   "doseText": "10 Gy 全身 X线",
+   "dose": {
+    "regimens": [
+     {
+      "setting": "invivo",
+      "gyPerFraction": 10,
+      "fractions": 1,
+      "note": "rat TBI",
+      "eqd2": 26.0
+     }
+    ],
+    "classes": [
+     "rt"
+    ]
+   },
+   "time": {
+    "zh": "72 h",
+    "en": "72 h"
+   },
+   "method": {
+    "zh": "细胞内微电极",
+    "en": "intracellular microelectrodes"
+   },
+   "functional": {
+    "zh": "静息膜电位",
+    "en": "resting membrane potential"
+   },
+   "limitation": {
+    "zh": "哇巴因预防为药理学证据，未做基因敲除。",
+    "en": "Pharmacological prevention only; no genetic knockout."
+   }
+  },
+  {
+   "id": "Q03",
+   "view": "screen-v07",
+   "source": "radiation",
+   "target": "ca",
+   "sign": "+",
+   "grade": "A",
+   "kind": "direct",
+   "stage": 0,
+   "label": {
+    "zh": "静息Ca²⁺：重离子急性↑、光子1月↓；SR释放↓",
+    "en": "resting Ca²⁺: acute ↑ (HZE), ↓ at 1 mo (photon); SR release ↓"
+   },
+   "refs": [
+    "P24131063",
+    "P35414122"
+   ],
+   "model": {
+    "zh": "成年小鼠全身⁵⁶Fe/质子；幼鼠后肢X线",
+    "en": "adult mice whole-body 56Fe/proton; juvenile hindlimb X-ray"
+   },
+   "doseText": "0.15 Gy ⁵⁶Fe / 0.9 Gy 质子；3×8.2 Gy X线",
+   "dose": {
+    "regimens": [
+     {
+      "setting": "invivo",
+      "gyPerFraction": 0.15,
+      "fractions": 1,
+      "note": "heavy ion 56Fe",
+      "eqd2": null
+     },
+     {
+      "setting": "invivo",
+      "gyPerFraction": 0.9,
+      "fractions": 1,
+      "note": "proton",
+      "eqd2": null
+     },
+     {
+      "setting": "invivo",
+      "gyPerFraction": 8.2,
+      "fractions": 3,
+      "note": "",
+      "eqd2": 55.1
+     }
+    ],
+    "classes": [
+     "na",
+     "rt"
+    ]
+   },
+   "time": {
+    "zh": "1 h–7 d；1 月",
+    "en": "1 h–7 d; 1 month"
+   },
+   "method": {
+    "zh": "Fura-2 Ca²⁺成像",
+    "en": "Fura-2 Ca²⁺ imaging"
+   },
+   "functional": {
+    "zh": "比肌力下降（光子研究）",
+    "en": "specific force ↓ (photon study)"
+   },
+   "limitation": {
+    "zh": "方向随时间和射线类型相反，只能表述为“失调”；重离子结果不能外推到临床光子放疗。",
+    "en": "Direction differs by time and particle — stated only as dysregulation; HZE data not transferable to clinical photon RT."
+   }
+  },
+  {
+   "id": "Q04",
+   "view": "screen-v07",
+   "source": "radiation",
+   "target": "piezo",
+   "sign": "+",
+   "grade": "A",
+   "kind": "direct",
+   "stage": 0,
+   "label": {
+    "zh": "膜刚度↑，Yoda1诱发Piezo1 Ca²⁺瞬变↓",
+    "en": "membrane rigidity ↑, Yoda1-evoked Piezo1 Ca²⁺ transients ↓"
+   },
+   "refs": [
+    "P42135336"
+   ],
+   "model": {
+    "zh": "C2C12成肌细胞",
+    "en": "C2C12 myoblasts"
+   },
+   "doseText": "17 MeV 质子（仅报告注量）",
+   "dose": {
+    "regimens": [
+     {
+      "setting": "invitro",
+      "gyPerFraction": null,
+      "fractions": 1,
+      "note": "proton fluence only",
+      "eqd2": null
+     }
+    ],
+    "classes": [
+     "invitro"
+    ]
+   },
+   "time": {
+    "zh": "未提取",
+    "en": "not extracted"
+   },
+   "method": {
+    "zh": "膜探针、Fura-2、Western blot",
+    "en": "membrane probes, Fura-2, Western blot"
+   },
+   "functional": {
+    "zh": "无功能读出",
+    "en": "no functional readout"
+   },
+   "limitation": {
+    "zh": "空间质子模型、仅成肌细胞；Piezo1蛋白量不变；未测YAP下游；剂量未换算为Gy。",
+    "en": "Space-proton model, myoblasts only; Piezo1 protein unchanged; YAP not tested; fluence not converted to Gy."
+   }
+  },
+  {
+   "id": "Q05",
+   "view": "screen-v07",
+   "source": "cd47",
+   "target": "dna-apoptosis",
+   "sign": "+",
+   "grade": "A",
+   "kind": "pharmacology",
+   "stage": 0,
+   "label": {
+    "zh": "CD47 促进照射后肌细胞凋亡（吗啉代敲低↓TUNEL）",
+    "en": "CD47 promotes post-IR muscle apoptosis (morpholino ↓ TUNEL)"
+   },
+   "refs": [
+    "P20161613"
+   ],
+   "model": {
+    "zh": "C57BL/6；TSP1/CD47缺失小鼠",
+    "en": "C57BL/6; TSP1/CD47-null mice"
+   },
+   "doseText": "单次 25 Gy 后肢",
+   "dose": {
+    "regimens": [
+     {
+      "setting": "invivo",
+      "gyPerFraction": 25,
+      "fractions": 1,
+      "note": "",
+      "eqd2": 140.0
+     }
+    ],
+    "classes": [
+     "high"
+    ]
+   },
+   "time": {
+    "zh": "24 h",
+    "en": "24 h"
+   },
+   "method": {
+    "zh": "反义吗啉代、TUNEL",
+    "en": "antisense morpholino, TUNEL"
+   },
+   "functional": {
+    "zh": "挛缩减轻",
+    "en": "contracture reduced"
+   },
+   "limitation": {
+    "zh": "肌肉只是多个组织之一；单次25 Gy远超分次临床剂量，LQ换算不可靠。",
+    "en": "Muscle is one of several tissues; single 25 Gy is far above fractionated clinical dosing and LQ is unreliable."
+   }
+  },
+  {
+   "id": "Q06",
+   "view": "screen-v07",
+   "source": "cd47",
+   "target": "ve-perfusion",
+   "sign": "-",
+   "grade": "A",
+   "kind": "pharmacology",
+   "stage": 0,
+   "label": {
+    "zh": "CD47 抑制照射后NO依赖灌注",
+    "en": "CD47 suppresses NO-dependent perfusion after IR"
+   },
+   "refs": [
+    "P20161613"
+   ],
+   "model": {
+    "zh": "C57BL/6；CD47缺失小鼠",
+    "en": "C57BL/6; CD47-null mice"
+   },
+   "doseText": "单次 25 Gy 后肢",
+   "dose": {
+    "regimens": [
+     {
+      "setting": "invivo",
+      "gyPerFraction": 25,
+      "fractions": 1,
+      "note": "",
+      "eqd2": 140.0
+     }
+    ],
+    "classes": [
+     "high"
+    ]
+   },
+   "time": {
+    "zh": "8 周",
+    "en": "8 weeks"
+   },
+   "method": {
+    "zh": "激光多普勒",
+    "en": "laser Doppler"
+   },
+   "functional": {
+    "zh": "灌注与挛缩",
+    "en": "perfusion and contracture"
+   },
+   "limitation": {
+    "zh": "主要终点为血管/软组织，不是肌纤维本身。",
+    "en": "Main endpoints vascular/soft tissue, not myofibers."
+   }
+  },
+  {
+   "id": "Q07",
+   "view": "screen-v07",
+   "source": "radiation",
+   "target": "ccl2",
+   "sign": "+",
+   "grade": "A",
+   "kind": "observed",
+   "stage": 0,
+   "label": {
+    "zh": "Ccl2/7/8、Ccr2 长期上调",
+    "en": "Ccl2/7/8 and Ccr2 up long-term"
+   },
+   "refs": [
+    "P34997696"
+   ],
+   "model": {
+    "zh": "幼年C57BL/6J小鼠",
+    "en": "juvenile C57BL/6J mice"
+   },
+   "doseText": "3×8.2 Gy（4周龄）",
+   "dose": {
+    "regimens": [
+     {
+      "setting": "invivo",
+      "gyPerFraction": 8.2,
+      "fractions": 3,
+      "note": "",
+      "eqd2": 55.1
+     }
+    ],
+    "classes": [
+     "rt"
+    ]
+   },
+   "time": {
+    "zh": "3 周、14 月",
+    "en": "3 weeks, 14 months"
+   },
+   "method": {
+    "zh": "RNA-seq、RT-qPCR",
+    "en": "RNA-seq, RT-qPCR"
+   },
+   "functional": {
+    "zh": "肌量−17%，肌力−25%，终身纤维化",
+    "en": "mass −17%, force −25%, lifelong fibrosis"
+   },
+   "limitation": {
+    "zh": "关联性；未阻断CCR2。",
+    "en": "Associative; CCR2 not blocked."
+   }
+  },
+  {
+   "id": "Q08",
+   "view": "screen-v07",
+   "source": "fap",
+   "target": "ccl2",
+   "sign": "+",
+   "grade": "A",
+   "kind": "direct",
+   "stage": 0,
+   "label": {
+    "zh": "照射致衰老FAP分泌CCL2、OPN",
+    "en": "IR-senescent FAPs secrete CCL2 and OPN"
+   },
+   "refs": [
+    "P38115574"
+   ],
+   "model": {
+    "zh": "小鼠原代FAP",
+    "en": "mouse primary FAPs"
+   },
+   "doseText": "10 Gy X线，培养21 d",
+   "dose": {
+    "regimens": [
+     {
+      "setting": "invitro",
+      "gyPerFraction": 10,
+      "fractions": 1,
+      "note": "",
+      "eqd2": null
+     }
+    ],
+    "classes": [
+     "invitro"
+    ]
+   },
+   "time": {
+    "zh": "21 d",
+    "en": "21 d"
+   },
+   "method": {
+    "zh": "qPCR、ELISA",
+    "en": "qPCR, ELISA"
+   },
+   "functional": {
+    "zh": "分泌组读出",
+    "en": "secretome readout"
+   },
+   "limitation": {
+    "zh": "体外。",
+    "en": "In vitro."
+   }
+  },
+  {
+   "id": "Q09",
+   "view": "screen-v07",
+   "source": "ccl2",
+   "target": "macRecruit",
+   "sign": "+",
+   "grade": "A",
+   "kind": "partial",
+   "stage": 0,
+   "label": {
+    "zh": "CCL2/OPN 中和削弱巨噬细胞迁移",
+    "en": "CCL2/OPN neutralization attenuates macrophage migration"
+   },
+   "refs": [
+    "P38115574"
+   ],
+   "model": {
+    "zh": "RAW264.7、BMDM",
+    "en": "RAW264.7, BMDM"
+   },
+   "doseText": "10 Gy X线诱导衰老",
+   "dose": {
+    "regimens": [
+     {
+      "setting": "invitro",
+      "gyPerFraction": 10,
+      "fractions": 1,
+      "note": "",
+      "eqd2": null
+     }
+    ],
+    "classes": [
+     "invitro"
+    ]
+   },
+   "time": {
+    "zh": "21 d",
+    "en": "21 d"
+   },
+   "method": {
+    "zh": "迁移实验、流式",
+    "en": "migration assay, flow cytometry"
+   },
+   "functional": {
+    "zh": "巨噬细胞募集、M2极化",
+    "en": "macrophage recruitment, M2 polarization"
+   },
+   "limitation": {
+    "zh": "中和实验所用衰老诱导方式原文未明确为X线；体内因果未验证。",
+    "en": "Senescence inducer in the neutralization assay not stated as X-ray; not causally tested in vivo."
+   }
+  },
+  {
+   "id": "Q10",
+   "view": "screen-v07",
+   "source": "radiation",
+   "target": "il6m",
+   "sign": "+",
+   "grade": "A",
+   "kind": "direct",
+   "stage": 0,
+   "label": {
+    "zh": "4–6 Gy 后基础IL-6分泌下降",
+    "en": "basal IL-6 secretion falls after 4–6 Gy"
+   },
+   "refs": [
+    "P24294183"
+   ],
+   "model": {
+    "zh": "人原代成肌细胞",
+    "en": "human primary myoblasts"
+   },
+   "doseText": "4–8 Gy X线",
+   "dose": {
+    "regimens": [
+     {
+      "setting": "invitro",
+      "gyPerFraction": 4,
+      "fractions": 1,
+      "note": "",
+      "eqd2": null
+     },
+     {
+      "setting": "invitro",
+      "gyPerFraction": 8,
+      "fractions": 1,
+      "note": "",
+      "eqd2": null
+     }
+    ],
+    "classes": [
+     "invitro"
+    ]
+   },
+   "time": {
+    "zh": "24 h",
+    "en": "24 h"
+   },
+   "method": {
+    "zh": "ELISA",
+    "en": "ELISA"
+   },
+   "functional": {
+    "zh": "增殖下降、LDH升高",
+    "en": "proliferation ↓, LDH ↑"
+   },
+   "limitation": {
+    "zh": "与体内组织IL-6升高方向相反，属区室差异。",
+    "en": "Opposite to in vivo tissue IL-6 rise; compartment-specific."
+   }
+  },
+  {
+   "id": "Q11",
+   "view": "screen-v07",
+   "source": "radiation",
+   "target": "il6t",
+   "sign": "+",
+   "grade": "B",
+   "kind": "observed",
+   "stage": 0,
+   "label": {
+    "zh": "组织IL-6 mRNA与血清IL-6升高",
+    "en": "tissue IL-6 mRNA and serum IL-6 rise"
+   },
+   "refs": [
+    "P32734547",
+    "P36142836"
+   ],
+   "model": {
+    "zh": "大鼠颏下肌；大鼠全身照射",
+    "en": "rat submental muscle; rat TBI"
+   },
+   "doseText": "6×8 Gy 电子线；10 Gy 全身",
+   "dose": {
+    "regimens": [
+     {
+      "setting": "invivo",
+      "gyPerFraction": 8,
+      "fractions": 6,
+      "note": "",
+      "eqd2": 105.6
+     },
+     {
+      "setting": "invivo",
+      "gyPerFraction": 10,
+      "fractions": 1,
+      "note": "rat TBI",
+      "eqd2": 26.0
+     }
+    ],
+    "classes": [
+     "high",
+     "rt"
+    ]
+   },
+   "time": {
+    "zh": "2–4 周；72 h",
+    "en": "2–4 weeks; 72 h"
+   },
+   "method": {
+    "zh": "RT-qPCR；ELISA",
+    "en": "RT-qPCR; ELISA"
+   },
+   "functional": {
+    "zh": "未在摘要中给出",
+    "en": "not given in abstract"
+   },
+   "limitation": {
+    "zh": "仅mRNA/血清；来源细胞不明；TNF-α、IL-1β未变。",
+    "en": "mRNA/serum only; cell source unknown; TNF-α and IL-1β unchanged."
+   }
+  },
+  {
+   "id": "Q12",
+   "view": "screen-v07",
+   "source": "radiation",
+   "target": "ctgf",
+   "sign": "+",
+   "grade": "B",
+   "kind": "observed",
+   "stage": 0,
+   "label": {
+    "zh": "CTGF升高（TGF-β +37%，p=0.06）",
+    "en": "CTGF rises (TGF-β +37%, p=0.06)"
+   },
+   "refs": [
+    "P26738903"
+   ],
+   "model": {
+    "zh": "CD-1小鼠（±Ang-(1-7)）",
+    "en": "CD-1 mice ± Ang-(1-7)"
+   },
+   "doseText": "4×7.3 Gy / 2 周",
+   "dose": {
+    "regimens": [
+     {
+      "setting": "invivo",
+      "gyPerFraction": 7.3,
+      "fractions": 4,
+      "note": "",
+      "eqd2": 60.2
+     }
+    ],
+    "classes": [
+     "rt"
+    ]
+   },
+   "time": {
+    "zh": "6 周",
+    "en": "6 weeks"
+   },
+   "method": {
+    "zh": "ELISA",
+    "en": "ELISA"
+   },
+   "functional": {
+    "zh": "间质纤维化、硬度增加",
+    "en": "interstitial fibrosis, stiffness ↑"
+   },
+   "limitation": {
+    "zh": "摘要级；CTGF幅度未给；Ang-(1-7)干预并非CTGF特异。",
+    "en": "Abstract-level; CTGF magnitude not given; Ang-(1-7) not CTGF-specific."
+   }
+  },
+  {
+   "id": "Q13",
+   "view": "screen-v07",
+   "source": "radiation",
+   "target": "myod",
+   "sign": "+",
+   "grade": "B",
+   "kind": "observed",
+   "stage": 0,
+   "label": {
+    "zh": "放疗后TGF-β1↑、MyoD↓",
+    "en": "TGF-β1 ↑ and MyoD ↓ after RT"
+   },
+   "refs": [
+    "P27144672"
+   ],
+   "model": {
+    "zh": "头颈癌患者（20例放疗，10例对照）",
+    "en": "head-neck cancer patients (20 RT, 10 controls)"
+   },
+   "doseText": "术后放疗（剂量未给）",
+   "dose": {
+    "regimens": [
+     {
+      "setting": "invivo",
+      "gyPerFraction": null,
+      "fractions": null,
+      "note": "clinical RT, dose not stated",
+      "eqd2": null
+     }
+    ],
+    "classes": [
+     "unknown"
+    ]
+   },
+   "time": {
+    "zh": "放疗结束后4周",
+    "en": "4 weeks after RT"
+   },
+   "method": {
+    "zh": "免疫组化、Western blot",
+    "en": "IHC, Western blot"
+   },
+   "functional": {
+    "zh": "未在摘要中给出",
+    "en": "not given in abstract"
+   },
+   "limitation": {
+    "zh": "小样本临床、摘要级；TGF-β1→MyoD因果未验证。",
+    "en": "Small clinical study, abstract-level; TGF-β1→MyoD causality not tested."
+   }
+  },
+  {
+   "id": "Q14",
+   "view": "screen-v07",
+   "source": "radiation",
+   "target": "atrogin",
+   "sign": "+",
+   "grade": "A",
+   "kind": "observed",
+   "stage": 0,
+   "label": {
+    "zh": "FBXO32 mRNA/蛋白升高",
+    "en": "FBXO32 mRNA/protein rise"
+   },
+   "refs": [
+    "P27029502",
+    "P31665379"
+   ],
+   "model": {
+    "zh": "恒河猴部分体照射；乳腺癌放疗患者胸肌",
+    "en": "rhesus PBI; pectoralis of breast-RT patients"
+   },
+   "doseText": "9.0–12.5 Gy 部分体；临床乳腺放疗",
+   "dose": {
+    "regimens": [
+     {
+      "setting": "invivo",
+      "gyPerFraction": null,
+      "fractions": 1,
+      "note": "rhesus PBI 9.0–12.5 Gy",
+      "eqd2": null
+     },
+     {
+      "setting": "invivo",
+      "gyPerFraction": null,
+      "fractions": null,
+      "note": "clinical breast RT, dose not stated",
+      "eqd2": null
+     }
+    ],
+    "classes": [
+     "unknown"
+    ]
+   },
+   "time": {
+    "zh": "至180 d；放疗后≤3年",
+    "en": "up to 180 d; ≤3 years after RT"
+   },
+   "method": {
+    "zh": "RT-qPCR；免疫组化/免疫荧光",
+    "en": "RT-qPCR; IHC/IF"
+   },
+   "functional": {
+    "zh": "体重/肌量下降；纤维化",
+    "en": "body/muscle mass loss; fibrosis"
+   },
+   "limitation": {
+    "zh": "关联性；猴模型有致死性全身混杂；小鼠4×4 Gy或16 Gy后2周未见改变（PMID 25177239）。",
+    "en": "Associative; systemic confounding in lethal NHP model; no change 2 weeks after 4×4 or 16 Gy in mice (PMID 25177239)."
+   }
+  },
+  {
+   "id": "Q15",
+   "view": "screen-v07",
+   "source": "radiation",
+   "target": "murf1",
+   "sign": "+",
+   "grade": "B",
+   "kind": "observed",
+   "stage": 0,
+   "label": {
+    "zh": "MuRF1 蛋白升高",
+    "en": "MuRF1 protein rises"
+   },
+   "refs": [
+    "P26504028",
+    "P27562841"
+   ],
+   "model": {
+    "zh": "小鼠喉肌；小鼠后肢±悬吊",
+    "en": "mouse laryngeal muscle; mouse hindlimb ± unloading"
+   },
+   "doseText": "单次 25 Gy 颈部；0.5 Gy 后肢",
+   "dose": {
+    "regimens": [
+     {
+      "setting": "invivo",
+      "gyPerFraction": 25,
+      "fractions": 1,
+      "note": "",
+      "eqd2": 140.0
+     },
+     {
+      "setting": "invivo",
+      "gyPerFraction": 0.5,
+      "fractions": 1,
+      "note": "",
+      "eqd2": 0.3
+     }
+    ],
+    "classes": [
+     "high",
+     "rt"
+    ]
+   },
+   "time": {
+    "zh": "3–10 d；约2 d",
+    "en": "3–10 d; ~2 d"
+   },
+   "method": {
+    "zh": "Western blot",
+    "en": "Western blot"
+   },
+   "functional": {
+    "zh": "肌纤维变小、肌球蛋白丢失",
+    "en": "smaller fibers, myosin loss"
+   },
+   "limitation": {
+    "zh": "摘要级；单一读数。",
+    "en": "Abstract-level; single readout."
+   }
+  },
+  {
+   "id": "Q16",
+   "view": "screen-v07",
+   "source": "radiation",
+   "target": "acvr2b",
+   "sign": "+",
+   "grade": "B",
+   "kind": "observed",
+   "stage": 0,
+   "label": {
+    "zh": "ACVR2B mRNA 升高2.4倍",
+    "en": "ACVR2B mRNA up 2.4×"
+   },
+   "refs": [
+    "P27029502"
+   ],
+   "model": {
+    "zh": "恒河猴部分体照射",
+    "en": "rhesus partial-body irradiation"
+   },
+   "doseText": "9.0–12.5 Gy 部分体",
+   "dose": {
+    "regimens": [
+     {
+      "setting": "invivo",
+      "gyPerFraction": null,
+      "fractions": 1,
+      "note": "rhesus PBI 9.0–12.5 Gy",
+      "eqd2": null
+     }
+    ],
+    "classes": [
+     "unknown"
+    ]
+   },
+   "time": {
+    "zh": "至180 d",
+    "en": "up to 180 d"
+   },
+   "method": {
+    "zh": "RT-qPCR",
+    "en": "RT-qPCR"
+   },
+   "functional": {
+    "zh": "恶病质",
+    "en": "cachexia"
+   },
+   "limitation": {
+    "zh": "同一研究中MSTN mRNA反而下降，而人胸肌MSTN蛋白升高（PMID 31665379），方向矛盾，故Myostatin列为骨架。",
+    "en": "MSTN mRNA fell in the same study while human pectoralis MSTN protein rose (PMID 31665379); conflicting, so myostatin stays scaffold."
+   }
+  },
+  {
+   "id": "Q17",
+   "view": "screen-v07",
+   "source": "radiation",
+   "target": "akt",
+   "sign": "+",
+   "grade": "A",
+   "kind": "observed",
+   "stage": 0,
+   "label": {
+    "zh": "⁵⁶Fe 第7天p-Akt/Erk/rpS6K↑；质子无变化",
+    "en": "56Fe raises p-Akt/Erk/rpS6K at day 7; proton no change"
+   },
+   "refs": [
+    "P24131063"
+   ],
+   "model": {
+    "zh": "成年小鼠全身照射",
+    "en": "adult mice whole-body"
+   },
+   "doseText": "0.15 Gy ⁵⁶Fe；0.9 Gy 质子",
+   "dose": {
+    "regimens": [
+     {
+      "setting": "invivo",
+      "gyPerFraction": 0.15,
+      "fractions": 1,
+      "note": "heavy ion 56Fe",
+      "eqd2": null
+     },
+     {
+      "setting": "invivo",
+      "gyPerFraction": 0.9,
+      "fractions": 1,
+      "note": "proton",
+      "eqd2": null
+     }
+    ],
+    "classes": [
+     "na"
+    ]
+   },
+   "time": {
+    "zh": "1 h–7 d",
+    "en": "1 h–7 d"
+   },
+   "method": {
+    "zh": "Western blot",
+    "en": "Western blot"
+   },
+   "functional": {
+    "zh": "中央核增多（仅⁵⁶Fe）",
+    "en": "central nuclei ↑ (56Fe only)"
+   },
+   "limitation": {
+    "zh": "空间重离子低剂量；临床光子4×4 Gy或16 Gy后2周p-Akt无变化（PMID 25177239）。",
+    "en": "Low-dose space HZE; no p-Akt change 2 weeks after clinical-type 4×4 or 16 Gy photons (PMID 25177239)."
+   }
+  },
+  {
+   "id": "Q18",
+   "view": "screen-v07",
+   "source": "radiation",
+   "target": "akt",
+   "sign": "+",
+   "grade": "B",
+   "kind": "observed",
+   "stage": 0,
+   "label": {
+    "zh": "急性p-Akt S473↑；远期胰岛素受体激活↓、Akt2氧化修饰",
+    "en": "acute p-Akt S473 ↑; years later insulin-receptor activation ↓ and Akt2 sulfenylation"
+   },
+   "refs": [
+    "P27562841",
+    "P40053841"
+   ],
+   "model": {
+    "zh": "小鼠后肢；恒河猴全身照射",
+    "en": "mouse hindlimb; rhesus whole-body"
+   },
+   "doseText": "0.5 Gy 后肢；平均6.5 Gy 全身",
+   "dose": {
+    "regimens": [
+     {
+      "setting": "invivo",
+      "gyPerFraction": 0.5,
+      "fractions": 1,
+      "note": "",
+      "eqd2": 0.3
+     },
+     {
+      "setting": "invivo",
+      "gyPerFraction": null,
+      "fractions": null,
+      "note": "rhesus whole-body mean 6.5 Gy",
+      "eqd2": null
+     }
+    ],
+    "classes": [
+     "rt",
+     "unknown"
+    ]
+   },
+   "time": {
+    "zh": "约2 d；约4年",
+    "en": "~2 d; ~4 years"
+   },
+   "method": {
+    "zh": "Western blot；蛋白组学",
+    "en": "Western blot; proteomics"
+   },
+   "functional": {
+    "zh": "持续胰岛素抵抗",
+    "en": "persistent insulin resistance"
+   },
+   "limitation": {
+    "zh": "摘要级；多年随访混杂多；方向随时相改变。",
+    "en": "Abstract-level; long follow-up with confounders; direction is phase-dependent."
+   }
+  },
+  {
+   "id": "Q19",
+   "view": "screen-v07",
+   "source": "radiation",
+   "target": "pgc",
+   "sign": "+",
+   "grade": "B",
+   "kind": "observed",
+   "stage": 0,
+   "label": {
+    "zh": "PGC-1α、LC3b、Park2 mRNA↓（重离子）",
+    "en": "PGC-1α, LC3b, Park2 mRNA ↓ (heavy ion)"
+   },
+   "refs": [
+    "P41565395"
+   ],
+   "model": {
+    "zh": "BALB/cByJ雌鼠（±部分负重）",
+    "en": "female BALB/cByJ mice ± partial weight-bearing"
+   },
+   "doseText": "0.5 Gy ²⁸Si",
+   "dose": {
+    "regimens": [
+     {
+      "setting": "invivo",
+      "gyPerFraction": 0.5,
+      "fractions": 1,
+      "note": "heavy ion 28Si",
+      "eqd2": null
+     }
+    ],
+    "classes": [
+     "na"
+    ]
+   },
+   "time": {
+    "zh": "21 d",
+    "en": "21 d"
+   },
+   "method": {
+    "zh": "qRT-PCR",
+    "en": "qRT-PCR"
+   },
+   "functional": {
+    "zh": "未报告",
+    "en": "not reported"
+   },
+   "limitation": {
+    "zh": "重离子、仅mRNA、摘要级；光子研究PGC-1α未变（PMID 35414122、25177239）。",
+    "en": "Heavy ion, mRNA only, abstract-level; photon studies show no PGC-1α change (PMID 35414122, 25177239)."
+   }
+  },
+  {
+   "id": "Q20",
+   "view": "screen-v07",
+   "source": "radiation",
+   "target": "mttx",
+   "sign": "+",
+   "grade": "B",
+   "kind": "observed",
+   "stage": 0,
+   "label": {
+    "zh": "mtDNA转录本下降85–95%，TFB2M↓",
+    "en": "mtDNA transcripts down 85–95%, TFB2M ↓"
+   },
+   "refs": [
+    "P20636270"
+   ],
+   "model": {
+    "zh": "小鼠全身照射",
+    "en": "mouse whole-body"
+   },
+   "doseText": "10 Gy X线（致死）",
+   "dose": {
+    "regimens": [
+     {
+      "setting": "invivo",
+      "gyPerFraction": 10,
+      "fractions": 1,
+      "note": "lethal TBI",
+      "eqd2": 26.0
+     }
+    ],
+    "classes": [
+     "rt"
+    ]
+   },
+   "time": {
+    "zh": "1–24 h",
+    "en": "1–24 h"
+   },
+   "method": {
+    "zh": "qPCR",
+    "en": "qPCR"
+   },
+   "functional": {
+    "zh": "无",
+    "en": "none"
+   },
+   "limitation": {
+    "zh": "致死剂量、摘要级；mtDNA拷贝数反而升高。",
+    "en": "Lethal dose, abstract-level; mtDNA copy number rose."
+   }
+  },
+  {
+   "id": "Q21",
+   "view": "screen-v07",
+   "source": "igf1",
+   "target": "myogenesis",
+   "sign": "-",
+   "grade": "B",
+   "kind": "pharmacology",
+   "stage": 0,
+   "label": {
+    "zh": "外源IGF-1挽救2 Gy后肌管形成下降",
+    "en": "exogenous IGF-1 rescues myotube loss after 2 Gy"
+   },
+   "refs": [
+    "P19280468"
+   ],
+   "model": {
+    "zh": "C2C12成肌细胞",
+    "en": "C2C12 myoblasts"
+   },
+   "doseText": "2、4 Gy X线",
+   "dose": {
+    "regimens": [
+     {
+      "setting": "invitro",
+      "gyPerFraction": 2,
+      "fractions": 1,
+      "note": "",
+      "eqd2": null
+     },
+     {
+      "setting": "invitro",
+      "gyPerFraction": 4,
+      "fractions": 1,
+      "note": "",
+      "eqd2": null
+     }
+    ],
+    "classes": [
+     "invitro"
+    ]
+   },
+   "time": {
+    "zh": "未给",
+    "en": "not stated"
+   },
+   "method": {
+    "zh": "抗肌球蛋白染色、融合指数",
+    "en": "anti-myosin staining, fusion index"
+   },
+   "functional": {
+    "zh": "肌管形成率",
+    "en": "myotube formation ratio"
+   },
+   "limitation": {
+    "zh": "未测下游信号，仅表型挽救；4 Gy挽救有限。",
+    "en": "No downstream signaling measured; phenotype rescue only."
+   }
+  },
+  {
+   "id": "Q22",
+   "view": "screen-v07",
+   "source": "no",
+   "target": "muscFunction",
+   "sign": "+",
+   "grade": "A",
+   "kind": "pharmacology",
+   "stage": 0,
+   "label": {
+    "zh": "NO供体SNP挽救≤2 Gy增殖，PTIO可消除",
+    "en": "NO donor SNP rescues proliferation ≤2 Gy; abolished by PTIO"
+   },
+   "refs": [
+    "P21319985"
+   ],
+   "model": {
+    "zh": "SD大鼠原代卫星细胞",
+    "en": "Sprague-Dawley rat primary satellite cells"
+   },
+   "doseText": "1、2、5 Gy γ射线",
+   "dose": {
+    "regimens": [
+     {
+      "setting": "invitro",
+      "gyPerFraction": 1,
+      "fractions": 1,
+      "note": "",
+      "eqd2": null
+     },
+     {
+      "setting": "invitro",
+      "gyPerFraction": 2,
+      "fractions": 1,
+      "note": "",
+      "eqd2": null
+     },
+     {
+      "setting": "invitro",
+      "gyPerFraction": 5,
+      "fractions": 1,
+      "note": "",
+      "eqd2": null
+     }
+    ],
+    "classes": [
+     "invitro"
+    ]
+   },
+   "time": {
+    "zh": "48–96 h",
+    "en": "48–96 h"
+   },
+   "method": {
+    "zh": "细胞计数、NO测定、Western blot",
+    "en": "cell counts, NO assay, Western blot"
+   },
+   "functional": {
+    "zh": "增殖",
+    "en": "proliferation"
+   },
+   "limitation": {
+    "zh": "体外；5 Gy不能挽救。",
+    "en": "In vitro; no rescue at 5 Gy."
+   }
+  }
+ ],
+ "sources": [
+  {
+   "id": "P36142836",
+   "pmid": "36142836",
+   "doi": "10.3390/ijms231810921",
+   "url": null,
+   "journal": "Int J Mol Sci",
+   "title": {
+    "zh": "慢性哇巴因预防辐射致大鼠膈肌α2 Na,K-ATPase功能下降",
+    "en": "Chronic ouabain prevents radiation-induced reduction in α2 Na,K-ATPase function in rat diaphragm"
+   },
+   "reviewDepth": {
+    "zh": "全文核查",
+    "en": "Full text reviewed"
+   },
+   "model": {
+    "zh": "大鼠全身10 Gy",
+    "en": "rat TBI 10 Gy"
+   }
+  },
+  {
+   "id": "P24131063",
+   "pmid": "24131063",
+   "doi": "10.1667/RR3329.1",
+   "url": null,
+   "journal": "Radiat Res",
+   "title": {
+    "zh": "低剂量⁵⁶Fe与质子对骨骼肌的不同影响",
+    "en": "Divergent modification of low-dose 56Fe-particle and proton radiation on skeletal muscle"
+   },
+   "reviewDepth": {
+    "zh": "全文核查",
+    "en": "Full text reviewed"
+   },
+   "model": {
+    "zh": "小鼠全身⁵⁶Fe/质子",
+    "en": "mouse whole-body 56Fe/proton"
+   }
+  },
+  {
+   "id": "P35414122",
+   "pmid": "35414122",
+   "doi": "10.1186/s13395-022-00291-y",
+   "url": null,
+   "journal": "Skelet Muscle",
+   "title": {
+    "zh": "耐力运动减轻幼年照射致骨骼肌功能下降和线粒体应激",
+    "en": "Endurance exercise attenuates juvenile irradiation-induced skeletal muscle functional decline and mitochondrial stress"
+   },
+   "reviewDepth": {
+    "zh": "全文核查",
+    "en": "Full text reviewed"
+   },
+   "model": {
+    "zh": "幼鼠后肢3×8.2 Gy",
+    "en": "juvenile mouse hindlimb 3×8.2 Gy"
+   }
+  },
+  {
+   "id": "P42135336",
+   "pmid": "42135336",
+   "doi": "10.1038/s41526-026-00609-w",
+   "url": null,
+   "journal": "npj Microgravity",
+   "title": {
+    "zh": "质子照射损害C2C12成肌细胞机械转导",
+    "en": "Proton radiation impairs mechanotransduction in C2C12 myoblasts"
+   },
+   "reviewDepth": {
+    "zh": "全文核查",
+    "en": "Full text reviewed"
+   },
+   "model": {
+    "zh": "C2C12 质子",
+    "en": "C2C12 protons"
+   }
+  },
+  {
+   "id": "P20161613",
+   "pmid": "20161613",
+   "doi": "10.1126/scitranslmed.3000139",
+   "url": null,
+   "journal": "Sci Transl Med",
+   "title": {
+    "zh": "阻断CD47信号实现正常组织放射防护并延缓肿瘤生长",
+    "en": "Radioprotection in normal tissue and delayed tumor growth by blockade of CD47 signaling"
+   },
+   "reviewDepth": {
+    "zh": "全文核查",
+    "en": "Full text reviewed"
+   },
+   "model": {
+    "zh": "小鼠后肢单次25 Gy",
+    "en": "mouse hindlimb 25 Gy"
+   }
+  },
+  {
+   "id": "P34997696",
+   "pmid": "34997696",
+   "doi": "10.1002/jcsm.12902",
+   "url": null,
+   "journal": "J Cachexia Sarcopenia Muscle",
+   "title": {
+    "zh": "儿童放疗与肿瘤清除后的肌肉特异功能缺陷和终身纤维化",
+    "en": "Muscle-specific functional deficits and lifelong fibrosis in response to paediatric radiotherapy and tumour elimination"
+   },
+   "reviewDepth": {
+    "zh": "全文核查",
+    "en": "Full text reviewed"
+   },
+   "model": {
+    "zh": "幼鼠3×8.2 Gy",
+    "en": "juvenile mice 3×8.2 Gy"
+   }
+  },
+  {
+   "id": "P38115574",
+   "pmid": "38115574",
+   "doi": "10.1111/acel.14069",
+   "url": null,
+   "journal": "Aging Cell",
+   "title": {
+    "zh": "衰老FAP募集巨噬细胞并促进M2极化",
+    "en": "Senescent skeletal muscle fibroadipogenic progenitors recruit and promote M2 polarization of macrophages"
+   },
+   "reviewDepth": {
+    "zh": "全文核查",
+    "en": "Full text reviewed"
+   },
+   "model": {
+    "zh": "小鼠原代FAP 10 Gy",
+    "en": "mouse primary FAPs 10 Gy"
+   }
+  },
+  {
+   "id": "P24294183",
+   "pmid": "24294183",
+   "doi": "10.2478/raon-2013-0058",
+   "url": null,
+   "journal": "Radiol Oncol",
+   "title": {
+    "zh": "电离辐射对人骨骼肌前体细胞的影响",
+    "en": "Effect of ionizing radiation on human skeletal muscle precursor cells"
+   },
+   "reviewDepth": {
+    "zh": "全文核查",
+    "en": "Full text reviewed"
+   },
+   "model": {
+    "zh": "人原代成肌细胞",
+    "en": "human primary myoblasts"
+   }
+  },
+  {
+   "id": "P32734547",
+   "pmid": "32734547",
+   "doi": "10.1007/s00455-020-10162-7",
+   "url": null,
+   "journal": "Dysphagia",
+   "title": {
+    "zh": "大鼠颏下肌放射损伤模型的细胞因子和生长因子反应",
+    "en": "Cytokine and growth factor response in a rat model of radiation-induced injury to the submental muscles"
+   },
+   "reviewDepth": {
+    "zh": "摘要级核查",
+    "en": "Abstract-level review"
+   },
+   "model": {
+    "zh": "大鼠6×8 Gy电子线",
+    "en": "rat 6×8 Gy electrons"
+   }
+  },
+  {
+   "id": "P26738903",
+   "pmid": "26738903",
+   "doi": "10.2106/JBJS.O.00545",
+   "url": null,
+   "journal": "J Bone Joint Surg Am",
+   "title": {
+    "zh": "Ang-(1-7)减轻肢体肉瘤放疗小鼠模型肌肉纤维化与硬化",
+    "en": "Angiotensin-(1-7) attenuates skeletal muscle fibrosis and stiffening in a mouse model of extremity sarcoma radiation therapy"
+   },
+   "reviewDepth": {
+    "zh": "摘要级核查",
+    "en": "Abstract-level review"
+   },
+   "model": {
+    "zh": "小鼠4×7.3 Gy",
+    "en": "mouse 4×7.3 Gy"
+   }
+  },
+  {
+   "id": "P27144672",
+   "pmid": "27144672",
+   "doi": "10.1002/jso.24265",
+   "url": null,
+   "journal": "J Surg Oncol",
+   "title": {
+    "zh": "神经肌肉电刺激经TGF-β1/MyoD稳态改善头颈癌放射性纤维化",
+    "en": "Neuromuscular electrical stimulation improves radiation-induced fibrosis through TGF-β1/MyoD homeostasis in head and neck cancer"
+   },
+   "reviewDepth": {
+    "zh": "摘要级核查",
+    "en": "Abstract-level review"
+   },
+   "model": {
+    "zh": "头颈癌术后放疗患者",
+    "en": "post-op head-neck RT patients"
+   }
+  },
+  {
+   "id": "P27029502",
+   "pmid": "27029502",
+   "doi": "10.1038/srep23612",
+   "url": null,
+   "journal": "Sci Rep",
+   "title": {
+    "zh": "放射性恶病质非人灵长类模型",
+    "en": "A non-human primate model of radiation-induced cachexia"
+   },
+   "reviewDepth": {
+    "zh": "全文核查",
+    "en": "Full text reviewed"
+   },
+   "model": {
+    "zh": "恒河猴部分体照射",
+    "en": "rhesus partial-body irradiation"
+   }
+  },
+  {
+   "id": "P31665379",
+   "pmid": "31665379",
+   "doi": "10.1093/jrr/rrz067",
+   "url": null,
+   "journal": "J Radiat Res",
+   "title": {
+    "zh": "乳腺原位放疗后胸肌细胞特征改变",
+    "en": "Alterations in pectoralis muscle cell characteristics after radiation of the human breast in situ"
+   },
+   "reviewDepth": {
+    "zh": "全文核查",
+    "en": "Full text reviewed"
+   },
+   "model": {
+    "zh": "乳腺癌放疗患者胸肌",
+    "en": "pectoralis of breast-RT patients"
+   }
+  },
+  {
+   "id": "P25177239",
+   "pmid": "25177239",
+   "doi": "10.2478/raon-2014-0025",
+   "url": null,
+   "journal": "Radiol Oncol",
+   "title": {
+    "zh": "辐射剂量对小鼠骨骼肌重塑的影响",
+    "en": "The effect of radiation dose on mouse skeletal muscle remodeling"
+   },
+   "reviewDepth": {
+    "zh": "全文核查",
+    "en": "Full text reviewed"
+   },
+   "model": {
+    "zh": "小鼠后肢4×4 Gy或16 Gy",
+    "en": "mouse hindlimb 4×4 or 16 Gy"
+   }
+  },
+  {
+   "id": "P26504028",
+   "pmid": "26504028",
+   "doi": null,
+   "url": null,
+   "journal": "Anticancer Res",
+   "title": {
+    "zh": "MuRF1表达增加与放射性喉肌萎缩相关",
+    "en": "Increased expression of MuRF1 is associated with radiation-induced laryngeal muscle atrophy"
+   },
+   "reviewDepth": {
+    "zh": "摘要级核查",
+    "en": "Abstract-level review"
+   },
+   "model": {
+    "zh": "小鼠颈部单次25 Gy",
+    "en": "mouse neck single 25 Gy"
+   }
+  },
+  {
+   "id": "P27562841",
+   "pmid": "27562841",
+   "doi": "10.1152/japplphysiol.00218.2016",
+   "url": null,
+   "journal": "J Appl Physiol",
+   "title": {
+    "zh": "辐射对萎缩骨骼肌Akt信号的影响",
+    "en": "Effect of irradiation on Akt signaling in atrophying skeletal muscle"
+   },
+   "reviewDepth": {
+    "zh": "摘要级核查",
+    "en": "Abstract-level review"
+   },
+   "model": {
+    "zh": "小鼠后肢0.5 Gy ± 悬吊",
+    "en": "mouse hindlimb 0.5 Gy ± unloading"
+   }
+  },
+  {
+   "id": "P40053841",
+   "pmid": "40053841",
+   "doi": "10.1667/RADE-23-00223.1",
+   "url": null,
+   "journal": "Radiat Res",
+   "title": {
+    "zh": "非人灵长类照射后骨骼肌蛋白与胰岛素敏感性的持续改变",
+    "en": "Persistent postirradiation skeletal muscle protein and insulin sensitivity changes in nonhuman primates"
+   },
+   "reviewDepth": {
+    "zh": "摘要级核查",
+    "en": "Abstract-level review"
+   },
+   "model": {
+    "zh": "恒河猴全身平均6.5 Gy",
+    "en": "rhesus whole-body mean 6.5 Gy"
+   }
+  },
+  {
+   "id": "P41565395",
+   "pmid": "41565395",
+   "doi": "10.1016/j.lssr.2025.10.008",
+   "url": null,
+   "journal": "Life Sci Space Res",
+   "title": {
+    "zh": "HZE照射与部分负重对小鼠骨骼肌线粒体质量控制的差异调控",
+    "en": "Differential regulation of mitochondrial quality control in skeletal muscle by HZE radiation exposure and partial weightbearing in mice"
+   },
+   "reviewDepth": {
+    "zh": "摘要级核查",
+    "en": "Abstract-level review"
+   },
+   "model": {
+    "zh": "小鼠0.5 Gy ²⁸Si",
+    "en": "mouse 0.5 Gy 28Si"
+   }
+  },
+  {
+   "id": "P20636270",
+   "pmid": "20636270",
+   "doi": "10.1134/s0006297910060131",
+   "url": null,
+   "journal": "Biochemistry (Mosc)",
+   "title": {
+    "zh": "致死X线照射后小鼠肝、骨骼肌和脑的线粒体DNA转录",
+    "en": "Mitochondrial DNA transcription in mouse liver, skeletal muscle, and brain following lethal X-ray irradiation"
+   },
+   "reviewDepth": {
+    "zh": "摘要级核查",
+    "en": "Abstract-level review"
+   },
+   "model": {
+    "zh": "小鼠全身10 Gy",
+    "en": "mouse whole-body 10 Gy"
+   }
+  },
+  {
+   "id": "P19280468",
+   "pmid": "19280468",
+   "doi": "10.1080/09553000802641177",
+   "url": null,
+   "journal": "Int J Radiat Biol",
+   "title": {
+    "zh": "IGF-I对电离辐射致成肌分化下降的保护作用",
+    "en": "Protective effects of insulin-like growth factor-I on the decrease in myogenic differentiation by ionizing radiation"
+   },
+   "reviewDepth": {
+    "zh": "摘要级核查",
+    "en": "Abstract-level review"
+   },
+   "model": {
+    "zh": "C2C12 2–4 Gy",
+    "en": "C2C12 2–4 Gy"
+   }
+  },
+  {
+   "id": "P21319985",
+   "pmid": "21319985",
+   "doi": "10.1667/RR2453.1",
+   "url": null,
+   "journal": "Radiat Res",
+   "title": {
+    "zh": "卫星细胞对辐射说NO",
+    "en": "Satellite cells say NO to radiation"
+   },
+   "reviewDepth": {
+    "zh": "全文核查",
+    "en": "Full text reviewed"
+   },
+   "model": {
+    "zh": "大鼠原代卫星细胞1–5 Gy",
+    "en": "rat primary satellite cells 1–5 Gy"
+   }
+  }
+ ]
+}
