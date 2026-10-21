@@ -1,0 +1,1479 @@
+[
+ {
+  "pmid": "27562841",
+  "doi": "10.1152/japplphysiol.00218.2016",
+  "year": 2016,
+  "title": "Effect of irradiation on Akt signaling in atrophying skeletal muscle.",
+  "module": "M2 IGF-1/Akt/mTOR; M4 UPS",
+  "species_model": "Female C57BL/6 mice; ± 5-d hindlimb suspension",
+  "cell_or_tissue": "Gastrocnemius",
+  "dose_text": "0.5 Gy X-ray, single unilateral hindlimb (given on day 3 of 5-d protocol)",
+  "gy_per_fraction": 0.5,
+  "fractions": 1,
+  "setting": "invivo",
+  "timepoint": "Tissue at end of 5-d protocol (~2 d post-IRR, inferred from abstract)",
+  "pathway_relation": [
+   "IR → p-Akt S473 (+)",
+   "IR → p-Akt T308 (0)",
+   "IR → MuRF1 (+)",
+   "IR → Atrogin-1 (0)",
+   "IR + HS → mTORC1 signalling (−, not altered by IR vs HS alone)"
+  ],
+  "method": "Western blot",
+  "functional_readout": "None beyond signalling in abstract",
+  "causal_test": "no",
+  "grade": "B",
+  "limitation": {
+   "zh": "仅摘要；低剂量单次；与后肢悬吊交互，IR单独效应有限",
+   "en": "Abstract-level only (full text blocked); single low dose; mostly IR×unloading interaction"
+  },
+  "full_text_checked": false,
+  "grade_note": "A-eligible if full text verified"
+ },
+ {
+  "pmid": "25177239",
+  "doi": "10.2478/raon-2014-0025",
+  "year": 2014,
+  "title": "The effect of radiation dose on mouse skeletal muscle remodeling.",
+  "module": "M2/M4/M7 (null evidence)",
+  "species_model": "Female C57BL/6 mice, 8 wk",
+  "cell_or_tissue": "Tibialis anterior, gastrocnemius",
+  "dose_text": "4×4 Gy (BED 37 Gy) vs single 16 Gy (BED 100 Gy), hindlimb X-ray",
+  "gy_per_fraction": "4 or 16",
+  "fractions": "4 or 1",
+  "setting": "invivo",
+  "timepoint": "2 wk after first exposure",
+  "pathway_relation": [
+   "IR → p-Akt, p-ERK1/2, p-p38, p-FOXO3A, Atrogin-1, LC3B, PGC-1α, TFAM, ubiquitin (no significant change; null)",
+   "IR (4×4 Gy) → 4-HNE (+)"
+  ],
+  "method": "Western blot, histology (fibre CSA, SDH, ECM)",
+  "functional_readout": "↓IIB CSA (both), ↓IIA CSA & ↑ECM & ↓protein/RNA (16 Gy), ↑central nuclei",
+  "causal_test": "no",
+  "grade": "A",
+  "limitation": {
+   "zh": "信号通路为阴性结果，单一时间点(2周)",
+   "en": "Signalling null at a single 2-wk timepoint; useful as negative evidence"
+  },
+  "full_text_checked": true,
+  "evidence_direction": "null"
+ },
+ {
+  "pmid": "24131063",
+  "doi": "10.1667/RR3329.1",
+  "year": 2013,
+  "title": "Divergent modification of low-dose ⁵⁶Fe-particle and proton radiation on skeletal muscle.",
+  "module": "M2 IGF-1/Akt/mTOR; NEW Ca2+ handling",
+  "species_model": "Adult male C57Bl/6N mice (8–10 mo)",
+  "cell_or_tissue": "Flexor digitorum brevis fibres; hindlimb muscle lysates",
+  "dose_text": "Whole-body 15 cGy 1 GeV/n 56Fe or 90 cGy 1 GeV/n protons (also 1 Gy γ pilot)",
+  "gy_per_fraction": "0.15 (Fe) / 0.9 (proton)",
+  "fractions": 1,
+  "setting": "invivo",
+  "timepoint": "1 h, 24 h, 72 h, 7 d",
+  "pathway_relation": [
+   "56Fe → p-Akt (+), p-Erk1/2 (+), p-rpS6K (+) at d7",
+   "Proton → p-Akt/Erk/rpS6K (0)",
+   "56Fe & proton → resting [Ca2+]i (+, transient; baseline by d7)",
+   "56Fe → depolarization-evoked SR Ca2+ release (−)"
+  ],
+  "method": "Fura-2 Ca2+ imaging, Western blot, histology",
+  "functional_readout": "Central nuclei ↑ (56Fe only)",
+  "causal_test": "no",
+  "grade": "A",
+  "limitation": {
+   "zh": "空间重离子/质子，低剂量；n小；与临床光子放疗外推有限",
+   "en": "Space-radiation (HZE/proton) low dose; limited extrapolation to clinical photon RT"
+  },
+  "full_text_checked": true,
+  "space_flag": "radiation isolated (no unloading)"
+ },
+ {
+  "pmid": "40053841",
+  "doi": "10.1667/RADE-23-00223.1",
+  "year": 2025,
+  "title": "Persistent Postirradiation Skeletal Muscle Protein and Insulin Sensitivity Changes in Nonhuman Primates.",
+  "module": "M2 insulin/Akt; M7 mitochondria",
+  "species_model": "Male rhesus macaques (CTL n=8, IRRAD n=16)",
+  "cell_or_tissue": "Skeletal muscle",
+  "dose_text": "Whole-body, average 6.5 Gy",
+  "gy_per_fraction": null,
+  "fractions": null,
+  "setting": "invivo",
+  "timepoint": "~4 y after exposure (average)",
+  "pathway_relation": [
+   "IR → insulin receptor activation basal & insulin-stimulated (−)",
+   "IR → Akt2 sulfenylation (+)",
+   "IR → mitochondrial & peroxisomal proteins (+)",
+   "IR → fission/fusion markers (+)"
+  ],
+  "method": "Shotgun proteomics, immunoblot, histology",
+  "functional_readout": "Persistent insulin resistance",
+  "causal_test": "no",
+  "grade": "B",
+  "limitation": {
+   "zh": "仅摘要；全身照射+多年随访，混杂因素多",
+   "en": "Abstract-level; whole-body exposure years earlier, many confounders"
+  },
+  "full_text_checked": false,
+  "grade_note": "A-eligible if full text verified"
+ },
+ {
+  "pmid": "27650856",
+  "doi": "10.2337/db16-0364",
+  "year": 2016,
+  "title": "Ionizing Radiation Potentiates High-Fat Diet-Induced Insulin Resistance and Reprograms Skeletal Muscle and Adipose Progenitor Cells.",
+  "module": "M2 insulin signalling; epigenetic",
+  "species_model": "C57Bl/6 mice ± high-fat diet",
+  "cell_or_tissue": "MuSCs isolated from irradiated mice, differentiated in vitro (also preadipocytes)",
+  "dose_text": "Single total-body irradiation (dose not in abstract)",
+  "gy_per_fraction": null,
+  "fractions": 1,
+  "setting": "invivo (ex vivo readout)",
+  "timepoint": null,
+  "pathway_relation": [
+   "TBI → insulin signalling in MuSC-derived myotubes (−, chronic)",
+   "TBI → DNA methylation of cell-cycle/glucose-lipid metabolism genes (changed)"
+  ],
+  "method": "RNA-seq, RRBS, signalling assays",
+  "functional_readout": "Hyperinsulinaemia with HFD",
+  "causal_test": "no",
+  "grade": "B",
+  "limitation": {
+   "zh": "仅摘要；剂量未知；代谢模型",
+   "en": "Abstract-level; dose not stated; metabolic framing"
+  },
+  "full_text_checked": false
+ },
+ {
+  "pmid": "19280468",
+  "doi": "10.1080/09553000802641177",
+  "year": 2009,
+  "title": "Protective effects of insulin-like growth factor-I on the decrease in myogenic differentiation by ionizing radiation.",
+  "module": "M2 IGF-1",
+  "species_model": "C2C12 mouse myoblasts",
+  "cell_or_tissue": "Myoblasts → myotubes",
+  "dose_text": "2 and 4 Gy X-ray",
+  "gy_per_fraction": "2 or 4",
+  "fractions": 1,
+  "setting": "invitro",
+  "timepoint": null,
+  "pathway_relation": [
+   "IGF-1 (exogenous) → IR-induced loss of myotube formation (− / rescue at 2 Gy)"
+  ],
+  "method": "Anti-myosin immunostaining, fusion index",
+  "functional_readout": "Myotube formation ratio",
+  "causal_test": "yes (ligand add-back rescue; no signalling measured)",
+  "grade": "B",
+  "limitation": {
+   "zh": "未测下游信号；仅表型挽救",
+   "en": "No downstream signalling measured; phenotype rescue only"
+  },
+  "full_text_checked": false
+ },
+ {
+  "pmid": "10224065",
+  "doi": "10.1074/jbc.274.19.13118",
+  "year": 1999,
+  "title": "Diminished G1 checkpoint after gamma-irradiation and altered cell cycle regulation by insulin-like growth factor II overexpression.",
+  "module": "M2 IGF-II; DDR/cell cycle",
+  "species_model": "C2C12-2.7 (IGF-II overexpressing) vs C2C12-1.1; RH30",
+  "cell_or_tissue": "Myoblasts",
+  "dose_text": "γ-irradiation (dose not in abstract)",
+  "gy_per_fraction": null,
+  "fractions": null,
+  "setting": "invitro",
+  "timepoint": null,
+  "pathway_relation": [
+   "IGF-II overexpression → IR-induced G1 arrest (−; cells arrest in G2/M instead)",
+   "IGF-II → cyclin D1, p21, p53, MAPK activity (+)"
+  ],
+  "method": "Flow cytometry, immunoblot",
+  "functional_readout": "Cell-cycle distribution",
+  "causal_test": "yes (stable overexpression, tumour framing)",
+  "grade": "B",
+  "limitation": {
+   "zh": "肿瘤学框架、过表达模型",
+   "en": "Tumour (rhabdomyosarcoma) framing; engineered overexpression"
+  },
+  "full_text_checked": false
+ },
+ {
+  "pmid": "9025997",
+  "doi": "10.1002/(SICI)1097-0185(199702)247:2<179::AID-AR4>3.0.CO;2-T",
+  "year": 1997,
+  "title": "Effect of radiation on satellite cell activity and protein expression in overloaded mammalian skeletal muscle.",
+  "module": "M2 IGF-1",
+  "species_model": "Adult rats, soleus overload",
+  "cell_or_tissue": "Soleus",
+  "dose_text": "γ-irradiation of hindlimb before synergist ablation (dose not in abstract)",
+  "gy_per_fraction": null,
+  "fractions": null,
+  "setting": "invivo",
+  "timepoint": "1–4 wk overload",
+  "pathway_relation": [
+   "IR → % fibres with IGF-I immunoreactivity in overloaded muscle (0)",
+   "IR → small-fibre formation & hypertrophy (−)"
+  ],
+  "method": "Immunocytochemistry",
+  "functional_readout": "Compensatory hypertrophy blocked",
+  "causal_test": "no",
+  "grade": "C",
+  "limitation": {
+   "zh": "辐射作为卫星细胞消融工具",
+   "en": "Radiation used as SC-ablation tool; IGF-I only immunolocalised"
+  },
+  "full_text_checked": false
+ },
+ {
+  "pmid": "24294183",
+  "doi": "10.2478/raon-2013-0058",
+  "year": 2013,
+  "title": "Effect of ionizing radiation on human skeletal muscle precursor cells.",
+  "module": "M3 IL-6; stress response",
+  "species_model": "Human primary skeletal muscle myoblasts (biopsy-derived)",
+  "cell_or_tissue": "Myoblasts",
+  "dose_text": "4, 6, 8 Gy X-ray (Darpac 2000)",
+  "gy_per_fraction": "4–8",
+  "fractions": 1,
+  "setting": "invitro",
+  "timepoint": "IL-6 & HSP at 24 h; proliferation/LDH to 72 h",
+  "pathway_relation": [
+   "IR (4–6 Gy) → constitutive IL-6 secretion (−)",
+   "IR (higher dose) → HSP27, HSP70 (+)"
+  ],
+  "method": "ELISA, Western blot, proliferation, LDH",
+  "functional_readout": "Proliferation ↓ (dose-dependent), LDH release ↑",
+  "causal_test": "no",
+  "grade": "A",
+  "limitation": {
+   "zh": "体外单一细胞来源；IL-6下降与体内上调方向相反",
+   "en": "In vitro; IL-6 falls in myoblasts whereas in vivo tissue IL-6 rises — compartment-specific"
+  },
+  "full_text_checked": true
+ },
+ {
+  "pmid": "32734547",
+  "doi": "10.1007/s00455-020-10162-7",
+  "year": 2021,
+  "title": "Cytokine and Growth Factor Response in a Rat Model of Radiation Induced Injury to the Submental Muscles.",
+  "module": "M3 IL-6; existing TGF-β1/ECM",
+  "species_model": "Rats",
+  "cell_or_tissue": "Mylohyoid (target), geniohyoid, digastric",
+  "dose_text": "48 Gy: 6×8 Gy, 6 MeV electrons (clinical linac)",
+  "gy_per_fraction": 8,
+  "fractions": 6,
+  "setting": "invivo",
+  "timepoint": "2 and 4 wk post-RT",
+  "pathway_relation": [
+   "IR → TGF-β1 mRNA (+)",
+   "IR → MMP-2 mRNA (+)",
+   "IR → IL-6 mRNA (+)",
+   "IR → TNF-α, IFN-γ, IL-1β mRNA (0)"
+  ],
+  "method": "RT-qPCR",
+  "functional_readout": "Not in abstract (companion dysphagia papers)",
+  "causal_test": "no",
+  "grade": "B",
+  "limitation": {
+   "zh": "仅mRNA，仅摘要（有bioRxiv预印本）",
+   "en": "mRNA only; abstract-level (bioRxiv preprint exists)"
+  },
+  "full_text_checked": false,
+  "grade_note": "A-eligible if full text verified"
+ },
+ {
+  "pmid": "31040340",
+  "doi": "10.1038/s41598-019-43204-8",
+  "year": 2019,
+  "title": "The Late Effects of Radiation Therapy on Skeletal Muscle Morphology and Progenitor Cell Content are Influenced by Diet-Induced Obesity and Exercise Training in Male Mice.",
+  "module": "M3 NF-κB (conditional on obesity)",
+  "species_model": "Male mice; HFD ± exercise",
+  "cell_or_tissue": "Gastrocnemius–soleus complex",
+  "dose_text": "3 Gy whole-body γ (Co-60), single",
+  "gy_per_fraction": 3,
+  "fractions": 1,
+  "setting": "invivo",
+  "timepoint": "4 wk post-IR",
+  "pathway_relation": [
+   "HFD (in irradiated mice) → p-NF-κB (+)",
+   "HFD → TGFB1 (+)",
+   "HFD → IL-6 (− trend)"
+  ],
+  "method": "IHC/WB, qPCR, histology",
+  "functional_readout": "Fibrosis ↑ with obesity; exercise ↑ CSA & committed SCs",
+  "causal_test": "no",
+  "grade": "B",
+  "limitation": {
+   "zh": "所有动物均受照，无非照射对照，不能分离IR效应",
+   "en": "All groups irradiated — no unirradiated control; IR effect not isolated"
+  },
+  "full_text_checked": true
+ },
+ {
+  "pmid": "29787429",
+  "doi": "10.1097/HP.0000000000000822",
+  "year": 2018,
+  "title": "First Insights Into the M2 Inflammatory Response After Adipose-Tissue-Derived Stem Cell Injections in Radiation-Injured Muscles.",
+  "module": "M3 macrophage polarization",
+  "species_model": "Minipigs (n=6, preliminary)",
+  "cell_or_tissue": "Muscle beneath irradiated skin (cutaneous radiation syndrome)",
+  "dose_text": "50 Gy γ local, single",
+  "gy_per_fraction": 50,
+  "fractions": 1,
+  "setting": "invivo",
+  "timepoint": "76 d post-IR",
+  "pathway_relation": [
+   "Irradiated muscle: IL-1β, IL-6 (M1) present",
+   "ADSC injection → IL-10, TGF-β, CD68+/CD206+ (+)"
+  ],
+  "method": "Western blot, ISH, IHC",
+  "functional_readout": "Not quantified in abstract",
+  "causal_test": "no (cell therapy intervention)",
+  "grade": "C",
+  "limitation": {
+   "zh": "样本小，治疗导向，仅摘要",
+   "en": "Very small n; therapy-focused; abstract-level"
+  },
+  "full_text_checked": false
+ },
+ {
+  "pmid": "28017795",
+  "doi": "10.1016/j.stem.2016.11.020",
+  "year": 2017,
+  "title": "Injury-Induced Senescence Enables In Vivo Reprogramming in Skeletal Muscle.",
+  "module": "M3 IL-6 / senescence",
+  "species_model": "Mice (reprogrammable OSKM)",
+  "cell_or_tissue": "Skeletal muscle, Pax7+ MuSC lineage",
+  "dose_text": "Local irradiation (dose not in abstract)",
+  "gy_per_fraction": null,
+  "fractions": null,
+  "setting": "invivo",
+  "timepoint": null,
+  "pathway_relation": [
+   "Local IR → senescent cells (+) → in vivo reprogramming (+)",
+   "Senescence → IL-6 release (+) → reprogramming (+)"
+  ],
+  "method": "Lineage tracing, senolytic depletion",
+  "functional_readout": "Reprogramming efficiency",
+  "causal_test": "partial (senolytic depletion; IL-6 link mainly in injury context)",
+  "grade": "C",
+  "limitation": {
+   "zh": "辐射用作衰老诱导手段，IL-6因果主要在损伤模型",
+   "en": "Radiation used as senescence inducer; IL-6 causality shown mainly for injury"
+  },
+  "full_text_checked": false
+ },
+ {
+  "pmid": "26504028",
+  "doi": null,
+  "year": 2015,
+  "title": "Increased Expression of MuRF1 Is Associated with Radiation-induced Laryngeal Muscle Atrophy.",
+  "module": "M4 UPS (MuRF1)",
+  "species_model": "Female C57BL mice, 8 wk",
+  "cell_or_tissue": "Thyroarytenoid (intrinsic laryngeal)",
+  "dose_text": "25 Gy single, neck",
+  "gy_per_fraction": 25,
+  "fractions": 1,
+  "setting": "invivo",
+  "timepoint": "d3, d7, d10",
+  "pathway_relation": [
+   "IR → MuRF1 protein (+, d7 & d10)",
+   "IR → myosin/MyHC IIB (−)"
+  ],
+  "method": "Western blot, histology",
+  "functional_readout": "Fibre size ↓, myosin loss (IIB > IIA/X)",
+  "causal_test": "no",
+  "grade": "B",
+  "limitation": {
+   "zh": "单一读数，仅摘要",
+   "en": "Single pathway readout; abstract-level"
+  },
+  "full_text_checked": false
+ },
+ {
+  "pmid": "27029502",
+  "doi": "10.1038/srep23612",
+  "year": 2016,
+  "title": "A non-human primate model of radiation-induced cachexia.",
+  "module": "M4 UPS; M6 myostatin/activin",
+  "species_model": "Rhesus macaques (n=112 exposed; muscle analyses subset)",
+  "cell_or_tissue": "Skeletal muscle (biceps brachii histology; CT whole-body)",
+  "dose_text": "9.0–12.5 Gy partial-body irradiation with 5% bone-marrow sparing (PBI/BM5), single",
+  "gy_per_fraction": "9.0–12.5",
+  "fractions": 1,
+  "setting": "invivo",
+  "timepoint": "Variable; euthanasia up to 180 d",
+  "pathway_relation": [
+   "IR (cachectic) → FBXO32/Atrogin-1 mRNA (+)",
+   "IR → ACVR2B/ActRIIB mRNA (+, 2.4×)",
+   "IR → MSTN mRNA (−)",
+   "IR → TRIM63, UBB (trend)"
+  ],
+  "method": "RT-qPCR, CT, histology",
+  "functional_readout": "BW loss up to 20–25%; muscle loss up to 50% on CT",
+  "causal_test": "no",
+  "grade": "A",
+  "limitation": {
+   "zh": "致死性部分体照射，系统性ARS/胃肠损伤混杂；myostatin下降与预期相反",
+   "en": "Lethal-range PBI; systemic ARS/GI confounding; MSTN fell (paradoxical) while receptor rose"
+  },
+  "full_text_checked": true
+ },
+ {
+  "pmid": "31665379",
+  "doi": "10.1093/jrr/rrz067",
+  "year": 2019,
+  "title": "Alterations in pectoralis muscle cell characteristics after radiation of the human breast in situ.",
+  "module": "M4 UPS; M6 myostatin; NEW GSK3β",
+  "species_model": "Human breast-cancer patients (n=12)",
+  "cell_or_tissue": "Pectoralis major (irradiated) vs rectus abdominis (intra-individual control)",
+  "dose_text": "Clinical breast RT (dose not reported per patient)",
+  "gy_per_fraction": null,
+  "fractions": null,
+  "setting": "invivo (human)",
+  "timepoint": "≤3 y after RT",
+  "pathway_relation": [
+   "RT → GDF8/myostatin protein (+)",
+   "RT → FBXO32 (+)",
+   "RT → GSK3β (+)",
+   "RT → MYOG (+)",
+   "RT → cleaved caspase-3 (+)",
+   "RT → BMP1 (+), BMP2/BMP5 (−)",
+   "RT → neutrophil infiltration (+)"
+  ],
+  "method": "IHC/IF, DNA microarray, histology",
+  "functional_readout": "Fibrosis ↑",
+  "causal_test": "no",
+  "grade": "A",
+  "limitation": {
+   "zh": "横断面，对照为不同肌肉；剂量不详",
+   "en": "Cross-sectional; control is a different muscle; dose not stated"
+  },
+  "full_text_checked": true
+ },
+ {
+  "pmid": "36231065",
+  "doi": "10.3390/cells11193102",
+  "year": 2022,
+  "title": "Exosomal Plasminogen Activator Inhibitor-1 Induces Ionizing Radiation-Adaptive Glioblastoma Cachexia.",
+  "module": "M3 STAT3; M4 MuRF1 (tumour-host indirect)",
+  "species_model": "U87MG glioblastoma cells; mouse model",
+  "cell_or_tissue": "Muscle not irradiated (tumour cells irradiated)",
+  "dose_text": "Single X-ray dose to GBM cells (0.38 Gy/min; dose per full text)",
+  "gy_per_fraction": null,
+  "fractions": 1,
+  "setting": "invitro+invivo",
+  "timepoint": null,
+  "pathway_relation": [
+   "IR (tumour) → exosomal PAI-1 (+) → muscle p-STAT3 (+) → MuRF1 (+) → atrophy"
+  ],
+  "method": "Exosome transfer, WB",
+  "functional_readout": "Muscle atrophy",
+  "causal_test": "partial (PAI-1 overexpression)",
+  "grade": "C",
+  "limitation": {
+   "zh": "肌肉未受照，属肿瘤-宿主间接通路",
+   "en": "Muscle not irradiated; tumour-host indirect (cf. atlas tumour sEV module)"
+  },
+  "full_text_checked": true
+ },
+ {
+  "pmid": "35414122",
+  "doi": "10.1186/s13395-022-00291-y",
+  "year": 2022,
+  "title": "Endurance exercise attenuates juvenile irradiation-induced skeletal muscle functional decline and mitochondrial stress.",
+  "module": "M7 mitochondria; NEW Ca2+ handling; existing ROS",
+  "species_model": "Juvenile male mice ± voluntary wheel running",
+  "cell_or_tissue": "EDL, soleus, TA",
+  "dose_text": "3×8.2 Gy X-ray (SARRP), every other day, right hindlimb",
+  "gy_per_fraction": 8.2,
+  "fractions": 3,
+  "setting": "invivo",
+  "timepoint": "1 month post-IR",
+  "pathway_relation": [
+   "IR → resting cytosolic Ca2+ (−)",
+   "IR → protein oxidation (+73%)",
+   "IR → mitochondrial damage (+)",
+   "IR → PGC-1α (0; ↑ only with exercise)"
+  ],
+  "method": "Ex vivo contractility, Ca2+ imaging, MitoSOX, qPCR, WB",
+  "functional_readout": "Specific force ↓27% EDL, ↓14% soleus",
+  "causal_test": "no (exercise intervention only)",
+  "grade": "A",
+  "limitation": {
+   "zh": "PGC-1α改变来自运动而非IR；单时间点",
+   "en": "PGC-1α change is exercise-driven not IR-driven; single timepoint"
+  },
+  "full_text_checked": true
+ },
+ {
+  "pmid": "41565395",
+  "doi": "10.1016/j.lssr.2025.10.008",
+  "year": 2026,
+  "title": "Differential regulation of mitochondrial quality control in skeletal muscle by HZE radiation exposure and partial weightbearing in mice.",
+  "module": "M7 mitochondrial biogenesis/mitophagy",
+  "species_model": "Female BALB/cByJ mice; ±1/6 G partial weight-bearing",
+  "cell_or_tissue": "Gastrocnemius",
+  "dose_text": "0.5 Gy 28Si heavy ion, single",
+  "gy_per_fraction": 0.5,
+  "fractions": 1,
+  "setting": "invivo",
+  "timepoint": "21 d",
+  "pathway_relation": [
+   "IR → PGC-1α mRNA (−)",
+   "IR → TFAM mRNA (− trend, p=0.051)",
+   "IR → LC3b mRNA (−)",
+   "IR → Park2 mRNA (−)",
+   "IR → OXPHOS, fusion/fission transcripts (0)"
+  ],
+  "method": "qRT-PCR",
+  "functional_readout": "Not reported",
+  "causal_test": "no",
+  "grade": "B",
+  "limitation": {
+   "zh": "重离子、仅mRNA、仅摘要",
+   "en": "Heavy-ion, mRNA only, abstract-level"
+  },
+  "full_text_checked": false,
+  "space_flag": "radiation effect isolated by 2×2 factorial (no interaction)"
+ },
+ {
+  "pmid": "20636270",
+  "doi": "10.1134/s0006297910060131",
+  "year": 2010,
+  "title": "Mitochondrial DNA transcription in mouse liver, skeletal muscle, and brain following lethal x-ray irradiation.",
+  "module": "M7 mitochondrial transcription",
+  "species_model": "Mice",
+  "cell_or_tissue": "Skeletal muscle (also liver, brain)",
+  "dose_text": "10 Gy X-ray, lethal whole-body",
+  "gy_per_fraction": 10,
+  "fractions": 1,
+  "setting": "invivo",
+  "timepoint": "1, 5, 24 h",
+  "pathway_relation": [
+   "IR → mtDNA transcripts ND2/ND4/CYTB/ATP6 (− 85–95%)",
+   "IR → TFB2M mRNA (−)",
+   "IR → mtDNA copy number (+)"
+  ],
+  "method": "qPCR",
+  "functional_readout": "None",
+  "causal_test": "no",
+  "grade": "B",
+  "limitation": {
+   "zh": "致死剂量、仅摘要",
+   "en": "Lethal dose; abstract-level"
+  },
+  "full_text_checked": false
+ },
+ {
+  "pmid": "40280643",
+  "doi": "10.1016/j.lssr.2025.02.002",
+  "year": 2025,
+  "title": "Effects of X-ray irradiation and housing conditions on mitochondria in Peromyscus maniculatus.",
+  "module": "M7 mitochondrial function",
+  "species_model": "Deer mice (Peromyscus maniculatus), two housing conditions",
+  "cell_or_tissue": "Skeletal muscle mitochondria (and liver)",
+  "dose_text": "2 Gy X-ray",
+  "gy_per_fraction": 2,
+  "fractions": 1,
+  "setting": "invivo",
+  "timepoint": "≤4 d and 1 month",
+  "pathway_relation": [
+   "IR → state 3/4 respiration (−, 4 d; recovered by 1 mo)",
+   "IR → mitochondrial volume (−)"
+  ],
+  "method": "Respirometry, oxidative damage",
+  "functional_readout": "None",
+  "causal_test": "no",
+  "grade": "C",
+  "limitation": {
+   "zh": "非经典模型，无通路节点",
+   "en": "Non-standard species; functional mitochondrial readouts, no pathway nodes"
+  },
+  "full_text_checked": false
+ },
+ {
+  "pmid": "21171096",
+  "doi": "10.1002/mus.21797",
+  "year": 2011,
+  "title": "Exercise training enhances the skeletal muscle response to radiation-induced oxidative stress.",
+  "module": "M7 / antioxidant (conditional on training)",
+  "species_model": "Mice, trained vs untrained (irradiated n=3/group)",
+  "cell_or_tissue": "Quadriceps",
+  "dose_text": "High-dose radiation (dose not in abstract)",
+  "gy_per_fraction": null,
+  "fractions": null,
+  "setting": "invivo",
+  "timepoint": "3–5 d after last exercise bout",
+  "pathway_relation": [
+   "IR (trained only) → total SOD, MnSOD activity (+)",
+   "IR (trained only) → citrate synthase, COX activity (+)"
+  ],
+  "method": "Enzyme activity",
+  "functional_readout": "None",
+  "causal_test": "no",
+  "grade": "C",
+  "limitation": {
+   "zh": "照射组n=3，剂量未知",
+   "en": "Irradiated n=3; dose not stated"
+  },
+  "full_text_checked": false
+ },
+ {
+  "pmid": "36142836",
+  "doi": "10.3390/ijms231810921",
+  "year": 2022,
+  "title": "Chronic Ouabain Prevents Radiation-Induced Reduction in the α2 Na,K-ATPase Function in the Rat Diaphragm Muscle.",
+  "module": "NEW ion transport (α2 Na,K-ATPase); M3 IL-6 (serum)",
+  "species_model": "Male Wistar rats ± ouabain 1 µg/kg/d",
+  "cell_or_tissue": "Diaphragm",
+  "dose_text": "10 Gy total-body X-ray, single",
+  "gy_per_fraction": 10,
+  "fractions": 1,
+  "setting": "invivo",
+  "timepoint": "72 h",
+  "pathway_relation": [
+   "IR → α2 Na,K-ATPase electrogenic contribution (−) → sarcolemmal depolarization (+)",
+   "IR → α2 protein (0)",
+   "IR → serum ouabain, IL-6, corticosterone (+)",
+   "IR → lipid peroxidation (−)",
+   "Ouabain → IR-induced α2 loss/depolarization (− , prevented)"
+  ],
+  "method": "Intracellular microelectrodes, WB, ELISA",
+  "functional_readout": "Resting membrane potential",
+  "causal_test": "yes (pharmacological: chronic ouabain prevents)",
+  "grade": "A",
+  "limitation": {
+   "zh": "全身照射，单时间点；机制为功能性非表达性",
+   "en": "TBI single timepoint; functional (not expression) change"
+  },
+  "full_text_checked": true
+ },
+ {
+  "pmid": "42135336",
+  "doi": "10.1038/s41526-026-00609-w",
+  "year": 2026,
+  "title": "Proton radiation impairs mechanotransduction in C2C12 myoblasts.",
+  "module": "NEW mechanotransduction (Piezo1/membrane)",
+  "species_model": "C2C12 myoblasts",
+  "cell_or_tissue": "Myoblasts",
+  "dose_text": "17 MeV protons, fluence 2.5×10^9–1×10^10 cm^-2 (Gy not extracted)",
+  "gy_per_fraction": null,
+  "fractions": 1,
+  "setting": "invitro",
+  "timepoint": null,
+  "pathway_relation": [
+   "Proton → membrane rigidity/dipole potential (+, dose-dependent)",
+   "Proton → Yoda1-evoked Piezo1 Ca2+ transients (−)",
+   "Proton → Piezo1 protein (0)"
+  ],
+  "method": "Membrane probes (PY3174, F66), Fura-2, WB",
+  "functional_readout": "None",
+  "causal_test": "no",
+  "grade": "A",
+  "limitation": {
+   "zh": "空间SPE模型、仅成肌细胞；未测YAP下游",
+   "en": "SPE-like proton model, myoblasts only; downstream YAP not tested"
+  },
+  "full_text_checked": true,
+  "space_flag": "radiation isolated (in vitro)"
+ },
+ {
+  "pmid": "19961755",
+  "doi": null,
+  "year": 2009,
+  "title": "[Effect of radiation on the activity and expression of Ca(2+)-Mg(2+)-ATPase in rat masseter muscle].",
+  "module": "NEW Ca2+ handling (SERCA/Ca-Mg-ATPase)",
+  "species_model": "Rats",
+  "cell_or_tissue": "Masseter",
+  "dose_text": "20 Gy X-ray single, local",
+  "gy_per_fraction": 20,
+  "fractions": 1,
+  "setting": "invivo",
+  "timepoint": "d3, d30",
+  "pathway_relation": [
+   "IR → Ca2+-Mg2+-ATPase activity (−20% d3, −40% d30)",
+   "IR → protein expression (abstract contradictory)"
+  ],
+  "method": "Colorimetric activity, WB, IHC",
+  "functional_readout": "None",
+  "causal_test": "no",
+  "grade": "C",
+  "limitation": {
+   "zh": "中文摘要自相矛盾",
+   "en": "Chinese-language abstract internally contradictory on protein level"
+  },
+  "full_text_checked": false
+ },
+ {
+  "pmid": "34879217",
+  "doi": "10.1080/09553002.2021.2013574",
+  "year": 2022,
+  "title": "Muscle regeneration after high-dose radiation exposure: therapeutic potential of Hedgehog pathway modulation?",
+  "module": "NEW Hedgehog",
+  "species_model": "C2C12 myoblasts",
+  "cell_or_tissue": "Myoblasts/myotubes",
+  "dose_text": "5 Gy X-ray",
+  "gy_per_fraction": 5,
+  "fractions": 1,
+  "setting": "invitro",
+  "timepoint": null,
+  "pathway_relation": [
+   "IR → proliferation, migration, differentiation (−)",
+   "rShh (agonist) / cyclopamine (antagonist) → modulate post-IR proliferation vs differentiation"
+  ],
+  "method": "Proliferation, migration, apoptosis, myogenic gene/protein",
+  "functional_readout": "Myogenesis",
+  "causal_test": "yes (pharmacological agonist/antagonist)",
+  "grade": "B",
+  "limitation": {
+   "zh": "仅摘要（结果截断），体外",
+   "en": "Abstract-level (results truncated); in vitro"
+  },
+  "full_text_checked": false,
+  "grade_note": "A-causal-eligible if full text verified"
+ },
+ {
+  "pmid": "38253061",
+  "doi": "10.1667/RADE-23-00140.1",
+  "year": 2024,
+  "title": "Comparison of Three Antagonists of Hedgehog Pathway to Promote Skeletal Muscle Regeneration after High Dose Irradiation.",
+  "module": "NEW Hedgehog",
+  "species_model": "C2C12 myoblasts",
+  "cell_or_tissue": "Myoblasts/myotubes",
+  "dose_text": "5 Gy X-ray",
+  "gy_per_fraction": 5,
+  "fractions": 1,
+  "setting": "invitro",
+  "timepoint": null,
+  "pathway_relation": [
+   "Hh antagonists (cyclopamine, sonidegib) → differentiation markers after IR (+)",
+   "Vismodegib → (0)"
+  ],
+  "method": "qPCR, protein, morphology",
+  "functional_readout": "Myotube morphology",
+  "causal_test": "yes (pharmacological antagonists)",
+  "grade": "B",
+  "limitation": {
+   "zh": "仅摘要，体外",
+   "en": "Abstract-level; in vitro"
+  },
+  "full_text_checked": false
+ },
+ {
+  "pmid": "25808704",
+  "doi": "10.1002/cbin.10462",
+  "year": 2015,
+  "title": "Ionizing radiation increases primary cilia incidence and induces multiciliation in C2C12 myoblasts.",
+  "module": "NEW primary cilia (Hh scaffold); apoptosis",
+  "species_model": "C2C12 myoblasts",
+  "cell_or_tissue": "Myoblasts",
+  "dose_text": "2–20 Gy γ",
+  "gy_per_fraction": null,
+  "fractions": 1,
+  "setting": "invitro",
+  "timepoint": "1 d and 3 d",
+  "pathway_relation": [
+   "IR → primary cilia incidence (+)",
+   "IR (10–20 Gy) → multiciliation (+)",
+   "IR (10–20 Gy) → caspase-3/7, -8, -9 (+)"
+  ],
+  "method": "Immunofluorescence, caspase assays",
+  "functional_readout": "Viability, proliferation ↓",
+  "causal_test": "no",
+  "grade": "B",
+  "limitation": {
+   "zh": "表型/细胞器层面，未连接信号",
+   "en": "Organelle phenotype; no signalling linkage"
+  },
+  "full_text_checked": false
+ },
+ {
+  "pmid": "15799618",
+  "doi": "10.1080/09553000400017408",
+  "year": 2004,
+  "title": "Involvment of c-Abl in the radiation-induced inhibition of myoblast differentiation.",
+  "module": "NEW c-Abl differentiation checkpoint",
+  "species_model": "C2C12 myoblasts",
+  "cell_or_tissue": "Differentiating myoblasts",
+  "dose_text": "Ionizing radiation (dose not in abstract)",
+  "gy_per_fraction": null,
+  "fractions": null,
+  "setting": "invitro",
+  "timepoint": "c-Abl activity 6 h after differentiation induction",
+  "pathway_relation": [
+   "IR → differentiation-induced c-Abl activity (−)",
+   "c-Abl loss (DN K290R / STI571) → myotube formation (−, mimics IR)",
+   "IR → myogenin, MyHC (0)"
+  ],
+  "method": "Immune-complex kinase assay, DN mutant, STI571",
+  "functional_readout": "Myotube formation",
+  "causal_test": "yes (dominant-negative c-Abl, STI571)",
+  "grade": "B",
+  "limitation": {
+   "zh": "仅摘要；与Puri 2002方向不同(c-Abl被IR抑制 vs 激活抑制MyoD)",
+   "en": "Abstract-level; direction differs from Puri 2002 (c-Abl activity reduced vs c-Abl-dependent MyoD inhibition)"
+  },
+  "full_text_checked": false,
+  "grade_note": "A-causal-eligible if full text verified"
+ },
+ {
+  "pmid": "12415271",
+  "doi": "10.1038/ng1023",
+  "year": 2002,
+  "title": "A myogenic differentiation checkpoint activated by genotoxic stress.",
+  "module": "NEW c-Abl → MyoD checkpoint",
+  "species_model": "Myoblasts (C2C12; p53−/−, c-Jun−/−, Abl1−/− cells)",
+  "cell_or_tissue": "Myoblasts",
+  "dose_text": "Genotoxic agents; IR use per secondary sources (dose not in abstract)",
+  "gy_per_fraction": null,
+  "fractions": null,
+  "setting": "invitro",
+  "timepoint": null,
+  "pathway_relation": [
+   "DNA damage → c-Abl (+) → MyoD activity (−) → muscle gene expression (−)",
+   "p53, c-Jun not required"
+  ],
+  "method": "Genetic knockouts, reporter assays",
+  "functional_readout": "Differentiation",
+  "causal_test": "yes (Abl1-deficient cells)",
+  "grade": "C",
+  "limitation": {
+   "zh": "摘要未明确使用电离辐射",
+   "en": "Abstract does not specify ionizing radiation (genotoxic agents); verify"
+  },
+  "full_text_checked": false
+ },
+ {
+  "pmid": "10757320",
+  "doi": "10.1080/095530000138745",
+  "year": 2000,
+  "title": "Radiation retards muscle differentiation but does not affect osteoblastic differentiation induced by bone morphogenetic protein-2 in C2C12 myoblasts.",
+  "module": "Myogenic differentiation; NEW BMP (null)",
+  "species_model": "C2C12 myoblasts",
+  "cell_or_tissue": "Myoblasts → myotubes / osteoblasts",
+  "dose_text": "2 and 4 Gy",
+  "gy_per_fraction": null,
+  "fractions": 1,
+  "setting": "invitro",
+  "timepoint": null,
+  "pathway_relation": [
+   "IR → MHC+ multinucleated myotube formation (−, transient)",
+   "IR → MyoD, myogenin mRNA (0)",
+   "IR → BMP-2-induced ALP/osteocalcin (0)"
+  ],
+  "method": "Immunostaining, ALP, Northern/RT-PCR",
+  "functional_readout": "Myotube formation delayed",
+  "causal_test": "no",
+  "grade": "B",
+  "limitation": {
+   "zh": "仅摘要；与12600237 BMP结果冲突",
+   "en": "Abstract-level; BMP result conflicts with PMID 12600237"
+  },
+  "full_text_checked": false
+ },
+ {
+  "pmid": "12600237",
+  "doi": "10.1667/0033-7587(2003)159[0345:risotb]2.0.co;2",
+  "year": 2003,
+  "title": "Radiation-induced suppression of the Bmp2 signal transduction pathway in the pluripotent mesenchymal cell line C2C12: an in vitro model for prevention of heterotopic ossification by radiotherapy.",
+  "module": "NEW BMP2–SMAD1",
+  "species_model": "C2C12 (pluripotent mesenchymal / osteogenic induction)",
+  "cell_or_tissue": "Myoblast line under BMP-2",
+  "dose_text": "0–20 Gy; 7 Gy 6 h before/after BMP",
+  "gy_per_fraction": null,
+  "fractions": 1,
+  "setting": "invitro",
+  "timepoint": "Time-dependent (h)",
+  "pathway_relation": [
+   "IR → BMP2–BMPR complex formation (−, dose-dependent)",
+   "IR → p-Smad1 (−, time-dependent)",
+   "IR → total Smad (0)",
+   "IR → ALP activity (−)"
+  ],
+  "method": "125I-BMP2 binding, WB, ALP",
+  "functional_readout": "Osteogenic differentiation ↓",
+  "causal_test": "no",
+  "grade": "B",
+  "limitation": {
+   "zh": "异位骨化/成骨情境，非肌损伤",
+   "en": "Heterotopic-ossification (osteogenic) context, not myogenic injury"
+  },
+  "full_text_checked": false
+ },
+ {
+  "pmid": "17928745",
+  "doi": "10.1269/jrr.07012",
+  "year": 2007,
+  "title": "Radiation-induced reduction of osteoblast differentiation in C2C12 cells.",
+  "module": "NEW BMP (osteogenic markers)",
+  "species_model": "C2C12",
+  "cell_or_tissue": "Myoblast line under BMP-2/heparin",
+  "dose_text": "2 and 4 Gy, 6 h before BMP-2",
+  "gy_per_fraction": null,
+  "fractions": 1,
+  "setting": "invitro",
+  "timepoint": null,
+  "pathway_relation": [
+   "IR → ALP, Col1 mRNA (−)",
+   "IR → ALP activity (−)"
+  ],
+  "method": "qPCR, ALP",
+  "functional_readout": "Growth ↓",
+  "causal_test": "no",
+  "grade": "C",
+  "limitation": {
+   "zh": "仅标志物，无通路节点",
+   "en": "Markers only; no pathway node measured"
+  },
+  "full_text_checked": false
+ },
+ {
+  "pmid": "20161613",
+  "doi": "10.1126/scitranslmed.3000139",
+  "year": 2009,
+  "title": "Radioprotection in normal tissue and delayed tumor growth by blockade of CD47 signaling.",
+  "module": "NEW TSP1–CD47 / NO survival",
+  "species_model": "C57BL/6 mice (also TSP1−/−, CD47−/− background); human EC in vitro",
+  "cell_or_tissue": "Hindlimb skeletal muscle & soft tissue",
+  "dose_text": "25 Gy single, hindlimb",
+  "gy_per_fraction": 25,
+  "fractions": 1,
+  "setting": "invivo",
+  "timepoint": "24 h (TUNEL), 8 wk (fibrosis/perfusion)",
+  "pathway_relation": [
+   "CD47 → skeletal-muscle cell apoptosis after IR (+) [CD47 morpholino ↓ TUNEL]",
+   "CD47 → NO-dependent vascular perfusion after IR (−)",
+   "CD47 suppression → fibrotic contracture (−)"
+  ],
+  "method": "Antisense morpholino, TUNEL, laser Doppler",
+  "functional_readout": "Limb contracture, perfusion",
+  "causal_test": "yes (CD47 antisense morpholino; TSP1/CD47-null mice)",
+  "grade": "A",
+  "limitation": {
+   "zh": "肌肉仅为多组织之一，主要终点为血管/软组织",
+   "en": "Muscle is one of several tissues; main endpoints vascular/soft tissue"
+  },
+  "full_text_checked": true
+ },
+ {
+  "pmid": "34997696",
+  "doi": "10.1002/jcsm.12902",
+  "year": 2022,
+  "title": "Muscle-specific functional deficits and lifelong fibrosis in response to paediatric radiotherapy and tumour elimination.",
+  "module": "NEW CCL2–CCR2 chemokine; existing TGF-β1/fibrosis",
+  "species_model": "Juvenile male C57BL/6J mice ± rhabdomyosarcoma",
+  "cell_or_tissue": "Hindlimb muscles",
+  "dose_text": "3×8.2 Gy at 4 wk of age",
+  "gy_per_fraction": 8.2,
+  "fractions": 3,
+  "setting": "invivo",
+  "timepoint": "3 wk and 14 mo post-IR",
+  "pathway_relation": [
+   "IR → Ccr2, Ccl2, Ccl7, Ccl8 mRNA (+)",
+   "IR → Tgfb1, Fn1 mRNA (+)"
+  ],
+  "method": "RNA-seq, RT-qPCR, physiology, histology",
+  "functional_readout": "Mass −17%, force −25%, lifelong fibrosis",
+  "causal_test": "no",
+  "grade": "A",
+  "limitation": {
+   "zh": "趋化因子为关联，未阻断CCR2",
+   "en": "Chemokine axis associative; CCR2 not blocked"
+  },
+  "full_text_checked": true
+ },
+ {
+  "pmid": "38115574",
+  "doi": "10.1111/acel.14069",
+  "year": 2024,
+  "title": "Senescent skeletal muscle fibroadipogenic progenitors recruit and promote M2 polarization of macrophages.",
+  "module": "NEW senescent-FAP SASP (CCL2, OPN/SPP1) → macrophage; existing FAP senescence",
+  "species_model": "Mouse primary FAPs; RAW264.7 & BMDM",
+  "cell_or_tissue": "Fibro-adipogenic progenitors",
+  "dose_text": "10 Gy X-ray, then 21 d culture",
+  "gy_per_fraction": 10,
+  "fractions": 1,
+  "setting": "invitro",
+  "timepoint": "21 d post-IR",
+  "pathway_relation": [
+   "IR-induced senescence → Ccl2, Spp1 expression & CCL2/OPN secretion (+)",
+   "Senescent FAP medium → macrophage migration (+) [CCL2 or OPN neutralisation attenuates]",
+   "Senescent FAP secretome → M2 polarisation (+)"
+  ],
+  "method": "qPCR, ELISA/array, migration assay, flow cytometry",
+  "functional_readout": "Macrophage recruitment",
+  "causal_test": "partial (neutralising antibodies; senescence inducer for that assay not specified as X-ray)",
+  "grade": "A",
+  "limitation": {
+   "zh": "体外；中和实验所用衰老诱导剂未明确为X线",
+   "en": "In vitro; inducer used in the neutralisation assay not specified as X-ray"
+  },
+  "full_text_checked": true
+ },
+ {
+  "pmid": "41681034",
+  "doi": "10.1111/acel.70410",
+  "year": 2026,
+  "title": "The Immunogenicity of Human Senescent Cells Is Dependent on the Senescence Inducer and Cell Type.",
+  "module": "Senescence/immunogenicity (SASP)",
+  "species_model": "Human iPSC-derived myoblasts (and HDF, EC, lung progenitors)",
+  "cell_or_tissue": "Myoblasts",
+  "dose_text": "Ionizing radiation (15 Gy used for HDF; i-MB dose not extracted)",
+  "gy_per_fraction": null,
+  "fractions": 1,
+  "setting": "invitro",
+  "timepoint": null,
+  "pathway_relation": [
+   "IR-senescent i-MB → distinct SASP & inhibitory immune ligands",
+   "Immunogenicity shown for RAS- not IR-induced senescent myoblasts"
+  ],
+  "method": "Immunopeptidome, co-culture, humanized mouse",
+  "functional_readout": "Immune activation",
+  "causal_test": "no",
+  "grade": "C",
+  "limitation": {
+   "zh": "IR诱导的成肌细胞未显示免疫原性",
+   "en": "IR-senescent myoblasts not shown immunogenic"
+  },
+  "full_text_checked": true
+ },
+ {
+  "pmid": "21319985",
+  "doi": "10.1667/RR2453.1",
+  "year": 2011,
+  "title": "Satellite cells say NO to radiation.",
+  "module": "Existing ROS/NO refinement (NO → MuSC proliferation; MRFs)",
+  "species_model": "Sprague-Dawley rat primary satellite cells",
+  "cell_or_tissue": "Satellite cells",
+  "dose_text": "1, 2, 5 Gy γ",
+  "gy_per_fraction": null,
+  "fractions": 1,
+  "setting": "invitro",
+  "timepoint": "48, 72, 96 h",
+  "pathway_relation": [
+   "IR → NO (−) → SC proliferation (−)",
+   "NO donor (SNP) → post-IR proliferation (+, rescue ≤2 Gy)",
+   "PTIO → SNP rescue (− , abolished)",
+   "IR → MyoD, myogenin (+), mitigated by SNP"
+  ],
+  "method": "Cell counts, NO assay, cyclic stretch, WB",
+  "functional_readout": "Proliferation",
+  "causal_test": "yes (SNP donor / PTIO scavenger)",
+  "grade": "A",
+  "limitation": {
+   "zh": "体外；5 Gy不可挽救",
+   "en": "In vitro; no rescue at 5 Gy"
+  },
+  "full_text_checked": true
+ },
+ {
+  "pmid": "37993260",
+  "doi": "10.26508/lsa.202302279",
+  "year": 2024,
+  "title": "Decline of DNA damage response along with myogenic differentiation.",
+  "module": "Existing DDR refinement (BER/NHEJ/HR decline in myotubes)",
+  "species_model": "C2C7 murine myoblasts/myocytes/myotubes",
+  "cell_or_tissue": "Myogenic cells by differentiation stage",
+  "dose_text": "5 Gy X-ray (LINAC) and local micro-irradiation",
+  "gy_per_fraction": 5,
+  "fractions": 1,
+  "setting": "invitro",
+  "timepoint": "Kinetics (min–h)",
+  "pathway_relation": [
+   "Myotube differentiation → recruitment of BER/NHEJ/HR proteins to IR damage (−)",
+   "Myotubes → steady-state BER & HR proteins (−)"
+  ],
+  "method": "Live imaging of GFP-53BP1 etc., immunofluorescence",
+  "functional_readout": "DNA repair kinetics",
+  "causal_test": "no",
+  "grade": "A",
+  "limitation": {
+   "zh": "已覆盖DDR模块，仅细化",
+   "en": "Within existing DDR module; refinement only"
+  },
+  "full_text_checked": true
+ },
+ {
+  "pmid": "41101385",
+  "doi": "10.1016/j.biocel.2025.106872",
+  "year": 2025,
+  "title": "The DNA damage response in myogenic C2C7 cells depends on the characteristics of ionizing particles.",
+  "module": "Existing DDR refinement (particle-type dependence)",
+  "species_model": "C2C7 myoblasts/myotubes",
+  "cell_or_tissue": "Myogenic cells",
+  "dose_text": "Proton or α-particle microbeams",
+  "gy_per_fraction": null,
+  "fractions": null,
+  "setting": "invitro",
+  "timepoint": "Time after irradiation (kinetics)",
+  "pathway_relation": [
+   "Myoblasts → NHEJ & HR recruitment dynamics depend on particle type/LET",
+   "Myotubes → global DDR (−)"
+  ],
+  "method": "Microbeam, live imaging",
+  "functional_readout": "DNA repair",
+  "causal_test": "no",
+  "grade": "B",
+  "limitation": {
+   "zh": "仅摘要，现有模块",
+   "en": "Abstract-level; existing module"
+  },
+  "full_text_checked": false
+ },
+ {
+  "pmid": "27452406",
+  "doi": "10.1093/jnen/nlw064",
+  "year": 2016,
+  "title": "DNA Damage Response and DNA Repair in Skeletal Myocytes From a Mouse Model of Spinal Muscular Atrophy.",
+  "module": "Existing DDR (p53/γH2AX in myotubes)",
+  "species_model": "Primary myotubes from control and SMA mice",
+  "cell_or_tissue": "Satellite-cell-derived myotubes",
+  "dose_text": "γ-irradiation (dose not in abstract)",
+  "gy_per_fraction": null,
+  "fractions": null,
+  "setting": "invitro",
+  "timepoint": "Recovery time-course",
+  "pathway_relation": [
+   "IR → p-p53, γH2AX foci (+, disperse then re-form)",
+   "Myotubes repair strand breaks (SMA = control)"
+  ],
+  "method": "Comet/IF",
+  "functional_readout": "DNA repair",
+  "causal_test": "no",
+  "grade": "B",
+  "limitation": {
+   "zh": "疾病模型背景，现有模块",
+   "en": "SMA-model context; existing module"
+  },
+  "full_text_checked": false
+ },
+ {
+  "pmid": "37352202",
+  "doi": "10.1371/journal.pone.0287044",
+  "year": 2023,
+  "title": "Radiation induced changes in profibrotic markers in the submental muscles and their correlation with tongue movement.",
+  "module": "Existing TGF-β1/ECM (swallowing muscle model)",
+  "species_model": "Male Sprague-Dawley rats",
+  "cell_or_tissue": "Mylohyoid, geniohyoid",
+  "dose_text": "64 Gy: 8×8 Gy (clinical linac)",
+  "gy_per_fraction": 8,
+  "fractions": 8,
+  "setting": "invivo",
+  "timepoint": "2 months",
+  "pathway_relation": [
+   "IR → TGF-β1 protein (+, mylohyoid)",
+   "IR → collagen (+, geniohyoid)",
+   "IR → fibre type (0)"
+  ],
+  "method": "ELISA, picrosirius red, IF, videofluoroscopy, lickometer",
+  "functional_readout": "Lick rate ↓, tongue protrusion ↓",
+  "causal_test": "no",
+  "grade": "A",
+  "limitation": {
+   "zh": "现有模块；仅单时间点",
+   "en": "Existing module; single timepoint"
+  },
+  "full_text_checked": true
+ },
+ {
+  "pmid": "34841459",
+  "doi": "10.1007/s11604-021-01219-0",
+  "year": 2022,
+  "title": "Feasibility study for inducing the skeletal muscle fibrosis via irradiation using two mouse strains.",
+  "module": "Existing TGF-β/fibrosis (strain dependence)",
+  "species_model": "C57BL/6 vs C3H/He mice",
+  "cell_or_tissue": "Gastrocnemius",
+  "dose_text": "25 Gy × 3 (weekly), right hindlimb",
+  "gy_per_fraction": 25,
+  "fractions": 3,
+  "setting": "invivo",
+  "timepoint": "d4, wk 2, 4, 8, 12, 24",
+  "pathway_relation": [
+   "IR → TGF-β, fibronectin (+; wk2 B6, wk8 C3H)"
+  ],
+  "method": "Immunoblot, histology",
+  "functional_readout": "Fibrosis (wk8 B6, wk12 C3H)",
+  "causal_test": "no",
+  "grade": "B",
+  "limitation": {
+   "zh": "仅摘要，现有模块",
+   "en": "Abstract-level; existing module"
+  },
+  "full_text_checked": false
+ },
+ {
+  "pmid": "30157899",
+  "doi": "10.1186/s13014-018-1104-0",
+  "year": 2018,
+  "title": "Radiation-induced muscle fibrosis rat model: establishment and valuation.",
+  "module": "Existing TGF-β1/fibrosis; MuSC genes",
+  "species_model": "Sprague-Dawley rats",
+  "cell_or_tissue": "Rectus femoris",
+  "dose_text": "65–90 Gy single; 90 Gy time course",
+  "gy_per_fraction": 90,
+  "fractions": 1,
+  "setting": "invivo",
+  "timepoint": "1, 2, 4, 8 wk",
+  "pathway_relation": [
+   "IR → TGF-β1 (+, time-dependent)",
+   "IR → satellite-cell proliferation/differentiation genes (changed)"
+  ],
+  "method": "Masson, EM, qPCR",
+  "functional_readout": "Fibrosis",
+  "causal_test": "no",
+  "grade": "B",
+  "limitation": {
+   "zh": "超高单次剂量，现有模块",
+   "en": "Very high single dose; existing module"
+  },
+  "full_text_checked": false
+ },
+ {
+  "pmid": "27144672",
+  "doi": "10.1002/jso.24265",
+  "year": 2016,
+  "title": "Neuromuscular electrical stimulation improves radiation-induced fibrosis through Tgf-Β1/MyoD homeostasis in head and neck cancer.",
+  "module": "Existing TGF-β1; TGF-β1 ⊣ MyoD",
+  "species_model": "Human head-and-neck cancer patients (n=20 RT, 10 controls)",
+  "cell_or_tissue": "Cervical muscles (biopsy)",
+  "dose_text": "Post-operative RT (dose not in abstract)",
+  "gy_per_fraction": null,
+  "fractions": null,
+  "setting": "invivo (human)",
+  "timepoint": "4 wk after RT completion",
+  "pathway_relation": [
+   "RT → TGF-β1 (+)",
+   "RT → MyoD (−)"
+  ],
+  "method": "IHC, Western blot",
+  "functional_readout": "Not in abstract (NMES/TST intervention)",
+  "causal_test": "no",
+  "grade": "B",
+  "limitation": {
+   "zh": "小样本临床，仅摘要",
+   "en": "Small clinical study; abstract-level"
+  },
+  "full_text_checked": false
+ },
+ {
+  "pmid": "26738903",
+  "doi": "10.2106/JBJS.O.00545",
+  "year": 2016,
+  "title": "Angiotensin-(1-7) Attenuates Skeletal Muscle Fibrosis and Stiffening in a Mouse Model of Extremity Sarcoma Radiation Therapy.",
+  "module": "M8 CTGF/CCN2; existing TGF-β",
+  "species_model": "Male CD-1 mice ± Ang-(1-7)",
+  "cell_or_tissue": "Gastrocnemius, soleus",
+  "dose_text": "4×7.3 Gy over 2 wk (BED ~100.3 Gy)",
+  "gy_per_fraction": 7.3,
+  "fractions": 4,
+  "setting": "invivo",
+  "timepoint": "6 wk (cytokines); 6 wk & 4 mo (fibrosis, mechanics)",
+  "pathway_relation": [
+   "IR → TGF-β (+37%, p=0.06)",
+   "IR → CTGF (+; mitigated by Ang-(1-7))",
+   "Ang-(1-7) → TGF-β, CTGF (−)",
+   "Ang-(1-7) → fibrosis, stiffness (−)"
+  ],
+  "method": "ELISA, histology, mechanical testing",
+  "functional_readout": "Interstitial fibrosis +89–154%, stiffness +90%",
+  "causal_test": "yes (Ang-(1-7) pharmacological; not CTGF-specific)",
+  "grade": "B",
+  "limitation": {
+   "zh": "仅摘要；CTGF增加幅度未在摘要给出",
+   "en": "Abstract-level; CTGF magnitude not in abstract"
+  },
+  "full_text_checked": false
+ },
+ {
+  "pmid": "28701320",
+  "doi": "10.1152/ajpregu.00108.2017",
+  "year": 2017,
+  "title": "Changes in microvascular density differentiate metabolic health outcomes in monkeys with prior radiation exposure and subsequent skeletal muscle ECM remodeling.",
+  "module": "Existing ECM/microvascular (TGF-β1 trend)",
+  "species_model": "Rhesus macaques (n=7–8/group)",
+  "cell_or_tissue": "Skeletal muscle",
+  "dose_text": "Prior whole-body irradiation 5–9 y earlier (dose not in abstract)",
+  "gy_per_fraction": null,
+  "fractions": null,
+  "setting": "invivo",
+  "timepoint": "5–9 y",
+  "pathway_relation": [
+   "IR → collagen IV (+)",
+   "IR → TGF-β1 (+ trend)",
+   "Microvascular density preserved → non-diabetic outcome"
+  ],
+  "method": "IHC, plasma nitrate, HSP",
+  "functional_readout": "Insulin resistance/diabetes",
+  "causal_test": "no",
+  "grade": "B",
+  "limitation": {
+   "zh": "现有模块，仅摘要",
+   "en": "Existing module; abstract-level"
+  },
+  "full_text_checked": false
+ },
+ {
+  "pmid": "28790924",
+  "doi": "10.3389/fphys.2017.00506",
+  "year": 2017,
+  "title": "Effects of Ionizing Irradiation on Mouse Diaphragmatic Skeletal Muscle.",
+  "module": "Existing ROS",
+  "species_model": "Mice; C2C12",
+  "cell_or_tissue": "Diaphragm; myocytes",
+  "dose_text": "10 Gy single (diaphragm region / cells)",
+  "gy_per_fraction": 10,
+  "fractions": 1,
+  "setting": "invivo+invitro",
+  "timepoint": "d1, 3, 5, 7",
+  "pathway_relation": [
+   "IR → ROS (+, d3–7)"
+  ],
+  "method": "ROS assays, contractility, viability",
+  "functional_readout": "Diaphragm function ↓ d5–7",
+  "causal_test": "no",
+  "grade": "B",
+  "limitation": {
+   "zh": "现有模块，未审全文",
+   "en": "Existing module; full text not reviewed"
+  },
+  "full_text_checked": false
+ },
+ {
+  "pmid": "30806333",
+  "doi": "10.2174/1874471012666190219120329",
+  "year": 2019,
+  "title": "Evaluation of the Radioprotective Effects of Melatonin Against Ionizing Radiation-Induced Muscle Tissue Injury.",
+  "module": "Existing ROS (MDA/CAT)",
+  "species_model": "Male Wistar rats ± melatonin",
+  "cell_or_tissue": "Gastrocnemius",
+  "dose_text": "30 Gy γ single, right hind leg",
+  "gy_per_fraction": 30,
+  "fractions": 1,
+  "setting": "invivo",
+  "timepoint": "4, 12, 20 wk",
+  "pathway_relation": [
+   "IR → MDA (+)",
+   "IR → CAT activity (changed; per abstract)"
+  ],
+  "method": "Biochemistry, histology, EMG",
+  "functional_readout": "Electrophysiological changes",
+  "causal_test": "yes (melatonin; non-specific)",
+  "grade": "B",
+  "limitation": {
+   "zh": "现有模块，仅摘要",
+   "en": "Existing module; abstract-level"
+  },
+  "full_text_checked": false
+ },
+ {
+  "pmid": "33600281",
+  "doi": "10.1152/japplphysiol.00664.2020",
+  "year": 2021,
+  "title": "Swallowing dysfunction following radiation to the rat mylohyoid muscle is associated with sensory neuron injury.",
+  "module": "M1 neural (sensory neuron injury) scaffold",
+  "species_model": "Rats",
+  "cell_or_tissue": "Mylohyoid irradiated; readout in trigeminal ganglion",
+  "dose_text": "48 or 64 Gy: 8 Gy × 6 or 8",
+  "gy_per_fraction": 8,
+  "fractions": "6 or 8",
+  "setting": "invivo",
+  "timepoint": "2, 4, 8 wk",
+  "pathway_relation": [
+   "IR (mylohyoid) → trigeminal ganglion ATF3, GAP-43 mRNA (+)"
+  ],
+  "method": "qPCR, videofluoroscopy",
+  "functional_readout": "Bolus transport ↓",
+  "causal_test": "no",
+  "grade": "B",
+  "limitation": {
+   "zh": "神经元读数非肌肉组织；未测NMJ",
+   "en": "Readout in sensory ganglion, not muscle; NMJ not measured"
+  },
+  "full_text_checked": false
+ },
+ {
+  "pmid": "42617041",
+  "doi": "10.1080/09553002.2026.2699713",
+  "year": 2026,
+  "title": "Effects of low-dose γ-radiation on skeletal muscle stem cells.",
+  "module": "Low-dose genomic stability (no pathway)",
+  "species_model": "C2C12; human biopsy-derived MuSCs",
+  "cell_or_tissue": "Myoblasts",
+  "dose_text": "10 and 100 mGy 60Co γ, single",
+  "gy_per_fraction": "0.01–0.1",
+  "fractions": 1,
+  "setting": "invitro",
+  "timepoint": "Serial passages (in vitro ageing)",
+  "pathway_relation": [
+   "LDIR → differentiation capacity (+, partial restoration)",
+   "LDIR → anaphase bridges, micronuclei (−)",
+   "LDIR → mutational burden (0, human)"
+  ],
+  "method": "Differentiation assays, cytogenetics, NGS",
+  "functional_readout": "Myogenic differentiation",
+  "causal_test": "no",
+  "grade": "C",
+  "limitation": {
+   "zh": "无通路节点",
+   "en": "No pathway node"
+  },
+  "full_text_checked": false
+ },
+ {
+  "pmid": "39004143",
+  "doi": "10.1016/j.taap.2024.117037",
+  "year": 2024,
+  "title": "Ameliorative effect of nano-pregabalin in gastrocnemius muscle of gamma irradiated rats with an experimental model of fibromyalgia: Crosstalk of Sirt3, IL-1β and PARP1 pathways.",
+  "module": "M3 IL-1β / Sirt3 / PARP1 (confounded)",
+  "species_model": "Male rats, reserpine fibromyalgia model",
+  "cell_or_tissue": "Gastrocnemius",
+  "dose_text": "Fractionated γ 2 Gy/day (total not stated)",
+  "gy_per_fraction": 2,
+  "fractions": null,
+  "setting": "invivo",
+  "timepoint": null,
+  "pathway_relation": [
+   "Reserpine+IR → IL-1β, MIF, PARP-1 (+); Sirt3, Bcl-XL (−); nano-pregabalin reverses"
+  ],
+  "method": "ELISA, histology",
+  "functional_readout": "Forced swim, rotarod",
+  "causal_test": "no",
+  "grade": "C",
+  "limitation": {
+   "zh": "与利血平模型混杂，IR单独效应不清",
+   "en": "Confounded by reserpine model; IR-alone effect unclear"
+  },
+  "full_text_checked": false
+ },
+ {
+  "pmid": "28767703",
+  "doi": "10.1371/journal.pone.0182403",
+  "year": 2017,
+  "title": "Simulated space radiation sensitizes bone but not muscle to the catabolic effects of mechanical unloading.",
+  "module": "M4 UPS (null evidence)",
+  "species_model": "Adult male C57Bl/6J mice ± hindlimb suspension",
+  "cell_or_tissue": "Gastrocnemius, quadriceps",
+  "dose_text": "Whole-body 50 cGy protons ± 10 cGy 16O (HZE)",
+  "gy_per_fraction": "0.5 (+0.1)",
+  "fractions": 1,
+  "setting": "invivo",
+  "timepoint": "Per study design (not extracted)",
+  "pathway_relation": [
+   "IR alone → muscle mass, protein synthesis, proteasome activity (0; null)",
+   "IR + HLS → catabolic outcomes (not exacerbated vs HLS)"
+  ],
+  "method": "Muscle mass, protein synthesis, proteasome activity assays",
+  "functional_readout": "No muscle loss from radiation alone",
+  "causal_test": "no",
+  "grade": "A",
+  "limitation": {
+   "zh": "空间低剂量辐射，阴性结果",
+   "en": "Low-dose space radiation; negative (null) evidence"
+  },
+  "full_text_checked": true,
+  "space_flag": "radiation isolated (factorial)",
+  "evidence_direction": "null"
+ }
+]
