@@ -268,3 +268,90 @@ miRNA：miR-494, miR-29/29b/29c, miR-26a, miR-486-5p, miR-132-3p, miR-145-5p, mi
 - `/workspace/work/ev-screen-v01/ev-excluded-v01.csv` — 526 条排除记录（pmid, title, reason）
 - `/workspace/work/ev-screen-v01/ev-report-v01.md` — 本报告
 - 支撑文件：`queries-v0.1.json`、`queries-rad-v0.1.json`（检索式与命中 ID）、`records-v0.1.json`（658 条题录与摘要）、`notes-v0.1.md`（逐条摘要筛查笔记）、`ft/`（32 篇全文文本）、`ftchar-v0.1.json`（全文自动提取的 EV 鉴定与分离方法）
+
+---
+
+## 7. 补充检索（WoS近似/预印本/跨库）/ Supplementary gap search (WoS approximation, preprints, cross-database)
+
+检索日期 2026-10-21。目的：查找 PubMed 主检索可能漏掉的研究。所有新增条目见 `ev-gap-additions-v01.json`（23 条）；脚本与原始数据在 `gap/`。
+
+### 7.1 检索源、检索式与计数
+
+| 库 | 查询 id | 检索要点 | 命中 | 取回 | 已在 132 | 已在 526 排除集 | 未见过 |
+|---|---|---|---|---|---|---|---|
+| Europe PMC | E1_main | EV/exosome AND "skeletal muscle" AND (regeneration/atrophy/fibrosis/injury)，含全文，2015–2026 | 11119 | 300 | 17 | 24 | 259 |
+| Europe PMC | E2_ppr | 同上主题 AND SRC:PPR（预印本） | 131 | 131 | 6 | 10 | 115 |
+| Europe PMC | E3_rad | (irradiation/radiation/radiotherapy) AND EV AND (muscle/myoblast/satellite/myogenic)，含全文 | 13109 | 300 | 8 | 16 | 276 |
+| Europe PMC | E4_rad_ppr | 辐射 + EV + 肌肉，仅预印本 | — | 11 | 0 | 1 | 10 |
+| Europe PMC | E5_conf | EV + 骨骼肌，PUB_TYPE 会议论文 | — | 48 | 0 | 0 | 48 |
+| Europe PMC | E6_models | EV + (CTX/BaCl2/VML/缺血/去神经/Dex/恶病质/肌少症/mdx)，NOT SRC:MED | 372 | 300 | 4 | 2 | 294 |
+| Europe PMC | **E7_rad_tiab** | **辐射 × EV/secretome × 肌肉，限题名/摘要** | **27** | 27 | 3 | 21 | 3 |
+| Europe PMC | E8_ppr_tiab | EV × 肌肉，题名/摘要，仅预印本 | 190 | 190 | 7 | 14 | 169 |
+| Europe PMC | E9_nonMED | EV × 骨骼肌，题名/摘要，NOT SRC:MED | 70 | 70 | 7 | 8 | 55 |
+| Europe PMC | E10_MED | EV × 骨骼肌 × 治疗类动词，题名/摘要 | 603 | 300 | 76 | 89 | 135 |
+| Crossref | C1_main | EV 骨骼肌 再生/损伤/萎缩（相关性排序） | 735154* | 300 | 24 | 10 | 266 |
+| Crossref | C2_rad | EV irradiation radiation skeletal muscle myoblast | 667239* | 300 | 11 | 13 | 276 |
+| Crossref | C3_models | EV muscle CTX/VML/缺血/肌少症/恶病质 | 184582* | 300 | 1 | 1 | 298 |
+| Semantic Scholar (bulk) | S1_main | EV + "skeletal muscle" + (regeneration/atrophy/injury/repair/fibrosis) | 356 | 300 | 69 | 95 | 136 |
+| Semantic Scholar (bulk) | **S2_rad** | **EV + 辐射 + 肌肉/成肌细胞/卫星细胞** | **29** | 29 | 3 | 11 | 15 |
+| Semantic Scholar (bulk) | S3_models | EV + muscle + 各损伤模型 | 323 | 300 | 55 | 97 | 148 |
+| bioRxiv API | 2024–2026 全量按日期翻页，本地正则 EV×肌肉 | 188130 篇 | 已扫 56471（≈30%，限流） | — | — | 7 命中，0 条新增可纳入 |
+| medRxiv API | 同上 | 51108 篇 | 已扫 15368（≈30%） | — | — | 4 命中，0 条新增可纳入 |
+| 网络检索 | 中/英辐射专项（"外泌体 放射性 骨骼肌损伤"等） | — | — | — | — | 发现 1 篇学位论文 + 1 条 ChiCTR 注册 |
+
+\* Crossref 为全文相关性排序，"命中"无实际意义，仅取前 300。
+
+**汇总：** API 共取回 3206 条记录（去重后 2293 条唯一记录）。其中重新命中原 132 篇纳入研究中的 **115 篇（87%）**，以及 526 篇排除记录中的 228 篇。未见过的唯一记录 1935 条 → 机器分流（须同时含 EV 词与肌肉词、非综述）后剩 206 条 → 人工逐条看题名 → 44 条读摘要 → **23 条为真正新增**（另有 1 条为原筛查误排）。另有 9 条被识别为已纳入研究的预印本/会议摘要版本，不计为新增（如 bioRxiv 128900 → 30944252；RS-5901934 → 40917871；bioRxiv 2020.03.04 → 33256005；VML 低氧 EV 预印本 → 41509230；FASEB/ Cytotherapy 摘要 → 31037144、33461058、35604307）。
+
+### 7.2 新增条目 / New items
+
+| id | 年 | 题名（缩写） | 模型 | EV 来源 | 级 | 来源库 | 为什么是新的 |
+|---|---|---|---|---|---|---|---|
+| hdl:20.500.12588/6937 | 2024 | Sharma U. 学位论文：未照射/照射/预处理 MPC 来源 EV 对成肌与血管生成的作用 | 受照 MPC、受照微血管模型（体外/离体） | 大鼠 MPC（NoRad/Rad/应激预处理） | **C（辐射）** | 网络检索（TDL 学位论文库） | 未被任何数据库收录；是 40835994 的母体工作，多出 Aim 3：应激预处理 EV 未增强效力 |
+| PMID 40742422 | 2025 | angio-miRNA 修饰 MSC 来源 EV 的促血管能力 | 小鼠后肢缺血 | miR-126/135b/210 过表达 BM-MSC | B | Europe PMC（经 bioRxiv 预印本） | PubMed 收录但被原检索式漏掉 |
+| PMID 32754983 | 2020 | HDACi 调节营养不良 FAP 的 EV miRNA（EMBO Rep） | mdx | HDACi 处理的 FAP | B | Europe PMC 预印本 → 正式版 | **原筛查误排**：摘要明确有 mdx 肌内 EV 移植 + antagomiR-206 因果验证，应重新纳入 |
+| 10.1016/j.cej.2025.164612 | 2025 | dECM 水凝胶包载成肌细胞外泌体 + CDDO，Nrf2-线粒体轴 | Dex 肌萎缩小鼠 | C2C12 外泌体 | B | Crossref | 期刊不在 PubMed（Chem Eng J） |
+| 10.1002/bmm2.70085 | 2026 | HA 水凝胶 + 外泌体微球，TGF-β1/Smad3/HDAC4 | 大鼠 CTX | miR-206 富集 BMSC 外泌体 | B | Semantic Scholar | 期刊不在 PubMed（BMEMat） |
+| 10.1039/d5nj01545f | 2025 | 间质细胞 sEV 促肌损伤修复 | 严重肢体缺血 | 间质细胞 sEV | B | Crossref | 期刊不在 PubMed（New J Chem）；仅有摘要片段 |
+| 10.1186/s13287-026-05215-x | 2026 | 特定肌祖细胞 EV 治疗肌少症 | 24–25 月龄小鼠；老年 MuSC 移植 | hiPSC-Givi-MPC EV | B | Semantic Scholar | 太新，PubMed/EPMC 尚未收录 |
+| RS-10556770 | 2026 | 黄芪-当归植物 EV 改善 KOA 关节周围肌萎缩 | ACLT 小鼠 | 植物 EV（口服） | B（预印本） | EPMC 预印本 | 仅预印本 |
+| Authorea 176150016 | 2025 | 双靶向运动模拟 EV 治疗骨肌减少症 | 老年 OSP 小鼠 | 牵张 hiPSC 肌管 EV | B（预印本） | EPMC 预印本 | 仅预印本 |
+| RS-676443 | 2021 | M1 巨噬细胞外泌体修复肛提肌损伤 | 阴道扩张 SUI 小鼠 | M1 巨噬细胞 | B（预印本） | EPMC 预印本 | 仅预印本 |
+| RS-471181 | 2021 | EPC 外泌体改善大鼠后肢缺血血管生成 | 大鼠后肢缺血 | EPC | B（预印本） | EPMC 预印本 | 仅预印本 |
+| RS-10737932 | 2026 | BMSC 外泌体经 PINK1 线粒体自噬缓解 Dex 肌管萎缩 | Dex C2C12 | BMSC | C | EPMC 预印本 | 仅预印本（与 42027319 不同） |
+| PMID 34314870 | 2021 | PROKR1 细胞来源囊泡恢复 C2C12 成肌能力 | Prokr1−/− C2C12 | 挤出型 CDV | C | Semantic Scholar | PubMed 收录但无损伤词被漏 |
+| 10.1134/S1990747820100013 | 2020 | MSC-EV 体外抗纤维化/促成肌 | 体外 | MSC | C | Semantic Scholar | 俄文期刊英文版，不在 PubMed |
+| JPS 94 P2-24 | 2021 | ASC/ASC 外泌体与去神经肌萎缩 | 大鼠坐骨神经损伤 | ASC 外泌体 | C | Semantic Scholar | 日本药理学会会议摘要 |
+| Circ 152 suppl 4372587 | 2025 | 冷等离子体预处理周细胞 EV 促缺血肢体恢复 | 后肢缺血 | 肌周细胞 | C | Semantic Scholar | AHA 会议摘要 |
+| Cytotherapy 2026 102363 | 2026 | iPSC 外泌体促自然衰老小鼠肌再生 | 衰老 | iPSC | C | Crossref | ISCT 会议摘要（仅题名） |
+| EJH 2025 P78 | 2025 | MSC-EV 与肌纤维再生 | 体外 | MSC/成肌细胞 | C | Semantic Scholar | 会议摘要 |
+| FASEB 2019 lb611 / 2020 04759 | 2019–20 | CDC 外泌体调节 mdx 巨噬细胞表型 | mdx + 下坡跑 | CDC | C | Semantic Scholar | 会议摘要（巨噬细胞清除后获益消失） |
+| Physiology 2023 5734763 | 2023 | 载 miR-206 EV 挽救酒精/SIV 猕猴成肌细胞分化 | 离体 | 工程化 EV | C | Crossref | APS 会议摘要 |
+| ECE 2026 lvag096.969 | 2026 | Dex 处理 hAMSC 外泌体减轻 C2C12 萎缩信号 | 体外 | 人脂肪 MSC | C | Semantic Scholar | 会议摘要 |
+| ChiCTR proj=297646 | — | 干细胞外泌体治疗骨骼肌损伤 RCT（对照生理盐水） | 人骨骼肌损伤 | 干细胞外泌体 | C（注册） | 网络检索 | 注册库，非文献库；页面无法抓取，注册号/日期未核实 |
+| JAPS 26(4):122 | 2021 | DMD 静脉 MSC + 外泌体病例报告 | 人 DMD，n=1 | 商业诊所产品 | C | Semantic Scholar | 非 PubMed 期刊；证据价值极低 |
+
+按级别：**A 0 / B 10（其中 4 篇仅为预印本；1 篇为原误排的重新纳入）/ C 13（其中 1 篇辐射相关）**。
+
+按原规则排除（未计入）：工程化 EV 作为抗肌营养不良蛋白基因/mRNA 递送载体（NMD 2026 摘要 2.63P；Manitoba 2019 报告 hdl:1993/34345），与 v0.1 对 42277317 的处理一致；致病性 EV 机制研究（PDAC EV 扰乱肌肉昼夜节律 bioRxiv 2026；肥胖脂肪 EV miR-150 致萎缩 bioRxiv 2025；食管癌 EV-PHB 致肌消耗），均为非辐射、非干预。热休克 EV 旁观者效应学位论文（Oxford Brookes 2018）与辐射无直接关系。
+
+范围外但值得注意：PMID 41210252（2025，Front Cell Dev Biol）——**脂肪干细胞（细胞本身，非 EV）**减轻大鼠放射性肌纤维化；连同 2016 年兔 80 Gy ADSC 研究（10.1155/2016/5638204），它们是"母细胞在体有效"的阳性对照依据，可支撑在同一模型中检验 ADSC-EV 的设计。
+
+### 7.3 对主要结论的影响
+
+- **辐射：** 唯一新增的辐射条目（Sharma 学位论文）与 40835994 为同一工作，仍是体外/离体，作者明确将在体验证列为"未来工作"。另外两条辐射专项检索（E7、S2_rad）中的新记录均为非肌肉或非辐射内容。**§4 第 1 条结论"不存在在体辐射骨骼肌 + EV 干预研究"保持不变。** 新增信息：应激预处理并未提升 MPC-EV 的效力，这是做预处理 EV 设计时的一条阴性先例。
+- **非辐射：** 10 条新增 B 级研究均落入已有模块（M-血管生成/缺血、M2-MuSC 活化、M3-线粒体/Nrf2、M4-TGF-β/Smad3 抗纤维化、M1-巨噬细胞），不新增通路节点。最有价值的是 **PMID 32754983**：FAP-EV → miR-206 → MuSC 扩增，并用 antagomiR 做了因果验证。它应补入 M4/M7，并列入"可直接迁移的最强模块"，因为 FAP 是辐射后纤维化的核心细胞。另外，miR-206 在三条独立新增证据中重复出现（32754983、BMEMat 2026、APS 2023 摘要），进一步支持把 miR-206 作为辐射货物验证的首选候选（§4 第 5 条）。
+- 计数更新建议：纳入数可由 132 增至 **约 139**（6 篇同行评审的 B 级 + 32754983 重新纳入；4 篇预印本 B 级与 13 篇 C 级是否并入，由你决定）。
+
+### 7.4 覆盖范围的局限
+
+- **无法检索（需订阅或登录）：Web of Science Core Collection、Scopus、Embase、CNKI（知网）、万方、维普、CBM（中国生物医学文献数据库）。** Crossref 与 Semantic Scholar 只能**近似** WoS/Scopus 的独有覆盖：它们能抓到不在 PubMed 中的 WoS/Scopus 期刊论文（本次找到 Chem Eng J、BMEMat、New J Chem 等 4 篇），但只按相关性排序且无受控词表，每条查询仅取前 300 条，召回率无法量化。Embase 独有的会议摘要（尤其 ESMO/ASTRO 放疗会议）可能仍有遗漏。
+- **中文文献基本未覆盖：** 中文期刊（如《中华放射医学与防护杂志》《中国组织工程研究》）中关于"外泌体 + 放射性肌损伤"的研究只可能通过 CNKI/万方检索到。本次只用中文做了一次网络检索，结果全为英文。若要声称"全球文献中无在体研究"，建议你通过院校账号在 CNKI/万方补检（检索式建议：`(外泌体 OR 细胞外囊泡) AND (放射 OR 辐射 OR 放疗) AND (骨骼肌 OR 肌肉 OR 成肌细胞 OR 卫星细胞)`）。
+- **bioRxiv/medRxiv API 没有关键词检索：** 只能按日期全量翻页再本地匹配，因限流只扫描了 2024–2026 年约 30%。预印本的主要覆盖来自 Europe PMC 的 SRC:PPR 索引（它收录 bioRxiv、medRxiv、Research Square、Authorea、Preprints.org、SSRN），该部分已完整检索。
+- Semantic Scholar 对单篇查询严重限流，部分条目只能读 TLDR 或摘要片段（New J Chem、Biochem Moscow、Cytotherapy 摘要）。付费墙后的 B 级论文未读全文，仅读了出版社摘要或页面片段。
+- ChiCTR 注册页无法抓取（HTTP 405），注册号与状态未核实。
+
+### 7.5 文件
+
+- `/workspace/work/ev-screen-v01/ev-gap-additions-v01.json` — 23 条新增条目（含 source_db、peer_reviewed、status、why_new、evidence_read 字段）
+- `/workspace/work/ev-screen-v01/gap/` — `fetch-gap-v0.1.py`、`fetch-gap2-v0.1.py`、`fetch-biorxiv-v0.1.py`（检索脚本）；`raw-epmc*.json`、`raw-crossref.json`、`raw-s2.json`、`raw-*rxiv-*.json`（原始结果）；`stats-v0.1.json`（逐查询去重计数）；`newpool-v0.1.json`（1935 条未见记录）；`triage-keep-v0.1.json`、`triage.txt`（206 条分流结果）；`cand-abs.txt`（人工阅读的摘要）
