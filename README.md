@@ -4,12 +4,27 @@
 
 **在线交互分子通路图：<https://tuanziding.github.io/radiation-muscle-pathway/>**（单文件 HTML，也可下载 [`docs/pathway-v0.7.html`](docs/pathway-v0.7.html) 离线双击打开）
 
-## EV 干预通路图 v0.1（2026-10-21，独立页面）
+## 图集 / Gallery
 
-- **在线**：<https://tuanziding.github.io/radiation-muscle-pathway/ev-intervention-v0.1.html>（单文件，可离线打开 [`docs/ev-intervention-v0.1.html`](docs/ev-intervention-v0.1.html)）。
-- **范围**：用细胞外囊泡（EV）干预骨骼肌损伤的原始研究。筛 658 个标题、读 157 篇摘要和 32 篇全文，纳入 132 篇（A 2 / B 111 / C 19）；图中按 7 个机制泳道绘出 52 个节点、42 条带文献的关系。A = 辐射模型直接证据，B = 心脏毒素/BaCl₂/萎缩/缺血/mdx 等非辐射模型的在体 EV 干预参照，C = 仅体外/候选；【致病】边为 EV 介导的损伤机制（如受照肿瘤 sEV）。
-- **关键缺口**：尚无“在体辐射骨骼肌损伤 + 外源 EV + 功能终点”研究；唯一直接研究（PMID 40835994）为体外，且受照细胞来源 EV 丧失促血管活性。
-- 数据 `data/ev-intervention-v0.1.json`，构建 `scripts/build-ev-v01.mjs`（模板 `scripts/pathway-template-ev.html`），筛查报告与纳入/排除表见 [`docs/ev-v0.1/`](docs/ev-v0.1/ev-report-v01.md)。
+以下截图均由真实页面（Playwright，浅色主题，2× 分辨率）渲染，点击图片打开在线交互页。顶部大图为分子通路图谱 v0.7（[在线](https://tuanziding.github.io/radiation-muscle-pathway/)）。
+
+<table>
+<tr>
+<td width="50%" align="center" valign="top"><a href="https://tuanziding.github.io/radiation-muscle-pathway/ev-intervention-v0.2.html"><img src="docs/ev-v0.2/inspector-ev-v0.2.png" alt="EV 干预通路图 v0.2 证据面板"></a><br><sub><b>证据面板：非照射 MPC-EV（PMID 40835994，A 级）</b><br>Inspector: model, dose, time, limitation, PubMed</sub></td>
+<td width="50%" align="center" valign="top"><a href="https://tuanziding.github.io/radiation-muscle-pathway/ev-intervention-v0.2.html"><img src="docs/ev-v0.2/lane-ev-v0.2.png" alt="TGF-β/SMAD 与 FAP 泳道"></a><br><sub><b>TGF-β/SMAD · FAP 泳道（新增 FAP-EV miR-206 链）</b><br>Anti-fibrosis &amp; FAP lane with the new miR-206 chain</sub></td>
+</tr>
+<tr>
+<td width="50%" align="center" valign="top"><a href="https://tuanziding.github.io/radiation-muscle-pathway/ev-intervention-v0.2.html"><img src="docs/ev-v0.2/hero-ev-v0.2.png" alt="EV 干预通路图 v0.2 全图"></a><br><sub><b>EV 干预通路图 v0.2 · 全图</b><br>EV intervention map v0.2 · full map (7 lanes, 61 nodes)</sub></td>
+<td width="50%" align="center" valign="top"><a href="https://tuanziding.github.io/radiation-muscle-pathway/ev-intervention-v0.2.html"><img src="docs/ev-v0.2/mobile-ev-v0.2.png" alt="EV 干预通路图 v0.2 手机端"></a><br><sub><b>手机 390 px · 点节点看证据</b><br>Mobile 390 px · tap a node for evidence</sub></td>
+</tr>
+</table>
+
+## EV 干预通路图 v0.2（2026-10-21，独立页面）
+
+- **在线**：<https://tuanziding.github.io/radiation-muscle-pathway/ev-intervention-v0.2.html>（稳定地址 [`ev-intervention.html`](https://tuanziding.github.io/radiation-muscle-pathway/ev-intervention.html) 指向 v0.2；单文件可离线打开 [`docs/ev-intervention-v0.2.html`](docs/ev-intervention-v0.2.html)；v0.1 保留在 [`docs/ev-intervention-v0.1.html`](docs/ev-intervention-v0.1.html)）。
+- **范围**：EV 干预骨骼肌损伤的原始研究，纳入 **141 篇（A 2 / B 120 / C 19）**；图中 7 个机制泳道、61 个节点、54 条带文献的关系（65 篇文献）。v0.2 新增 9 篇 B 级在体研究（跨库补检 6 篇同行评审 + 苏州大学 WebVPN Web of Science 补检 3 篇），更正误排除的 PMID 32754983（FAP-EV miR-206，mdx），新增化疗（多柔比星）肌毒性 ES-Exo→NLRP3 焦亡链；重排布局，节点/标签/连线不再重叠。
+- **关键缺口不变**：尚无“在体辐射骨骼肌损伤 + 外源 EV + 功能终点”研究；唯一直接研究（PMID 40835994）为体外，且受照细胞来源 EV 丧失促血管活性。Scopus/Embase 未订阅、中文库按要求未检索。
+- 数据 `data/ev-intervention-v0.2.json`，构建 `scripts/build-ev-v02.mjs`，验证 `scripts/verify-ev-v02.mjs`（25 项真实点击检查），截图 `scripts/shots-ev-v02.mjs`；更新报告与纳入/排除表见 [`docs/ev-v0.2/`](docs/ev-v0.2/ev-report-v02.md)。
 
 ## v0.7 更新（2026-10-21）：系统文献筛查补全
 
