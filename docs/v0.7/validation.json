@@ -1,0 +1,457 @@
+{
+  "version": "v0.7",
+  "checks": [
+    {
+      "name": "every module evidence edge appears exactly once",
+      "pass": true
+    },
+    {
+      "name": "A01 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "A02 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "D08 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "A03 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "Q22 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "A04 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "A05 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "A06 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "S04 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "A07 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "A09 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "A11 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "I01 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "A12 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "A13 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "A14 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "A15a grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "A15b grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "A16 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "A18 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "A19 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "O01 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "O02 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "O03 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "D01 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "D02 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "D03 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "D04 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "D05 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "D06 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "S02 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "D07 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "D09 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "D10 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "D11 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "D12 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "D13 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "D14 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "D15 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "V01 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "V02 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "V03 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "I00 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "S01 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "S03 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "E01 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "E02 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "E03 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "E04 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "E05 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "Q01 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "Q02 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "Q03 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "Q04 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "Q05 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "Q06 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "Q07 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "Q08 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "Q09 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "Q10 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "Q11 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "Q12 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "Q13 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "Q14 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "Q15 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "Q16 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "Q17 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "Q18 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "Q19 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "Q20 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "Q21 grade unchanged",
+      "pass": true
+    },
+    {
+      "name": "scaffold nodes carry no edges",
+      "pass": true
+    },
+    {
+      "name": "excluded A08/A10 absent",
+      "pass": true
+    },
+    {
+      "name": "excluded relations X01–X08 carried",
+      "pass": true
+    },
+    {
+      "name": "v0.7 adds systematic-screen view",
+      "pass": true
+    },
+    {
+      "name": "Q01 carries PubMed-resolvable refs",
+      "pass": true
+    },
+    {
+      "name": "Q05 carries PubMed-resolvable refs",
+      "pass": true
+    },
+    {
+      "name": "Q07 carries PubMed-resolvable refs",
+      "pass": true
+    },
+    {
+      "name": "Q09 carries PubMed-resolvable refs",
+      "pass": true
+    },
+    {
+      "name": "Q14 carries PubMed-resolvable refs",
+      "pass": true
+    },
+    {
+      "name": "conflicting myostatin kept as scaffold",
+      "pass": true
+    },
+    {
+      "name": "docs/index.html is the v0.7 page",
+      "pass": true
+    },
+    {
+      "name": "1680x1000 renders all nodes",
+      "pass": true
+    },
+    {
+      "name": "1680x1000 renders all edges",
+      "pass": true
+    },
+    {
+      "name": "1680x1000 no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "1680x1000 real click on node opens evidence with PubMed link",
+      "pass": true
+    },
+    {
+      "name": "1680x1000 real click on edge shows E04 evidence, boundary and PubMed link",
+      "pass": true
+    },
+    {
+      "name": "1680x1000 new v0.7 node CCL2 shows evidence",
+      "pass": true
+    },
+    {
+      "name": "1680x1000 English toggle",
+      "pass": true
+    },
+    {
+      "name": "1680x1000 background click clears selection",
+      "pass": true
+    },
+    {
+      "name": "1680x1000 A-only filter dims non-A edges",
+      "pass": true
+    },
+    {
+      "name": "1680x1000 no page errors",
+      "pass": true
+    },
+    {
+      "name": "390x844 renders all nodes",
+      "pass": true
+    },
+    {
+      "name": "390x844 renders all edges",
+      "pass": true
+    },
+    {
+      "name": "390x844 no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "390x844 real click on node opens evidence with PubMed link",
+      "pass": true
+    },
+    {
+      "name": "390x844 real click on edge shows E04 evidence, boundary and PubMed link",
+      "pass": true
+    },
+    {
+      "name": "390x844 new v0.7 node CCL2 shows evidence",
+      "pass": true
+    },
+    {
+      "name": "390x844 English toggle",
+      "pass": true
+    },
+    {
+      "name": "390x844 background click clears selection",
+      "pass": true
+    },
+    {
+      "name": "390x844 A-only filter dims non-A edges",
+      "pass": true
+    },
+    {
+      "name": "390x844 no page errors",
+      "pass": true
+    },
+    {
+      "name": "844x390 renders all nodes",
+      "pass": true
+    },
+    {
+      "name": "844x390 renders all edges",
+      "pass": true
+    },
+    {
+      "name": "844x390 no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "844x390 real click on node opens evidence with PubMed link",
+      "pass": true
+    },
+    {
+      "name": "844x390 real click on edge shows E04 evidence, boundary and PubMed link",
+      "pass": true
+    },
+    {
+      "name": "844x390 new v0.7 node CCL2 shows evidence",
+      "pass": true
+    },
+    {
+      "name": "844x390 English toggle",
+      "pass": true
+    },
+    {
+      "name": "844x390 background click clears selection",
+      "pass": true
+    },
+    {
+      "name": "844x390 A-only filter dims non-A edges",
+      "pass": true
+    },
+    {
+      "name": "844x390 no page errors",
+      "pass": true
+    }
+  ]
+}
