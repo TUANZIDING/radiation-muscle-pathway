@@ -1,0 +1,527 @@
+pmid,title,reason
+11859204,Benign vascular proliferations in irradiated skin.,Non-muscle target tissue
+21098712,Cancer exosomes trigger fibroblast to myofibroblast differentiation.,Non-muscle target tissue
+21609392,Identification of telocytes in skeletal muscle interstitium: implication for muscle regeneration.,EV characterisation / methodology; no intervention
+22161843,Exosome signaling in mammary gland development and cancer.,Review / meta-analysis
+23233752,MicroRNA-15a and microRNA-16 impair human circulating proangiogenic cell functions and are increased in the proangiogenic cells and serum of patients with critical limb ischemia.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+23945935,Extracellular microRNAs are dynamic non-vesicular biomarkers of muscle turnover.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+24336651,miR-23a is decreased during muscle atrophy by a mechanism that includes calcineurin signaling and exosome-mediated export.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+24337306,[Stem cell derived therapy for cutaneous radiation exposure].,Review / meta-analysis
+24406210,Carcinoma-associated fibroblasts provide operational flexibility in metastasis.,Review / meta-analysis
+24452375,"Tiny transporters: how exosomes and calcineurin signaling regulate miR-23a levels during muscle atrophy. Focus on ""miR-23a is decreased during muscle atrophy by a mechanism that includes calcineurin signaling and exosome-mediated export"".","Comment, editorial, letter or erratum"
+24871856,miR-182 attenuates atrophy-related gene expression by targeting FoxO3 in skeletal muscle.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+25073444,Exosomes participate in the alteration of muscle homeostasis during lipid-induced insulin resistance in mice.,Non-muscle target tissue
+25205643,Redox proteins are constitutively secreted by skeletal muscle.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+25464262,Repeated remote ischemic conditioning attenuates left ventricular remodeling via exosome-mediated intercellular communication on chronic heart failure after myocardial infarction.,Cardiac muscle only
+26059504,Altered exosomal protein expression in the serum of NF-κB knockout mice following skeletal muscle ischemia-reperfusion injury.,EV characterisation / methodology; no intervention
+26159041,"Exosomal clusterin, identified in the pericardial fluid, improves myocardial performance following MI through epicardial activation, enhanced arteriogenesis and reduced apoptosis.",Cardiac muscle only
+26268554,Exosomes secreted by human-induced pluripotent stem cell-derived mesenchymal stem cells attenuate limb ischemia by promoting angiogenesis in mice.,Hindlimb ischemia with angiogenesis/perfusion endpoints only
+26538457,Reaching out: junctions between cardiac telocytes and cardiac stem cells in culture.,Cardiac muscle only
+26742038,Cardiac Extracellular Vesicles in Normal and Infarcted Heart.,Review / meta-analysis
+26781091,Exosome-based therapeutic approach for muscle regeneration.,"Comment, editorial, letter or erratum"
+26811168,Pretreatment of Cardiac Stem Cells With Exosomes Derived From Mesenchymal Stem Cells Enhances Myocardial Repair.,Cardiac muscle only
+26839565,Epigenetic Reprogramming of Muscle Progenitors: Inspiration for Clinical Therapies.,Review / meta-analysis
+26950419,Sortilin mediates vascular calcification via its recruitment into extracellular vesicles.,Bone/tendon/cartilage only
+27041495,Cardiovascular progenitor-derived extracellular vesicles recapitulate the beneficial effects of their parent cells in the treatment of chronic heart failure.,Cardiac muscle only
+27150009,Mesenchymal stromal cell-derived extracellular vesicles rescue radiation damage to murine marrow hematopoietic cells.,Bone/tendon/cartilage only
+27336721,Cardiac progenitor cell-derived exosomes prevent cardiomyocytes apoptosis through exosomal miR-21 by targeting PDCD4.,Cardiac muscle only
+27338006,XBP1 splicing triggers miR-150 transfer from smooth muscle cells to endothelial cells via extracellular vesicles.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+27378829,Notch Signaling Mediates Skeletal Muscle Atrophy in Cancer Cachexia Caused by Osteosarcoma.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+27443883,Roles of exosomes in cardioprotection.,Review / meta-analysis
+27570124,Exosomes from Cardiomyocyte Progenitor Cells and Mesenchymal Stem Cells Stimulate Angiogenesis Via EMMPRIN.,Cardiac muscle only
+27734833,Macrophage-derived extracellular vesicle-packaged WNTs rescue intestinal stem cells and enhance survival after radiation injury.,Bone/tendon/cartilage only
+27802428,"Effect of Melatonin on Telocytes in the Seminal Vesicle of the Soay Ram: An Immunohistochemical, Ultrastructural and Morphometrical Study.",Nerve/CNS model; no skeletal muscle injury outcome
+27840022,Myogenic Progenitor Cells Control Extracellular Matrix Production by Fibroblasts during Skeletal Muscle Hypertrophy.,Mechanical overload hypertrophy (not an injury model); MPC exosomal miR-206 → Rrbp1 in fibrogenic cells. Retained as context for the ECM module.
+27872050,"Experimental, Systems, and Computational Approaches to Understanding the MicroRNA-Mediated Reparative Potential of Cardiac Progenitor Cell-Derived Exosomes From Pediatric Patients.",Cardiac muscle only
+27908912,A Deep Proteome Analysis Identifies the Complete Secretome as the Functional Unit of Human Cardiac Progenitor Cells.,Cardiac muscle only
+27977725,"Characterization and Functional Analysis of Extracellular Vesicles and Muscle-Abundant miRNAs (miR-1, miR-133a, and miR-206) in C2C12 Myocytes and mdx Mice.",Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+28164211,Stem cell therapy for ischemic heart diseases.,Review / meta-analysis
+28208010,Circulating Plasma and Exosomal microRNAs as Indicators of Drug-Induced Organ Injury in Rodent Models.,Non-muscle target tissue
+28254793,Young Hearts Run Free: Therapeutic Potential of Neonatal Human Cardiac Progenitor Cells Secretome.,"Comment, editorial, letter or erratum"
+28298297,Angiogenic Mechanisms of Human CD34+ Stem Cell Exosomes in the Repair of Ischemic Hindlimb.,Cardiac muscle only
+28365418,Higher functionality of extracellular vesicles isolated using size-exclusion chromatography compared to ultracentrifugation.,Cardiac muscle only
+28400445,MicroRNA-23a and MicroRNA-27a Mimic Exercise by Ameliorating CKD-Induced Muscle Atrophy.,Not an EV study (retrieved by query overlap)
+28419894,Muscle cell communication in development and repair.,Review / meta-analysis
+28466428,Extracellular vesicles of ETV2 transfected fibroblasts stimulate endothelial cells and improve neovascularization in a murine model of hindlimb ischemia.,Cardiac muscle only
+28621431,Adhesion molecule Kirrel3/Neph2 is required for the elongated shape of myocytes during skeletal muscle differentiation.,Not an EV study (retrieved by query overlap)
+28637233,Identification of exosomal muscle-specific miRNAs in serum of myotonic dystrophy patients relating to muscle disease progress.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+28834378,Autophagic dysfunction and autophagosome escape in the mdx mus musculus model of Duchenne muscular dystrophy.,Not an EV study (retrieved by query overlap)
+28880029,Fluorescence labelling of extracellular vesicles using a novel thiol-based strategy for quantitative analysis of cellular delivery and intracellular traffic.,Non-muscle target tissue
+28920705,Human Endothelial Progenitor Cell-Derived Exosomes Increase Proliferation and Angiogenesis in Cardiac Fibroblasts by Promoting the Mesenchymal-Endothelial Transition and Reducing High Mobility Group Box 1 Protein B1 Expression.,Cardiac muscle only
+28928431,Tumor induces muscle wasting in mice through releasing extracellular Hsp70 and Hsp90.,Tumour-derived EVs as disease mediators; no EV intervention
+28936734,Exosomes as New Intercellular Mediators in Development and Therapeutics of Cardiomyocyte Hypertrophy.,Review / meta-analysis
+28936742,Cardiac Progenitor-Cell Derived Exosomes as Cell-Free Therapeutic for Cardiac Repair.,Review / meta-analysis
+28936743,Therapeutic Potential of Hematopoietic Stem Cell-Derived Exosomes in Cardiovascular Disease.,Review / meta-analysis
+28936744,Cardiac Telocyte-Derived Exosomes and Their Possible Implications in Cardiovascular Pathophysiology.,Review / meta-analysis
+29016556,The current status and future of cardiac stem/progenitor cell therapy for congenital heart defects from diabetic pregnancy.,Review / meta-analysis
+29020403,Cardiac and systemic rejuvenation after cardiosphere-derived cell therapy in senescent rats.,Cardiac muscle only
+29038428,Denervation-related alterations and biological activity of miRNAs contained in exosomes released by skeletal muscle fibers.,"Myofiber exosome characterisation after denervation; recipient assay in NIH3T3, no muscle intervention"
+29067668,Advanced Methods to Study the Cross Talk Between Fibro-Adipogenic Progenitors and Muscle Stem Cells.,EV characterisation / methodology; no intervention
+29070527,Extracellular Vesicles Released by Cardiomyocytes in a Doxorubicin-Induced Cardiac Injury Mouse Model Contain Protein Biomarkers of Early Cardiac Injury.,Nerve/CNS model; no skeletal muscle injury outcome
+29141446,Myocardial reparative functions of exosomes from mesenchymal stem cells are enhanced by hypoxia treatment of the cells via transferring microRNA-210 in an nSMase2-dependent way.,Cardiac muscle only
+29285222,A primary tumor gene expression signature identifies a crucial role played by tumor stroma myofibroblasts in lymph node involvement in oral squamous cell carcinoma.,EV characterisation / methodology; no intervention
+29320747,Identification of Cardiomyocyte-Fated Progenitors from Human-Induced Pluripotent Stem Cells Marked with CD82.,Cardiac muscle only
+29330880,Concise Review: Optimized Strategies for Stem Cell-Based Therapy in Myocardial Repair: Clinical Translatability and Potential Limitation.,Review / meta-analysis
+29420830,Acellular therapeutic approach for heart failure: in vitro production of extracellular vesicles from human cardiovascular progenitors.,Cardiac muscle only
+29518183,Cardioprotection by cardiac progenitor cell-secreted exosomes: role of pregnancy-associated plasma protein-A.,Cardiac muscle only
+29547023,Do platelets promote cardiac recovery after myocardial infarction: roles beyond occlusive ischemic damage.,Cardiac muscle only
+29566124,Sustained release of endothelial progenitor cell-derived extracellular vesicles from shear-thinning hydrogels improves angiogenesis and promotes function after myocardial infarction.,Cardiac muscle only
+29582582,miRNA-23a/27a attenuates muscle atrophy and renal fibrosis through muscle-kidney crosstalk.,"AAV-miR-23a/27a overexpression in muscle; EVs are the proposed transport route, not the intervention"
+29615899,Extracellular Guanosine 5'-Triphosphate Induces Human Muscle Satellite Cells to Release Exosomes Stuffed With Guanosine.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+29693711,"Telocytes in skeletal, cardiac and smooth muscle interstitium: morphological and functional aspects.",Review / meta-analysis
+29721064,Coronary Serum Exosomes Derived from Patients with Myocardial Ischemia Regulate Angiogenesis through the miR-939-mediated Nitric Oxide Signaling Pathway.,Cardiac muscle only
+29786755,Cardiac progenitor cell‑derived exosomes promote H9C2 cell growth via Akt/mTOR activation.,Cardiac muscle only
+29807783,Exosomes in Myocardial Repair: Advances and Challenges in the Development of Next-Generation Therapeutics.,Review / meta-analysis
+29875202,"Anchor peptide captures, targets, and loads exosomes of diverse origins for diagnostics and therapy.",Non-muscle target tissue
+30028249,Potentials of combining nanomaterials and stem cell therapy in myocardial repair.,Cardiac muscle only
+30077997,Therapeutic Potential of Human Adipose-Derived Stem Cell Exosomes in Stress Urinary Incontinence - An in Vitro and in Vivo Study.,Stress urinary incontinence ADSC exosomes; urethral/nerve endpoints with limited skeletal muscle mechanism (superseded by PMID 30849996 and 36175423)
+30092568,Roles of Exosome-Like Vesicles Released from Inflammatory C2C12 Myotubes: Regulation of Myocyte Differentiation and Myokine Expression.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+30105430,The Biological Mechanisms of Action of Cardiac Progenitor Cell Therapy.,Review / meta-analysis
+30132347,Electrically stimulated acupuncture increases renal blood flow through exosome-carried miR-181.,Non-muscle target tissue
+30155598,Exosome-Derived Dystrophin from Allograft Myogenic Progenitors Improves Cardiac Function in Duchenne Muscular Dystrophic Mice.,Cardiac muscle only
+30177888,Investigation of Circulating Extracellular Vesicle MicroRNA Following Two Consecutive Bouts of Muscle-Damaging Exercise.,EV characterisation / methodology; no intervention
+30184318,"Migratory, metabolic and functional alterations of fibrocytes in type 2 diabetes.",Non-muscle target tissue
+30209066,The TLR7/8/9 Antagonist IMO-8503 Inhibits Cancer-Induced Cachexia.,Non-muscle target tissue
+30210636,"Mesenchymal Stem Cell Derived Exosomes in Cancer Progression, Metastasis and Drug Delivery: A Comprehensive Review.",Review / meta-analysis
+30340833,Adipose tissue browning in cancer-associated cachexia can be attenuated by inhibition of exosome generation.,Non-muscle target tissue
+30342032,ZIP4 Promotes Muscle Wasting and Cachexia in Mice With Orthotopic Pancreatic Tumors by Stimulating RAB27B-Regulated Release of Extracellular Vesicles From Cancer Cells.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+30359265,Tumour-originated exosomal miR-155 triggers cancer-associated cachexia to promote tumour progression.,"Comment, editorial, letter or erratum"
+30374796,Immunomodulation by Exosomes in Myocardial Infarction.,Review / meta-analysis
+30412280,Exosomal circRNA derived from gastric tumor promotes white adipose browning by targeting the miR-133/PRDM16 pathway.,"Comment, editorial, letter or erratum"
+30456736,Cardiac Progenitor Cell-Derived Extracellular Vesicles Reduce Infarct Size and Associate with Increased Cardiovascular Cell Proliferation.,Cardiac muscle only
+30463748,Exosomes of Endothelial Progenitor Cells Inhibit Neointima Formation After Carotid Artery Injury.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+30474469,Breast cancer-released exosomes trigger cancer-associated cachexia to promote tumor progression.,"Comment, editorial, letter or erratum"
+30569689,[Effect of exosomes from adipose-derived stem cells on peripheral nerve regeneration].,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+30590978,Aggregation of Child Cardiac Progenitor Cells Into Spheres Activates Notch Signaling and Improves Treatment of Right Ventricular Heart Failure.,Cardiac muscle only
+30626897,Adiponectin promotes muscle regeneration through binding to T-cadherin.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+30677401,Phases of Metabolic and Soft Tissue Changes in Months Preceding a Diagnosis of Pancreatic Ductal Adenocarcinoma.,EVs studied as biomarkers only; no EV intervention
+30744440,Efficient exosome delivery in refractory tissues assisted by ultrasound-targeted microbubble destruction.,Non-muscle target tissue
+30755672,The Regenerative Potential of Amniotic Fluid Stem Cell Extracellular Vesicles: Lessons Learned by Comparing Different Isolation Techniques.,"EV isolation-method comparison; functional test in lung epithelial injury, not a muscle injury model"
+30814518,Circulating myocardial microRNAs from infarcted hearts are carried in exosomes and mobilise bone marrow progenitor cells.,Cardiac muscle only
+30910993,Muscle-derived miR-34a increases with age in circulating extracellular vesicles and induces senescence of bone marrow stem cells.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+30924311,Extracellular Vesicles Released by Allogeneic Human Cardiac Stem/Progenitor Cells as Part of Their Therapeutic Benefit.,Cardiac muscle only
+30945349,Wnt/β-catenin signaling induces the myomiRs miR-133b and miR-206 to suppress Pax7 and induce the myogenic differentiation program.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+30984014,Exercise-Induced Myokines With Therapeutic Potential for Muscle Wasting.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+30987834,Reactivating endogenous mechanisms of cardiac regeneration via paracrine boosting using the human amniotic fluid stem cell secretome.,Cardiac muscle only
+31002945,Lung cancer-derived extracellular vesicles induced myotube atrophy and adipocyte lipolysis via the extracellular IL-6-mediated STAT3 pathway.,Tumour-derived EVs as disease mediators; no EV intervention
+31033573,Stress urinary incontinence and regenerative medicine: is injecting functional cells into the urethra feasible based on current knowledge and future prospects?,Review / meta-analysis
+31033952,Purification and Transplantation of Myogenic Progenitor Cell Derived Exosomes to Improve Cardiac Function in Duchenne Muscular Dystrophic Mice.,Cardiac muscle only
+31050222,Rescue of degenerating neurons and cells by stem cell released molecules: using a physiological renormalization strategy.,Nerve/CNS model; no skeletal muscle injury outcome
+31068039,Mesenchymal stem cell-derived exosomes attenuate phosgene-induced acute lung injury in rats.,Non-muscle target tissue
+31098627,Intravenous administration of cardiac progenitor cell-derived exosomes protects against doxorubicin/trastuzumab-induced cardiac toxicity.,Cardiac muscle only
+31118291,Circulating exosomes derived from transplanted progenitor cells aid the functional recovery of ischemic myocardium.,Cardiac muscle only
+31124125,Exosomes from human adipose-derived stem cells promote sciatic nerve regeneration via optimizing Schwann cell function.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+31140622,Cardioprotective role of extracellular vesicles: A highlight on exosome beneficial effects in cardiovascular diseases.,Review / meta-analysis
+31248454,Differences in the cargos and functions of exosomes derived from six cardiac cell types: a systematic review.,Review / meta-analysis
+31353103,Delayed delivery of endothelial progenitor cell-derived extracellular vesicles via shear thinning gel improves postinfarct hemodynamics.,Cardiac muscle only
+31394269,Macrophages Educated with Exosomes from Primed Mesenchymal Stem Cells Treat Acute Radiation Syndrome by Promoting Hematopoietic Recovery.,Bone/tendon/cartilage only
+31418583,Exosomes derived from induced vascular progenitor cells promote angiogenesis in vitro and in an in vivo rat hindlimb ischemia model.,Cardiac muscle only
+31451800,Augmenting canonical Wnt signalling in therapeutically inert cells converts them into therapeutically potent exosome factories.,Engineered fibroblast exosome factories; mdx benefit reported but the paper's focus and primary model are cardiac
+31534118,Exosomes derived from cardiac progenitor cells attenuate CVB3-induced apoptosis via abrogating the proliferation of CVB3 and modulating the mTOR signaling pathways.,Cardiac muscle only
+31547508,Molecular Mechanisms of Cardiac Remodeling and Regeneration in Physical Exercise.,Review / meta-analysis
+31557390,Role of cardiac progenitor cell-derived exosome-mediated microRNA-210 in cardiovascular disease.,Review / meta-analysis
+31578459,"Effects of an acute bout of exercise on circulating extracellular vesicles: tissue-, sex-, and BMI-related differences.",Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+31684046,Biodistribution of Mesenchymal Stem Cell-Derived Extracellular Vesicles in a Radiation Injury Bone Marrow Murine Model.,Bone/tendon/cartilage only
+31685023,Physiologic expansion of human heart-derived cells enhances therapeutic repair of injured myocardium.,Cardiac muscle only
+31707339,Lung-derived exosomes in phosgene-induced acute lung injury regulate the functions of mesenchymal stem cells partially via miR-28-5p.,Non-muscle target tissue
+31775322,Biofabrication of Cell-Derived Nanovesicles: A Potential Alternative to Extracellular Vesicles for Regenerative Medicine.,Cardiac muscle only
+31815595,Interleukin-10 Deficiency Alters Endothelial Progenitor Cell-Derived Exosome Reparative Effect on Myocardial Repair via Integrin-Linked Kinase Enrichment.,Cardiac muscle only
+31817149,Transthyretin Maintains Muscle Homeostasis Through the Novel Shuttle Pathway of Thyroid Hormones During Myoblast Differentiation.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+31891633,Potential of mesenchymal- and cardiac progenitor cells for therapeutic targeting of B-cells and antibody responses in end-stage heart failure.,Cardiac muscle only
+31938060,Smooth muscle SIRT1 reprograms endothelial cells to suppress angiogenesis after ischemia.,Non-muscle target tissue
+31950871,Exogenous miR-29a Attenuates Muscle Atrophy and Kidney Fibrosis in Unilateral Ureteral Obstruction Mice.,"AAV-miR-29a overexpression, not an EV intervention (EV secretion only observed)"
+31989677,Melatonin-stimulated exosomes enhance the regenerative potential of chronic kidney disease-derived mesenchymal stem/stromal cells via cellular prion proteins.,Non-muscle target tissue
+32049348,Extracellular vesicles from human cardiovascular progenitors trigger a reparative immune response in infarcted hearts.,Cardiac muscle only
+32051439,Ticagrelor Enhances Release of Anti-Hypoxic Cardiac Progenitor Cell-Derived Exosomes Through Increasing Cell Proliferation In Vitro.,Cardiac muscle only
+32072905,Cardiac Repair: The Intricate Crosstalk between the Epicardium and the Myocardium.,Review / meta-analysis
+32105824,Desmin mutations result in mitochondrial dysfunction regardless of their aggregation properties.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+32183455,Message in a Bottle: Upgrading Cardiac Repair into Rejuvenation.,Review / meta-analysis
+32194404,Fat Therapeutics: The Clinical Capacity of Adipose-Derived Stem Cells and Exosomes for Human Disease and Tissue Regeneration.,Review / meta-analysis
+32202346,Iron deficiency-induced loss of skeletal muscle mitochondrial proteins and respiratory capacity; the role of mitophagy and secretion of mitochondria-containing vesicles.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+32233025,Muscle atrophy-related myotube-derived exosomal microRNA in neuronal dysfunction: Targeting both coding and long noncoding RNAs.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+32245988,"Blood flow-restricted resistance exercise alters the surface profile, miRNA cargo and functional impact of circulating extracellular vesicles.",EV characterisation / methodology; no intervention
+32393784,Extracellular vesicles from human embryonic stem cell-derived cardiovascular progenitor cells promote cardiac infarct healing through reducing cardiomyocyte death and promoting angiogenesis.,Cardiac muscle only
+32441910,Extracellular Vesicles Enhance the Remodeling of Cell-Free Silk Vascular Scaffolds in Rat Aortae.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+32466282,Unravelling the Biology of Adult Cardiac Stem Cell-Derived Exosomes to Foster Endogenous Cardiac Regeneration and Repair.,Review / meta-analysis
+32477950,Diacylglycerol Kinase Alpha in Radiation-Induced Fibrosis: Potential as a Predictive Marker or Therapeutic Target.,Review / meta-analysis
+32557673,Mesenchymal stem cell-derived extracellular vesicles suppress the fibroblast proliferation by downregulating FZD6 expression in fibroblasts via micrRNA-29b-3p in idiopathic pulmonary fibrosis.,Non-muscle target tissue
+32585911,Extracellular Vesicles from Skeletal Muscle Cells Efficiently Promote Myogenesis in Induced Pluripotent Stem Cells.,Muscle EVs used to differentiate iPSCs (method development); no injury model
+32601364,Identification of critical molecular pathways involved in exosome-mediated improvement of cardiac function in a mouse model of muscular dystrophy.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+32639875,Serum extracellular vesicle miR-203a-3p content is associated with skeletal muscle mass and protein turnover during disuse atrophy and regrowth.,EVs studied as biomarkers only; no EV intervention
+32641118,Optimized method for extraction of exosomes from human primary muscle cells.,EV characterisation / methodology; no intervention
+32664737,Mesenchymal Stem Cell-Derived Extracellular Vesicles Attenuate Radiation-Induced Lung Injury via miRNA-214-3p.,Non-muscle target tissue
+32747668,Human pluripotent stem cell-derived cardiomyocytes as a target platform for paracrine protection by cardiac mesenchymal stromal cells.,Cardiac muscle only
+32749649,Dental Pulp Stem Cell-Derived Extracellular Vesicles Mitigate Haematopoietic Damage after Radiation.,Bone/tendon/cartilage only
+32754983,HDAC inhibitors tune miRNAs in extracellular vesicles of dystrophic muscle-resident mesenchymal cells.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+32761640,Exosomes: Beyond stem cells for cardiac protection and repair.,Review / meta-analysis
+32835733,Extracellular vesicles of MSCs and cardiomyoblasts are vehicles for lipid mediators.,Cardiac muscle only
+32852610,Angiotensin-converting enzyme 2 augments the effects of endothelial progenitor cells-exosomes on vascular smooth muscle cell phenotype transition.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+32864621,Fusion-Independent Satellite Cell Communication to Muscle Fibers During Load-Induced Hypertrophy.,Mechanical overload hypertrophy (not an injury model); satellite cell EV transfer to myofibres. Retained as context.
+32889404,Exosome secreted by human gingival fibroblasts in radiation therapy inhibits osteogenic differentiation of bone mesenchymal stem cells by transferring miR-23a.,Bone/tendon/cartilage only
+32929392,Can Wharton jelly derived or adipose tissue derived mesenchymal stem cell can be a treatment option for duchenne muscular dystrophy? Answers as transcriptomic aspect.,Transcriptomic comparison of MSC sources; no EV intervention
+32944493,Use of MSCs and MSC-educated macrophages to mitigate hematopoietic acute radiation syndrome.,Non-muscle target tissue
+32961400,High-intensity ultrasound irradiation promotes the release of extracellular vesicles from C2C12 myotubes.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+32998818,Exosomes of oral squamous cell carcinoma cells containing miR-181a-3p induce muscle cell atrophy and apoptosis by transmissible endoplasmic reticulum stress signaling.,Tumour-derived EVs as disease mediators; no EV intervention
+33002577,The secretome of senescent preadipocytes influences the phenotype and function of cells of the vascular wall.,Not an EV study (retrieved by query overlap)
+33072749,"Circulating Mitochondrial-Derived Vesicles, Inflammatory Biomarkers and Amino Acids in Older Adults With Physical Frailty and Sarcopenia: A Preliminary BIOSPHERE Multi-Marker Study Using Sequential and Orthogonalized Covariance Selection - Linear Discriminant Analysis.",EVs studied as biomarkers only; no EV intervention
+33141101,Twelve-Week Internet-Based Individualized Exercise Program in Adults With Systemic Lupus Erythematosus: Protocol for a Randomized Controlled Trial.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+33142729,Fluorescence Correlation Spectroscopy Reveals Interaction of Some Microdomain-Associated Lipids with Cellular Focal Adhesion Sites.,Not an EV study (retrieved by query overlap)
+33174379,Coadministration of endothelial and smooth muscle cells derived from human induced pluripotent stem cells as a therapy for critical limb ischemia.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+33208172,The nSMase2/Smpd3 gene modulates the severity of muscular dystrophy and the emotional stress response in mdx mice.,Nerve/CNS model; no skeletal muscle injury outcome
+33269630,Cross-talk with skeletal muscle and its nexus with regenerative rehabilitation.,"Comment, editorial, letter or erratum"
+33284092,Increased vascular permeability and severe renal tubular damage after ischemia-reperfusion injury in mice lacking adiponectin or T-cadherin.,Non-muscle target tissue
+33289229,Reviewing the role of cardiac exosomes in myocardial repair at a glance.,Review / meta-analysis
+33381854,GMP-Grade Methods for Cardiac Progenitor Cells: Cell Bank Production and Quality Control.,Cardiac muscle only
+33386754,Microglial recruitment and mechanisms involved in the disruption of afferent synaptic terminals on spinal cord motor neurons after acute peripheral nerve injury.,Nerve/CNS model; no skeletal muscle injury outcome
+33403929,Ultrafiltration and Injection of Islet Regenerative Stimuli Secreted by Pancreatic Mesenchymal Stromal Cells.,Bone/tendon/cartilage only
+33469781,Human cardiomyocyte-derived exosomes induce cardiac gene expressions in mesenchymal stromal cells within 3D hyaluronic acid hydrogels and in dose-dependent manner.,Cardiac muscle only
+33510128,Extracellular vesicles-released parathyroid hormone-related protein from Lewis lung carcinoma induces lipolysis and adipose tissue browning in cancer cachexia.,Non-muscle target tissue
+33513081,Characterization of βARKct engineered cellular extracellular vesicles and model specific cardioprotection.,Cardiac muscle only
+33527775,Immature adipocyte-derived exosomes inhibit expression of muscle differentiation markers.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+33530565,Cell-Free Approaches and Therapeutic Biomolecules for Cardiac Regeneration.,"Comment, editorial, letter or erratum"
+33539522,Identification and Clinical Associations of 3 Forms of Circulating T-cadherin in Human Serum.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+33572486,Cardiac Exosomes in Ischemic Heart Disease- A Narrative Review.,Review / meta-analysis
+33579366,Pluripotent stem cell-induced skeletal muscle progenitor cells with givinostat promote myoangiogenesis and restore dystrophin in injured Duchenne dystrophic muscle.,Cell therapy (givinostat-induced muscle progenitor cells); EVs profiled only
+33658506,Minimally invasive delivery of therapeutic agents by hydrogel injection into the pericardial cavity for cardiac repair.,Cardiac muscle only
+33709717,Stimulating Extracellular Vesicles Production from Engineered Tissues by Mechanical Forces.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+33716175,Delivery of cardiovascular progenitors with biomimetic microcarriers reduces adverse ventricular remodeling in a rat model of chronic myocardial infarction.,Cardiac muscle only
+33719604,Adipose Stem Cell-Derived Exosomes Recover Impaired Matrix Metabolism of Torn Human Rotator Cuff Tendons by Maintaining Tissue Homeostasis.,Bone/tendon/cartilage only
+33727530,Stem cell-derived exosomes repair ischemic muscle injury by inhibiting the tumor suppressor Rb1-mediated NLRP3 inflammasome pathway.,"Comment, editorial, letter or erratum"
+33731514,"Therapeutic Efficacy of Cryopreserved, Allogeneic Extracellular Vesicles for Treatment of Acute Myocardial Infarction.",Cardiac muscle only
+33732415,Extracellular vesicles derived from oesophageal cancer containing P4HB promote muscle wasting via regulating PHGDH/Bcl-2/caspase-3 pathway.,EV characterisation / methodology; no intervention
+33738245,Extracellular Vesicles for the Treatment of Radiation-Induced Normal Tissue Toxicity in the Lung.,Non-muscle target tissue
+33861516,Proteome characterisation of extracellular vesicles isolated from heart.,Cardiac muscle only
+33870156,Genetic or pharmacological reduction of cholangiocyte senescence improves inflammation and fibrosis in the Mdr2 -/-  mouse.,Not an EV study (retrieved by query overlap)
+33871287,Adipose-derived stem cell exosomes facilitate rotator cuff repair by mediating tendon-derived stem cells.,Bone/tendon/cartilage only
+33897872,An exosomal-carried short periostin isoform induces cardiomyocyte proliferation.,Cardiac muscle only
+33907416,Exosomes Derived from Pancreatic Cancer Cells Induce Osteoclast Differentiation Through the miR125a-5p/TNFRSF1B Pathway.,EV characterisation / methodology; no intervention
+33948557,Early satellite cell communication creates a permissive environment for long-term muscle growth.,Mechanical overload hypertrophy (not an injury model); satellite cell EV miR-206 → Wisp1 in FAPs. Retained as context for the ECM module.
+34084138,Extracellular Vesicles for the Treatment of Radiation Injuries.,Review / meta-analysis
+34094711,Cancer-derived exosome miRNAs induce skeletal muscle wasting by Bcl-2-mediated apoptosis in colon cancer cachexia.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+34135937,Comparative Analysis of MicroRNA Expression Profiles Between Skeletal Muscle- and Adipose-Derived Exosomes in Pig.,EV characterisation / methodology; no intervention
+34185301,Seminal Vesicle Tumor Microenvironment.,Not an EV study (retrieved by query overlap)
+34229732,Amiloride ameliorates muscle wasting in cancer cachexia through inhibiting tumor-derived exosome release.,Non-muscle target tissue
+34266474,Exosomes derived from adipose-derived stem cells overexpressing glyoxalase-1 protect endothelial cells and enhance angiogenesis in type 2 diabetic mice with limb ischemia.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+34270708,Cardiomyocyte-produced miR-339-5p mediates pathology in Duchenne muscular dystrophy cardiomyopathy.,Cardiac muscle only
+34281156,Mesenchymal Stem Cell-Derived Small Extracellular Vesicles Protect Cardiomyocytes from Doxorubicin-Induced Cardiomyopathy by Upregulating Survivin Expression via the miR-199a-3p-Akt-Sp1/p53 Signaling Pathway.,Cardiac muscle only
+34297034,Identification of plexin D1 on circulating extracellular vesicles as a potential biomarker of polymyositis and dermatomyositis.,EVs studied as biomarkers only; no EV intervention
+34297471,Hydrogel Loaded with VEGF/TFEB-Engineered Extracellular Vesicles for Rescuing Critical Limb Ischemia by a Dual-Pathway Activation Strategy.,"Critical limb ischemia; endothelial/angiogenic endpoints dominate, muscle injury readout secondary and unquantified at fibre level"
+34331784,Lung-derived exosomes regulate the function of mesenchymal stem cells and alleviate phosgene-induced lung injury via miR-34c-3p.,Non-muscle target tissue
+34333817,Extracellular vesicles released from stress-induced prematurely senescent myoblasts impair endothelial function and proliferation.,Senescent myoblast EVs impairing endothelial function in vitro; no muscle injury model
+34404763,Lysosome purinergic receptor P2X4 regulates neoangiogenesis induced by microvesicles from sarcoma patients.,Non-muscle target tissue
+34436382,Skeletal Muscle Cell Growth Alters the Lipid Composition of Extracellular Vesicles.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+34439837,Characterization of the Skeletal Muscle Secretome Reveals a Role for Extracellular Vesicles and IL1α/IL1β in Restricting Fibro/Adipogenic Progenitor Adipogenesis.,"Descriptive secretome/EV characterisation during regeneration; EV effects in vitro only, no intervention arm"
+34480776,Fusion and beyond: Satellite cell contributions to loading-induced skeletal muscle adaptation.,Review / meta-analysis
+34489723,Downregulation of let-7 by Electrical Acupuncture Increases Protein Synthesis in Mice.,EV characterisation / methodology; no intervention
+34552283,Treatment with adipose-derived regenerative cells enhances ischemia-induced angiogenesis via exosomal microRNA delivery in mice.,Non-muscle target tissue
+34563222,miR-410-3P inhibits adipocyte differentiation by targeting IRS-1 in cancer-associated cachexia patients.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+34580402,Sarcopenia-derived exosomal micro-RNA 16-5p disturbs cardio-repair via a pro-apoptotic mechanism in myocardial infarction in mice.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+34698812,Plasma exosomal RNAs have potential as both clinical biomarkers and therapeutic targets of dermatomyositis.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+34703840,miR-223-3p and miR-24-3p as novel serum-based biomarkers for myotonic dystrophy type 1.,EVs studied as biomarkers only; no EV intervention
+34729960,Ameliorating cancer cachexia by inhibiting cancer cell release of Hsp70 and Hsp90 with omeprazole.,Non-muscle target tissue
+34815807,Extracellular vesicles fail to trigger the generation of new cardiomyocytes in chronically infarcted hearts.,Cardiac muscle only
+34858202,Remote Hind-Limb Ischemia Mechanism of Preserved Ejection Fraction During Heart Failure.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+34867338,Pharmacological Inhibition of HMGB1 Prevents Muscle Wasting.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+34867435,"Age-Related Exosomal and Endogenous Expression Patterns of miR-1, miR-133a, miR-133b, and miR-206 in Skeletal Muscles.",Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+34872024,MicroRNAs and exosomes: Cardiac stem cells in heart diseases.,Cardiac muscle only
+34904902,The Biological Use of Platelet-Rich Plasma in Skeletal Muscle Injury and Repair.,EV characterisation / methodology; no intervention
+34928395,"Key concepts in muscle regeneration: muscle ""cellular ecology"" integrates a gestalt of cellular cross-talk, motility, and activity to remodel structure and restore function.",Review / meta-analysis
+34931471,Extracellular vesicles derived from tumour cells as a trigger of energy crisis in the skeletal muscle.,Tumour-derived EVs as disease mediators; no EV intervention
+34968647,Isolation methods of large and small extracellular vesicles derived from cardiovascular progenitors: A comparative study.,Cardiac muscle only
+35034093,The critical role of STAT3 in biogenesis of tumor-derived exosomes with potency of inducing cancer cachexia in vitro and in vivo.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+35053121,"Secretome of Stressed Peripheral Blood Mononuclear Cells Alters Transcriptome Signature in Heart, Liver, and Spleen after an Experimental Acute Myocardial Infarction: An In Silico Analysis.",Cardiac muscle only
+35163475,"Therapeutic Application of Extracellular Vesicles-Capsulated Adeno-Associated Virus Vector via nSMase2/Smpd3, Satellite, and Immune Cells in Duchenne Muscular Dystrophy.",Review / meta-analysis
+35194965,Muscle cells of sporadic amyotrophic lateral sclerosis patients secrete neurotoxic vesicles.,Nerve/CNS model; no skeletal muscle injury outcome
+35258704,Uncovering the molecular identity of cardiosphere-derived cells (CDCs) by single-cell RNA sequencing.,Cardiac muscle only
+35263279,Regenerative medicine 2.0: extracellular vesicle-based therapeutics for musculoskeletal tissue regeneration.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+35305652,Young fibroblast-derived exosomal microRNA-125b transfers beneficial effects on aged cutaneous wound healing.,Non-muscle target tissue
+35322574,Bioactivity and miRNome Profiling of Native Extracellular Vesicles in Human Induced Pluripotent Stem Cell-Cardiomyocyte Differentiation.,Cardiac muscle only
+35336023,Human Umbilical Cord Mesenchymal Stem Cell-Derived Small Extracellular Vesicles Ameliorated Insulin Resistance in Type 2 Diabetes Mellitus Rats.,Non-muscle target tissue
+35341679,Stem cell therapy for pulmonary arterial hypertension: An update.,Review / meta-analysis
+35346780,Comparative computational RNA analysis of cardiac-derived progenitor cells and their extracellular vesicles.,Cardiac muscle only
+35346801,Cytokines chattering in pancreatic ductal adenocarcinoma tumor microenvironment.,Review / meta-analysis
+35379793,GDF-15 in tumor-derived exosomes promotes muscle atrophy via Bcl-2/caspase-3 pathway.,EV characterisation / methodology; no intervention
+35409022,"A Novel, Cell-Free Therapy to Enter Our Hearts: The Potential Role of Small EVs in Prevention and Treatment of CVD.",Review / meta-analysis
+35528209,Osteoblast Derived Exosomes Alleviate Radiation- Induced Hematopoietic Injury.,Bone/tendon/cartilage only
+35546766,Mesenchymal Stem Cell-derived Exosomes Affect Macrophage Phenotype: A Cell-free Strategy for the Treatment of Skeletal Muscle Disorders.,Narrative review of MSC exosomes and macrophage phenotype
+35563123,The Role of Telocytes and Telocyte-Derived Exosomes in the Development of Thoracic Aortic Aneurysm.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+35619556,Serum extracellular vesicles for delivery of CRISPR-CAS9 ribonucleoproteins to modify the dystrophin gene.,Non-muscle target tissue
+35629791,Characterizing Extracellular Vesicles and Particles Derived from Skeletal Muscle Myoblasts and Myotubes and the Effect of Acute Contractile Activity.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+35646081,Editorial: MicroRNAs and Muscle Cell Death in Cancer.,"Comment, editorial, letter or erratum"
+35673580,Diabetes impairs cardioprotective function of endothelial progenitor cell-derived extracellular vesicles via H3K9Ac inhibition.,Cardiac muscle only
+35694153,The mechanism by which noncoding RNAs regulate muscle wasting in cancer cachexia.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+35759450,MicroRNA cargo of extracellular vesicles released by skeletal muscle fibro-adipogenic progenitor cells is significantly altered with disuse atrophy and IL-1β deficiency.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+35786604,Mesenchymal Stem Cells Promote IL-6 Secretion and Suppress the Gene Expression of Proinflammatory Cytokines in Contractile C2C12 Myotubes.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+35935623,Prophylactic exercise-derived circulating exosomal miR-125a-5p promotes endogenous revascularization after hindlimb ischemia by targeting endothelin converting enzyme 1.,"Exercise exosomal miR-125a-5p; endpoint is revascularisation, no muscle regeneration/fibrosis readout"
+35955732,Human Multipotent Mesenchymal Stromal Cell-Derived Extracellular Vesicles Enhance Neuroregeneration in a Rat Model of Sciatic Nerve Crush Injury.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+35966577,Engineered extracellular vesicles with high collagen-binding affinity present superior in situ retention and therapeutic efficacy in tissue repair.,Collagen-binding engineered EVs; hindlimb ischemia with vascularisation focus (muscle regeneration reported but mechanism is EV retention engineering)
+36078164,Patient-Derived Pancreatic Cancer Cells Induce C2C12 Myotube Atrophy by Releasing Hsp70 and Hsp90.,Non-muscle target tissue
+36085573,Atractylenolide I ameliorates cancer cachexia through inhibiting biogenesis of IL-6 and tumour-derived extracellular vesicles.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+36090820,Clinical perspectives for repairing rotator cuff injuries with multi-tissue regenerative approaches.,Review / meta-analysis
+36128871,Systemic Metabolic Alteration Dependent on the Thyroid-Liver Axis in Early PD.,Nerve/CNS model; no skeletal muscle injury outcome
+36142245,Cell-Based and Selected Cell-Free Therapies for Myocardial Infarction: How Do They Compare to the Current Treatment Options?,Review / meta-analysis
+36153544,Small extracellular vesicles of hypoxic endothelial cells regulate the therapeutic potential of adipose-derived mesenchymal stem cells via miR-486-5p/PTEN in a limb ischemia model.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+36160702,Exploring the Temporal Correlation of Sarcopenia with Bone Mineral Density and the Effects of Osteoblast-Derived Exosomes on Myoblasts through an Oxidative Stress-Related Gene.,"Comment, editorial, letter or erratum"
+36161709,Extracellular vesicles from human urine-derived stem cells merged in hyaluronic acid ameliorate erectile dysfunction in type 2 diabetic rats by glans administration.,Non-muscle target tissue
+36195925,The therapeutic effect of adipose-derived stem cells on soft tissue injury after radiotherapy and their value for breast reconstruction.,Review / meta-analysis
+36217495,Exosomes and Exosomal Cargos: A Promising World for Ventricular Remodeling Following Myocardial Infarction.,Review / meta-analysis
+36250617,"Mechanical strain drives exosome production, function, and miRNA cargo in C2C12 muscle progenitor cells.",Bone/tendon/cartilage only
+36263355,General consensus on multimodal functions and validation analysis of perinatal derivatives for regenerative medicine applications.,Review / meta-analysis
+36328130,Mesenchymal stromal cell spheroids in sulfated alginate enhance muscle regeneration.,Non-muscle target tissue
+36345317,Thermosensitive hydrogel carrying extracellular vesicles from adipose-derived stem cells promotes peripheral nerve regeneration after microsurgical repair.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+36351490,Differential expression of adipocyte and myotube extracellular vesicle miRNA cargo in chronic binge alcohol-administered SIV-infected male macaques.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+36398109,Extracellular Vesicles as Communicators of Senescence in Musculoskeletal Aging.,Review / meta-analysis
+36419834,"Integrated bioinformatics, network pharmacology, and artificial intelligence to predict the mechanism of celastrol against muscle atrophy caused by colorectal cancer.",Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+36451814,Extracellular vesicle-derived miRNAs improve stem cell-based therapeutic approaches in muscle wasting conditions.,"EV-derived miRNA signature transfected into mesoangioblasts; cell therapy, not EV intervention"
+36460667,Bead-jet printing enabled sparse mesenchymal stem cell patterning augments skeletal muscle and hair follicle regeneration.,Non-muscle target tissue
+36474029,A novel circ_0018553 protects against angiotensin-induced cardiac hypertrophy in cardiomyocytes by modulating the miR-4731/SIRT2 signaling pathway.,Cardiac muscle only
+36499243,Extracellular Vesicles in Regenerative Processes Associated with Muscle Injury Recovery of Professional Athletes Undergoing Sub Maximal Strength Rehabilitation.,Non-muscle target tissue
+36526242,Muscle-derived extracellular vesicles improve disuse-induced osteoporosis by rebalancing bone formation and bone resorption.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+36543717,Soluble components from mesenchymal stromal cell processing exert anti-inflammatory effects and facilitate ischemic muscle regeneration.,MSC freeze-thaw cell debris/supernatant; EV fraction not isolated or tested in vivo
+36546840,Repair mechanism of radiation-induced salivary gland injury by hypoxia-pretreated human urine-derived stem cell exosomes.,Non-muscle target tissue
+36576505,Tumor Necrosis Factor-α Blunts the Osteogenic Effects of Muscle Cell-Derived Extracellular Vesicles by Affecting Muscle Cells.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+36581870,Exosomal IL-8 derived from Lung Cancer and Colon Cancer cells induced adipocyte atrophy via NF-κB signaling pathway.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+36722691,Circulating exosome-like vesicle and skeletal muscle microRNAs are altered with age and resistance training.,Non-muscle target tissue
+36725841,HuMSC-EV induce monocyte/macrophage mobilization to orchestrate neovascularization in wound healing process following radiation injury.,Bone/tendon/cartilage only
+36728671,The emerging role of extracellular vesicles in the testis.,Non-muscle target tissue
+36729282,Extracellular vesicles derived from hypoxia-preconditioned bone marrow mesenchymal stem cells ameliorate lower limb ischemia by delivering miR-34c.,Bone/tendon/cartilage only
+36842089,Senescence-associated exosomes transfer miRNA-induced fibrosis to neighboring cells.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+36895061,Extracellular vesicle distribution and localization in skeletal muscle at rest and following disuse atrophy.,EV characterisation / methodology; no intervention
+36923267,Exosomes-loaded electroconductive nerve dressing for nerve regeneration and pain relief against diabetic peripheral nerve injury.,Bone/tendon/cartilage only
+36936950,Skeletal myotube-derived extracellular vesicles enhance itaconate production and attenuate inflammatory responses of macrophages.,Myotube EV effect on macrophage itaconate in vitro; no muscle injury model
+37009008,Exosomes from adipose-derived stem cells promote angiogenesis and reduce necrotic grade in hindlimb ischemia mouse models.,Hindlimb ischemia with angiogenesis and necrosis grade only; no muscle regeneration mechanism
+37068578,Endothelial progenitor cell-derived exosomes inhibit pulmonary artery smooth muscle cell in vitro proliferation and resistance to apoptosis by modulating the Mitofusin-2 and Ras-Raf-ERK1/2 signaling pathway.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+37081396,Myoblast-derived exosomal Prrx2 attenuates osteoporosis via transcriptional regulation of lncRNA-MIR22HG to activate Hippo pathway.,Non-muscle target tissue
+37086197,Age and low intensity resistance exercise on exosome-like vesicle and skeletal muscle microRNA profiles.,"Comment, editorial, letter or erratum"
+37122841,Neural grafts containing exosomes derived from Schwann cell-like cells promote peripheral nerve regeneration in rats.,Non-muscle target tissue
+37150341,Cardiosome-mediated protection in myocardial ischemia.,Review / meta-analysis
+37175796,Neonatal Cardiovascular-Progenitor-Cell-Derived Extracellular Vesicles Activate YAP1 in Adult Cardiac Progenitor Cells.,Cardiac muscle only
+37240415,Revolutionizing Radiotoxicity Management with Mesenchymal Stem Cells and Their Derivatives: A Focus on Radiation-Induced Cystitis.,Review / meta-analysis
+37247938,Metabolic Changes in Blood-derived Extracellular Vesicles of Malnourished Breast Cancer Patients.,Tumour-derived EVs as disease mediators; no EV intervention
+37305554,Muscle-derived stem cell exosomes with overexpressed miR-214 promote the regeneration and repair of rat sciatic nerve after crush injury to activate the JAK2/STAT3 pathway by targeting PTEN.,EV characterisation / methodology; no intervention
+37308908,Exosomal miR-125b-5p derived from adipose-derived mesenchymal stem cells enhance diabetic hindlimb ischemia repair via targeting alkaline ceramidase 2.,EV characterisation / methodology; no intervention
+37309723,Proteomic analysis of the small extracellular vesicles and soluble secretory proteins from cachexia inducing and non-inducing cancer cells.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+37323108,Human mesenchymal stem-derived extracellular vesicles improve body growth and motor function following severe spinal cord injury in rat.,Nerve/CNS model; no skeletal muscle injury outcome
+37326466,"Report and Abstracts of the 19th Meeting of the Interuniversity Institute of Myology: Assisi, October 20-23, 2022.",Conference abstract book / proceedings
+37367824,Differentiation state and culture conditions impact neural stem/progenitor cell-derived extracellular vesicle bioactivity.,Nerve/CNS model; no skeletal muscle injury outcome
+37370673,Deconstructing Fat to Reverse Radiation Induced Soft Tissue Fibrosis.,Review / meta-analysis
+37398399,Wnt binding to Coatomer proteins directs secretion on exosomes independently of palmitoylation.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+37439436,Cancer-cell-secreted extracellular vesicles target p53 to impair mitochondrial function in muscle.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+37466428,Exosome-coated polydatin nanoparticles in the treatment of radiation-induced intestinal damage.,Non-muscle target tissue
+37478186,Engineered exosomes reprogram Gli1+ cells in vivo to prevent calcification of vascular grafts and autologous pathological vessels.,Bone/tendon/cartilage only
+37528162,Cardiac progenitor cell-derived extracellular vesicles promote angiogenesis through both associated- and co-isolated proteins.,Cardiac muscle only
+37540440,A Modified Differential Centrifugation Protocol for Isolation and Quantitation of Extracellular Heat Shock Protein 90 (eHsp90).,Tumour-derived EVs as disease mediators; no EV intervention
+37540699,Diabetes diminishes muscle precursor cell-mediated microvascular angiogenesis.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+37542118,The role of cardiac pericytes in health and disease: therapeutic targets for myocardial infarction.,Review / meta-analysis
+37544997,A review of current status of cell-based therapies for aortic aneurysms.,Review / meta-analysis
+37569674,New Insights into the Reparative Angiogenesis after Myocardial Infarction.,Review / meta-analysis
+37575060,Muscle mitochondrial transplantation can rescue and maintain cellular homeostasis.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+37595498,Human PSC-derived cardiac cells and their products: therapies for cardiac repair.,Review / meta-analysis
+37596398,Satellite cell-derived exosome-mediated delivery of microRNA-23a/27a/26a cluster ameliorates the renal tubulointerstitial fibrosis in mouse diabetic nephropathy.,Non-muscle target tissue
+37603272,Extracellular Vesicles and Ischemic Cardiovascular Diseases.,Cardiac muscle only
+37603276,Extracellular Vesicles for Muscle Atrophy Treatment.,Review / meta-analysis
+37620316,Cancer-cell-secreted miR-204-5p induces leptin signalling pathway in white adipose tissue to promote cancer-associated cachexia.,Tumour-derived EVs as disease mediators; no EV intervention
+37626898,Crosstalk between Bone and Muscles during Physical Activity.,Review / meta-analysis
+37628730,Extracellular Vesicles in Young Serum Contribute to the Restoration of Age-Related Brain Transcriptomes and Cognition in Old Mice.,EV characterisation / methodology; no intervention
+37631323,Adult Mesenchymal Stem Cells from Oral Cavity and Surrounding Areas: Types and Biomedical Applications.,Review / meta-analysis
+37671686,Radiation induces long-term muscle fibrosis and promotes a fibrotic phenotype in fibro-adipogenic progenitors.,Not an EV study (retrieved by query overlap)
+37740674,Ultrastructural evidence of telocytes in the embryonic chick heart.,Cardiac muscle only
+37743008,Exosomal EIF5A derived from Lewis lung carcinoma induced adipocyte wasting in cancer cachexia.,Non-muscle target tissue
+37747344,Small extracellular vesicles from irradiated lung epithelial cells promote the activation of fibroblasts in pulmonary fibrosis.,Non-muscle target tissue
+37759522,Cardiac Progenitor Cell Exosomal miR-935 Protects against Oxidative Stress.,Cardiac muscle only
+37820679,Electroacupuncture Promotes Skeletal Muscle Myogenic Differentiation and Protein Synthesis by Reducing Let-7c-5p Levels.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+37858665,Extracellular vesicles and microRNAs in the regulation of cardiomyocyte differentiation and proliferation.,Review / meta-analysis
+37882347,Proteomics analysis of C2C12 myotubes treated with atrophy inducing cancer cell-derived factors.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+37896871,Umbilical Cord Mesenchymal-Stem-Cell-Derived Exosomes Exhibit Anti-Oxidant and Antiviral Effects as Cell-Free Therapies.,Non-muscle target tissue
+37939660,Skeletal muscle-derived extracellular vesicles transport glycolytic enzymes to mediate muscle-to-bone crosstalk.,Non-muscle target tissue
+37957174,Enhanced pericyte-endothelial interactions through NO-boosted extracellular vesicles drive revascularization in a mouse model of ischemic injury.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+37967239,Mitigation of acute radiation syndrome (ARS) with human umbilical cord blood.,Review / meta-analysis
+37968711,Human umbilical cord mesenchymal stem cell-derived exosomes promote microcirculation in aged diabetic mice by TGF-β1 signaling pathway.,"Aged diabetic microcirculation study; muscle outcomes secondary to endothelial permeability, no injury model"
+38028974,Exercise and Ischemia-Activated Pathways in Limb Muscle Angiogenesis and Vascular Regeneration.,Review / meta-analysis
+38054662,Pulsed ultrasound promotes secretion of anti-inflammatory extracellular vesicles from skeletal myotubes via elevation of intracellular calcium level.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+38063490,Co-Delivery of Bioengineered Exosomes and Oxygen for Treating Critical Limb Ischemia in Diabetic Mice.,Exosome plus oxygen co-delivery in diabetic limb ischemia; angiogenesis-dominant endpoints
+38085347,Transcriptome sequencing promotes insights on the molecular mechanism of SKP-SC-EVs mitigating denervation-induced muscle atrophy.,EV characterisation / methodology; no intervention
+38088531,Deciphering Immune Landscape Remodeling Unravels the Underlying Mechanism for Synchronized Muscle and Bone Aging.,Bone/tendon/cartilage only
+38106447,Therapeutic Effects of Mechanical Stress-Induced C2C12-Derived Exosomes on Glucocorticoid-Induced Osteoporosis Through miR-92a-3p/PTEN/AKT Signaling Pathway.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+38115574,Senescent skeletal muscle fibroadipogenic progenitors recruit and promote M2 polarization of macrophages.,EV characterisation / methodology; no intervention
+38117373,Myeloma extracellular vesicle-derived RAGE increases inflammatory responses and myotube atrophy in multiple myeloma through activation of the TLR4/NF-κB p65 pathway.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+38185757,Cardiopulmonary progenitors facilitate cardiac repair via exosomal transfer of miR-27b-3p targeting the SIK1-CREB1 axis.,Cardiac muscle only
+38243682,Induced pluripotent stem cell-derived extracellular vesicles enriched with miR-126 induce proangiogenic properties and promote repair of ischemic tissue.,Hindlimb ischemia with angiogenesis and perfusion endpoints only; no muscle regeneration/fibrosis readout
+38328077,Wnt7a is Required for Regeneration of Dystrophic Skeletal Muscle.,Duplicate preprint of PMID 39702274
+38339164,Immunological Profile and Markers of Endothelial Dysfunction in Elderly Patients with Cognitive Impairments.,Nerve/CNS model; no skeletal muscle injury outcome
+38347587,Mesenchymal stem cell-derived extracellular vesicles exert pro-angiogenic and pro-lymphangiogenic effects in ischemic tissues by transferring various microRNAs and proteins including ITGa5 and NRP1.,Bone/tendon/cartilage only
+38374439,In-situ gelation of fibrin gel encapsulating platelet-rich plasma-derived exosomes promotes rotator cuff healing.,Bone/tendon/cartilage only
+38405765,Isolation of small extracellular vesicles from regenerating muscle tissue using Tangential Flow Filtration and Size Exclusion Chromatography.,EV characterisation / methodology; no intervention
+38448545,Generalizable anchor aptamer strategy for loading nucleic acid therapeutics on exosomes.,Non-muscle target tissue
+38500398,"Stem cell secretome treatment improves whole-body metabolism, reduces adiposity, and promotes skeletal muscle function in aged mice.",Stem cell secretome product containing EVs; EV fraction not isolated or separately tested
+38501170,Cross-species modeling of muscular dystrophy in Caenorhabditis elegans using patient-derived extracellular vesicles.,Non-muscle target tissue
+38501548,The telocytes relationship with satellite cells: Extracellular vesicles mediate the myotendinous junction remodeling.,Nerve/CNS model; no skeletal muscle injury outcome
+38575766,Facilitatory effect of low-pulse repetition frequency ultrasound on release of extracellular vesicles from cultured myotubes.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+38589686,Exosomes derived from induced cardiopulmonary progenitor cells alleviate acute lung injury in mice.,Cardiac muscle only
+38612587,Stem Cell Therapy against Ischemic Heart Disease.,Review / meta-analysis
+38616175,Tracking of Nascent Matrix Deposition during Muscle Stem Cell Activation across Lifespan Using Engineered Hydrogels.,Not an EV study (retrieved by query overlap)
+38640834,Advanced cell and gene therapies in cardiology.,Review / meta-analysis
+38683978,Neuronal innervation regulates the secretion of neurotrophic myokines and exosomes from skeletal muscle.,Nerve/CNS model; no skeletal muscle injury outcome
+38711334,Head-to-head comparison of relevant cell sources of small extracellular vesicles for cardiac repair: Superiority of embryonic stem cells.,Cardiac muscle only
+38767492,miRNA-21-5p is an important contributor to the promotion of injured peripheral nerve regeneration using hypoxia-pretreated bone marrow-derived neural crest cells.,Bone/tendon/cartilage only
+38776447,Emerging role of mesenchymal stem cell-derived exosome microRNA in radiation injury.,Review / meta-analysis
+38884354,Exosomes From Muscle-Derived Stem Cells Repair Peripheral Nerve Injury by Inhibiting Ferroptosis via the Keap1-Nrf2-Ho-1 Axis.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+38901103,Extracellular vesicles from II trimester human amniotic fluid as paracrine conveyors counteracting oxidative stress.,Cardiac muscle only
+38909681,Stem cell and exosome therapies for regenerating damaged myocardium in heart failure.,Review / meta-analysis
+38946863,Synergistic Effects of Icariin and Extracellular Vesicles Derived from Rabbit Synovial Membrane-Derived Mesenchymal Stem Cells on Osteochondral Repair via the Wnt/β-Catenin Pathway.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+38963135,Adipose mesenchymal stem cells-derived extracellular vesicles exert their preferential action in damaged central sites of SOD1 mice rather than peripherally.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+39000080,Cell Therapies for Acute Radiation Syndrome.,Review / meta-analysis
+39005221,Tumor-Derived Exosomes Promote Tumor Growth Through Modulating Microvascular Hemodynamics in a Human Ovarian Cancer Xenograft Model.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+39009419,Proteomic profiling of human plasma extracellular vesicles identifies PF4 and C1R as novel biomarker in sarcopenia.,EVs studied as biomarkers only; no EV intervention
+39099419,Extracellular vesicle miR-206 improves chronic binge alcohol-mediated decreased myoblast differentiation in SIV-infected female macaques.,"Alcohol/SIV myoblast differentiation; in vitro EV-miR-206 delivery, no muscle injury model"
+39114150,Targeted treatment of rat AKI induced by rhabdomyolysis using BMSC derived magnetic exosomes and its mechanism.,Bone/tendon/cartilage only
+39154102,LncRNA GHET1 from bone mesenchymal stem cell-derived exosomes improves doxorubicin-induced pyroptosis of cardiomyocytes by mediating NLRP3.,Cardiac muscle only
+39188632,Rosmarinic Acid Alleviates Radiation-Induced Pulmonary Fibrosis by Downregulating the tRNA N7-Methylguanosine Modification-Regulated Fibroblast-to-Myofibroblast Transition Through the Exosome Pathway.,Non-muscle target tissue
+39238258,Hydrogel Microneedle Patches Loaded with Stem Cell Mitochondria-Enriched Microvesicles Boost the Chronic Wound Healing.,Non-muscle target tissue
+39327432,GRP75 triggers white adipose tissue browning to promote cancer-associated cachexia.,EV characterisation / methodology; no intervention
+39343927,Histone deacetylase inhibition enhances extracellular vesicles from muscle to promote osteogenesis via miR-873-3p.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+39394606,Isolation of small extracellular vesicles from regenerating muscle tissue using tangential flow filtration and size exclusion chromatography.,EV characterisation / methodology; no intervention
+39440618,Netrin1-Enriched Exosomes From Genetically Modified ADSCs as a Novel Treatment for Diabetic Limb Ischemia.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+39462403,S-RBD-modified and miR-486-5p-engineered exosomes derived from mesenchymal stem cells suppress ferroptosis and alleviate radiation-induced lung injury and long-term pulmonary fibrosis.,Non-muscle target tissue
+39478138,Heterogeneity of extracellular vesicles in porcine myoblasts regulates adipocyte differentiation.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+39519296,Various Strategies of Tendon Stem/Progenitor Cell Reprogramming for Tendon Regeneration.,Review / meta-analysis
+39574133,Myofibroblast-derived extracellular vesicles facilitate cancer stemness of hepatocellular carcinoma via transferring ITGA5 to tumor cells.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+39649602,Identification of disease-specific extracellular vesicle-associated plasma protein biomarkers for Duchenne Muscular Dystrophy and Facioscapulohumeral Muscular Dystrophy.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+39661666,Identification of the Wnt signal peptide that directs secretion on extracellular vesicles.,Non-muscle target tissue
+39707562,Small extracellular vesicles derived from umbilical cord mesenchymal stem cells alleviate radiation-induced cardiac organoid injury.,Cardiac muscle only
+39768063,Integrating Physical and Biochemical Cues for Muscle Engineering: Scaffolds and Graft Durability.,Review / meta-analysis
+39780320,Mesenchymal Stem Cell-Derived Extracellular Vesicles for Regenerative Applications and Radiotherapy.,Review / meta-analysis
+39804962,Liver-Secreted Extracellular Vesicles Promote Cirrhosis-Associated Skeletal Muscle Injury Through mtDNA-cGAS/STING Axis.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+39910431,Neural progenitor cell-derived exosomes in ischemia/reperfusion injury in cardiomyoblasts.,Cardiac muscle only
+39921321,Circulating Extracellular Vesicles in Alcoholic Liver Disease Affect Skeletal Muscle Homeostasis and Differentiation.,Non-muscle target tissue
+39955442,Extracellular vesicles efficiently deliver survival motor neuron protein to cells in culture.,Non-muscle target tissue
+39995210,Enzymatic Isolation of Skeletal Muscle Interstitial Extracellular Vesicles.,Non-muscle target tissue
+39998743,Tonsil-Derived Mesenchymal Stem Cell-Derived Small Extracellular Vesicles (sEVs) Restore Myo-Inositol Production in LPS-Treated Skeletal Muscle.,"LPS-treated muscle; endpoint is myo-inositol metabolism, not an injury/regeneration readout"
+40025506,Apoptotic vesicles derived from bone marrow mesenchymal stem cells increase angiogenesis in a hind limb ischemia model via the NAMPT/SIRT1/FOXO1 axis.,Hindlimb ischemia with angiogenesis endpoints only; no muscle regeneration/fibrosis readout
+40044661,Analysis of human urinary extracellular vesicles reveals disordered renal metabolism in myotonic dystrophy type 1.,EVs studied as biomarkers only; no EV intervention
+40045367,Small extracellular vesicles enhance the survival of Sca-1+ cardiac stem cells against ROS-induced ischemic-reoxygenation injury in vitro.,Cardiac muscle only
+40118057,Long-term preservation of muscle function and structure by repeated administration of cardiosphere-derived cells in mdx mice.,"Cardiosphere-derived CELLS repeated administration in mdx; cell therapy, not EV intervention"
+40134140,Mechanisms Tackling Salivary Gland Diseases with Extracellular Vesicle Therapies.,Review / meta-analysis
+40135580,Mesenchymal Stem Cell-Derived Extracellular Vesicles Improve Survival and Enhance Hematopoietic Recovery in Mice Exposed to High-Dose Irradiation.,Bone/tendon/cartilage only
+40162496,In Vivo Reprogramming of Tissue-Derived Extracellular Vesicles for Treating Chronic Tissue Injury Through Metabolic Engineering.,In vivo reprogramming of endogenous EV secretion (AAV-TFAM); no EV administration
+40162588,"Plasma Extracellular Vesicles Biomarkers Linked to Lower Muscle Mass, Function and Physical Performance in Sarcopenia.",EVs studied as biomarkers only; no EV intervention
+40185430,GelMA/HA-NB hydrogel encapsulating adipose-derived chondrogenic exosomes enhances enthesis regeneration in chronic rotator cuff tears.,Bone/tendon/cartilage only
+40205946,Extracellular Vesicles Released From Skeletal Muscle Post-Chronic Contractile Activity Increase Mitochondrial Biogenesis in Recipient Myoblasts.,Exercise EV effect on recipient myoblast mitochondrial biogenesis in vitro; no injury model
+40207397,Comparative Analysis of Primary Sarcopenia and End-Stage Renal Disease-Related Muscle Wasting Using Multi-Omics Approaches.,Non-muscle target tissue
+40225952,Myofibroblast-Targeting Extracellular Vesicles: A Promising Platform for Cardiac Fibrosis Drug Delivery.,Cardiac muscle only
+40331939,Plasma Microvesicles May Contribute to Muscle Damage in the mdx Mouse Model of Duchenne Muscular Dystrophy.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+40349799,Editorial Commentary: Excitement Regarding Commercially Available Exosome Products Is High but Concerns Include Misinformation and Limited Evidence of Efficacy.,"Comment, editorial, letter or erratum"
+40401524,Endothelial extracellular vesicle miR-423-5p regulates microvascular homeostasis and renal function after ischemia-reperfusion injury.,Non-muscle target tissue
+40430942,From Mechanism to Therapy: The Role of MSC-EVs in Alleviating Radiation-Induced Injuries.,Review / meta-analysis
+40460966,Ultrasound-triggered targeted delivery of engineered ADSCs-derived exosomes with high SDF-1α levels to promote cardiac repair following myocardial infarction.,Cardiac muscle only
+40511589,Small Extracellular Vesicles Derived From Damaged Muscle Aggravate Kidney Injury Progression.,Non-muscle target tissue
+40571786,Attenuation of primate aging via systemic infusion of senescence-resistant mesenchymal progenitor cells.,Bone/tendon/cartilage only
+40605471,Pancreatic Cancer-Derived Extracellular Vesicles Enriched with miR-223-5p Promote Skeletal Muscle Wasting Associated with Cachexia.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+40630003,Non-Invasive Ultrasound Treatment Enhances the Release of Skeletal Muscle-Derived Extracellular Vesicles in Mice.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+40640841,Muscle-specific miR-499-5p delivered by small extracellular vesicles impairs endothelial function and ischemic hindlimb recovery in diabetic mice.,Muscle-derived sEV miR-499-5p as a pathogenic mediator of impaired neovascularisation; endothelial endpoints only
+40653226,Extradomain B fibronectin-targeted small interfering RNA-loaded biosynthetic gas vesicles for ultrasound-imaging-guided vulnerable plaque treatment.,Non-muscle target tissue
+40757450,Hypoxic Exosomal miRNAs From Skeletal Muscle Enhances Angiogenesis in Lower Limb Ischemia.,EV characterisation / methodology; no intervention
+40795306,In vivo self-assembled SOD1-siRNAs mitigate muscle atrophy and denervation in amyotrophic lateral sclerosis.,Non-muscle target tissue
+40821670,Evaluating the potential of graphene oxide to promote skeletal muscle complex regeneration.,EV characterisation / methodology; no intervention
+40824483,Myoblast and fibroblast derived small extracellular vesicles differentially affect myoblast migration dynamics.,EV characterisation / methodology; no intervention
+40844299,Advances in stem cell-derived exosome therapy for radiation-induced skin injury.,Review / meta-analysis
+40869196,"Mesenchymal Stromal Cell-Derived Extracellular Vesicles as a Therapeutic Treatment for Osteosarcopenia: Crosstalk Among Neurons, Muscle, and Bone.",Transwell tri-culture system; in vitro only with no defined muscle injury model
+40877018,Akkermansia muciniphila Alleviates Sarcopenia in Senescence-Accelerated Mouse-Prone 8 Mice.,Non-muscle target tissue
+40903975,Small extracellular vesicles derived from hair follicle neural crest stem cells enhance perineurial cell proliferation and migration via the TGF-β/SMAD/HAS2 pathway.,Non-muscle target tissue
+40917056,"Clinical, Immunological, and Vesicular Markers in Sarcopenia and Presarcopenia.",Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+40922748,Hypoxic exosomes alleviated the spinal cord injury after ischemic/reperfusion in a rat model.,Nerve/CNS model; no skeletal muscle injury outcome
+40940715,Extracellular Vesicle-Mediated miR-155 from Visceral Adipocytes Induces Skeletal Muscle Dysplasia in Obesity.,Non-muscle target tissue
+41041909,Silencing Myostatin Using In Vivo Self-Assembled siRNA Protects Against Cancer- and Dexamethasone-Induced Muscle Atrophy.,Non-muscle target tissue
+41160094,Shining a Light on Skeletal Muscle Regeneration: Red Photobiomodulation Boosts Myoblast Differentiation In Vitro.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+41227383,Targeting Mitochondrial Dynamics via EV Delivery in Regenerative Cardiology: Mechanistic and Therapeutic Perspectives.,Review / meta-analysis
+41252786,"Exosomal microRNA in diabetic myocardial disorder: Mechanisms, diagnosis, and treatment.",Review / meta-analysis
+41265384,"Mitochondrial stress bridge: Could muscle-derived extracellular vesicles be the missing link between sarcopenia, insulin resistance, and chemotherapy-induced cardiotoxicity?",Non-muscle target tissue
+41299552,Protective effects of mouse bone marrow mesenchymal stem cell-derived extracellular vesicles on radiation-induced epididymal cells damage via USP44/RBM14 axis.,Bone/tendon/cartilage only
+41301745,A Novel In Vitro Potency Assay Demonstrating the Anti-Fibrotic Mechanism of Action of CDCs in Deramiocel.,Cardiac muscle only
+41318967,Non-Targeted Analysis of Extracellular Vesicle-Enriched Plasma Proteome Between Early and Late Rugby Playing Career.,EVs studied as biomarkers only; no EV intervention
+41378714,The Promise of Exosomes in Cardiac Repair: When 'Best Things Come in Small Packages'.,Review / meta-analysis
+41413605,Correction: Human umbilical cord-derived mesenchymal stromal cell exosomes ameliorate aging-associated skeletal muscle atrophy and dysfunction in SAMP10 mice.,"Comment, editorial, letter or erratum"
+41424620,Rat adipose-derived mesenchymal stem cell-derived exosomes loaded with miR-375 promote neurite outgrowth and peripheral nerve regeneration via activation of Akt by targeting EPHA4.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+41468961,Thbs1+ extracellular vesicles from irradiated tumors induce cardiac wasting via PERK-eIF2α-Atf4 signaling.,Cardiac muscle only
+41506143,Cardiac and skeletal muscle delivery of biotherapeutics with a blood vessel epicardial substance-targeting peptide.,Non-muscle target tissue
+41507636,"Ionizing radiation: molecular mechanisms, biological effects, and therapeutic targets.",Review / meta-analysis
+41520729,Brain irradiation drives remote liver changes via senescence-independent mechanisms.,Nerve/CNS model; no skeletal muscle injury outcome
+41551595,"Blood, sweat, tears and fibrosis: when overtraining injures the liver.",Non-muscle target tissue
+41587671,Mitochondria transfer from myocytes to endothelial cells promotes angiogenesis in skeletal muscle.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+41622281,Exosomes derived from bone marrow mesenchymal stem cells facilitate repair of radiation-Induced skin injury by attenuating inflammation and apoptosis.,Bone/tendon/cartilage only
+41630643,Aged Small Intestine Derived Small Extracellular Vesicles miR-214-3p Leads to Intermuscular Fatty Infiltration Through Wnt/β-Catenin Mediated Fibro-Adipogenic Progenitors Adipogenesis.,Non-muscle target tissue
+41631960,Obesity Reprogrammes Adipose Extracellular Vesicles to Induce Muscle Atrophy via miR-150-5p-Mediated Transcriptional Silencing.,EV characterisation / methodology; no intervention
+41638198,Acutely denervated muscle EVs reshape neuronal mitochondrial metabolism via retrograde signaling to rescue peripheral nerve injury.,"Denervated muscle EVs acting retrogradely on neurons; the therapeutic target is the nerve, not the muscle"
+41644686,Functional properties of skeletal myotube-derived extracellular vesicles based on microRNA profiles: a comparative analysis with mesenchymal stem cell-derived extracellular vesicles.,In silico reanalysis of public miRNA-seq datasets; no experiment
+41685581,Chorus line in oral squamous cell carcinoma: How stromal and immune players orchestrate tumor progression (Review).,Review / meta-analysis
+41692982,Moving geroscience forward in China: proceedings of the first international exchange forum of the Chinese Geriatrics Society.,Conference abstract book / proceedings
+41694618,Tumor-Derived Polyamines Initiate Fat Wasting in Cancer Cachexia.,EVs studied as biomarkers only; no EV intervention
+41706877,"T-cadherin, a major adiponectin binding partner, suppresses ERK signaling in metabolic tissues.",Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+41718080,Neuromuscular Mechanisms and Oxidative Stress in Skeletal Muscle Atrophy: Emerging Stem Cell and Gene-Based Therapeutic Strategies.,Review / meta-analysis
+41719276,The role of exosomal miRNA-125b derived from colon cancer-associated fibroblasts in skeletal muscle cachexia.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+41726564,Therapeutic effects of human amniotic mesenchymal stem cell-derived exosomes on stem cell proliferation in irradiated salivary glands via the Wnt pathway.,Non-muscle target tissue
+41747076,Atrophic Skeletal Muscle-Derived Extracellular Vesicles Transfer miR-125a-5p to Inhibit Bone Formation in Osteoporosis during Aging.,Non-muscle target tissue
+41759703,Molecular basis of muscle wasting and emerging therapeutic strategies targeting degenerative muscle disorders.,Review / meta-analysis
+41778477,Comparative study of the effects of subcutaneously administered umbilical cord-derived mesenchymal stem cells and exosomes derivatives on wound healing in a chemical burn model of alkaline-induced skin burns.,Chemical skin burn model; striated muscle regeneration is an incidental histological readout
+41782806,Anti-inflammatory and immunomodulatory effects of human induced pluripotent stem cells-derived mesenchymal stem/stromal cells and their extracellular vesicles.,Immune cell assays only; no muscle injury model or muscle outcome
+41834672,PIEZO1 Channels Modulate the Small Extracellular Vesicle Release in C2C12 Cells.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+41837732,Targeting Arterial Dysfunction in Cardiovascular Disease Using Stem Cell-Based Therapies.,Review / meta-analysis
+41839280,"An inflammation-responsive hydrogel based on gelatin, loaded with chrysanthemum-derived exosomes, enhances nerve injury repair and mitigates neuropathic pain through the modulation of macrophage polarization.",Non-muscle target tissue
+41883015,Exosomal Dialogue: The Emerging Role of Cancer-Associated Fibroblast-Derived Exosomes in Colorectal Cancer Progression and Therapy Resistance.,Review / meta-analysis
+41887468,Extracellular vesicle-mediated HIF-1α delivery promotes durable vascular remodeling via endothelial Dll1-dependent CD163+ macrophage differentiation.,Hindlimb ischemia with vascular/macrophage endpoints only; no muscle regeneration or fibrosis readout
+41957840,A 3D skeletal muscle system for disease modelling and secretome profiling of Duchenne muscular dystrophy.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+41977188,"Source-Specific Photobiomodulation Regulates Mitochondrial Bioenergetics, Redox Signaling, and Functional Outputs in C2C12 Myoblasts Across Replicative Aging.",Non-muscle target tissue
+41977323,Extracellular Vesicles in Obesity: From Pathophysiological Mediators to Therapeutic Tools.,Review / meta-analysis
+41988986,PBK-Loaded secretory autophagosomes drive radiotherapy-induced systemic adipose depletion via MAPK/ERK-PRKA/PKA-LIPE/HSL signaling: a therapeutic target for esophageal cancer cachexia.,Non-muscle target tissue
+41995010,Dual Roles of Adipose Tissue in Skeletal Muscle Regeneration: Pro-Regenerative Versus Maladaptive.,Review / meta-analysis
+42010004,Hypoxia-induced Schwann cells-derived extracellular vesicles carrying LncRNA TNXA-PS1 promote recovery post sciatic nerve injury.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+42018083,Circulating Microglia-derived Extracellular Vesicles Predict Recovery After Rehabilitation in Stroke Survivors.,EVs studied as biomarkers only; no EV intervention
+42045191,Sarcopenia promotes tumorigenesis by disrupting NOTCH-SDC2-regulated biogenesis of muscle-derived extracellular vesicles.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+42072353,"Mesenchymal Stem Cell-Derived Exosomes Mitigate Cutaneous Radiation Injury Through Coordinated Modulation of DNA Repair, Stress, and Inflammatory Gene Programs.",Bone/tendon/cartilage only
+42079419,Therapeutic advances in ureteral stricture: lessons from radiation-induced fibrosis to regenerative strategies-a narrative review.,Review / meta-analysis
+42099382,"Stem cell activation in organ culture reveals novel transcriptional programs underlying metabolic, fibrotic, vascular, and immune dysregulation in uterine leiomyomas.",Not an EV study (retrieved by query overlap)
+42113967,Different effects of 3-week disuse on phenotype and gene expression in calf and thigh muscles.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+42180043,Regulatory mechanisms of mitochondrial function by cancer-derived exosomes in cachexia.,Non-muscle target tissue
+42192466,RYR1+ skeletal muscle-derived extracellular vesicles are exercise responsive and associated with insulin action.,EVs studied as biomarkers only; no EV intervention
+42193908,Extracellular Vesicles in Cardiac Repair Approaches: Implications for In Vitro Heart Models and Potential ATMP Development.,Review / meta-analysis
+42196301,Small Extracellular Vesicle Release Following Electrical Pulse Stimulation of C2C12 Myotubes: Effects on microRNA Cargo and Myoblast Migration and Differentiation.,EV characterisation / methodology; no intervention
+42206567,Walnut-Derived Extracellular Vesicles Orchestrate a Pre-Regenerative Niche via c-Myc Mediated Metabolic Reprogramming.,Peripheral nerve repair study (Schwann cell niche); muscle atrophy is a secondary readout of nerve recovery
+42209195,Physical activity reshapes intrapancreatic immune and inflammatory programmes to restrain chronic pancreatitis.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+42227458,[Embryonic Stem Cell-Derived Mesenchymal Stromal Cell Exosomes Protect Against Radiation-Induced Lymphocyte Injury and Its Related Mechanisms].,Bone/tendon/cartilage only
+42232219,Extracellular vesicles as biomarkers of disease progression and therapeutic response in patients with spinal muscular atrophy.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+42271440,DNA hydrogel-delivered hypoxic exosomes alleviate radiation-induced skin injury by stabilizing AKT.,Non-muscle target tissue
+42275464,Targeted Delivery of mRNA to the Heart via Extracellular Vesicles or Lipid Nanoparticles.,Cardiac muscle only
+42277317,Muscle-targeted extracellular vesicles for full-length dystrophin mRNA therapy in Duchenne muscular dystrophy.,Muscle-targeted EVs delivering dystrophin mRNA to mdx muscle; gene-replacement delivery vehicle rather than a signalling-pathway intervention
+42277318,Skeletal-muscle-targeted non-viral delivery of full-length DMD mRNA for Duchenne muscular dystrophy.,Non-viral full-length DMD mRNA delivery; lipid nanoparticle platform rather than an EV signalling intervention
+42313915,Exercise Training Stimulates the Release of Glutathione Peroxidase 1 (GPX1)-Enriched Extracellular Vesicles That Promote Angiogenesis.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+42321919,SMN deficiency contributes to osteoporosis in spinal muscular atrophy by impairing Snap23 meditated muscle-derived extracellular vesicle secretion.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+42352245,Radiation-Induced Alterations in Cancer-Associated Fibroblasts: Drivers of Tumor Radioresistance and Therapeutic Targets.,Review / meta-analysis
+42435237,Adipose-derived mesenchymal stromal cells and their acellular derivatives in cutaneous wound healing and pathological scarring: a narrative review.,Review / meta-analysis
+42473083,Cigarette Smoke-Exposed Alveolar Epithelial Cell-Derived Exosomes Exacerbate Skeletal Muscle Dysfunction Through HDAC2 Signalling.,Pathogenic lung-derived exosomes in COPD; no EV therapy arm (therapy is HDAC2 rescue)
+42477892,Plasma Extracellular Vesicles-Derived Complement Proteins as Biomarkers of Sarcopenia Progression in Longitudinal Cohorts.,EVs studied as biomarkers only; no EV intervention
+42523934,"Biological mechanisms governing the periodontal regenerative microenvironment: cellular crosstalk, extracellular matrix remodelling, and immunomodulation.",Review / meta-analysis
+42543772,Unlocking Myofibroblast Plasticity to Reverse Salivary Gland Fibrosis.,Review / meta-analysis
+42596531,Extracellular vesicles derived from immobilization-induced atrophic muscle of male mice contain distinct microRNA profiles and impact mRNA profiles in brain neurons.,EV characterisation / methodology; no intervention
+42606782,Shockwave-Induced Myoblast Exosome-Like Vesicles: Emerging Drivers of Muscle Regeneration.,Shockwave effect on EV release kinetics in vitro; no functional intervention
+42632463,Counteracting vascular ageing with Traditional Chinese Medicine: Mechanisms at the cellular and molecular levels.,Review / meta-analysis
+42632514,Tumor-educated adipocytes promote muscle wasting via EV-packaged miR-221-3p targeting IRS1 in pancreatic cancer cachexia.,Non-muscle target tissue
+42645196,Muscle-Derived Small Extracellular Vesicles Regulate Bone Maintenance During Hibernation Through miRNA-Mediated Signaling.,EV characterisation / methodology; no intervention
+42665938,Targeted Lactic Acid Regulation via Engineered Exosomes for Synergistic Metabolic and Photodynamic Tumor Therapy.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+42676793,Musculoskeletal ultrasound-guided cellular therapy: Current applications and future directions in skeletal muscle regeneration.,Review / meta-analysis
+42697281,Effects of intrinsic aerobic capacity on an isometric forelimb resistance exercise task and bulbar motor function in aging rats.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+42699320,Metabolic targeting by a small extracellular vesicle-based cellulose-GelMA hydrogel restores neurovascular regeneration in diabetic nerve injury.,Non-muscle target tissue
+42722290,"Genomic and epigenetic regulatory mechanisms in exercise-based rehabilitation processes: Cellular and tissue remodeling, microvascular adaptation, and circulating biomarkers.",Review / meta-analysis
+42729129,Extracellular vesicles in erectile dysfunction: a narrative review of multicellular regulation.,Review / meta-analysis
+42729938,A hydrogel ionic circuit electrical stimulation system to restore denervated muscle following long-gap peripheral nerve injury.,Non-muscle target tissue
+42737688,"Non-Coding RNAs from Cardiac Development to Disease: Regulatory Context, Regenerative Potential, and Translational Limits.",Review / meta-analysis
+42737790,Cancer Cell-Derived Small Extracellular Vesicles Are Associated with Impaired C2C12 Myoblast Differentiation.,EV characterisation / methodology; no intervention
+42749096,Cellular senescence of fibro-adipogenic progenitors by STAT5A/GFPT2/O-GlcNAcylation impairs muscle recovery after glucocorticoid-induced injury.,EV characterisation / methodology; no intervention
+42787221,Biomechanical strain alters the microRNA cargo of primary myogenic cell-derived extracellular vesicles associated with a differentiation phenotype.,Non-muscle target tissue
+42787952,Correction: Extracellular vesicle-derived miRNAs improve stem cell-based therapeutic approaches in muscle wasting conditions.,"Comment, editorial, letter or erratum"
+42807134,Tendon-muscle-nerve disconnection in chronic large and massive posterosuperior rotator cuff tears: a targeted narrative mechanistic review and hypothesis-generating framework.,Review / meta-analysis
+42810340,Spatial evolution of a cachexia-promoting microenvironment in pancreatic cancer.,Bone/tendon/cartilage only
+42813811,"Clinical Translation of Mesenchymal Stem Cells to Medicinal Signaling Cells: Origins, Clinical Applications, and the Future of Regenerative Medicine-2026 Arnold I. Caplan Award for Distinguished Research in Orthobiologics.",Bone/tendon/cartilage only
+42827024,Matrix stiffness and stress relaxation regulate matrix-bound nanovesicle release from alginate hydrogels.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+42863226,Delphinidin induces the upregulation of miR-23a-3p expression in skeletal muscle and miR-23a-3p release from intestinal cells.,Non-muscle target tissue
+42867826,Extracellular Vesicle Isolation and Purification from Skeletal Muscle Cells.,Screened out at title/abstract: no EV intervention in a skeletal muscle injury model
+42872306,"Extracellular Vesicles: Emerging Players in Tumor Progression, Diagnosis, and Therapeutic Applications.",Non-muscle target tissue
