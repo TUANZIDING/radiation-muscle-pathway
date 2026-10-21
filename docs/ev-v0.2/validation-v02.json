@@ -1,0 +1,134 @@
+{
+  "version": "ev-v0.2",
+  "generated": "2026-10-21",
+  "passed": 25,
+  "failed": 0,
+  "pageErrors": [],
+  "checks": [
+    {
+      "name": "stable alias docs/ev-intervention.html equals v0.2",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "study table counts",
+      "pass": true,
+      "detail": "141 A2 B120 C19"
+    },
+    {
+      "name": "32754983 included, not excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "header stats derived from data",
+      "pass": true,
+      "detail": "v0.2 · 纳入 141 篇 · A 2 / B 120 / C 19 · 文献 65 · 节点 61 · 关系 54"
+    },
+    {
+      "name": "map stats line present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "node count",
+      "pass": true,
+      "detail": "61"
+    },
+    {
+      "name": "click node mir206 → inspector shows PMID 32754983, antagomiR",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "click node esExo → inspector shows PMID 33316945, 多柔比星",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "click node mpcEV → inspector shows PMID 40835994",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "click node youngEV → inspector shows PMID 37507448, DOI 10.1186/s13287-026-05215-x",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "DOI-only source links to doi.org",
+      "pass": true,
+      "detail": "https://doi.org/10.1186/s13287-026-05215-x"
+    },
+    {
+      "name": "click edge skpEV>mito shows both WoS/gap items",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "click on empty canvas clears selection",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "A filter shows only grade-A edges",
+      "pass": true,
+      "detail": "4 visible / 4 expected"
+    },
+    {
+      "name": "All filter restores edges",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "EN toggle",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "layout: nodeOverlap = 0",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "layout: edgeThroughNode = 0",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "layout: badgeOnNode = 0",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "layout: textOverflow = 0",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop no horizontal overflow",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "no page errors (desktop)",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "390px no horizontal overflow",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "390px real click on node opens inspector",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "no page errors (mobile)",
+      "pass": true,
+      "detail": ""
+    }
+  ]
+}
