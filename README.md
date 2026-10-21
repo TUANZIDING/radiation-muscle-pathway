@@ -1,8 +1,17 @@
-# 肌肉信号图谱 v0.3 – v0.6：辐射损伤、修复障碍与纤维化
+# 肌肉信号图谱 v0.3 – v0.7：辐射损伤、修复障碍与纤维化
 
-[![辐射致骨骼肌损伤分子信号通路图 v0.6](docs/v0.6/hero-v0.6.png)](https://tuanziding.github.io/radiation-muscle-pathway/)
+[![辐射致骨骼肌损伤分子信号通路图 v0.7](docs/v0.7/hero-v0.7.png)](https://tuanziding.github.io/radiation-muscle-pathway/)
 
-**在线交互分子通路图：<https://tuanziding.github.io/radiation-muscle-pathway/>**（单文件 HTML，也可下载 [`docs/pathway-v0.6.html`](docs/pathway-v0.6.html) 离线双击打开）
+**在线交互分子通路图：<https://tuanziding.github.io/radiation-muscle-pathway/>**（单文件 HTML，也可下载 [`docs/pathway-v0.7.html`](docs/pathway-v0.7.html) 离线双击打开）
+
+## v0.7 更新（2026-10-21）：系统文献筛查补全
+
+- **系统筛查**：PubMed 按 8 组通路关键词 + 2023–2026 全量 + 2 轮补充检索，去重后筛 891 个标题、精读约 95 篇摘要、18 篇全文；纳入 53 篇（A 15 / B 26 / C 12），排除 227 篇并逐条记录理由。只纳入直接照射骨骼肌或肌源细胞的原始研究；所有 A 级均已读全文。检索式、纳入表、排除表与报告见 [`docs/v0.7/`](docs/v0.7/screen-report-v07.md)。
+- **新增泳道“离子/膜 · 趋化 · 蛋白稳态 · 代谢”**：α2 Na,K-ATPase 功能↓→肌膜去极化（哇巴因可预防，A）、Ca²⁺ 稳态失调（A）、质子照射致 Piezo1 反应↓（A）、TSP1–CD47（阻断后凋亡减少、灌注改善，A）、CCL2/7/8–CCR2 及衰老 FAP→CCL2/OPN→巨噬细胞募集（A）、Atrogin-1↑（A）、MuRF1↑、ActRIIB↑、Akt/胰岛素–Akt2（时相依赖）、PGC-1α/TFAM/Parkin↓（重离子）、线粒体转录↓、IL-6（组织↑、成肌细胞分泌↓）、CTGF↑、MyoD↓（B）；外源 IGF-1 挽救分化（B）；NO 供体挽救卫星细胞增殖新增 A 级证据。
+- **新增骨架（证据不足或方向矛盾，不连证据边）**：神经肌肉接头/去神经、cGAS–STING（0 篇）、NF-κB/STAT3、Hedgehog/初级纤毛、c-Abl–MyoD、Myostatin（方向矛盾）、BMP–SMAD1。
+- **数据**：`data/atlas-v0.5.json` 保持不变；新增证据写在 `data/additions-v0.7.json`，由 `scripts/merge-registry-v07.mjs` 合并为 `data/atlas-v0.7.json`，再由 `scripts/build-pathway-v07.mjs` 生成页面。新泳道连线改为沿列间走线、从节点上方进入，避免穿过其他节点。
+- **验证**：`scripts/verify-pathway-v07.mjs` 113 项检查（新增节点点击、PubMed 可追溯、Myostatin 保持骨架等），已替换 CI 中的 v0.6 检查。v0.6 页面保留在 `docs/pathway-v0.6.html`。
+- **局限**：基础检索约 3,700 条 2023 年前记录未逐条筛查；cGAS–STING、HIF-1α、YAP、NLRP3、铁死亡、PDGFRα 在直接照射肌肉中未检索到原始证据。
 
 ## v0.6 更新（2026-10-21）
 
@@ -10,7 +19,7 @@
 - **真实性约束**：图上每个节点、连线、等级、剂量和文献都由 `data/atlas-v0.5.json` 自动生成，不手写、不由图像模型生成；同一实体在多个专题出现时合并为一个节点（如 p53、p21、FAP），同一关系在多个专题出现时保留各自编号（如 D06 + S02）。
 - **交互**：点节点看所有相连证据；点连线看模型、剂量（含 EQD2）、时间点、方法、功能读出、解释边界和 PubMed 链接；“仅A级”“放疗相关”筛选；中英文切换；拖动/缩放。
 - **验证**：`scripts/verify-pathway-v06.mjs` 81 项检查（含真实鼠标点击节点/连线、证据边与注册表一一对应、等级不变、骨架无证据边、A08/A10 不出现、X01–X08 保留、三种视口无横向溢出、无页面错误），已加入 CI。
-- GitHub Pages 首页改为 v0.6 通路图；v0.5 教学图谱保留在 `docs/atlas/index.html`，页面右上角可切换。
+- （v0.6 时）GitHub Pages 首页改为 v0.6 通路图；v0.5 教学图谱保留在 `docs/atlas/index.html`，页面右上角可切换。
 
 一个中文优先、可切换英文的交互式教学图谱。页面按六个阶段演示电离辐射后的MuSC直接损伤、FAP状态改变、免疫和基质通讯、成肌障碍、长期结局及可研究的修复窗口。设计参考 Human Atlas 的探索式布局，并以肌纤维—基底膜—间质的空间关系组织节点。
 
