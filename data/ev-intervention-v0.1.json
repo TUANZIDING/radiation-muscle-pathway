@@ -1,0 +1,3857 @@
+{
+ "version": "ev-v0.1",
+ "generated": "2026-10-21",
+ "title": {
+  "zh": "EV干预骨骼肌损伤 · 信号通路图",
+  "en": "EV intervention in skeletal muscle injury · signaling map"
+ },
+ "doseModel": {
+  "type": "none"
+ },
+ "lanes": [
+  {
+   "id": "rad",
+   "r0": -0.5,
+   "r1": 3.3,
+   "zh": "辐射模型（A级）与辐射致病EV",
+   "en": "Radiation models (grade A) & pathogenic radiation EV"
+  },
+  {
+   "id": "musc",
+   "r0": 3.3,
+   "r1": 6.7,
+   "zh": "MuSC增殖/分化 · 抗炎M2 · miRNA",
+   "en": "MuSC & M2 macrophage · miRNA"
+  },
+  {
+   "id": "atrophy",
+   "r0": 6.7,
+   "r1": 10.3,
+   "zh": "Akt/mTOR 合成代谢与 FoxO–UPS 抗萎缩",
+   "en": "Akt/mTOR anabolic & FoxO–UPS anti-atrophy"
+  },
+  {
+   "id": "fibro",
+   "r0": 10.3,
+   "r1": 12.8,
+   "zh": "TGF-β/SMAD 抗纤维化与 FAP 命运",
+   "en": "TGF-β/SMAD anti-fibrosis & FAP fate"
+  },
+  {
+   "id": "vasc",
+   "r0": 12.8,
+   "r1": 14.6,
+   "zh": "血管新生",
+   "en": "Angiogenesis"
+  },
+  {
+   "id": "death",
+   "r0": 14.6,
+   "r1": 17.2,
+   "zh": "细胞死亡 · 线粒体/抗氧化",
+   "en": "Regulated cell death · mitochondria/antioxidant"
+  },
+  {
+   "id": "mem",
+   "r0": 17.2,
+   "r1": 19.3,
+   "zh": "膜修复与其他机制",
+   "en": "Membrane repair & other mechanisms"
+  }
+ ],
+ "cols": [
+  {
+   "zh": "EV来源",
+   "en": "EV source"
+  },
+  {
+   "zh": "货物",
+   "en": "Cargo"
+  },
+  {
+   "zh": "靶点/信号",
+   "en": "Target / signal"
+  },
+  {
+   "zh": "细胞过程",
+   "en": "Cell process"
+  },
+  {
+   "zh": "组织结局",
+   "en": "Tissue outcome"
+  },
+  {
+   "zh": "功能结局",
+   "en": "Functional outcome"
+  }
+ ],
+ "rows": 19.3,
+ "scaffoldTop": 19.3,
+ "nodes": [
+  {
+   "id": "mpcEV",
+   "type": "ev-source",
+   "status": "evidence",
+   "label": {
+    "zh": "非照射 MPC-EV",
+    "en": "Non-irradiated MPC-EV"
+   },
+   "sub": {
+    "zh": "大鼠肌前体细胞",
+    "en": "rat muscle precursor"
+   },
+   "ids": {},
+   "layout": {
+    "x": 0,
+    "y": 0
+   },
+   "view": "ev",
+   "c": 0,
+   "r": 0
+  },
+  {
+   "id": "radMPC",
+   "type": "cell-process",
+   "status": "evidence",
+   "label": {
+    "zh": "受照MPC活力/增殖 ↑",
+    "en": "Irradiated MPC viability/proliferation ↑"
+   },
+   "sub": {
+    "zh": "10 Gy X线",
+    "en": "10 Gy X-ray"
+   },
+   "ids": {},
+   "layout": {
+    "x": 0,
+    "y": 0
+   },
+   "view": "ev",
+   "c": 3,
+   "r": 0
+  },
+  {
+   "id": "radEndo",
+   "type": "cell-process",
+   "status": "evidence",
+   "label": {
+    "zh": "内皮成管/微血管密度 ↑",
+    "en": "Endothelial tube / microvessel density ↑"
+   },
+   "sub": {
+    "zh": "HUVEC体外",
+    "en": "HUVEC in vitro"
+   },
+   "ids": {},
+   "layout": {
+    "x": 0,
+    "y": 0
+   },
+   "view": "ev",
+   "c": 4,
+   "r": 0.7
+  },
+  {
+   "id": "radEVsrc",
+   "type": "ev-source",
+   "status": "evidence",
+   "label": {
+    "zh": "受照MPC-EV (Rad-EV)",
+    "en": "Irradiated MPC-EV (Rad-EV)"
+   },
+   "sub": {
+    "zh": "促血管活性丧失",
+    "en": "loses pro-angiogenic activity"
+   },
+   "ids": {},
+   "layout": {
+    "x": 0,
+    "y": 0
+   },
+   "view": "ev",
+   "c": 0,
+   "r": 1.15
+  },
+  {
+   "id": "radMiR",
+   "type": "cargo",
+   "status": "evidence",
+   "label": {
+    "zh": "Rad-EV miRNA谱改变",
+    "en": "Rad-EV miRNA profile shift"
+   },
+   "sub": {
+    "zh": "13↓/7↑ (miR-206↓等)",
+    "en": "13 down / 7 up"
+   },
+   "ids": {},
+   "layout": {
+    "x": 0,
+    "y": 0
+   },
+   "view": "ev",
+   "c": 1,
+   "r": 1.15
+  },
+  {
+   "id": "myomixEV",
+   "type": "ev-source",
+   "status": "evidence",
+   "label": {
+    "zh": "Myo-MIX转染MSC外泌体",
+    "en": "Myo-MIX-transfected MSC exosome"
+   },
+   "sub": {
+    "zh": "MyoD/MyoG/Myf6",
+    "en": "MyoD/MyoG/Myf6"
+   },
+   "ids": {},
+   "layout": {
+    "x": 0,
+    "y": 0
+   },
+   "view": "ev",
+   "c": 0,
+   "r": 2.35
+  },
+  {
+   "id": "esoMyo",
+   "type": "outcome",
+   "status": "evidence",
+   "label": {
+    "zh": "放射性食管炎：再生↑/纤维化↓",
+    "en": "Radiation esophagitis: regen ↑ / fibrosis ↓"
+   },
+   "sub": {
+    "zh": "10 Gy×2",
+    "en": "10 Gy×2"
+   },
+   "ids": {},
+   "layout": {
+    "x": 0,
+    "y": 0
+   },
+   "view": "ev",
+   "c": 4,
+   "r": 2.35
+  },
+  {
+   "id": "tumorEV",
+   "type": "ev-source",
+   "status": "evidence",
+   "label": {
+    "zh": "受照肿瘤sEV【致病】",
+    "en": "Irradiated tumor sEV [pathogenic]"
+   },
+   "sub": {
+    "zh": "放疗荷瘤",
+    "en": "RT tumor-bearing"
+   },
+   "ids": {},
+   "layout": {
+    "x": 0,
+    "y": 0
+   },
+   "view": "ev",
+   "c": 0,
+   "r": 1.75
+  },
+  {
+   "id": "srmAxis",
+   "type": "signaling",
+   "status": "evidence",
+   "label": {
+    "zh": "SRM→精胺→eIF5A→I型胶原 ↑",
+    "en": "SRM→spermidine→eIF5A→collagen I ↑"
+   },
+   "sub": {
+    "zh": "肌肉纤维化/无力",
+    "en": "fibrosis / weakness"
+   },
+   "ids": {},
+   "layout": {
+    "x": 0,
+    "y": 0
+   },
+   "view": "ev",
+   "c": 3,
+   "r": 1.75
+  },
+  {
+   "id": "gbmEV",
+   "type": "ev-source",
+   "status": "evidence",
+   "label": {
+    "zh": "受照GBM外泌体PAI-1【致病】",
+    "en": "Irradiated GBM exosome PAI-1 [pathogenic]"
+   },
+   "sub": {
+    "zh": "放疗荷瘤",
+    "en": "RT tumor-bearing"
+   },
+   "ids": {},
+   "layout": {
+    "x": 0,
+    "y": 0
+   },
+   "view": "ev",
+   "c": 0,
+   "r": 2.9
+  },
+  {
+   "id": "stat3",
+   "type": "signaling",
+   "status": "evidence",
+   "label": {
+    "zh": "STAT3 → MuRF1/Atrogin1 ↑",
+    "en": "STAT3 → MuRF1/Atrogin1 ↑"
+   },
+   "sub": {
+    "zh": "mTOR ↓",
+    "en": "mTOR ↓"
+   },
+   "ids": {},
+   "layout": {
+    "x": 0,
+    "y": 0
+   },
+   "view": "ev",
+   "c": 3,
+   "r": 2.9
+  },
+  {
+   "id": "mscEV",
+   "type": "ev-source",
+   "status": "evidence",
+   "label": {
+    "zh": "MSC-EV（骨髓/脂肪/脐带）",
+    "en": "MSC-EV (BM / adipose / UC)"
+   },
+   "sub": {
+    "zh": "最常用来源",
+    "en": "most-used source"
+   },
+   "ids": {},
+   "layout": {
+    "x": 0,
+    "y": 0
+   },
+   "view": "ev",
+   "c": 0,
+   "r": 3.6
+  },
+  {
+   "id": "fapEV",
+   "type": "ev-source",
+   "status": "evidence",
+   "label": {
+    "zh": "FAP-EV",
+    "en": "FAP-EV"
+   },
+   "sub": {
+    "zh": "miR-125b/127",
+    "en": "miR-125b/127"
+   },
+   "ids": {},
+   "layout": {
+    "x": 0,
+    "y": 0
+   },
+   "view": "ev",
+   "c": 0,
+   "r": 4.5
+  },
+  {
+   "id": "m2ev",
+   "type": "ev-source",
+   "status": "evidence",
+   "label": {
+    "zh": "M2巨噬细胞EV",
+    "en": "M2 macrophage EV"
+   },
+   "sub": {
+    "zh": "miR-501/24",
+    "en": "miR-501/24"
+   },
+   "ids": {},
+   "layout": {
+    "x": 0,
+    "y": 0
+   },
+   "view": "ev",
+   "c": 0,
+   "r": 5.4
+  },
+  {
+   "id": "neoEV",
+   "type": "ev-source",
+   "status": "evidence",
+   "label": {
+    "zh": "新生/年轻肌EV · 血清EV",
+    "en": "Neonatal / young muscle & serum EV"
+   },
+   "sub": {
+    "zh": "miR-542/α-Klotho",
+    "en": "miR-542 / α-Klotho"
+   },
+   "ids": {},
+   "layout": {
+    "x": 0,
+    "y": 0
+   },
+   "view": "ev",
+   "c": 0,
+   "r": 6.2
+  },
+  {
+   "id": "mac2",
+   "type": "cell-process",
+   "status": "evidence",
+   "label": {
+    "zh": "巨噬细胞 M1→M2 极化",
+    "en": "Macrophage M1→M2 polarization"
+   },
+   "sub": {
+    "zh": "Arg1/CD206↑, NF-κB↓",
+    "en": "Arg1/CD206↑"
+   },
+   "ids": {},
+   "layout": {
+    "x": 0,
+    "y": 0
+   },
+   "view": "ev",
+   "c": 3,
+   "r": 3.6
+  },
+  {
+   "id": "miMusc",
+   "type": "cargo",
+   "status": "evidence",
+   "label": {
+    "zh": "成肌miRNA(miR-127/145/126/193b等)",
+    "en": "Myogenic miRNAs"
+   },
+   "sub": {
+    "zh": "靶PTEN/FBXO32/S1PR3/AP2M1",
+    "en": "targets PTEN/FBXO32.."
+   },
+   "ids": {},
+   "layout": {
+    "x": 0,
+    "y": 0
+   },
+   "view": "ev",
+   "c": 1,
+   "r": 4.8
+  },
+  {
+   "id": "wntb",
+   "type": "signaling",
+   "status": "evidence",
+   "label": {
+    "zh": "Wnt/β-catenin · ERK · PI3K/Akt",
+    "en": "Wnt/β-catenin · ERK · PI3K/Akt"
+   },
+   "sub": {
+    "zh": "",
+    "en": " "
+   },
+   "ids": {},
+   "layout": {
+    "x": 0,
+    "y": 0
+   },
+   "view": "ev",
+   "c": 2,
+   "r": 5.1
+  },
+  {
+   "id": "pax7",
+   "type": "target",
+   "status": "evidence",
+   "label": {
+    "zh": "Pax7/MyoD/MyoG 去抑制",
+    "en": "Pax7/MyoD/MyoG de-repression"
+   },
+   "sub": {
+    "zh": "",
+    "en": " "
+   },
+   "ids": {},
+   "layout": {
+    "x": 0,
+    "y": 0
+   },
+   "view": "ev",
+   "c": 3,
+   "r": 5.0
+  },
+  {
+   "id": "scProlif",
+   "type": "cell-process",
+   "status": "evidence",
+   "label": {
+    "zh": "MuSC 激活/增殖/分化 ↑",
+    "en": "MuSC activation/proliferation/differentiation ↑"
+   },
+   "sub": {
+    "zh": "",
+    "en": " "
+   },
+   "ids": {},
+   "layout": {
+    "x": 0,
+    "y": 0
+   },
+   "view": "ev",
+   "c": 4,
+   "r": 4.6
+  },
+  {
+   "id": "regen",
+   "type": "outcome",
+   "status": "evidence",
+   "label": {
+    "zh": "再生↑（中央核/eMyHC/CSA）",
+    "en": "Regeneration ↑ (central nuclei/eMyHC/CSA)"
+   },
+   "sub": {
+    "zh": "",
+    "en": " "
+   },
+   "ids": {},
+   "layout": {
+    "x": 0,
+    "y": 0
+   },
+   "view": "ev",
+   "c": 5,
+   "r": 4.6
+  },
+  {
+   "id": "agingEV",
+   "type": "ev-source",
+   "status": "evidence",
+   "label": {
+    "zh": "衰老脂肪/萎缩肌/衰老BMSC-EV【致病】",
+    "en": "Senescent adipose / atrophic myotube / aged BMSC-EV [pathogenic]"
+   },
+   "sub": {
+    "zh": "Let-7d/miR-690/CD81",
+    "en": "Let-7d/miR-690/CD81"
+   },
+   "ids": {},
+   "layout": {
+    "x": 0,
+    "y": 0
+   },
+   "view": "ev",
+   "c": 0,
+   "r": 6.2
+  },
+  {
+   "id": "scBad",
+   "type": "cell-process",
+   "status": "evidence",
+   "label": {
+    "zh": "MuSC 自我更新/分化 ↓",
+    "en": "MuSC self-renewal/differentiation ↓"
+   },
+   "sub": {
+    "zh": "HMGA2↓/MEF2↓",
+    "en": "HMGA2↓/MEF2↓"
+   },
+   "ids": {},
+   "layout": {
+    "x": 0,
+    "y": 0
+   },
+   "view": "ev",
+   "c": 3,
+   "r": 6.2
+  },
+  {
+   "id": "ucmscEV",
+   "type": "ev-source",
+   "status": "evidence",
+   "label": {
+    "zh": "hucMSC/MSC-EV（抗萎缩）",
+    "en": "hucMSC/MSC-EV (anti-atrophy)"
+   },
+   "sub": {
+    "zh": "miR-486/132/23b",
+    "en": "miR-486/132/23b"
+   },
+   "ids": {},
+   "layout": {
+    "x": 0,
+    "y": 0
+   },
+   "view": "ev",
+   "c": 0,
+   "r": 7.3
+  },
+  {
+   "id": "engAtr",
+   "type": "ev-source",
+   "status": "evidence",
+   "label": {
+    "zh": "工程EV（装载miR-29/26a/145, 肌抑素前肽, siMstn）",
+    "en": "Engineered EV (miR-29/26a/145, Mstn propeptide, siMstn)"
+   },
+   "sub": {
+    "zh": "靶向抗萎缩",
+    "en": "targeted anti-atrophy"
+   },
+   "ids": {},
+   "layout": {
+    "x": 0,
+    "y": 0
+   },
+   "view": "ev",
+   "c": 0,
+   "r": 8.4
+  },
+  {
+   "id": "plantEV",
+   "type": "ev-source",
+   "status": "evidence",
+   "label": {
+    "zh": "植物/脂肪/凋亡EV",
+    "en": "Plant / adipose / apoptotic EV"
+   },
+   "sub": {
+    "zh": "AMPK通路",
+    "en": "AMPK axis"
+   },
+   "ids": {},
+   "layout": {
+    "x": 0,
+    "y": 0
+   },
+   "view": "ev",
+   "c": 0,
+   "r": 9.4
+  },
+  {
+   "id": "foxo",
+   "type": "target",
+   "status": "evidence",
+   "label": {
+    "zh": "FoxO1/3a 核转位 ↓",
+    "en": "FoxO1/3a nuclear translocation ↓"
+   },
+   "sub": {
+    "zh": "",
+    "en": " "
+   },
+   "ids": {},
+   "layout": {
+    "x": 0,
+    "y": 0
+   },
+   "view": "ev",
+   "c": 2,
+   "r": 7.5
+  },
+  {
+   "id": "ups",
+   "type": "signaling",
+   "status": "evidence",
+   "label": {
+    "zh": "MuRF1 / Atrogin-1(FBXO32) ↓",
+    "en": "MuRF1 / Atrogin-1 (FBXO32) ↓"
+   },
+   "sub": {
+    "zh": "UPS蛋白降解↓",
+    "en": "UPS proteolysis ↓"
+   },
+   "ids": {},
+   "layout": {
+    "x": 0,
+    "y": 0
+   },
+   "view": "ev",
+   "c": 3,
+   "r": 7.9
+  },
+  {
+   "id": "aktm",
+   "type": "signaling",
+   "status": "evidence",
+   "label": {
+    "zh": "PI3K/Akt/mTOR ↑ · AMPK/ULK1自噬",
+    "en": "PI3K/Akt/mTOR ↑ · AMPK/ULK1 autophagy"
+   },
+   "sub": {
+    "zh": "",
+    "en": " "
+   },
+   "ids": {},
+   "layout": {
+    "x": 0,
+    "y": 0
+   },
+   "view": "ev",
+   "c": 2,
+   "r": 8.6
+  },
+  {
+   "id": "mstn",
+   "type": "target",
+   "status": "evidence",
+   "label": {
+    "zh": "肌生长抑制素/激活素信号 ↓",
+    "en": "Myostatin / activin signaling ↓"
+   },
+   "sub": {
+    "zh": "ACVR2/Follistatin",
+    "en": "ACVR2/Follistatin"
+   },
+   "ids": {},
+   "layout": {
+    "x": 0,
+    "y": 0
+   },
+   "view": "ev",
+   "c": 3,
+   "r": 9.0
+  },
+  {
+   "id": "antiAtr",
+   "type": "outcome",
+   "status": "evidence",
+   "label": {
+    "zh": "肌量/CSA/握力 ↑",
+    "en": "Muscle mass/CSA/grip ↑"
+   },
+   "sub": {
+    "zh": "",
+    "en": " "
+   },
+   "ids": {},
+   "layout": {
+    "x": 0,
+    "y": 0
+   },
+   "view": "ev",
+   "c": 5,
+   "r": 8.4
+  },
+  {
+   "id": "muscExoF",
+   "type": "ev-source",
+   "status": "evidence",
+   "label": {
+    "zh": "MuSC/MSC/PRP-EV（抗纤维化）",
+    "en": "MuSC/MSC/PRP-EV (anti-fibrosis)"
+   },
+   "sub": {
+    "zh": "let-7f/miR-16/miR-29",
+    "en": "let-7f/miR-16/miR-29"
+   },
+   "ids": {},
+   "layout": {
+    "x": 0,
+    "y": 0
+   },
+   "view": "ev",
+   "c": 0,
+   "r": 10.6
+  },
+  {
+   "id": "m2fap",
+   "type": "ev-source",
+   "status": "evidence",
+   "label": {
+    "zh": "M2/FAP-BAT外泌体",
+    "en": "M2 / FAP-BAT exosome"
+   },
+   "sub": {
+    "zh": "米色化",
+    "en": "beiging"
+   },
+   "ids": {},
+   "layout": {
+    "x": 0,
+    "y": 0
+   },
+   "view": "ev",
+   "c": 0,
+   "r": 11.5
+  },
+  {
+   "id": "tgfb",
+   "type": "signaling",
+   "status": "evidence",
+   "label": {
+    "zh": "TGF-β1/SMAD3 ↓ · TGFBR3-ERK-PPARγ",
+    "en": "TGF-β1/SMAD3 ↓ · TGFBR3-ERK-PPARγ"
+   },
+   "sub": {
+    "zh": "",
+    "en": " "
+   },
+   "ids": {},
+   "layout": {
+    "x": 0,
+    "y": 0
+   },
+   "view": "ev",
+   "c": 2,
+   "r": 10.6
+  },
+  {
+   "id": "fapFate",
+   "type": "cell-process",
+   "status": "evidence",
+   "label": {
+    "zh": "FAP 成脂/成纤维 ↓ · 成肌融合↑",
+    "en": "FAP adipogenesis/fibrogenesis ↓ · fusion ↑"
+   },
+   "sub": {
+    "zh": "",
+    "en": " "
+   },
+   "ids": {},
+   "layout": {
+    "x": 0,
+    "y": 0
+   },
+   "view": "ev",
+   "c": 3,
+   "r": 11.2
+  },
+  {
+   "id": "antiFib",
+   "type": "outcome",
+   "status": "evidence",
+   "label": {
+    "zh": "纤维化/脂肪浸润 ↓",
+    "en": "Fibrosis / fat infiltration ↓"
+   },
+   "sub": {
+    "zh": "",
+    "en": " "
+   },
+   "ids": {},
+   "layout": {
+    "x": 0,
+    "y": 0
+   },
+   "view": "ev",
+   "c": 5,
+   "r": 10.9
+  },
+  {
+   "id": "dmdPath",
+   "type": "ev-source",
+   "status": "evidence",
+   "label": {
+    "zh": "DMD成纤维EV miR-199a-5p【致病】",
+    "en": "DMD fibroblast EV miR-199a-5p [pathogenic]"
+   },
+   "sub": {
+    "zh": "Caveolin-1↓",
+    "en": "Caveolin-1↓"
+   },
+   "ids": {},
+   "layout": {
+    "x": 0,
+    "y": 0
+   },
+   "view": "ev",
+   "c": 0,
+   "r": 12.2
+  },
+  {
+   "id": "ascVasc",
+   "type": "ev-source",
+   "status": "evidence",
+   "label": {
+    "zh": "ASC/MSC/USC/工程iMSC-EV",
+    "en": "ASC/MSC/USC / engineered iMSC-EV"
+   },
+   "sub": {
+    "zh": "NRG1/miR-126/VEGF",
+    "en": "NRG1/miR-126/VEGF"
+   },
+   "ids": {},
+   "layout": {
+    "x": 0,
+    "y": 0
+   },
+   "view": "ev",
+   "c": 0,
+   "r": 13.2
+  },
+  {
+   "id": "angio",
+   "type": "cell-process",
+   "status": "evidence",
+   "label": {
+    "zh": "内皮增殖/成管 ↑",
+    "en": "Endothelial proliferation / tube formation ↑"
+   },
+   "sub": {
+    "zh": "",
+    "en": " "
+   },
+   "ids": {},
+   "layout": {
+    "x": 0,
+    "y": 0
+   },
+   "view": "ev",
+   "c": 3,
+   "r": 13.2
+  },
+  {
+   "id": "perf",
+   "type": "outcome",
+   "status": "evidence",
+   "label": {
+    "zh": "血流灌注/毛细血管密度 ↑",
+    "en": "Perfusion / capillary density ↑"
+   },
+   "sub": {
+    "zh": "",
+    "en": " "
+   },
+   "ids": {},
+   "layout": {
+    "x": 0,
+    "y": 0
+   },
+   "view": "ev",
+   "c": 5,
+   "r": 13.4
+  },
+  {
+   "id": "umscEV",
+   "type": "ev-source",
+   "status": "evidence",
+   "label": {
+    "zh": "UMSC-EV circHIPK3/circDB",
+    "en": "UMSC-EV circHIPK3 / circDB"
+   },
+   "sub": {
+    "zh": "miR海绵",
+    "en": "miRNA sponge"
+   },
+   "ids": {},
+   "layout": {
+    "x": 0,
+    "y": 0
+   },
+   "view": "ev",
+   "c": 0,
+   "r": 15.0
+  },
+  {
+   "id": "imrcEV",
+   "type": "ev-source",
+   "status": "evidence",
+   "label": {
+    "zh": "IMRC/BMSC-EV（抗死亡）",
+    "en": "IMRC / BMSC-EV (anti-death)"
+   },
+   "sub": {
+    "zh": "GSDME/GPX4",
+    "en": "GSDME/GPX4"
+   },
+   "ids": {},
+   "layout": {
+    "x": 0,
+    "y": 0
+   },
+   "view": "ev",
+   "c": 0,
+   "r": 16.0
+  },
+  {
+   "id": "skpEV",
+   "type": "ev-source",
+   "status": "evidence",
+   "label": {
+    "zh": "SKP-SC/植物/运动肌EV（线粒体）",
+    "en": "SKP-SC / plant / exercise EV (mito)"
+   },
+   "sub": {
+    "zh": "Nrf2/AMPK/SIRT1",
+    "en": "Nrf2/AMPK/SIRT1"
+   },
+   "ids": {},
+   "layout": {
+    "x": 0,
+    "y": 0
+   },
+   "view": "ev",
+   "c": 0,
+   "r": 16.8
+  },
+  {
+   "id": "pyro",
+   "type": "signaling",
+   "status": "evidence",
+   "label": {
+    "zh": "NLRP3焦亡/GSDME ↓",
+    "en": "NLRP3 pyroptosis / GSDME ↓"
+   },
+   "sub": {
+    "zh": "",
+    "en": " "
+   },
+   "ids": {},
+   "layout": {
+    "x": 0,
+    "y": 0
+   },
+   "view": "ev",
+   "c": 2,
+   "r": 15.0
+  },
+  {
+   "id": "ferro",
+   "type": "signaling",
+   "status": "evidence",
+   "label": {
+    "zh": "铁死亡(GPX4↑/ACSL4↓) ↓",
+    "en": "Ferroptosis (GPX4↑/ACSL4↓) ↓"
+   },
+   "sub": {
+    "zh": "",
+    "en": " "
+   },
+   "ids": {},
+   "layout": {
+    "x": 0,
+    "y": 0
+   },
+   "view": "ev",
+   "c": 2,
+   "r": 16.0
+  },
+  {
+   "id": "mito",
+   "type": "signaling",
+   "status": "evidence",
+   "label": {
+    "zh": "线粒体自噬/生物发生 · ROS ↓",
+    "en": "Mitophagy/biogenesis · ROS ↓"
+   },
+   "sub": {
+    "zh": "AMPK/SIRT1/PGC-1α",
+    "en": "AMPK/SIRT1/PGC-1α"
+   },
+   "ids": {},
+   "layout": {
+    "x": 0,
+    "y": 0
+   },
+   "view": "ev",
+   "c": 2,
+   "r": 16.9
+  },
+  {
+   "id": "survive",
+   "type": "outcome",
+   "status": "evidence",
+   "label": {
+    "zh": "细胞存活/再生 ↑",
+    "en": "Cell survival / regeneration ↑"
+   },
+   "sub": {
+    "zh": "",
+    "en": " "
+   },
+   "ids": {},
+   "layout": {
+    "x": 0,
+    "y": 0
+   },
+   "view": "ev",
+   "c": 5,
+   "r": 16.0
+  },
+  {
+   "id": "apoEV",
+   "type": "ev-source",
+   "status": "evidence",
+   "label": {
+    "zh": "MSC-ApoEV · 肌管EV",
+    "en": "MSC-ApoEV · myotube EV"
+   },
+   "sub": {
+    "zh": "Pannexin1/肌酸",
+    "en": "Pannexin1/creatine"
+   },
+   "ids": {},
+   "layout": {
+    "x": 0,
+    "y": 0
+   },
+   "view": "ev",
+   "c": 0,
+   "r": 17.6
+  },
+  {
+   "id": "wnt7EV",
+   "type": "ev-source",
+   "status": "evidence",
+   "label": {
+    "zh": "Wnt7a-EV · IL6ST诱饵EV（工程）",
+    "en": "Wnt7a-EV · IL6ST-decoy EV (engineered)"
+   },
+   "sub": {
+    "zh": "mdx",
+    "en": "mdx"
+   },
+   "ids": {},
+   "layout": {
+    "x": 0,
+    "y": 0
+   },
+   "view": "ev",
+   "c": 0,
+   "r": 18.5
+  },
+  {
+   "id": "memRepair",
+   "type": "cell-process",
+   "status": "evidence",
+   "label": {
+    "zh": "肌膜完整性↑/Ca²⁺内流↓/融合↑",
+    "en": "Sarcolemma integrity↑ / Ca²⁺ influx↓ / fusion↑"
+   },
+   "sub": {
+    "zh": "",
+    "en": " "
+   },
+   "ids": {},
+   "layout": {
+    "x": 0,
+    "y": 0
+   },
+   "view": "ev",
+   "c": 3,
+   "r": 17.6
+  },
+  {
+   "id": "il6trans",
+   "type": "signaling",
+   "status": "evidence",
+   "label": {
+    "zh": "IL-6反式信号/STAT3 ↓",
+    "en": "IL-6 trans-signaling / STAT3 ↓"
+   },
+   "sub": {
+    "zh": "",
+    "en": " "
+   },
+   "ids": {},
+   "layout": {
+    "x": 0,
+    "y": 0
+   },
+   "view": "ev",
+   "c": 3,
+   "r": 18.5
+  },
+  {
+   "id": "mdxOut",
+   "type": "outcome",
+   "status": "evidence",
+   "label": {
+    "zh": "mdx 肌损伤/功能改善",
+    "en": "mdx damage ↓ / function ↑"
+   },
+   "sub": {
+    "zh": "",
+    "en": " "
+   },
+   "ids": {},
+   "layout": {
+    "x": 0,
+    "y": 0
+   },
+   "view": "ev",
+   "c": 5,
+   "r": 18.0
+  }
+ ],
+ "edges": [
+  {
+   "id": "EA1",
+   "source": "mpcEV",
+   "target": "radMPC",
+   "sign": "+",
+   "grade": "A",
+   "kind": "direct",
+   "label": {
+    "zh": "提升活力52→71%、BrdU +16%",
+    "en": "viability 52→71%, BrdU +16%"
+   },
+   "refs": [
+    "P40835994"
+   ],
+   "model": {
+    "zh": "受照大鼠MPC",
+    "en": "irradiated rat MPC"
+   },
+   "doseText": "25–75 µg蛋白/孔",
+   "dose": {
+    "regimens": [],
+    "classes": []
+   },
+   "time": {
+    "zh": "48–72 h",
+    "en": "48–72 h"
+   },
+   "method": {
+    "zh": "活力/BrdU",
+    "en": "viability/BrdU"
+   },
+   "functional": {
+    "zh": "增殖恢复",
+    "en": "proliferation"
+   },
+   "limitation": {
+    "zh": "纯体外；无在体、无功能学终点。",
+    "en": "In vitro only; no in vivo or functional endpoint."
+   },
+   "view": "ev"
+  },
+  {
+   "id": "EA2",
+   "source": "mpcEV",
+   "target": "radEndo",
+   "sign": "+",
+   "grade": "A",
+   "kind": "direct",
+   "label": {
+    "zh": "HUVEC成管+1.5×、微血管密度+3×",
+    "en": "HUVEC tubes +1.5×, microvessel +3×"
+   },
+   "refs": [
+    "P40835994"
+   ],
+   "model": {
+    "zh": "HUVEC/微血管凝胶",
+    "en": "HUVEC / microvessel gel"
+   },
+   "doseText": "25–75 µg蛋白",
+   "dose": {
+    "regimens": [],
+    "classes": []
+   },
+   "time": {
+    "zh": "24 h / d7–8",
+    "en": "24 h / d7–8"
+   },
+   "method": {
+    "zh": "成管/微血管碎片",
+    "en": "tube/MVF assay"
+   },
+   "functional": {
+    "zh": "血管读出",
+    "en": "angiogenic readout"
+   },
+   "limitation": {
+    "zh": "体外；受照来源EV(Rad-EV)无此活性。",
+    "en": "In vitro; Rad-EV lacks this activity."
+   },
+   "view": "ev"
+  },
+  {
+   "id": "EA3",
+   "source": "radEVsrc",
+   "target": "radMiR",
+   "sign": "+",
+   "grade": "A",
+   "kind": "observed",
+   "label": {
+    "zh": "Rad-EV miRNA 13↓/7↑",
+    "en": "Rad-EV miRNA 13 down / 7 up"
+   },
+   "refs": [
+    "P40835994"
+   ],
+   "model": {
+    "zh": "受照MPC条件EV",
+    "en": "irradiated MPC EV"
+   },
+   "doseText": "—",
+   "dose": {
+    "regimens": [],
+    "classes": []
+   },
+   "time": {
+    "zh": "48 h",
+    "en": "48 h"
+   },
+   "method": {
+    "zh": "nCounter",
+    "en": "nCounter"
+   },
+   "functional": {
+    "zh": "miR-206/let-7b/miR-34a/miR-499/miR-132↓",
+    "en": "miR-206/let-7b/miR-34a/miR-499/miR-132 down"
+   },
+   "limitation": {
+    "zh": "下游通路仅生信预测，未功能验证。",
+    "en": "Downstream pathways predicted in silico only."
+   },
+   "view": "ev"
+  },
+  {
+   "id": "EA4",
+   "source": "radMiR",
+   "target": "regen",
+   "sign": "+",
+   "grade": "C",
+   "kind": "candidate",
+   "label": {
+    "zh": "预测靶VEGF/PI3K-Akt/FoxO（仅生信）",
+    "en": "predicted VEGF/PI3K-Akt/FoxO (in silico)"
+   },
+   "refs": [
+    "P40835994"
+   ],
+   "model": {
+    "zh": "同上",
+    "en": "same"
+   },
+   "doseText": "—",
+   "dose": {
+    "regimens": [],
+    "classes": []
+   },
+   "time": {
+    "zh": "—",
+    "en": "—"
+   },
+   "method": {
+    "zh": "靶点预测",
+    "en": "target prediction"
+   },
+   "functional": {
+    "zh": "候选",
+    "en": "candidate"
+   },
+   "limitation": {
+    "zh": "降级为C：无功能验证；候选miRNA需逐一验证。",
+    "en": "Downgraded to C: no functional validation."
+   },
+   "view": "ev"
+  },
+  {
+   "id": "EA5",
+   "source": "myomixEV",
+   "target": "esoMyo",
+   "sign": "+",
+   "grade": "A",
+   "kind": "direct",
+   "label": {
+    "zh": "Mrf4/Myf5/Myogenin↑，胶原↓，CD68↓",
+    "en": "Mrf4/Myf5/Myogenin↑, collagen↓, CD68↓"
+   },
+   "refs": [
+    "P41936013"
+   ],
+   "model": {
+    "zh": "放射性食管炎在体",
+    "en": "radiation esophagitis in vivo"
+   },
+   "doseText": "未报告",
+   "dose": {
+    "regimens": [],
+    "classes": []
+   },
+   "time": {
+    "zh": "4 周",
+    "en": "4 weeks"
+   },
+   "method": {
+    "zh": "组化/qPCR",
+    "en": "histology/qPCR"
+   },
+   "functional": {
+    "zh": "再生↑/纤维化↓",
+    "en": "regen↑/fibrosis↓"
+   },
+   "limitation": {
+    "zh": "靶器官以平滑肌为主；无剂量、无肌力终点。",
+    "en": "Target is largely smooth muscle; no dose or force endpoint."
+   },
+   "view": "ev"
+  },
+  {
+   "id": "EA6",
+   "source": "tumorEV",
+   "target": "srmAxis",
+   "sign": "+",
+   "grade": "B",
+   "kind": "pharmacology",
+   "label": {
+    "zh": "SRM→精胺→eIF5A→I型胶原↑【致病】",
+    "en": "SRM→spermidine→eIF5A→collagen I↑ [pathogenic]"
+   },
+   "refs": [
+    "P40541182"
+   ],
+   "model": {
+    "zh": "放疗荷瘤",
+    "en": "RT tumor-bearing"
+   },
+   "doseText": "内源",
+   "dose": {
+    "regimens": [],
+    "classes": []
+   },
+   "time": {
+    "zh": "—",
+    "en": "—"
+   },
+   "method": {
+    "zh": "氯沙坦阻断",
+    "en": "losartan block"
+   },
+   "functional": {
+    "zh": "纤维化/无力",
+    "en": "fibrosis/weakness"
+   },
+   "limitation": {
+    "zh": "致病性EV（非治疗）；肿瘤—宿主远程机制。",
+    "en": "Pathogenic (not therapeutic) EV; tumor-host remote axis."
+   },
+   "view": "ev"
+  },
+  {
+   "id": "EA7",
+   "source": "gbmEV",
+   "target": "stat3",
+   "sign": "+",
+   "grade": "B",
+   "kind": "pharmacology",
+   "label": {
+    "zh": "PAI-1→STAT3→MuRF1/Atrogin1↑，mTOR↓【致病】",
+    "en": "PAI-1→STAT3→MuRF1/Atrogin1↑, mTOR↓ [pathogenic]"
+   },
+   "refs": [
+    "P36231065"
+   ],
+   "model": {
+    "zh": "放疗GBM荷瘤",
+    "en": "RT GBM-bearing"
+   },
+   "doseText": "内源",
+   "dose": {
+    "regimens": [],
+    "classes": []
+   },
+   "time": {
+    "zh": "—",
+    "en": "—"
+   },
+   "method": {
+    "zh": "TM5441抑制PAI-1",
+    "en": "TM5441 PAI-1 inhibitor"
+   },
+   "functional": {
+    "zh": "肌萎缩",
+    "en": "atrophy"
+   },
+   "limitation": {
+    "zh": "致病性EV；肿瘤—宿主远程机制。",
+    "en": "Pathogenic EV; tumor-host remote axis."
+   },
+   "view": "ev"
+  },
+  {
+   "id": "EM1",
+   "source": "mscEV",
+   "target": "mac2",
+   "sign": "+",
+   "grade": "B",
+   "kind": "pharmacology",
+   "label": {
+    "zh": "M1→M2（Arg1/CD206↑, IL6/Nos2↓）",
+    "en": "M1→M2 (Arg1/CD206↑, IL6/Nos2↓)"
+   },
+   "refs": [
+    "P28186708",
+    "P33323007",
+    "P37964317"
+   ],
+   "model": {
+    "zh": "CTX/挫伤/VML",
+    "en": "CTX/contusion/VML"
+   },
+   "doseText": "1–100 µg",
+   "dose": {
+    "regimens": [],
+    "classes": []
+   },
+   "time": {
+    "zh": "d1–d7",
+    "en": "d1–d7"
+   },
+   "method": {
+    "zh": "流式/组化",
+    "en": "flow/histology"
+   },
+   "functional": {
+    "zh": "炎症消退",
+    "en": "inflammation resolution"
+   },
+   "limitation": {
+    "zh": "非辐射模型；巨噬细胞清除证实依赖性。",
+    "en": "Non-radiation models; macrophage depletion confirms dependence."
+   },
+   "view": "ev"
+  },
+  {
+   "id": "EM2",
+   "source": "mac2",
+   "target": "scProlif",
+   "sign": "+",
+   "grade": "B",
+   "kind": "observed",
+   "label": {
+    "zh": "M2环境支持MuSC增殖分化",
+    "en": "M2 milieu supports MuSC"
+   },
+   "refs": [
+    "P33323007",
+    "P37964317"
+   ],
+   "model": {
+    "zh": "同上",
+    "en": "same"
+   },
+   "doseText": "—",
+   "dose": {
+    "regimens": [],
+    "classes": []
+   },
+   "time": {
+    "zh": "d3–d7",
+    "en": "d3–d7"
+   },
+   "method": {
+    "zh": "组化",
+    "en": "histology"
+   },
+   "functional": {
+    "zh": "再生",
+    "en": "regeneration"
+   },
+   "limitation": {
+    "zh": "非辐射模型。",
+    "en": "Non-radiation models."
+   },
+   "view": "ev"
+  },
+  {
+   "id": "EM3",
+   "source": "fapEV",
+   "target": "miMusc",
+   "sign": "+",
+   "grade": "B",
+   "kind": "direct",
+   "label": {
+    "zh": "FAP/BMSC/肌源EV 递送成肌miRNA",
+    "en": "FAP/BMSC/myogenic EV deliver myogenic miRNA"
+   },
+   "refs": [
+    "P38442155",
+    "P41025492",
+    "P42823972"
+   ],
+   "model": {
+    "zh": "BaCl2/VML",
+    "en": "BaCl2/VML"
+   },
+   "doseText": "1.2×10⁹ EV/TA",
+   "dose": {
+    "regimens": [],
+    "classes": []
+   },
+   "time": {
+    "zh": "d1–d14",
+    "en": "d1–d14"
+   },
+   "method": {
+    "zh": "RNase保护+mimic",
+    "en": "RNase+mimic"
+   },
+   "functional": {
+    "zh": "miR-127/126/193b",
+    "en": "miR-127/126/193b"
+   },
+   "limitation": {
+    "zh": "非辐射模型；miRNA货物因果较强。",
+    "en": "Non-radiation; cargo causality strong."
+   },
+   "view": "ev"
+  },
+  {
+   "id": "EM4",
+   "source": "miMusc",
+   "target": "pax7",
+   "sign": "-",
+   "grade": "B",
+   "kind": "direct",
+   "label": {
+    "zh": "靶 S1PR3/FBXO32/AP2M1/miR-140→Pax7去抑制",
+    "en": "targets S1PR3/FBXO32/AP2M1 → Pax7 de-repression"
+   },
+   "refs": [
+    "P38442155",
+    "P41025492",
+    "P38428405"
+   ],
+   "model": {
+    "zh": "BaCl2",
+    "en": "BaCl2"
+   },
+   "doseText": "—",
+   "dose": {
+    "regimens": [],
+    "classes": []
+   },
+   "time": {
+    "zh": "—",
+    "en": "—"
+   },
+   "method": {
+    "zh": "靶点验证",
+    "en": "target validation"
+   },
+   "functional": {
+    "zh": "Pax7/MyoD↑",
+    "en": "Pax7/MyoD↑"
+   },
+   "limitation": {
+    "zh": "非辐射模型。",
+    "en": "Non-radiation."
+   },
+   "view": "ev"
+  },
+  {
+   "id": "EM5",
+   "source": "pax7",
+   "target": "scProlif",
+   "sign": "+",
+   "grade": "B",
+   "kind": "observed",
+   "label": {
+    "zh": "MyoD/MyoG/MyHC↑ · Wnt/ERK/PI3K",
+    "en": "MyoD/MyoG/MyHC↑ · Wnt/ERK/PI3K"
+   },
+   "refs": [
+    "P38294592",
+    "P30849996"
+   ],
+   "model": {
+    "zh": "肌少症/盆底肌",
+    "en": "sarcopenia/pelvic"
+   },
+   "doseText": "—",
+   "dose": {
+    "regimens": [],
+    "classes": []
+   },
+   "time": {
+    "zh": "—",
+    "en": "—"
+   },
+   "method": {
+    "zh": "融合指数",
+    "en": "fusion index"
+   },
+   "functional": {
+    "zh": "分化",
+    "en": "differentiation"
+   },
+   "limitation": {
+    "zh": "非辐射模型。",
+    "en": "Non-radiation."
+   },
+   "view": "ev"
+  },
+  {
+   "id": "EM6",
+   "source": "scProlif",
+   "target": "regen",
+   "sign": "+",
+   "grade": "B",
+   "kind": "observed",
+   "label": {
+    "zh": "再生↑：中央核/eMyHC/CSA",
+    "en": "regeneration↑: central nuclei/eMyHC/CSA"
+   },
+   "refs": [
+    "P38442155",
+    "P33323007",
+    "P42823972"
+   ],
+   "model": {
+    "zh": "多模型",
+    "en": "multiple"
+   },
+   "doseText": "—",
+   "dose": {
+    "regimens": [],
+    "classes": []
+   },
+   "time": {
+    "zh": "d7–d28",
+    "en": "d7–d28"
+   },
+   "method": {
+    "zh": "组化",
+    "en": "histology"
+   },
+   "functional": {
+    "zh": "再生",
+    "en": "regen"
+   },
+   "limitation": {
+    "zh": "非辐射模型。",
+    "en": "Non-radiation."
+   },
+   "view": "ev"
+  },
+  {
+   "id": "EM7",
+   "source": "neoEV",
+   "target": "scProlif",
+   "sign": "+",
+   "grade": "B",
+   "kind": "pharmacology",
+   "label": {
+    "zh": "α-Klotho mRNA / miR-542 恢复再生",
+    "en": "α-Klotho mRNA / miR-542 restore regeneration"
+   },
+   "refs": [
+    "P35665306",
+    "P41572110",
+    "P42327492"
+   ],
+   "model": {
+    "zh": "老龄CTX/甘油",
+    "en": "aged CTX/glycerol"
+   },
+   "doseText": "等量回补",
+   "dose": {
+    "regimens": [],
+    "classes": []
+   },
+   "time": {
+    "zh": "d3–d23",
+    "en": "d3–d23"
+   },
+   "method": {
+    "zh": "EV耗竭+回补+Klotho siRNA",
+    "en": "EV depletion+repletion+siRNA"
+   },
+   "functional": {
+    "zh": "再生",
+    "en": "regen"
+   },
+   "limitation": {
+    "zh": "非辐射；EV耗竭-回补设计最严谨，值得辐射研究借鉴。",
+    "en": "Non-radiation; depletion-repletion design worth copying."
+   },
+   "view": "ev"
+  },
+  {
+   "id": "EM8",
+   "source": "agingEV",
+   "target": "scBad",
+   "sign": "-",
+   "grade": "B",
+   "kind": "observed",
+   "label": {
+    "zh": "Let-7d→HMGA2↓ / miR-690→MEF2↓ / CD81摄取【致病】",
+    "en": "Let-7d→HMGA2↓ / miR-690→MEF2↓ / CD81 uptake [pathogenic]"
+   },
+   "refs": [
+    "P35679898",
+    "P36237168",
+    "P35846725"
+   ],
+   "model": {
+    "zh": "老龄肌少症",
+    "en": "aged sarcopenia"
+   },
+   "doseText": "—",
+   "dose": {
+    "regimens": [],
+    "classes": []
+   },
+   "time": {
+    "zh": "—",
+    "en": "—"
+   },
+   "method": {
+    "zh": "mimic/抗CD81",
+    "en": "mimic/anti-CD81"
+   },
+   "functional": {
+    "zh": "自我更新↓",
+    "en": "self-renewal↓"
+   },
+   "limitation": {
+    "zh": "致病性衰老EV；提示自体受照EV可能有害。",
+    "en": "Pathogenic aging EV; self EV may harm."
+   },
+   "view": "ev"
+  },
+  {
+   "id": "ET1",
+   "source": "ucmscEV",
+   "target": "foxo",
+   "sign": "-",
+   "grade": "B",
+   "kind": "direct",
+   "label": {
+    "zh": "miR-486/132/23b → FoxO1/3a核转位↓",
+    "en": "miR-486/132/23b → FoxO1/3a nuclear ↓"
+   },
+   "refs": [
+    "P34659106",
+    "P39420945",
+    "P38381592"
+   ],
+   "model": {
+    "zh": "地塞米松/去神经",
+    "en": "dex/denervation"
+   },
+   "doseText": "40–100 µg IM",
+   "dose": {
+    "regimens": [],
+    "classes": []
+   },
+   "time": {
+    "zh": "2周",
+    "en": "2 weeks"
+   },
+   "method": {
+    "zh": "mimic/inhibitor EV",
+    "en": "mimic/inhibitor EV"
+   },
+   "functional": {
+    "zh": "FoxO↓",
+    "en": "FoxO↓"
+   },
+   "limitation": {
+    "zh": "非辐射模型。",
+    "en": "Non-radiation."
+   },
+   "view": "ev"
+  },
+  {
+   "id": "ET2",
+   "source": "foxo",
+   "target": "ups",
+   "sign": "-",
+   "grade": "B",
+   "kind": "direct",
+   "label": {
+    "zh": "FoxO↓ → MuRF1/Atrogin-1↓",
+    "en": "FoxO↓ → MuRF1/Atrogin-1↓"
+   },
+   "refs": [
+    "P34659106",
+    "P39420945",
+    "P30711446"
+   ],
+   "model": {
+    "zh": "萎缩模型",
+    "en": "atrophy models"
+   },
+   "doseText": "—",
+   "dose": {
+    "regimens": [],
+    "classes": []
+   },
+   "time": {
+    "zh": "—",
+    "en": "—"
+   },
+   "method": {
+    "zh": "WB",
+    "en": "WB"
+   },
+   "functional": {
+    "zh": "UPS↓",
+    "en": "UPS↓"
+   },
+   "limitation": {
+    "zh": "非辐射模型。",
+    "en": "Non-radiation."
+   },
+   "view": "ev"
+  },
+  {
+   "id": "ET3",
+   "source": "engAtr",
+   "target": "mstn",
+   "sign": "-",
+   "grade": "B",
+   "kind": "direct",
+   "label": {
+    "zh": "装载miR-29/26a/145 · 肌抑素前肽 · siMstn",
+    "en": "loaded miR-29/26a/145 · Mstn propeptide · siMstn"
+   },
+   "refs": [
+    "P30711446",
+    "P31037144",
+    "P32028167",
+    "P37016578",
+    "P34440938"
+   ],
+   "model": {
+    "zh": "CKD/mdx/恶病质",
+    "en": "CKD/mdx/cachexia"
+   },
+   "doseText": "工程装载",
+   "dose": {
+    "regimens": [],
+    "classes": []
+   },
+   "time": {
+    "zh": "反复",
+    "en": "repeated"
+   },
+   "method": {
+    "zh": "工程EV装载",
+    "en": "engineered loading"
+   },
+   "functional": {
+    "zh": "肌抑素/激活素信号↓",
+    "en": "myostatin/activin↓"
+   },
+   "limitation": {
+    "zh": "非辐射；工程化策略可迁移。",
+    "en": "Non-radiation; engineering transferable."
+   },
+   "view": "ev"
+  },
+  {
+   "id": "ET4",
+   "source": "mscEV",
+   "target": "aktm",
+   "sign": "+",
+   "grade": "B",
+   "kind": "pharmacology",
+   "label": {
+    "zh": "AMPK/ULK1自噬 · AKT/mTOR · Follistatin",
+    "en": "AMPK/ULK1 autophagy · AKT/mTOR · Follistatin"
+   },
+   "refs": [
+    "P36708027",
+    "P39732451",
+    "P40753405"
+   ],
+   "model": {
+    "zh": "db/db/损伤",
+    "en": "db/db/injury"
+   },
+   "doseText": "200 µg IV",
+   "dose": {
+    "regimens": [],
+    "classes": []
+   },
+   "time": {
+    "zh": "6–8周",
+    "en": "6–8 weeks"
+   },
+   "method": {
+    "zh": "AMPKα2 siRNA/3-MA",
+    "en": "AMPKα2 siRNA/3-MA"
+   },
+   "functional": {
+    "zh": "合成代谢↑",
+    "en": "anabolic↑"
+   },
+   "limitation": {
+    "zh": "非辐射；双阻断证实依赖性。",
+    "en": "Non-radiation; dual block confirms dependence."
+   },
+   "view": "ev"
+  },
+  {
+   "id": "ET5",
+   "source": "ups",
+   "target": "antiAtr",
+   "sign": "-",
+   "grade": "B",
+   "kind": "observed",
+   "label": {
+    "zh": "UPS↓ → 肌量/CSA/握力↑",
+    "en": "UPS↓ → mass/CSA/grip↑"
+   },
+   "refs": [
+    "P34659106",
+    "P39420945",
+    "P38381592",
+    "P36708027"
+   ],
+   "model": {
+    "zh": "萎缩模型",
+    "en": "atrophy models"
+   },
+   "doseText": "—",
+   "dose": {
+    "regimens": [],
+    "classes": []
+   },
+   "time": {
+    "zh": "—",
+    "en": "—"
+   },
+   "method": {
+    "zh": "功能学",
+    "en": "functional"
+   },
+   "functional": {
+    "zh": "抗萎缩",
+    "en": "anti-atrophy"
+   },
+   "limitation": {
+    "zh": "非辐射模型。",
+    "en": "Non-radiation."
+   },
+   "view": "ev"
+  },
+  {
+   "id": "ET6",
+   "source": "mstn",
+   "target": "antiAtr",
+   "sign": "-",
+   "grade": "B",
+   "kind": "observed",
+   "label": {
+    "zh": "肌抑素↓ → 肌量↑",
+    "en": "myostatin↓ → mass↑"
+   },
+   "refs": [
+    "P32028167",
+    "P37016578",
+    "P39732451"
+   ],
+   "model": {
+    "zh": "mdx/恶病质",
+    "en": "mdx/cachexia"
+   },
+   "doseText": "—",
+   "dose": {
+    "regimens": [],
+    "classes": []
+   },
+   "time": {
+    "zh": "—",
+    "en": "—"
+   },
+   "method": {
+    "zh": "功能学",
+    "en": "functional"
+   },
+   "functional": {
+    "zh": "肌量",
+    "en": "mass"
+   },
+   "limitation": {
+    "zh": "非辐射模型。",
+    "en": "Non-radiation."
+   },
+   "view": "ev"
+  },
+  {
+   "id": "ET7",
+   "source": "aktm",
+   "target": "antiAtr",
+   "sign": "+",
+   "grade": "B",
+   "kind": "observed",
+   "label": {
+    "zh": "AKT/mTOR↑/自噬平衡 → CSA↑",
+    "en": "AKT/mTOR↑ / autophagy balance → CSA↑"
+   },
+   "refs": [
+    "P36708027",
+    "P40753405",
+    "P38778385"
+   ],
+   "model": {
+    "zh": "db/db/地塞米松",
+    "en": "db/db/dex"
+   },
+   "doseText": "—",
+   "dose": {
+    "regimens": [],
+    "classes": []
+   },
+   "time": {
+    "zh": "—",
+    "en": "—"
+   },
+   "method": {
+    "zh": "功能学",
+    "en": "functional"
+   },
+   "functional": {
+    "zh": "抗萎缩",
+    "en": "anti-atrophy"
+   },
+   "limitation": {
+    "zh": "非辐射模型。",
+    "en": "Non-radiation."
+   },
+   "view": "ev"
+  },
+  {
+   "id": "ET8",
+   "source": "plantEV",
+   "target": "aktm",
+   "sign": "+",
+   "grade": "B",
+   "kind": "pharmacology",
+   "label": {
+    "zh": "AMPK/SIRT1/PGC-1α↑ · Atrogin/MuRF1↓",
+    "en": "AMPK/SIRT1/PGC-1α↑ · Atrogin/MuRF1↓"
+   },
+   "refs": [
+    "P38778385",
+    "P41261435"
+   ],
+   "model": {
+    "zh": "地塞米松",
+    "en": "dex"
+   },
+   "doseText": "未报告",
+   "dose": {
+    "regimens": [],
+    "classes": []
+   },
+   "time": {
+    "zh": "—",
+    "en": "—"
+   },
+   "method": {
+    "zh": "AMPK抑制剂",
+    "en": "AMPK inhibitor"
+   },
+   "functional": {
+    "zh": "代谢重塑",
+    "en": "metabolic"
+   },
+   "limitation": {
+    "zh": "非辐射；植物EV来源新颖但表征参差。",
+    "en": "Non-radiation; plant EV source novel but variable."
+   },
+   "view": "ev"
+  },
+  {
+   "id": "EF1",
+   "source": "muscExoF",
+   "target": "tgfb",
+   "sign": "-",
+   "grade": "B",
+   "kind": "direct",
+   "label": {
+    "zh": "let-7f/miR-16/miR-29 → TGF-β1/SMAD3/TGFBR3↓",
+    "en": "let-7f/miR-16/miR-29 → TGF-β1/SMAD3/TGFBR3↓"
+   },
+   "refs": [
+    "P41444423",
+    "P38329214",
+    "P35816980"
+   ],
+   "model": {
+    "zh": "甘油/去神经/重损伤",
+    "en": "glycerol/denervation/severe"
+   },
+   "doseText": "1×10⁹ EV/TA",
+   "dose": {
+    "regimens": [],
+    "classes": []
+   },
+   "time": {
+    "zh": "d7–3周",
+    "en": "d7–3wk"
+   },
+   "method": {
+    "zh": "RNA耗竭+双miR抑制+TGFBR3敲除",
+    "en": "RNA depletion+inhibitors+KO"
+   },
+   "functional": {
+    "zh": "SMAD3↓",
+    "en": "SMAD3↓"
+   },
+   "limitation": {
+    "zh": "非辐射；TGFBR3-FAP条件敲除因果最强。",
+    "en": "Non-radiation; TGFBR3 FAP-conditional KO strongest."
+   },
+   "view": "ev"
+  },
+  {
+   "id": "EF2",
+   "source": "m2fap",
+   "target": "fapFate",
+   "sign": "-",
+   "grade": "B",
+   "kind": "pharmacology",
+   "label": {
+    "zh": "FAP成脂/成纤维↓，米色化与成肌融合↑",
+    "en": "FAP adipo/fibrogenesis↓, beiging & fusion↑"
+   },
+   "refs": [
+    "P37936229",
+    "P35604307",
+    "P38442155"
+   ],
+   "model": {
+    "zh": "肩袖/BaCl2",
+    "en": "rotator-cuff/BaCl2"
+   },
+   "doseText": "2×10⁹ 外泌体",
+   "dose": {
+    "regimens": [],
+    "classes": []
+   },
+   "time": {
+    "zh": "6周",
+    "en": "6 weeks"
+   },
+   "method": {
+    "zh": "GW4869阻断",
+    "en": "GW4869 block"
+   },
+   "functional": {
+    "zh": "脂肪浸润↓",
+    "en": "fat infiltration↓"
+   },
+   "limitation": {
+    "zh": "非辐射模型。",
+    "en": "Non-radiation."
+   },
+   "view": "ev"
+  },
+  {
+   "id": "EF3",
+   "source": "tgfb",
+   "target": "antiFib",
+   "sign": "-",
+   "grade": "B",
+   "kind": "observed",
+   "label": {
+    "zh": "TGF-β/SMAD3↓ → 纤维化↓、收缩力↑",
+    "en": "TGF-β/SMAD3↓ → fibrosis↓, force↑"
+   },
+   "refs": [
+    "P41444423",
+    "P35816980",
+    "P38329214"
+   ],
+   "model": {
+    "zh": "多模型",
+    "en": "multiple"
+   },
+   "doseText": "—",
+   "dose": {
+    "regimens": [],
+    "classes": []
+   },
+   "time": {
+    "zh": "—",
+    "en": "—"
+   },
+   "method": {
+    "zh": "Masson/力学",
+    "en": "Masson/mechanics"
+   },
+   "functional": {
+    "zh": "抗纤维化",
+    "en": "anti-fibrosis"
+   },
+   "limitation": {
+    "zh": "非辐射模型；但辐射纤维化期尚无EV数据。",
+    "en": "Non-radiation; no EV data for radiation fibrosis."
+   },
+   "view": "ev"
+  },
+  {
+   "id": "EF4",
+   "source": "fapFate",
+   "target": "antiFib",
+   "sign": "-",
+   "grade": "B",
+   "kind": "observed",
+   "label": {
+    "zh": "FAP命运纠正 → 脂肪浸润/纤维化↓",
+    "en": "corrected FAP fate → fat/fibrosis↓"
+   },
+   "refs": [
+    "P37936229",
+    "P35604307"
+   ],
+   "model": {
+    "zh": "肩袖",
+    "en": "rotator-cuff"
+   },
+   "doseText": "—",
+   "dose": {
+    "regimens": [],
+    "classes": []
+   },
+   "time": {
+    "zh": "—",
+    "en": "—"
+   },
+   "method": {
+    "zh": "组化",
+    "en": "histology"
+   },
+   "functional": {
+    "zh": "脂肪浸润",
+    "en": "fat infiltration"
+   },
+   "limitation": {
+    "zh": "非辐射模型。",
+    "en": "Non-radiation."
+   },
+   "view": "ev"
+  },
+  {
+   "id": "EF5",
+   "source": "dmdPath",
+   "target": "antiFib",
+   "sign": "+",
+   "grade": "B",
+   "kind": "direct",
+   "label": {
+    "zh": "miR-199a-5p→Caveolin-1↓→Akt/ERK→纤维化↑【致病】",
+    "en": "miR-199a-5p→Caveolin-1↓→fibrosis↑ [pathogenic]"
+   },
+   "refs": [
+    "P29981373"
+   ],
+   "model": {
+    "zh": "CTX注入人源EV",
+    "en": "CTX + human EV"
+   },
+   "doseText": "未报告",
+   "dose": {
+    "regimens": [],
+    "classes": []
+   },
+   "time": {
+    "zh": "—",
+    "en": "—"
+   },
+   "method": {
+    "zh": "mimic/inhibitor",
+    "en": "mimic/inhibitor"
+   },
+   "functional": {
+    "zh": "纤维化↑",
+    "en": "fibrosis↑"
+   },
+   "limitation": {
+    "zh": "致病性EV（示范反向机制）。",
+    "en": "Pathogenic EV (illustrates reverse axis)."
+   },
+   "view": "ev"
+  },
+  {
+   "id": "EV1",
+   "source": "ascVasc",
+   "target": "angio",
+   "sign": "+",
+   "grade": "B",
+   "kind": "pharmacology",
+   "label": {
+    "zh": "NRG1/miR-126/VEGF等 → 内皮增殖成管",
+    "en": "NRG1/miR-126/VEGF → endothelial proliferation/tube"
+   },
+   "refs": [
+    "P31665908",
+    "P40484285",
+    "P30041250"
+   ],
+   "model": {
+    "zh": "后肢缺血/VML",
+    "en": "ischemia/VML"
+   },
+   "doseText": "100 µg IV",
+   "dose": {
+    "regimens": [],
+    "classes": []
+   },
+   "time": {
+    "zh": "d3–d28",
+    "en": "d3–d28"
+   },
+   "method": {
+    "zh": "NRG1中和抗体",
+    "en": "NRG1 neutralization"
+   },
+   "functional": {
+    "zh": "成管",
+    "en": "tube formation"
+   },
+   "limitation": {
+    "zh": "非辐射；但Rad-EV丧失促血管活性(EA2)是辐射特异警示。",
+    "en": "Non-radiation; Rad-EV loses angiogenic activity (see EA2)."
+   },
+   "view": "ev"
+  },
+  {
+   "id": "EV2",
+   "source": "angio",
+   "target": "perf",
+   "sign": "+",
+   "grade": "B",
+   "kind": "observed",
+   "label": {
+    "zh": "灌注/毛细血管密度↑ → 再生↑",
+    "en": "perfusion/capillary density↑ → regen↑"
+   },
+   "refs": [
+    "P31665908",
+    "P30041250",
+    "P37964317"
+   ],
+   "model": {
+    "zh": "缺血/VML",
+    "en": "ischemia/VML"
+   },
+   "doseText": "—",
+   "dose": {
+    "regimens": [],
+    "classes": []
+   },
+   "time": {
+    "zh": "—",
+    "en": "—"
+   },
+   "method": {
+    "zh": "激光多普勒",
+    "en": "laser Doppler"
+   },
+   "functional": {
+    "zh": "灌注",
+    "en": "perfusion"
+   },
+   "limitation": {
+    "zh": "非辐射模型。",
+    "en": "Non-radiation."
+   },
+   "view": "ev"
+  },
+  {
+   "id": "ED1",
+   "source": "umscEV",
+   "target": "pyro",
+   "sign": "-",
+   "grade": "B",
+   "kind": "pharmacology",
+   "label": {
+    "zh": "circHIPK3→miR-421/FOXO3a→NLRP3焦亡↓",
+    "en": "circHIPK3→miR-421/FOXO3a→NLRP3↓"
+   },
+   "refs": [
+    "P32550900",
+    "P39137155"
+   ],
+   "model": {
+    "zh": "缺血/IR",
+    "en": "ischemia/IR"
+   },
+   "doseText": "100 µg IM",
+   "dose": {
+    "regimens": [],
+    "classes": []
+   },
+   "time": {
+    "zh": "d1–d28",
+    "en": "d1–d28"
+   },
+   "method": {
+    "zh": "si-circHIPK3 EV失效",
+    "en": "si-circHIPK3 loss-of-function"
+   },
+   "functional": {
+    "zh": "焦亡↓",
+    "en": "pyroptosis↓"
+   },
+   "limitation": {
+    "zh": "非辐射；si-circRNA失效设计严谨。",
+    "en": "Non-radiation; si-circRNA design rigorous."
+   },
+   "view": "ev"
+  },
+  {
+   "id": "ED2",
+   "source": "umscEV",
+   "target": "survive",
+   "sign": "+",
+   "grade": "B",
+   "kind": "pharmacology",
+   "label": {
+    "zh": "circDB→miR-34a/USP7/Notch1→成肌增殖↑",
+    "en": "circDB→miR-34a/USP7/Notch1→myogenesis↑"
+   },
+   "refs": [
+    "P40896178"
+   ],
+   "model": {
+    "zh": "缺血",
+    "en": "ischemia"
+   },
+   "doseText": "100 µg IM",
+   "dose": {
+    "regimens": [],
+    "classes": []
+   },
+   "time": {
+    "zh": "d28",
+    "en": "d28"
+   },
+   "method": {
+    "zh": "si-circDB EV失效",
+    "en": "si-circDB loss-of-function"
+   },
+   "functional": {
+    "zh": "增殖",
+    "en": "proliferation"
+   },
+   "limitation": {
+    "zh": "非辐射模型。",
+    "en": "Non-radiation."
+   },
+   "view": "ev"
+  },
+  {
+   "id": "ED3",
+   "source": "imrcEV",
+   "target": "ferro",
+   "sign": "-",
+   "grade": "B",
+   "kind": "observed",
+   "label": {
+    "zh": "ACSL4/NOX1↓, GPX4/FTH1↑ → 铁死亡↓",
+    "en": "ACSL4/NOX1↓, GPX4/FTH1↑ → ferroptosis↓"
+   },
+   "refs": [
+    "P40628981",
+    "P42893935"
+   ],
+   "model": {
+    "zh": "蛇毒/糖脂毒",
+    "en": "snakebite/metabolic"
+   },
+   "doseText": "7.5×10¹⁰ 颗粒",
+   "dose": {
+    "regimens": [],
+    "classes": []
+   },
+   "time": {
+    "zh": "24 h",
+    "en": "24 h"
+   },
+   "method": {
+    "zh": "组化/WB",
+    "en": "histology/WB"
+   },
+   "functional": {
+    "zh": "铁死亡↓",
+    "en": "ferroptosis↓"
+   },
+   "limitation": {
+    "zh": "非辐射模型。",
+    "en": "Non-radiation."
+   },
+   "view": "ev"
+  },
+  {
+   "id": "ED4",
+   "source": "imrcEV",
+   "target": "pyro",
+   "sign": "-",
+   "grade": "B",
+   "kind": "observed",
+   "label": {
+    "zh": "GSDME/N-GSDME↓ → 焦亡↓",
+    "en": "GSDME↓ → pyroptosis↓"
+   },
+   "refs": [
+    "P40917871"
+   ],
+   "model": {
+    "zh": "蛇毒",
+    "en": "snakebite"
+   },
+   "doseText": "7.5×10¹⁰ 颗粒",
+   "dose": {
+    "regimens": [],
+    "classes": []
+   },
+   "time": {
+    "zh": "24 h",
+    "en": "24 h"
+   },
+   "method": {
+    "zh": "WB",
+    "en": "WB"
+   },
+   "functional": {
+    "zh": "焦亡↓",
+    "en": "pyroptosis↓"
+   },
+   "limitation": {
+    "zh": "非辐射模型。",
+    "en": "Non-radiation."
+   },
+   "view": "ev"
+  },
+  {
+   "id": "ED5",
+   "source": "skpEV",
+   "target": "mito",
+   "sign": "+",
+   "grade": "B",
+   "kind": "direct",
+   "label": {
+    "zh": "Nrf2↑/Nox↓ · AMPK/SIRT1/PGC-1α↑ · 线粒体自噬平衡",
+    "en": "Nrf2↑ · AMPK/SIRT1/PGC-1α↑ · mitophagy balance"
+   },
+   "refs": [
+    "P35052570",
+    "P39901193",
+    "P41308393"
+   ],
+   "model": {
+    "zh": "去神经/失重/db/db",
+    "en": "denervation/unloading/db-db"
+   },
+   "doseText": "5×10¹⁰ 颗粒",
+   "dose": {
+    "regimens": [],
+    "classes": []
+   },
+   "time": {
+    "zh": "—",
+    "en": "—"
+   },
+   "method": {
+    "zh": "3-MA体外",
+    "en": "3-MA"
+   },
+   "functional": {
+    "zh": "ROS↓",
+    "en": "ROS↓"
+   },
+   "limitation": {
+    "zh": "非辐射；抗氧化轴与辐射ROS机制平行，但未在辐射肌验证。",
+    "en": "Non-radiation; antioxidant axis parallels radiation ROS but untested there."
+   },
+   "view": "ev"
+  },
+  {
+   "id": "ED6",
+   "source": "mito",
+   "target": "survive",
+   "sign": "+",
+   "grade": "B",
+   "kind": "observed",
+   "label": {
+    "zh": "线粒体功能↑/ROS↓ → 存活与再生↑",
+    "en": "mito function↑/ROS↓ → survival & regen↑"
+   },
+   "refs": [
+    "P35052570",
+    "P39901193",
+    "P41308393"
+   ],
+   "model": {
+    "zh": "多模型",
+    "en": "multiple"
+   },
+   "doseText": "—",
+   "dose": {
+    "regimens": [],
+    "classes": []
+   },
+   "time": {
+    "zh": "—",
+    "en": "—"
+   },
+   "method": {
+    "zh": "功能学",
+    "en": "functional"
+   },
+   "functional": {
+    "zh": "存活",
+    "en": "survival"
+   },
+   "limitation": {
+    "zh": "非辐射模型。",
+    "en": "Non-radiation."
+   },
+   "view": "ev"
+  },
+  {
+   "id": "ED7",
+   "source": "pyro",
+   "target": "survive",
+   "sign": "-",
+   "grade": "B",
+   "kind": "observed",
+   "label": {
+    "zh": "焦亡↓ → 存活↑",
+    "en": "pyroptosis↓ → survival↑"
+   },
+   "refs": [
+    "P32550900",
+    "P40917871"
+   ],
+   "model": {
+    "zh": "缺血/蛇毒",
+    "en": "ischemia/snakebite"
+   },
+   "doseText": "—",
+   "dose": {
+    "regimens": [],
+    "classes": []
+   },
+   "time": {
+    "zh": "—",
+    "en": "—"
+   },
+   "method": {
+    "zh": "功能学",
+    "en": "functional"
+   },
+   "functional": {
+    "zh": "存活",
+    "en": "survival"
+   },
+   "limitation": {
+    "zh": "非辐射模型。",
+    "en": "Non-radiation."
+   },
+   "view": "ev"
+  },
+  {
+   "id": "ED8",
+   "source": "ferro",
+   "target": "survive",
+   "sign": "-",
+   "grade": "B",
+   "kind": "observed",
+   "label": {
+    "zh": "铁死亡↓ → 再生↑",
+    "en": "ferroptosis↓ → regen↑"
+   },
+   "refs": [
+    "P40628981",
+    "P42893935"
+   ],
+   "model": {
+    "zh": "蛇毒/糖脂毒",
+    "en": "snakebite/metabolic"
+   },
+   "doseText": "—",
+   "dose": {
+    "regimens": [],
+    "classes": []
+   },
+   "time": {
+    "zh": "—",
+    "en": "—"
+   },
+   "method": {
+    "zh": "功能学",
+    "en": "functional"
+   },
+   "functional": {
+    "zh": "再生",
+    "en": "regen"
+   },
+   "limitation": {
+    "zh": "非辐射模型。",
+    "en": "Non-radiation."
+   },
+   "view": "ev"
+  },
+  {
+   "id": "Eme1",
+   "source": "apoEV",
+   "target": "memRepair",
+   "sign": "+",
+   "grade": "B",
+   "kind": "pharmacology",
+   "label": {
+    "zh": "Pannexin1→肌酸↑/肌膜完整→Ca²⁺↓/calpain↓/融合↑",
+    "en": "Pannexin1→creatine↑/sarcolemma→Ca²⁺↓/fusion↑"
+   },
+   "refs": [
+    "P36646698",
+    "P33333294"
+   ],
+   "model": {
+    "zh": "CTX/mdx",
+    "en": "CTX/mdx"
+   },
+   "doseText": "30 µg/TA",
+   "dose": {
+    "regimens": [],
+    "classes": []
+   },
+   "time": {
+    "zh": "d3",
+    "en": "d3"
+   },
+   "method": {
+    "zh": "BB-FCF抑制Pannexin1",
+    "en": "BB-FCF Pannexin1 block"
+   },
+   "functional": {
+    "zh": "融合",
+    "en": "fusion"
+   },
+   "limitation": {
+    "zh": "非辐射；为非信号（代谢/结构）机制。",
+    "en": "Non-radiation; non-signalling (metabolic/structural)."
+   },
+   "view": "ev"
+  },
+  {
+   "id": "Eme2",
+   "source": "wnt7EV",
+   "target": "memRepair",
+   "sign": "+",
+   "grade": "B",
+   "kind": "pharmacology",
+   "label": {
+    "zh": "Wnt7a-EV单次挽救再生",
+    "en": "Wnt7a-EV single dose rescues regeneration"
+   },
+   "refs": [
+    "P39702274"
+   ],
+   "model": {
+    "zh": "mdx+CTX",
+    "en": "mdx+CTX"
+   },
+   "doseText": "单次IV",
+   "dose": {
+    "regimens": [],
+    "classes": []
+   },
+   "time": {
+    "zh": "d21",
+    "en": "d21"
+   },
+   "method": {
+    "zh": "条件敲除+EV挽救",
+    "en": "conditional KO + EV rescue"
+   },
+   "functional": {
+    "zh": "再生",
+    "en": "regen"
+   },
+   "limitation": {
+    "zh": "非辐射；敲除-挽救因果强。",
+    "en": "Non-radiation; KO-rescue causality strong."
+   },
+   "view": "ev"
+  },
+  {
+   "id": "Eme3",
+   "source": "wnt7EV",
+   "target": "il6trans",
+   "sign": "-",
+   "grade": "B",
+   "kind": "pharmacology",
+   "label": {
+    "zh": "IL6ST诱饵→IL-6反式信号/STAT3↓",
+    "en": "IL6ST decoy→IL-6 trans-signaling/STAT3↓"
+   },
+   "refs": [
+    "P33049461"
+   ],
+   "model": {
+    "zh": "mdx",
+    "en": "mdx"
+   },
+   "doseText": "未报告",
+   "dose": {
+    "regimens": [],
+    "classes": []
+   },
+   "time": {
+    "zh": "—",
+    "en": "—"
+   },
+   "method": {
+    "zh": "选择性阻断反式信号",
+    "en": "selective trans-signaling block"
+   },
+   "functional": {
+    "zh": "STAT3↓",
+    "en": "STAT3↓"
+   },
+   "limitation": {
+    "zh": "非辐射；工程诱饵策略可迁移至辐射STAT3轴。",
+    "en": "Non-radiation; decoy strategy may map to radiation STAT3 axis."
+   },
+   "view": "ev"
+  },
+  {
+   "id": "Eme4",
+   "source": "memRepair",
+   "target": "mdxOut",
+   "sign": "+",
+   "grade": "B",
+   "kind": "observed",
+   "label": {
+    "zh": "肌膜稳定/融合↑ → 功能改善",
+    "en": "sarcolemma stability/fusion↑ → function↑"
+   },
+   "refs": [
+    "P33333294",
+    "P36646698",
+    "P39702274"
+   ],
+   "model": {
+    "zh": "mdx/CTX",
+    "en": "mdx/CTX"
+   },
+   "doseText": "—",
+   "dose": {
+    "regimens": [],
+    "classes": []
+   },
+   "time": {
+    "zh": "—",
+    "en": "—"
+   },
+   "method": {
+    "zh": "功能学",
+    "en": "functional"
+   },
+   "functional": {
+    "zh": "功能",
+    "en": "function"
+   },
+   "limitation": {
+    "zh": "非辐射模型。",
+    "en": "Non-radiation."
+   },
+   "view": "ev"
+  }
+ ],
+ "sources": [
+  {
+   "id": "P40835994",
+   "pmid": "40835994",
+   "doi": "10.1038/s41598-025-15699-x",
+   "url": null,
+   "journal": "Sci Rep",
+   "title": {
+    "zh": "非照射肌前体细胞EV改善受照MPC与内皮功能",
+    "en": "Irradiation of muscle precursor cells impairs the proliferative and angiogenic functions of their extracellular vesicles."
+   },
+   "reviewDepth": {
+    "zh": "全文核查",
+    "en": "Full text reviewed"
+   },
+   "model": {
+    "zh": "10 Gy大鼠MPC体外",
+    "en": "10 Gy rat MPC in vitro"
+   }
+  },
+  {
+   "id": "P41936013",
+   "pmid": "41936013",
+   "doi": "10.1007/s13770-026-00795-4",
+   "url": null,
+   "journal": "Tissue Eng Regen Med",
+   "title": {
+    "zh": "Myo-MIX工程MSC外泌体改善放射性食管炎肌再生",
+    "en": "Regenerative effects of myogenic gene transfected MSC derived exosomes on radiation esophagitis."
+   },
+   "reviewDepth": {
+    "zh": "全文核查",
+    "en": "Full text reviewed"
+   },
+   "model": {
+    "zh": "放射性食管炎10 Gy×2",
+    "en": "radiation esophagitis 10 Gy×2"
+   }
+  },
+  {
+   "id": "P40541182",
+   "pmid": "40541182",
+   "doi": "10.1016/j.cmet.2025.05.013",
+   "url": null,
+   "journal": "Cell Metab",
+   "title": {
+    "zh": "放疗肿瘤sEV携带SRM经精胺-eIF5A诱导肌无力",
+    "en": "Arachidonic acid triggers spermidine synthase secretion from primary tumor to induce skeletal muscle weakness upon irradiation."
+   },
+   "reviewDepth": {
+    "zh": "摘要级核查",
+    "en": "Abstract-level review"
+   },
+   "model": {
+    "zh": "放疗荷瘤小鼠",
+    "en": "RT tumor-bearing mice"
+   }
+  },
+  {
+   "id": "P36231065",
+   "pmid": "36231065",
+   "doi": "10.3390/cells11193102",
+   "url": null,
+   "journal": "Cells",
+   "title": {
+    "zh": "放疗GBM外泌体PAI-1经STAT3诱导肌萎缩",
+    "en": "Exosomal Plasminogen Activator Inhibitor-1 Induces Ionizing Radiation-Adaptive Glioblastoma Cachexia."
+   },
+   "reviewDepth": {
+    "zh": "摘要级核查",
+    "en": "Abstract-level review"
+   },
+   "model": {
+    "zh": "放疗GBM荷瘤",
+    "en": "RT GBM-bearing"
+   }
+  },
+  {
+   "id": "P33323007",
+   "pmid": "33323007",
+   "doi": "10.1089/scd.2020.0167",
+   "url": null,
+   "journal": "Stem Cells Dev",
+   "title": {
+    "zh": "MSC-EV经巨噬细胞介导促进肌再生",
+    "en": "Bone Marrow Stromal Cell-Derived Exosomes Promote Muscle Healing Following Contusion Through Macrophage Polarization."
+   },
+   "reviewDepth": {
+    "zh": "摘要级核查",
+    "en": "Abstract-level review"
+   },
+   "model": {
+    "zh": "挫伤/CTX",
+    "en": "contusion/CTX"
+   }
+  },
+  {
+   "id": "P37964317",
+   "pmid": "37964317",
+   "doi": "10.1186/s13287-023-03530-1",
+   "url": null,
+   "journal": "Stem Cell Res Ther",
+   "title": {
+    "zh": "MSC-EV调控巨噬细胞促VML修复",
+    "en": "Extracellular vesicles derived from human ESC-MSCs target macrophage and promote anti-inflammation process, angiogenesis, and functional recovery in ACS-induced severe skeletal muscle injury."
+   },
+   "reviewDepth": {
+    "zh": "全文核查",
+    "en": "Full text reviewed"
+   },
+   "model": {
+    "zh": "VML",
+    "en": "VML"
+   }
+  },
+  {
+   "id": "P28186708",
+   "pmid": "28186708",
+   "doi": "10.1002/sctm.16-0363",
+   "url": null,
+   "journal": "Stem Cells Transl Med",
+   "title": {
+    "zh": "MSC-EV促肌再生并调节炎症",
+    "en": "Mesenchymal Stem Cell-Derived Extracellular Vesicles as Mediators of Anti-Inflammatory Effects: Endorsement of Macrophage Polarization."
+   },
+   "reviewDepth": {
+    "zh": "全文核查",
+    "en": "Full text reviewed"
+   },
+   "model": {
+    "zh": "心脏毒素TA",
+    "en": "CTX TA"
+   }
+  },
+  {
+   "id": "P38442155",
+   "pmid": "38442155",
+   "doi": "10.1073/pnas.2316544121",
+   "url": null,
+   "journal": "Proc Natl Acad Sci U S A",
+   "title": {
+    "zh": "FAP-EV miR-127-3p经S1PR3促成肌、miR-206/27抑制成脂",
+    "en": "Reciprocal communication between FAPs and muscle cells via distinct extracellular vesicle miRNAs in muscle regeneration."
+   },
+   "reviewDepth": {
+    "zh": "全文核查",
+    "en": "Full text reviewed"
+   },
+   "model": {
+    "zh": "BaCl2 TA",
+    "en": "BaCl2 TA"
+   }
+  },
+  {
+   "id": "P41025492",
+   "pmid": "41025492",
+   "doi": "10.1111/apha.70114",
+   "url": null,
+   "journal": "Acta Physiol (Oxf)",
+   "title": {
+    "zh": "BMSC-Exo miR-126-5p经FBXO32促卫星细胞分化",
+    "en": "MiR-126-5p Derived From Bone Marrow Mesenchymal Stem Cell Exosomes Promotes Skeletal Muscle Regeneration by Regulating FBXO32/MyoD Signaling."
+   },
+   "reviewDepth": {
+    "zh": "摘要级核查",
+    "en": "Abstract-level review"
+   },
+   "model": {
+    "zh": "BaCl2腓肠肌",
+    "en": "BaCl2 gastrocnemius"
+   }
+  },
+  {
+   "id": "P42823972",
+   "pmid": "42823972",
+   "doi": "10.1016/j.omtn.2026.103087",
+   "url": null,
+   "journal": "Mol Ther Nucleic Acids",
+   "title": {
+    "zh": "肌源sEV miR-193b-3p经AP2M1促VML成肌",
+    "en": "Myogenic differentiation-derived small extracellular vesicles as a therapeutic strategy for miR-193b-3p-mediated muscle regeneration."
+   },
+   "reviewDepth": {
+    "zh": "全文核查",
+    "en": "Full text reviewed"
+   },
+   "model": {
+    "zh": "VML TA",
+    "en": "VML TA"
+   }
+  },
+  {
+   "id": "P38428405",
+   "pmid": "38428405",
+   "doi": "10.18632/aging.205617",
+   "url": null,
+   "journal": "Aging (Albany NY)",
+   "title": {
+    "zh": "MPC-EV调控miR-140-5p去抑制Pax7",
+    "en": "Myogenic exosome miR-140-5p modulates skeletal muscle regeneration and injury repair by regulating muscle satellite cells."
+   },
+   "reviewDepth": {
+    "zh": "全文核查",
+    "en": "Full text reviewed"
+   },
+   "model": {
+    "zh": "BaCl2腓肠肌",
+    "en": "BaCl2 gastrocnemius"
+   }
+  },
+  {
+   "id": "P38294592",
+   "pmid": "38294592",
+   "doi": "10.1007/s13770-023-00618-w",
+   "url": null,
+   "journal": "Tissue Eng Regen Med",
+   "title": {
+    "zh": "hFCPC-Exo miR-145-5p经Wnt5a/β-catenin改善肌少症",
+    "en": "Exosomes Secreted During Myogenic Differentiation of Human Fetal Cartilage-Derived Progenitor Cells Promote Skeletal Muscle Regeneration through miR-145-5p."
+   },
+   "reviewDepth": {
+    "zh": "摘要级核查",
+    "en": "Abstract-level review"
+   },
+   "model": {
+    "zh": "肌少症大鼠",
+    "en": "sarcopenia rat"
+   }
+  },
+  {
+   "id": "P35665306",
+   "pmid": "35665306",
+   "doi": "10.1038/s43587-021-00143-2",
+   "url": null,
+   "journal": "Nat Aging",
+   "title": {
+    "zh": "年轻血清EV α-Klotho mRNA恢复老龄肌再生",
+    "en": "Regulation of aged skeletal muscle regeneration by circulating extracellular vesicles."
+   },
+   "reviewDepth": {
+    "zh": "全文核查",
+    "en": "Full text reviewed"
+   },
+   "model": {
+    "zh": "老龄CTX",
+    "en": "aged CTX"
+   }
+  },
+  {
+   "id": "P34659106",
+   "pmid": "34659106",
+   "doi": "10.3389/fendo.2021.681267",
+   "url": null,
+   "journal": "Front Endocrinol (Lausanne)",
+   "title": {
+    "zh": "BMSC-Exo miR-486-5p经FoxO1抗地塞米松肌萎缩",
+    "en": "BMSC-Derived Exosomes Inhibit Dexamethasone-Induced Muscle Atrophy via the miR-486-5p/FoxO1 Axis."
+   },
+   "reviewDepth": {
+    "zh": "全文核查",
+    "en": "Full text reviewed"
+   },
+   "model": {
+    "zh": "地塞米松",
+    "en": "dexamethasone"
+   }
+  },
+  {
+   "id": "P39420945",
+   "pmid": "39420945",
+   "doi": "10.1016/j.jot.2024.08.005",
+   "url": null,
+   "journal": "J Orthop Translat",
+   "title": {
+    "zh": "hucMSC-Exo miR-132-3p经FoxO3抗萎缩",
+    "en": "Human umbilical cord mesenchymal stem cell-derived exosomes ameliorate muscle atrophy via the miR-132-3p/FoxO3 axis."
+   },
+   "reviewDepth": {
+    "zh": "全文核查",
+    "en": "Full text reviewed"
+   },
+   "model": {
+    "zh": "地塞米松+衰老",
+    "en": "dex+aging"
+   }
+  },
+  {
+   "id": "P38381592",
+   "pmid": "38381592",
+   "doi": "10.1093/stmcls/sxae017",
+   "url": null,
+   "journal": "Stem Cells",
+   "title": {
+    "zh": "hucMSC-EXO miR-23b-3p抑制去神经萎缩基因",
+    "en": "HucMSCs Delay Muscle Atrophy After Peripheral Nerve Injury Through Exosomes by Repressing Muscle-Specific Ubiquitin Ligases."
+   },
+   "reviewDepth": {
+    "zh": "全文核查",
+    "en": "Full text reviewed"
+   },
+   "model": {
+    "zh": "去神经",
+    "en": "denervation"
+   }
+  },
+  {
+   "id": "P30711446",
+   "pmid": "30711446",
+   "doi": "10.1016/j.ymthe.2019.01.008",
+   "url": null,
+   "journal": "Mol Ther",
+   "title": {
+    "zh": "工程miR-29 EV经YY1/TGF-β3抗萎缩",
+    "en": "Exosome-Mediated miR-29 Transfer Reduces Muscle Atrophy and Kidney Fibrosis in Mice."
+   },
+   "reviewDepth": {
+    "zh": "摘要级核查",
+    "en": "Abstract-level review"
+   },
+   "model": {
+    "zh": "UUO",
+    "en": "UUO"
+   }
+  },
+  {
+   "id": "P31037144",
+   "pmid": "31037144",
+   "doi": "10.7150/thno.29579",
+   "url": null,
+   "journal": "Theranostics",
+   "title": {
+    "zh": "工程miR-26a EV经FoxO1抗CKD肌萎缩",
+    "en": "miR-26a Limits Muscle Wasting and Cardiac Fibrosis through Exosome-Mediated microRNA Transfer in Chronic Kidney Disease."
+   },
+   "reviewDepth": {
+    "zh": "摘要级核查",
+    "en": "Abstract-level review"
+   },
+   "model": {
+    "zh": "CKD",
+    "en": "CKD"
+   }
+  },
+  {
+   "id": "P32028167",
+   "pmid": "32028167",
+   "doi": "10.1016/j.biomaterials.2020.119826",
+   "url": null,
+   "journal": "Biomaterials",
+   "title": {
+    "zh": "CD63-肌抑素前肽工程EV中和肌抑素",
+    "en": "Effects of exosome-mediated delivery of myostatin propeptide on functional recovery of mdx mice."
+   },
+   "reviewDepth": {
+    "zh": "摘要级核查",
+    "en": "Abstract-level review"
+   },
+   "model": {
+    "zh": "mdx",
+    "en": "mdx"
+   }
+  },
+  {
+   "id": "P37016578",
+   "pmid": "37016578",
+   "doi": "10.1016/j.ymthe.2023.03.036",
+   "url": null,
+   "journal": "Mol Ther",
+   "title": {
+    "zh": "RBC-EV siMstn促肌生长",
+    "en": "Red blood cell extracellular vesicles deliver therapeutic siRNAs to skeletal muscles for treatment of cancer cachexia."
+   },
+   "reviewDepth": {
+    "zh": "摘要级核查",
+    "en": "Abstract-level review"
+   },
+   "model": {
+    "zh": "恶病质",
+    "en": "cachexia"
+   }
+  },
+  {
+   "id": "P34440938",
+   "pmid": "34440938",
+   "doi": "10.3390/cells10082169",
+   "url": null,
+   "journal": "Cells",
+   "title": {
+    "zh": "扁桃体MSC-Exo miR-145-5p抑制激活素受体",
+    "en": "Mesenchymal Stem Cell-Derived Exosomes Protect Muscle Loss by miR-145-5p Activity Targeting Activin A Receptors."
+   },
+   "reviewDepth": {
+    "zh": "全文核查",
+    "en": "Full text reviewed"
+   },
+   "model": {
+    "zh": "化疗",
+    "en": "chemo"
+   }
+  },
+  {
+   "id": "P36708027",
+   "pmid": "36708027",
+   "doi": "10.1002/jcsm.13177",
+   "url": null,
+   "journal": "J Cachexia Sarcopenia Muscle",
+   "title": {
+    "zh": "hucMSC-EXO经AMPK/ULK1自噬抗萎缩",
+    "en": "Mesenchymal stromal cells ameliorate diabetes-induced muscle atrophy through exosomes by enhancing AMPK/ULK1-mediated autophagy."
+   },
+   "reviewDepth": {
+    "zh": "全文核查",
+    "en": "Full text reviewed"
+   },
+   "model": {
+    "zh": "db/db制动",
+    "en": "db/db immobilization"
+   }
+  },
+  {
+   "id": "P39732451",
+   "pmid": "39732451",
+   "doi": "10.1016/j.yexcr.2024.114396",
+   "url": null,
+   "journal": "Exp Cell Res",
+   "title": {
+    "zh": "UC-MSC-Exo Follistatin抗萎缩",
+    "en": "Umbilical cord mesenchymal stem cell-derived exosomal Follistatin inhibits fibrosis and promotes muscle regeneration in mice by influencing Smad2 and AKT signaling."
+   },
+   "reviewDepth": {
+    "zh": "摘要级核查",
+    "en": "Abstract-level review"
+   },
+   "model": {
+    "zh": "肌损伤",
+    "en": "muscle injury"
+   }
+  },
+  {
+   "id": "P40753405",
+   "pmid": "40753405",
+   "doi": "10.1186/s13287-025-04328-z",
+   "url": null,
+   "journal": "Stem Cell Res Ther",
+   "title": {
+    "zh": "MSC-Exo经ER/PI3K-AKT-mTOR抗地塞米松萎缩",
+    "en": "hUC-MSCs and derived exosomes attenuate DEX-induced muscle atrophy through modulation of estrogen signaling pathway."
+   },
+   "reviewDepth": {
+    "zh": "摘要级核查",
+    "en": "Abstract-level review"
+   },
+   "model": {
+    "zh": "地塞米松",
+    "en": "dex"
+   }
+  },
+  {
+   "id": "P38778385",
+   "pmid": "38778385",
+   "doi": "10.1186/s12951-024-02563-9",
+   "url": null,
+   "journal": "J Nanobiotechnology",
+   "title": {
+    "zh": "植物EV经AMPK/SIRT1/PGC-1α抗萎缩",
+    "en": "Gouqi-derived nanovesicles (GqDNVs) inhibited dexamethasone-induced muscle atrophy associating with AMPK/SIRT1/PGC1α signaling pathway."
+   },
+   "reviewDepth": {
+    "zh": "摘要级核查",
+    "en": "Abstract-level review"
+   },
+   "model": {
+    "zh": "地塞米松",
+    "en": "dex"
+   }
+  },
+  {
+   "id": "P41444423",
+   "pmid": "41444423",
+   "doi": "10.1038/s12276-025-01606-x",
+   "url": null,
+   "journal": "Exp Mol Med",
+   "title": {
+    "zh": "PRP-exo let-7f/miR-16经TGFBR3抑制FAP成脂",
+    "en": "Platelet-rich plasma-derived exosomes establishing a muscular proregenerative microenvironment through enhancing the viability of fibro-adipogenic progenitors."
+   },
+   "reviewDepth": {
+    "zh": "全文核查",
+    "en": "Full text reviewed"
+   },
+   "model": {
+    "zh": "甘油脂肪浸润",
+    "en": "glycerol fatty infiltration"
+   }
+  },
+  {
+   "id": "P38329214",
+   "pmid": "38329214",
+   "doi": "10.1002/adbi.202300558",
+   "url": null,
+   "journal": "Adv Biol (Weinh)",
+   "title": {
+    "zh": "MuSC-Exo经TGF-β1/Smad3抗去神经纤维化",
+    "en": "Satellite Cell-Derived Exosomes: A Novel Approach to Alleviate Skeletal Muscle Atrophy and Fibrosis."
+   },
+   "reviewDepth": {
+    "zh": "摘要级核查",
+    "en": "Abstract-level review"
+   },
+   "model": {
+    "zh": "去神经",
+    "en": "denervation"
+   }
+  },
+  {
+   "id": "P35816980",
+   "pmid": "35816980",
+   "doi": "10.1016/j.biomaterials.2022.121630",
+   "url": null,
+   "journal": "Biomaterials",
+   "title": {
+    "zh": "miR-29富集EV抑制纤维化恢复收缩力",
+    "en": "Silk sericin patches delivering miRNA-29-enriched extracellular vesicles-decorated myoblasts (SPEED) enhances regeneration and functional repair after severe skeletal muscle injury."
+   },
+   "reviewDepth": {
+    "zh": "摘要级核查",
+    "en": "Abstract-level review"
+   },
+   "model": {
+    "zh": "重度TA损伤",
+    "en": "severe TA injury"
+   }
+  },
+  {
+   "id": "P37936229",
+   "pmid": "37936229",
+   "doi": "10.1186/s13287-023-03555-6",
+   "url": null,
+   "journal": "Stem Cell Res Ther",
+   "title": {
+    "zh": "M2外泌体促FAP米色化减少肩袖脂肪浸润",
+    "en": "Polarized macrophages regulate fibro/adipogenic progenitor (FAP) adipogenesis through exosomes."
+   },
+   "reviewDepth": {
+    "zh": "全文核查",
+    "en": "Full text reviewed"
+   },
+   "model": {
+    "zh": "肩袖撕裂",
+    "en": "rotator-cuff tear"
+   }
+  },
+  {
+   "id": "P35604307",
+   "pmid": "35604307",
+   "doi": "10.1177/03635465221095568",
+   "url": null,
+   "journal": "Am J Sports Med",
+   "title": {
+    "zh": "FAP-BAT外泌体促成肌融合",
+    "en": "Muscle-Derived Beige Adipose Precursors Secrete Promyogenic Exosomes That Treat Rotator Cuff Muscle Degeneration in Mice and Are Identified in Humans by Single-Cell RNA Sequencing."
+   },
+   "reviewDepth": {
+    "zh": "摘要级核查",
+    "en": "Abstract-level review"
+   },
+   "model": {
+    "zh": "肩袖撕裂",
+    "en": "rotator-cuff tear"
+   }
+  },
+  {
+   "id": "P29981373",
+   "pmid": "29981373",
+   "doi": "10.1016/j.matbio.2018.07.003",
+   "url": null,
+   "journal": "Matrix Biol",
+   "title": {
+    "zh": "DMD成纤维EV miR-199a-5p经Caveolin-1促纤维化",
+    "en": "Exosomes and exosomal miRNAs from muscle-derived fibroblasts promote skeletal muscle fibrosis."
+   },
+   "reviewDepth": {
+    "zh": "摘要级核查",
+    "en": "Abstract-level review"
+   },
+   "model": {
+    "zh": "CTX+人源EV",
+    "en": "CTX+human EV"
+   }
+  },
+  {
+   "id": "P31665908",
+   "pmid": "31665908",
+   "doi": "10.1161/ATVBAHA.119.313506",
+   "url": null,
+   "journal": "Arterioscler Thromb Vasc Biol",
+   "title": {
+    "zh": "ASC-EV NRG1促缺血肌血管生长与保护",
+    "en": "Extracellular Vesicles From Adipose Stem Cells Prevent Muscle Damage and Inflammation in a Mouse Model of Hind Limb Ischemia: Role of Neuregulin-1."
+   },
+   "reviewDepth": {
+    "zh": "摘要级核查",
+    "en": "Abstract-level review"
+   },
+   "model": {
+    "zh": "后肢缺血",
+    "en": "hindlimb ischemia"
+   }
+  },
+  {
+   "id": "P32550900",
+   "pmid": "32550900",
+   "doi": "10.7150/thno.42259",
+   "url": null,
+   "journal": "Theranostics",
+   "title": {
+    "zh": "UMSC-Exo circHIPK3抑制焦亡促缺血肌修复",
+    "en": "Stem cell-derived exosomes prevent pyroptosis and repair ischemic muscle injury through a novel exosome/circHIPK3/ FOXO3a pathway."
+   },
+   "reviewDepth": {
+    "zh": "全文核查",
+    "en": "Full text reviewed"
+   },
+   "model": {
+    "zh": "后肢缺血",
+    "en": "hindlimb ischemia"
+   }
+  },
+  {
+   "id": "P40896178",
+   "pmid": "40896178",
+   "doi": "10.1016/j.reth.2025.08.009",
+   "url": null,
+   "journal": "Regen Ther",
+   "title": {
+    "zh": "UMSC-EV circDB经miR-34a/USP7/Notch1促成肌",
+    "en": "Extracellular vesicles-delivered circDB promotes ischemic muscle repair through the miR-34a/USP7/Notch1 signaling pathway."
+   },
+   "reviewDepth": {
+    "zh": "全文核查",
+    "en": "Full text reviewed"
+   },
+   "model": {
+    "zh": "后肢缺血",
+    "en": "hindlimb ischemia"
+   }
+  },
+  {
+   "id": "P40484285",
+   "pmid": "40484285",
+   "doi": "10.1016/j.jconrel.2025.113938",
+   "url": null,
+   "journal": "J Control Release",
+   "title": {
+    "zh": "工程iMSC-EV多因子促严重肢体缺血灌注恢复",
+    "en": "Targeted delivery of engineered extracellular vesicles to simultaneously promote vascularization and muscle regeneration in ischemic limbs."
+   },
+   "reviewDepth": {
+    "zh": "摘要级核查",
+    "en": "Abstract-level review"
+   },
+   "model": {
+    "zh": "严重肢体缺血",
+    "en": "severe limb ischemia"
+   }
+  },
+  {
+   "id": "P30041250",
+   "pmid": "30041250",
+   "doi": "10.1159/000490214",
+   "url": null,
+   "journal": "Cell Physiol Biochem",
+   "title": {
+    "zh": "MSC-EV改善缺血肌灌注",
+    "en": "Extracellular Vesicles Secreted by Human Urine-Derived Stem Cells Promote Ischemia Repair in a Mouse Model of Hind-Limb Ischemia."
+   },
+   "reviewDepth": {
+    "zh": "摘要级核查",
+    "en": "Abstract-level review"
+   },
+   "model": {
+    "zh": "后肢缺血",
+    "en": "hindlimb ischemia"
+   }
+  },
+  {
+   "id": "P39137155",
+   "pmid": "39137155",
+   "doi": "10.1093/jpp/rgae086",
+   "url": null,
+   "journal": "J Pharm Pharmacol",
+   "title": {
+    "zh": "BMSC-exo miR-367-3p经EZH2抑制I/R焦亡",
+    "en": "Mesenchymal stem cell-derived exosomal microRNA-367-3p mitigates lower limb ischemia/reperfusion injury in mouse skeletal muscle via EZH2 targeting."
+   },
+   "reviewDepth": {
+    "zh": "摘要级核查",
+    "en": "Abstract-level review"
+   },
+   "model": {
+    "zh": "下肢I/R",
+    "en": "limb I/R"
+   }
+  },
+  {
+   "id": "P40628981",
+   "pmid": "40628981",
+   "doi": "10.1038/s41598-025-10746-z",
+   "url": null,
+   "journal": "Sci Rep",
+   "title": {
+    "zh": "IMRC-Exo抑制蛇毒肢体损伤铁死亡",
+    "en": "IMRC-exo alleviates limb injury by inhibiting ferroptosis in a rabbit model of deinagkistrodon acutus snakebite envenomation."
+   },
+   "reviewDepth": {
+    "zh": "摘要级核查",
+    "en": "Abstract-level review"
+   },
+   "model": {
+    "zh": "蛇毒肢体损伤",
+    "en": "snakebite limb"
+   }
+  },
+  {
+   "id": "P40917871",
+   "pmid": "40917871",
+   "doi": "10.1590/1678-9199-JVATITD-2025-0009",
+   "url": null,
+   "journal": "J Venom Anim Toxins Incl Trop Dis",
+   "title": {
+    "zh": "IMRC-Exo抑制GSDME焦亡",
+    "en": "IMRC-Exo mitigates Deinagkistrodon acutus venom-induced limb injury in rabbits by inhibiting GSDME-dependent pyroptosis."
+   },
+   "reviewDepth": {
+    "zh": "摘要级核查",
+    "en": "Abstract-level review"
+   },
+   "model": {
+    "zh": "蛇毒肢体损伤",
+    "en": "snakebite limb"
+   }
+  },
+  {
+   "id": "P42893935",
+   "pmid": "42893935",
+   "doi": "10.1002/adhm.71868",
+   "url": null,
+   "journal": "Adv Healthc Mater",
+   "title": {
+    "zh": "BMSC-EV经FOXO3抑制糖脂毒萎缩铁死亡",
+    "en": "Multimodal Programming of Extracellular Vesicles via Nano-Primed SECCS-Based 3D Microenvironments for Coordinated Ferroptosis Suppression and Myogenic Regeneration in Diabetes."
+   },
+   "reviewDepth": {
+    "zh": "摘要级核查",
+    "en": "Abstract-level review"
+   },
+   "model": {
+    "zh": "糖脂毒萎缩",
+    "en": "metabolic atrophy"
+   }
+  },
+  {
+   "id": "P35052570",
+   "pmid": "35052570",
+   "doi": "10.3390/antiox11010066",
+   "url": null,
+   "journal": "Antioxidants (Basel)",
+   "title": {
+    "zh": "SKP-SC-EV经Nrf2抗去神经氧化应激",
+    "en": "SKP-SC-EVs Mitigate Denervated Muscle Atrophy by Inhibiting Oxidative Stress and Inflammation and Improving Microcirculation."
+   },
+   "reviewDepth": {
+    "zh": "全文核查",
+    "en": "Full text reviewed"
+   },
+   "model": {
+    "zh": "去神经",
+    "en": "denervation"
+   }
+  },
+  {
+   "id": "P39901193",
+   "pmid": "39901193",
+   "doi": "10.1186/s13287-025-04175-y",
+   "url": null,
+   "journal": "Stem Cell Res Ther",
+   "title": {
+    "zh": "hBMSC-EV抑制失重肌氧化与蛋白降解",
+    "en": "hBMSC-EVs alleviate weightlessness-induced skeletal muscle atrophy by suppressing oxidative stress and inflammation."
+   },
+   "reviewDepth": {
+    "zh": "摘要级核查",
+    "en": "Abstract-level review"
+   },
+   "model": {
+    "zh": "尾吊失重",
+    "en": "tail suspension"
+   }
+  },
+  {
+   "id": "P41308393",
+   "pmid": "41308393",
+   "doi": "10.1016/j.phymed.2025.157573",
+   "url": null,
+   "journal": "Phytomedicine",
+   "title": {
+    "zh": "AA-sEV经Pink1/Parkin线粒体自噬改善糖尿病肌",
+    "en": "Anemarrhena asphodeloides-derived small extracellular vesicle ameliorate diabetes-induced muscle atrophy via activating Pink1-mediated mitophagy."
+   },
+   "reviewDepth": {
+    "zh": "摘要级核查",
+    "en": "Abstract-level review"
+   },
+   "model": {
+    "zh": "db/db",
+    "en": "db/db"
+   }
+  },
+  {
+   "id": "P36646698",
+   "pmid": "36646698",
+   "doi": "10.1038/s41368-022-00205-0",
+   "url": null,
+   "journal": "Int J Oral Sci",
+   "title": {
+    "zh": "MSC-ApoEV经Pannexin1释放肌酸促融合",
+    "en": "MSCs-derived apoptotic extracellular vesicles promote muscle regeneration by inducing Pannexin 1 channel-dependent creatine release by myoblasts."
+   },
+   "reviewDepth": {
+    "zh": "全文核查",
+    "en": "Full text reviewed"
+   },
+   "model": {
+    "zh": "CTX TA",
+    "en": "CTX TA"
+   }
+  },
+  {
+   "id": "P33333294",
+   "pmid": "33333294",
+   "doi": "10.1016/j.ymthe.2020.12.018",
+   "url": null,
+   "journal": "Mol Ther",
+   "title": {
+    "zh": "外泌体稳定肌膜减少mdx损伤",
+    "en": "Exosome-mediated improvement in membrane integrity and muscle function in dystrophic mice."
+   },
+   "reviewDepth": {
+    "zh": "摘要级核查",
+    "en": "Abstract-level review"
+   },
+   "model": {
+    "zh": "mdx",
+    "en": "mdx"
+   }
+  },
+  {
+   "id": "P39702274",
+   "pmid": "39702274",
+   "doi": "10.1186/s13395-024-00367-x",
+   "url": null,
+   "journal": "Skelet Muscle",
+   "title": {
+    "zh": "Wnt7a-EV挽救mdx再生缺陷",
+    "en": "Wnt7a is required for regeneration of dystrophic skeletal muscle."
+   },
+   "reviewDepth": {
+    "zh": "摘要级核查",
+    "en": "Abstract-level review"
+   },
+   "model": {
+    "zh": "mdx+CTX",
+    "en": "mdx+CTX"
+   }
+  },
+  {
+   "id": "P33049461",
+   "pmid": "33049461",
+   "doi": "10.1016/j.biomaterials.2020.120435",
+   "url": null,
+   "journal": "Biomaterials",
+   "title": {
+    "zh": "工程IL6ST诱饵EV阻断IL-6反式信号",
+    "en": "Engineered extracellular vesicle decoy receptor-mediated modulation of the IL6 trans-signalling pathway in muscle."
+   },
+   "reviewDepth": {
+    "zh": "摘要级核查",
+    "en": "Abstract-level review"
+   },
+   "model": {
+    "zh": "mdx",
+    "en": "mdx"
+   }
+  }
+ ]
+}
