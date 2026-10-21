@@ -4,6 +4,13 @@
 
 **在线交互分子通路图：<https://tuanziding.github.io/radiation-muscle-pathway/>**（单文件 HTML，也可下载 [`docs/pathway-v0.7.html`](docs/pathway-v0.7.html) 离线双击打开）
 
+## EV 干预通路图 v0.1（2026-10-21，独立页面）
+
+- **在线**：<https://tuanziding.github.io/radiation-muscle-pathway/ev-intervention-v0.1.html>（单文件，可离线打开 [`docs/ev-intervention-v0.1.html`](docs/ev-intervention-v0.1.html)）。
+- **范围**：用细胞外囊泡（EV）干预骨骼肌损伤的原始研究。筛 658 个标题、读 157 篇摘要和 32 篇全文，纳入 132 篇（A 2 / B 111 / C 19）；图中按 7 个机制泳道绘出 52 个节点、42 条带文献的关系。A = 辐射模型直接证据，B = 心脏毒素/BaCl₂/萎缩/缺血/mdx 等非辐射模型的在体 EV 干预参照，C = 仅体外/候选；【致病】边为 EV 介导的损伤机制（如受照肿瘤 sEV）。
+- **关键缺口**：尚无“在体辐射骨骼肌损伤 + 外源 EV + 功能终点”研究；唯一直接研究（PMID 40835994）为体外，且受照细胞来源 EV 丧失促血管活性。
+- 数据 `data/ev-intervention-v0.1.json`，构建 `scripts/build-ev-v01.mjs`（模板 `scripts/pathway-template-ev.html`），筛查报告与纳入/排除表见 [`docs/ev-v0.1/`](docs/ev-v0.1/ev-report-v01.md)。
+
 ## v0.7 更新（2026-10-21）：系统文献筛查补全
 
 - **系统筛查**：PubMed 按 8 组通路关键词 + 2023–2026 全量 + 2 轮补充检索，去重后筛 891 个标题、精读约 95 篇摘要、18 篇全文；纳入 53 篇（A 15 / B 26 / C 12），排除 227 篇并逐条记录理由。只纳入直接照射骨骼肌或肌源细胞的原始研究；所有 A 级均已读全文。检索式、纳入表、排除表与报告见 [`docs/v0.7/`](docs/v0.7/screen-report-v07.md)。
